@@ -1,25 +1,25 @@
 {
  "ai": {
-  "calls": 0,
-  "cli_cost_usd": 0.0,
+  "calls": 3,
+  "cli_cost_usd": 0.0032,
   "errors": [],
-  "est_cost_usd": 0.0,
-  "input_tokens": 0,
+  "est_cost_usd": 0.0036,
+  "input_tokens": 11208,
   "mode": "subscription",
-  "output_tokens": 0,
+  "output_tokens": 4962,
   "searches": 0
  },
  "counts": {
   "candidates": 3,
-  "new": 0,
+  "new": 3,
   "over_limit": 0,
-  "read": 0,
-  "read_failed": 3,
+  "read": 3,
+  "read_failed": 0,
   "same": 0,
   "skipped": 0,
   "updated": 0
  },
  "discovery": [],
- "runAt": "2026-10-30 21:01",
+ "runAt": "2026-10-30 21:13",
  "sources": []
 }

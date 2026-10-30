@@ -1,4 +1,14 @@
 {
+ "https://arthub.co.kr/sub04/board01_view.htm?No=27355&sType1=1&sType2=2&sType3=3": {
+  "date": "2026-10-30",
+  "reason": "아티스트 프롤로그 2027 작가 공모",
+  "status": "kept"
+ },
+ "https://bcf.or.kr/base/board/read?boardManagementNo=25&boardNo=153237&menuLevel=2&menuNo=86": {
+  "date": "2026-10-30",
+  "reason": "2026 부천문화재단×크라이치즈버거 예술상품 개발 공모전",
+  "status": "kept"
+ },
  "https://contestkorea.com/sub/view.php?Txt_bcode=030110001&int_gbn=1&str_no=202610140072": {
   "date": "2026-10-30",
   "reason": "문학·글쓰기 공모(독후감)로 굿즈·디자인·시각예술·창업 관련이 없음. 콘테스트코리아 기본 분야(goods, design)는 실제 내용과 맞지 않아 무시함.",
@@ -283,6 +293,11 @@
   "date": "2026-10-30",
   "reason": "관광 콘텐츠 제작 크리에이터를 뽑는 공모로, 굿즈·디자인·시각예술 창작과는 거리가 멀다.",
   "status": "skipped"
+ },
+ "https://gdfac.or.kr/community/ko/notice/102403": {
+  "date": "2026-10-30",
+  "reason": "2026 강동문화재단 GAC Creative Bridge 아트 굿즈 창작지원 프로젝트 공모",
+  "status": "kept"
  },
  "https://wevity.com?c=find&cidx=19&gbn=view&gp=1&gub=1&ix=109516&s=1": {
   "date": "2026-10-30",
