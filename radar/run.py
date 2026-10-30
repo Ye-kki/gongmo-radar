@@ -82,7 +82,8 @@ def main(argv=None, ai_factory=None, fetcher=None, data_dir=None):
         print(f"[{h['status']:>6}] {src['id']}: links={h['links']} new={h['new']}", file=sys.stderr)
 
     # 1a) institution homepages: find their notice boards automatically
-    for org in _load_orgs(data_dir):
+    orgs = sorted(_load_orgs(data_dir), key=lambda o: store.sources_state.get(o["id"], {}).get("scanned", ""))
+    for org in orgs:  # least recently scanned first, so institutions skipped for time go first next day
         if org.get("enabled") is False or (args.only and args.only not in (org["id"], "orgs")):
             continue
         if time.monotonic() - started > args.budget_min * 60 * 0.4:  # leave most of the time for reading posts
@@ -93,6 +94,7 @@ def main(argv=None, ai_factory=None, fetcher=None, data_dir=None):
                "region": org.get("region", "전국"), "filter": True, "board": "art", "post_like": True, "first_take": 5}
         h = {"id": org["id"], "name": org["name"], "url": org["home"], "status": "ok", "links": 0, "new": 0,
              "board": "art", "kind": "org"}
+        store.sources_state.setdefault(org["id"], {})["scanned"] = today.isoformat()
         try:
             boards = [org["board_url"]] if org.get("board_url") else _org_boards(org, fetcher, store, today)
             if not boards:
@@ -245,7 +247,7 @@ def _scan_board(src, url, fetcher, store, sources_cfg, candidates, counts, h, to
         h["status"] = "ok"
         h.pop("detail", None)
     state_key = src["id"]
-    first_run = state_key not in store.sources_state and not (links and store.known_host(links[0]["url"]))
+    first_run = "since" not in store.sources_state.get(state_key, {}) and not (links and store.known_host(links[0]["url"]))
     taken = 0
     for ln in links:
         if src.get("filter") and not keyword_match(ln["title"], src.get("title_keywords") or sources_cfg["title_keywords"]):
