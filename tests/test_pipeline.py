@@ -172,3 +172,78 @@ def test_robots_longest_match():
     assert robots_allows(rules, "/community/ko/notice/1") and not robots_allows(rules, "/member")
     only_named = parse_robots("User-Agent : *\nDisallow : /\n\nUser-Agent : Yeti\nAllow : /\n")
     assert not robots_allows(only_named, "/sub04/board01_view.htm")
+
+
+def test_prefilter():
+    from radar.prefilter import looks_like_call, date_fingerprint
+    assert looks_like_call("2026 굿즈 공모전", "접수기간: 11.1~11.20")[0]
+    assert not looks_like_call("2026 굿즈 공모전 결과 발표", "수상작 안내")[0]
+    assert not looks_like_call("[연합뉴스] 재단 표창", "기사 본문")[0]
+    assert not looks_like_call("정기 종합감사 안내", "감사 기간 11월")[0]
+    assert looks_like_call("입주작가 모집", "")[0]
+    a = date_fingerprint("접수 2026. 11. 2.(월) ~ 2026. 11. 20.(금) 조회수 81")
+    b = date_fingerprint("접수 2026. 11. 2.(월) ~ 2026. 11. 20.(금) 조회수 95")
+    c = date_fingerprint("접수 2026. 11. 2.(월) ~ 2026. 11. 27.(금) 조회수 95")
+    assert a == b and a != c and a
+
+
+class BatchAI(FakeAI):
+    def __init__(self, *a):
+        super().__init__()
+        self.batches = []
+
+    def extract_batch(self, items):
+        self.batches.append(len(items))
+        return {j: (_rec() if "관광기념품" in p["text"] else {"is_open_call": False, "relevance": 0})
+                for j, (p, c) in enumerate(items)}
+
+
+def test_batch_recheck_and_first_run(tmp_path, monkeypatch):
+    pages = dict(FakeFetcher.pages)
+    list_html = "".join(f'<a href="/board/view.do?pblancId=X{i}">2026 시설 안내 게시글 {i}번</a>' for i in range(20))
+    pages["https://www.site.go.kr/new/list.do"] = list_html
+    for i in range(20):
+        pages[f"https://www.site.go.kr/board/view.do?pblancId=X{i}"] = "<div class='view'>" + "<p>일반 안내 글입니다. 신청 내용 없음.</p>" * 5 + "</div>"
+
+    class F(FakeFetcher):
+        def get(self, url, max_bytes=0):
+            if url in pages:
+                return Page(url=url, text=pages[url], content_type="text/html", content=b"")
+            raise FetchError("404")
+
+    cfg = {"title_keywords": ["공모", "모집", "안내"], "sources": [
+        {"id": "site", "name": "테스트 기관", "url": "https://www.site.go.kr/board/list.do", "filter": True},
+        {"id": "newsite", "name": "새 기관", "url": "https://www.site.go.kr/new/list.do", "filter": True}]}
+    real_load = runmod.load
+    monkeypatch.setattr(runmod, "load", lambda n: cfg if n == "sources.yaml" else real_load(n))
+    ai = BatchAI()
+    runmod.main(["--no-discover"], ai_factory=lambda p, t: ai, fetcher=F(), data_dir=tmp_path)
+    health = json.loads((tmp_path / "health.json").read_text("utf-8"))
+    c = health["counts"]
+    # site.go.kr was never seen -> both boards are first runs: newsite keeps 12, baselines 8; all 12 filtered in code
+    assert c["baseline"] == 8 and c["filtered"] == 12 and ai.batches == [1]
+    data = json.loads((tmp_path / "calls.json").read_text("utf-8"))
+    assert data["calls"][0]["fp"] and data["calls"][0]["board"] == "art"
+
+    # deadline edited on the page -> re-read once and the date replaced
+    pages["https://www.site.go.kr/board/view.do?pblancId=PB001&page=2"] = DETAIL_HTML.replace("11. 20.(금)", "11. 27.(금)")
+    ai2 = BatchAI()
+    ai2.extract_batch = lambda items: {0: _rec(deadline="2026-11-27", deadline_evidence="2026. 11. 27.(금) 18:00까지")}
+    runmod.main(["--no-discover"], ai_factory=lambda p, t: ai2, fetcher=F(), data_dir=tmp_path)
+    health = json.loads((tmp_path / "health.json").read_text("utf-8"))
+    assert health["counts"]["changed"] == 1
+    data = json.loads((tmp_path / "calls.json").read_text("utf-8"))
+    assert data["calls"][0]["deadline"] == "2026-11-27"
+
+
+def test_find_boards_and_post_like():
+    from radar.collect import extract_links, find_boards
+    home = ('<a href="/brd/board/314/L/menu/282">공지사항</a><a href="/brd/board/337/L/menu/284">사업공모</a>'
+            '<a href="/x/result">공모결과</a><a href="https://other.kr/x">공지</a>')
+    assert find_boards(home, "https://www.kcdf.or.kr/main") == [
+        "https://www.kcdf.or.kr/brd/board/337/L/menu/284", "https://www.kcdf.or.kr/brd/board/314/L/menu/282"]
+    board = ('<a href="/about/intro">재단 소개 페이지 안내</a>'
+             '<a href="/board/view?idx=1234">2027 공예 공모전시 참여작가 모집</a>'
+             '<a href="/notice/5821">입주작가 정기공모 안내</a>')
+    links = extract_links(board, "https://www.ex.or.kr/board/list", {"post_like": True})
+    assert [l["url"] for l in links] == ["https://www.ex.or.kr/board/view?idx=1234", "https://www.ex.or.kr/notice/5821"]

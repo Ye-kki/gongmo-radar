@@ -8,6 +8,7 @@ from bs4 import BeautifulSoup
 
 NAV_WORDS = {"로그인", "회원가입", "사이트맵", "이전", "다음", "처음", "마지막", "목록", "더보기", "검색",
              "공지사항", "자주묻는질문", "개인정보처리방침", "이용약관", "홈", "home", "next", "prev", "more"}
+POST_ID_RX = re.compile(r"(\d{3,}|[?&](idx|seq|no|id|num|nttId|bbsId|articleNo|wr_id|uid)=\w+)", re.I)
 FILE_EXT = re.compile(r"\.(pdf|hwp|hwpx|docx?|xlsx?|zip|jpg|jpeg|png|gif)(\?|$)", re.I)
 
 
@@ -55,6 +56,8 @@ def extract_links(html: str, base_url: str, source: dict) -> list[dict]:
             continue
         if link_re and not link_re.search(url):
             continue
+        if source.get("post_like") and not POST_ID_RX.search(url.split("#")[0][len(urlsplit(url).scheme) + 3:].split("/", 1)[-1]):
+            continue  # auto-found boards: keep only links that carry a post number
         if len(title) < 6 or title.lower() in NAV_WORDS or len(title) > 300:
             continue
         key = url.split("#")[0]
@@ -68,3 +71,29 @@ def extract_links(html: str, base_url: str, source: dict) -> list[dict]:
 def keyword_match(title: str, keywords: list[str]) -> bool:
     t = title.lower()
     return any(k.lower() in t for k in keywords)
+
+
+BOARD_NAME_RX = re.compile(r"^\s*(공지\s*사항|공지|사업\s*공모|공모\s*사업|공모\s*안내|공모|모집\s*공고|공고|새\s*소식|알림\s*마당|재단\s*소식|"
+                           r"지원\s*사업|공모\s*/\s*모집|모집|공고\s*/\s*공모)\s*$")
+BOARD_RANK = ["사업공모", "공모사업", "공모안내", "공모", "모집공고", "지원사업", "공고", "공지사항", "공지", "알림마당", "새소식", "재단소식", "모집"]
+
+
+def find_boards(html: str, base_url: str, limit: int = 2) -> list[str]:
+    """Find notice / open-call board pages linked from an institution's homepage."""
+    soup = BeautifulSoup(html, "lxml")
+    base_site = _site(urlsplit(base_url).netloc)
+    found: dict[str, int] = {}
+    for a in soup.find_all("a"):
+        name = re.sub(r"\s+", " ", a.get_text(" ", strip=True))
+        if not BOARD_NAME_RX.match(name):
+            continue
+        href = (a.get("href") or "").strip()
+        if not href or href.startswith(("#", "mailto:")) or href.lower().startswith("javascript"):
+            continue
+        url = urljoin(base_url, href)
+        if not url.startswith("http") or _site(urlsplit(url).netloc) != base_site or FILE_EXT.search(url):
+            continue
+        key = re.sub(r"\s+", "", name)
+        rank = BOARD_RANK.index(key) if key in BOARD_RANK else len(BOARD_RANK)
+        found[url] = min(rank, found.get(url, 99))
+    return [u for u, _ in sorted(found.items(), key=lambda x: x[1])][:limit]

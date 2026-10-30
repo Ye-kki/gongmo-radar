@@ -37,6 +37,7 @@ class Store:
         root.mkdir(parents=True, exist_ok=True)
         self.calls: dict[str, dict] = {c["id"]: c for c in self._load("calls.json", {"calls": []})["calls"]}
         self.seen: dict[str, dict] = self._load("seen.json", {})
+        self.sources_state: dict[str, dict] = self._load("sources.json", {})
 
     def _load(self, name, default):
         p = self.root / name
@@ -65,8 +66,13 @@ class Store:
                     return c
         return None
 
-    def upsert(self, rec: dict, today: str) -> str:
-        """Add or merge a call. Returns 'new', 'updated' or 'same'."""
+    def known_host(self, url: str) -> bool:
+        host = urlsplit(normalize_url(url)).netloc
+        return any(urlsplit(k).netloc == host for k in self.seen)
+
+    def upsert(self, rec: dict, today: str, force: bool = False) -> str:
+        """Add or merge a call. Returns 'new', 'updated' or 'same'.
+        force=True (a re-read after the notice changed) lets the new values replace the old ones."""
         dup = self.find_duplicate(rec)
         if dup is None:
             rec["id"] = call_id(rec["url"])
@@ -76,7 +82,7 @@ class Store:
             return "new"
         # Prefer the version that passed checks; keep first-seen date and id.
         changed = False
-        better = (dup.get("needsCheck") and not rec.get("needsCheck")) or \
+        better = force or (dup.get("needsCheck") and not rec.get("needsCheck")) or \
                  (not dup.get("deadline") and rec.get("deadline"))
         for k, v in rec.items():
             if k in ("id", "foundAt", "sources", "url"):
@@ -90,7 +96,7 @@ class Store:
         for s in rec.get("sources", []):
             if s not in dup.setdefault("sources", []):
                 dup["sources"].append(s)
-        if better and rec["url"] != dup["url"]:
+        if better and not force and rec["url"] != dup["url"]:
             dup.setdefault("altUrls", []).append(dup["url"])
             dup["url"] = rec["url"]
         if changed:
@@ -107,4 +113,5 @@ class Store:
         calls = sorted(self.calls.values(), key=lambda c: (c.get("deadline") or "9999", c["title"]))
         self._save("calls.json", {"updatedAt": updated_at, "calls": calls})
         self._save("seen.json", self.seen)
+        self._save("sources.json", self.sources_state)
         self._save("health.json", health)

@@ -134,14 +134,15 @@ img{max-width:100%}
       <p id="updated">공고 목록을 불러오는 중입니다.</p>
     </div>
     <div class="tabs" role="tablist">
-      <button id="tab-list" role="tab" aria-selected="true">공고 목록</button>
+      <button id="tab-art" role="tab" aria-selected="true">작가·공모전</button>
+      <button id="tab-life" role="tab" aria-selected="false">생활 지원</button>
       <button id="tab-cal" role="tab" aria-selected="false">내 지원 달력</button>
     </div>
   </header>
 
   <div id="dbnote" class="notice" hidden></div>
 
-  <section class="stats" aria-label="요약">
+  <section class="stats" id="stats" aria-label="요약">
     <button class="stat" id="st-open"><b>0</b><span>접수 중</span></button>
     <button class="stat hot" id="st-week"><b>0</b><span>7일 안에 마감</span></button>
     <button class="stat" id="st-new"><b>0</b><span>최근 3일 새 공고</span></button>
@@ -156,9 +157,9 @@ img{max-width:100%}
       <div class="fgroup"><label for="f-due">마감</label>
         <select id="f-due"><option value="">전체</option><option value="7">7일 안</option><option value="14">2주 안</option><option value="31">한 달 안</option></select></div>
       <div class="fgroup"><span class="lbl">지원 형태</span><div class="chips" id="f-sup"></div></div>
-      <div class="fgroup"><span class="lbl">나와의 적합도</span><div class="chips" id="f-fit"></div></div>
+      <div class="fgroup" id="fg-fit"><span class="lbl">나와의 적합도</span><div class="chips" id="f-fit"></div></div>
       <div class="fgroup"><span class="lbl">자격·상태</span>
-        <label class="check"><input type="checkbox" id="f-indiv"> 개인 작가 지원 가능만</label>
+        <label class="check" id="lb-indiv"><input type="checkbox" id="f-indiv"> 개인 작가 지원 가능만</label>
         <label class="check"><input type="checkbox" id="f-noage"> 연령 제한 없는 것만</label>
         <label class="check"><input type="checkbox" id="f-star"> 관심 표시한 것만</label>
         <label class="check"><input type="checkbox" id="f-hidepass" checked> 패스한 공고 숨기기</label>
@@ -190,12 +191,18 @@ img{max-width:100%}
 </div>
 
 <script>
-const CATS={goods:"굿즈·기념품",art:"예술·전시 지원",design:"디자인 공모",startup:"창업 지원",overseas:"해외 공모전",residency:"레지던시",local:"지자체 사업"};
-const SUPS={prize:"상금",fund:"제작·사업비",exhibit:"전시 기회",space:"공간·체류",commercial:"상품화·납품"};
+const ART_CATS={goods:"굿즈·기념품",art:"예술·전시 지원",design:"디자인 공모",startup:"창업 지원",overseas:"해외 공모전",residency:"레지던시",local:"지자체 사업"};
+const LIFE_CATS={youth:"청년 지원",housing:"주거",welfare:"생활·복지"};
+const CATS={...ART_CATS,...LIFE_CATS};
+const ART_SUPS={prize:"상금",fund:"제작·사업비",exhibit:"전시 기회",space:"공간·체류",commercial:"상품화·납품"};
+const LIFE_SUPS={rent:"주거·임대",cash:"수당·현금",loan:"대출·이자",service:"서비스·바우처"};
+const SUPS={...ART_SUPS,...LIFE_SUPS};
+const boardOf=c=>c.board==="life"?"life":"art";
 const FITS={pixel:"Pixel Studio",yekki:"YEKKI 작업"};
 const STATES={applying:"준비 중",submitted:"제출 완료",waiting:"결과 대기",selected:"선정",rejected:"미선정"};
 const KEY="gongmo-radar-marks-v1";
-const S={calls:[],marks:{},meta:null,health:null,cat:new Set(),sup:new Set(),fit:new Set(),openApply:null,tab:"list",month:null};
+const S={calls:[],marks:{},meta:null,health:null,cat:new Set(),sup:new Set(),fit:new Set(),openApply:null,tab:"art",month:null};
+const inBoard=()=>S.calls.filter(c=>boardOf(c)===(S.tab==="life"?"life":"art"));
 const $=id=>document.getElementById(id);
 const esc=s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
 const fmt=d=>d.getFullYear()+"-"+String(d.getMonth()+1).padStart(2,"0")+"-"+String(d.getDate()).padStart(2,"0");
@@ -215,15 +222,17 @@ function setMark(id,data){if(data)S.marks[id]={...data,updatedAt:new Date().toIS
 
 function chips(el,map,set){el.innerHTML=Object.entries(map).map(([k,v])=>`<button class="chip" data-k="${k}" aria-pressed="${set.has(k)}">${v}</button>`).join("");
   el.onclick=e=>{const b=e.target.closest(".chip");if(!b)return;const k=b.dataset.k;set.has(k)?set.delete(k):set.add(k);b.setAttribute("aria-pressed",set.has(k));render()}}
-chips($("f-cat"),CATS,S.cat);chips($("f-sup"),SUPS,S.sup);chips($("f-fit"),FITS,S.fit);
+function boardChips(){const life=S.tab==="life";chips($("f-cat"),life?LIFE_CATS:ART_CATS,S.cat);chips($("f-sup"),life?LIFE_SUPS:ART_SUPS,S.sup);
+  chips($("f-fit"),FITS,S.fit);$("fg-fit").hidden=life;$("lb-indiv").hidden=life}
+boardChips();
 ["q","f-region","f-due","f-indiv","f-noage","f-star","f-hidepass","f-hideclosed","f-verified","sort"].forEach(id=>$(id).addEventListener("input",render));
 $("reset").onclick=()=>{S.cat.clear();S.sup.clear();S.fit.clear();$("q").value="";$("f-region").value="";$("f-due").value="";
   ["f-indiv","f-noage","f-star","f-verified"].forEach(i=>$(i).checked=false);$("f-hidepass").checked=true;$("f-hideclosed").checked=true;
-  chips($("f-cat"),CATS,S.cat);chips($("f-sup"),SUPS,S.sup);chips($("f-fit"),FITS,S.fit);render()};
+  boardChips();render()};
 
 function filtered(){
   const q=$("q").value.trim().toLowerCase(),reg=$("f-region").value,due=+$("f-due").value||0;
-  const out=S.calls.filter(c=>{
+  const out=inBoard().filter(c=>{
     const m=mark(c.id),dl=daysLeft(c.deadline);
     if($("f-hideclosed").checked&&dl!==null&&dl<0&&!STATES[m.state])return false;
     if($("f-hidepass").checked&&m.state==="pass")return false;
@@ -271,17 +280,18 @@ function slip(c){const m=mark(c.id),dl=daysLeft(c.deadline),applied=!!STATES[m.s
     <div class="actions">${act}</div></div></article>`}
 
 function render(){
-  const open=S.calls.filter(c=>{const d=daysLeft(c.deadline);return d===null||d>=0});
+  const B=inBoard(),open=B.filter(c=>{const d=daysLeft(c.deadline);return d===null||d>=0});
   $("st-open").querySelector("b").textContent=open.length;
   $("st-week").querySelector("b").textContent=open.filter(c=>{const d=daysLeft(c.deadline);return d!==null&&d<=7}).length;
-  $("st-new").querySelector("b").textContent=S.calls.filter(isNew).length;
+  $("st-new").querySelector("b").textContent=B.filter(isNew).length;
   $("st-mine").querySelector("b").textContent=S.calls.filter(c=>STATES[mark(c.id).state]).length;
-  const regs=[...new Set(S.calls.map(c=>c.region||"전국"))].sort();const rs=$("f-region"),cur=rs.value;
+  const regs=[...new Set(B.map(c=>c.region||"전국"))].sort();const rs=$("f-region"),cur=rs.value;
   rs.innerHTML='<option value="">전체 지역</option>'+regs.map(r=>`<option ${r===cur?"selected":""}>${esc(r)}</option>`).join("");
-  const list=filtered();$("count").textContent=list.length+"건 표시 · 전체 "+S.calls.length+"건";
-  $("list").innerHTML=list.length?list.map(slip).join(""):(S.calls.length?`<div class="empty"><b>조건에 맞는 공고가 없습니다</b>필터를 줄이거나 초기화해 보세요.</div>`:
+  const list=filtered();$("count").textContent=list.length+"건 표시 · 이 게시판 전체 "+B.length+"건";
+  $("list").innerHTML=list.length?list.map(slip).join(""):(B.length?`<div class="empty"><b>조건에 맞는 공고가 없습니다</b>필터를 줄이거나 초기화해 보세요.</div>`:
+    S.tab==="life"?`<div class="empty"><b>아직 생활 지원 공고가 없습니다</b>청년·주거·생활 지원 공고는 수집처를 연결하는 대로 여기에 쌓입니다.</div>`:
     `<div class="empty"><b>아직 들어온 공고가 없습니다</b>매일 아침 자동 수집이 돌면 여기에 마감 임박순으로 쌓입니다.</div>`);
-  $("updated").textContent=S.meta?"마지막 자동 업데이트 "+S.meta:"굿즈·전시·디자인·창업·해외·레지던시 공고를 매일 모아 둡니다.";
+  $("updated").textContent=S.meta?"마지막 자동 업데이트 "+S.meta:"공모·지원사업과 생활 지원 공고를 매일 모아 둡니다.";
   if(S.tab==="cal")renderCal()}
 
 document.addEventListener("click",e=>{const b=e.target.closest("[data-act]");if(!b||b.tagName==="SELECT")return;const id=b.dataset.id,m=mark(id);
@@ -295,12 +305,15 @@ document.addEventListener("click",e=>{const b=e.target.closest("[data-act]");if(
 document.addEventListener("change",e=>{const s=e.target.closest('select[data-act="state"]');if(!s)return;const m=mark(s.dataset.id);
   setMark(s.dataset.id,{state:s.value,prepDays:m.prepDays??14})});
 
-function tab(t){S.tab=t;$("tab-list").setAttribute("aria-selected",t==="list");$("tab-cal").setAttribute("aria-selected",t==="cal");
-  $("view-list").hidden=t!=="list";$("view-cal").hidden=t!=="cal";if(t==="cal")renderCal()}
-$("tab-list").onclick=()=>tab("list");$("tab-cal").onclick=()=>tab("cal");
-$("st-week").onclick=()=>{tab("list");$("f-due").value="7";render()};
-$("st-new").onclick=()=>{tab("list");$("sort").value="new";render()};
-$("st-open").onclick=()=>{tab("list");$("reset").click()};
+let listTab="art";
+function tab(t){const was=S.tab;S.tab=t;["art","life","cal"].forEach(k=>$("tab-"+k).setAttribute("aria-selected",t===k));
+  $("view-list").hidden=t==="cal";$("view-cal").hidden=t!=="cal";$("stats").hidden=t==="cal";
+  if(t!=="cal"){listTab=t;if(was!==t){S.cat.clear();S.sup.clear();S.fit.clear();boardChips()}render()}else renderCal();
+  try{localStorage.setItem("gongmo-radar-tab",t)}catch(e){}}
+$("tab-art").onclick=()=>tab("art");$("tab-life").onclick=()=>tab("life");$("tab-cal").onclick=()=>tab("cal");
+$("st-week").onclick=()=>{$("f-due").value="7";render()};
+$("st-new").onclick=()=>{$("sort").value="new";render()};
+$("st-open").onclick=()=>$("reset").click();
 $("st-mine").onclick=()=>tab("cal");
 
 function events(){const ev=[];
@@ -320,7 +333,7 @@ function renderCal(){
   const mine=S.calls.filter(c=>STATES[mark(c.id).state]).sort((a,b)=>String(a.deadline||"9").localeCompare(String(b.deadline||"9")));
   $("agenda").innerHTML=`<h3>지원 목록</h3>`+(mine.length?mine.map(c=>{const m=mark(c.id),dl=daysLeft(c.deadline),p=m.prepDays??14;
     return `<div class="arow"><div class="d">${c.deadline?short(c.deadline)+" 마감<br>"+(dl>=0?"D-"+dl:"마감됨"):"마감 미정"}</div>
-      <div class="t"><b><a href="${esc(safeUrl(c.url))}" target="_blank" rel="noopener">${esc(c.title)}</a></b><small>${c.deadline&&p>0?"준비 시작 "+short(addDays(c.deadline,-p)):""}${c.announceDate?" · 발표 "+short(c.announceDate):""}</small></div>
+      <div class="t"><b><a href="${esc(safeUrl(c.url))}" target="_blank" rel="noopener">${esc(c.title)}</a></b><small>${boardOf(c)==="life"?"생활 · ":""}${c.deadline&&p>0?"준비 시작 "+short(addDays(c.deadline,-p)):""}${c.announceDate?" · 발표 "+short(c.announceDate):""}</small></div>
       ${stateSelect(c,m)}</div>`}).join(""):
     `<div class="empty"><b>달력에 들어간 공고가 없습니다</b>공고 목록에서 ‘지원하기’를 누르면 준비 시작일·마감일·발표일이 여기 표시됩니다.</div>`)}
 $("prev").onclick=()=>{S.month=new Date(S.month.getFullYear(),S.month.getMonth()-1,1);renderCal()};
@@ -328,7 +341,7 @@ $("next").onclick=()=>{S.month=new Date(S.month.getFullYear(),S.month.getMonth()
 $("thismonth").onclick=()=>{S.month=null;renderCal()};
 
 function renderHealth(){const h=S.health,el=$("healthbody");if(!h){el.textContent="아직 수집 기록이 없습니다.";return}
-  const label={ok:"정상",empty:"0건",error:"실패",robots:"수집 금지"};
+  const label={ok:"정상",empty:"0건",error:"실패",robots:"수집 금지",skipped:"건너뜀"};
   const bad=(h.sources||[]).filter(s=>s.status!=="ok").length,c=h.counts||{},ai=h.ai||{};
   $("health").querySelector("summary").textContent=`수집 상태 · ${h.runAt} · 소스 ${(h.sources||[]).length}곳 중 문제 ${bad}곳`;
   el.innerHTML=`<p>새 공고 ${c.new||0}건, 갱신 ${c.updated||0}건, 관련 없음 ${c.skipped||0}건, 읽기 실패 ${c.read_failed||0}건${c.over_limit?`, 하루 한도 초과로 내일로 미룬 글 ${c.over_limit}건`:""}.
@@ -344,6 +357,7 @@ Promise.all([fetch("data/calls.json",{cache:"no-store"}).then(r=>r.ok?r.json():n
   if(calls){S.calls=calls.calls||[];S.meta=calls.updatedAt||null}
   else{$("dbnote").textContent="공고 데이터를 불러오지 못했습니다. 첫 자동 수집이 끝나면 표시됩니다.";$("dbnote").hidden=false}
   S.health=health;renderHealth();render()});
+try{const t=localStorage.getItem("gongmo-radar-tab");if(t==="life"||t==="cal")tab(t)}catch(e){}
 </script>
 </body>
 </html>

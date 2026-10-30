@@ -141,12 +141,12 @@ sources:
     filter: true
 
   - id: kcdf-notice
-    name: 공예디자인문화진흥원 공지
-    enabled: false   # 주소 확인 필요
-    url: https://www.kcdf.kr/web/board/notice
-    cats: [design]
+    name: 공예디자인문화진흥원 사업공모
+    url: https://www.kcdf.or.kr/brd/board/337/L/menu/284
+    link_regex: 'board/337/L/menu/284\?brdType=R.*bbIdx=\d+'
+    cats: [design, art]
     region: 전국
-    filter: true
+    filter: false
 
   # ── 창업 지원 ────────────────────────────────
   - id: kstartup-ongoing
@@ -208,3 +208,35 @@ sources:
     region: 해외
     filter: false
     link_regex: 'designboom\.com/competition/'
+
+  # ── 생활 지원 (청년·주거) ────────────────────────
+  # 주소는 GitHub에서 시험 수집으로 확인 중. 수집 상태 표에서 0건·실패가 나오면 고칩니다.
+  - id: life-seoul-youth
+    name: 서울 청년몽땅정보통 지원정보
+    url: https://youth.seoul.go.kr/infoData/sprtInfo/list.do
+    board: life
+    cats: [youth]
+    region: 서울
+    filter: true
+    post_like: true
+    title_keywords: [청년, 모집, 신청, 지원, 월세, 전세, 주거, 수당, 공고]
+
+  - id: life-sh
+    name: SH 서울주택도시공사 공고
+    url: https://www.i-sh.co.kr/main/lay2/program/S1T294C297/www/brd/m_247/list.do
+    board: life
+    cats: [housing]
+    region: 서울
+    filter: true
+    post_like: true
+    title_keywords: [청년, 임대, 행복주택, 매입, 전세, 모집, 입주자, 신혼]
+
+  - id: life-myhome
+    name: 마이홈 공공주택 모집공고
+    url: https://www.myhome.go.kr/hws/portal/sch/selectRsdtRcritNtcView.do
+    board: life
+    cats: [housing]
+    region: 전국
+    filter: true
+    post_like: true
+    title_keywords: [청년, 임대, 행복주택, 매입, 전세, 모집, 입주자]
