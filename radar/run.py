@@ -101,6 +101,7 @@ def main(argv=None, ai_factory=None, fetcher=None, data_dir=None):
     # 3) read and extract
     counts = {"candidates": len(candidates), "read": 0, "same": 0, "new": 0, "updated": 0, "skipped": 0,
               "read_failed": 0, "over_limit": 0}
+    fails = 0
     for c in candidates:
         if counts["read"] >= args.max_new:
             counts["over_limit"] += 1
@@ -120,7 +121,13 @@ def main(argv=None, ai_factory=None, fetcher=None, data_dir=None):
         counts["read"] += 1
         rec = ai.extract(post, c)
         if rec is None:
-            continue  # API error: not marked seen, retried next run
+            # API error: not marked seen, retried next run. Stop early if AI is down (e.g. bad token).
+            fails += 1
+            if fails >= 5:
+                counts["aborted"] = "AI 호출이 연속 5번 실패해 중단 (토큰·키 확인 필요)"
+                break
+            continue
+        fails = 0
         if not rec.get("is_open_call") or (rec.get("relevance") or 0) < 2:
             counts["skipped"] += 1
             store.mark_seen(c["url"], "skipped", rec.get("skip_reason") or "관련 낮음", today.isoformat())

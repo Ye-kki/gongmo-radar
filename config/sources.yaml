@@ -72,15 +72,15 @@ sources:
   # ── 예술·전시 지원 ───────────────────────────
   - id: arko-notice
     name: 한국문화예술위원회 공지
-    url: https://www.arko.or.kr/board/list/4013
+    url: https://www.arko.or.kr/board/list/4013?bid=463
     cats: [art]
     region: 전국
     filter: true
-    link_regex: 'board/view/'
+    link_regex: '(board/view/4013|artnuri\.or\.kr/crawler/info/view)'
 
   - id: gokams-event
     name: 예술경영지원센터 공모
-    url: https://www.gokams.or.kr/01_news/event.aspx
+    url: https://www.gokams.or.kr/01_news/event_list.aspx
     cats: [art]
     region: 전국
     filter: true
@@ -95,6 +95,7 @@ sources:
 
   - id: sema-notice
     name: 서울시립미술관 공지
+    enabled: false   # robots.txt가 수집을 막음
     url: https://sema.seoul.go.kr/kr/notice/notice/list
     cats: [art, residency]
     region: 서울
@@ -107,10 +108,14 @@ sources:
     cats: [design, startup]
     region: 전국
     filter: true
+    onclick:
+      regex: "submitForm\\(this,'view',(\\d+)\\)"
+      template: "https://kidp.or.kr/?menuno=1202&bbsno={id}&siteno=16&act=view&ztag=rO0ABXQAMzxjYWxsIHR5cGU9ImJvYXJkIiBubz0iNjIyIiBza2luPSJraWRwX2JicyI%2BPC9jYWxsPg%3D%3D"
     link_regex: 'act=view'
 
   - id: seouldesign-notice
     name: 서울디자인재단 공지
+    enabled: false   # 상세 글이 주소 없이 열리는 방식이라 수집 불가. DDP 공모는 공모전 모음 사이트로 들어옴
     url: https://www.seouldesign.or.kr/board/notice
     cats: [design, goods]
     region: 서울
@@ -118,6 +123,7 @@ sources:
 
   - id: kcdf-notice
     name: 공예디자인문화진흥원 공지
+    enabled: false   # 주소 확인 필요
     url: https://www.kcdf.kr/web/board/notice
     cats: [design]
     region: 전국
@@ -136,6 +142,7 @@ sources:
 
   - id: bizinfo
     name: 기업마당 지원사업
+    enabled: false   # 목록이 자바스크립트로 그려져 링크를 못 찾음. K-Startup으로 대체
     url: https://www.bizinfo.go.kr/web/lay1/bbs/S1T122C128/AS/74/list.do
     cats: [startup]
     region: 전국

@@ -54,6 +54,8 @@ jobs:
           if [ -n "$ANTHROPIC_API_KEY" ]; then
             echo "AI: Claude API (종량제)"
           elif [ -n "$CLAUDE_CODE_OAUTH_TOKEN" ]; then
+            # 붙여넣을 때 섞인 줄바꿈·공백 제거
+            export CLAUDE_CODE_OAUTH_TOKEN="$(printf %s "$CLAUDE_CODE_OAUTH_TOKEN" | tr -d '[:space:]')"
             echo "AI: Claude 구독 (Claude Code CLI)"
             npm install -g @anthropic-ai/claude-code >/dev/null
             claude --version
