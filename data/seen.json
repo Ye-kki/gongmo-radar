@@ -1,1 +1,402 @@
-{}
+{
+ "https://contestkorea.com/sub/view.php?Txt_bcode=030110001&int_gbn=1&str_no=202610140072": {
+  "date": "2026-10-30",
+  "reason": "문학·글쓰기 공모(독후감)로 굿즈·디자인·시각예술·창업 관련이 없음. 콘테스트코리아 기본 분야(goods, design)는 실제 내용과 맞지 않아 무시함.",
+  "status": "skipped"
+ },
+ "https://contestkorea.com/sub/view.php?Txt_bcode=030110001&int_gbn=1&str_no=202610200060": {
+  "date": "2026-10-30",
+  "reason": "문학(시·수필·소설) 전용 공모로, 굿즈·가구·조명·시각예술 등 관심 분야와 무관함",
+  "status": "skipped"
+ },
+ "https://contestkorea.com/sub/view.php?Txt_bcode=030110001&int_gbn=1&str_no=202610230001": {
+  "date": "2026-10-30",
+  "reason": "문학 분야(소설·에세이·시) 원고 공모로, 굿즈·디자인·시각예술·창업 관심 범위와 무관함",
+  "status": "skipped"
+ },
+ "https://contestkorea.com/sub/view.php?Txt_bcode=030110001&int_gbn=1&str_no=202610270028": {
+  "date": "2026-10-30",
+  "reason": "복지멤버십 이용 체험을 쓰는 문학·수기 공모로, 굿즈·디자인·미술 창작 공모와 무관함.",
+  "status": "skipped"
+ },
+ "https://contestkorea.com/sub/view.php?Txt_bcode=030110001&int_gbn=1&str_no=202610270037": {
+  "date": "2026-10-30",
+  "reason": "문학 전용 공모(소설·시·동화)로 관심 분야인 굿즈, 가구·조명, 시각예술, 창업 지원과 무관함.",
+  "status": "skipped"
+ },
+ "https://contestkorea.com/sub/view.php?Txt_bcode=030210001&int_gbn=1&str_no=202610200019": {
+  "date": "2026-10-30",
+  "reason": "슬로건만 제출하는 네이밍·슬로건 공모로, 굿즈·디자인·작가 공모 범위에 해당하지 않아 관련성 0",
+  "status": "skipped"
+ },
+ "https://contestkorea.com/sub/view.php?Txt_bcode=030210001&int_gbn=1&str_no=202610200046": {
+  "date": "2026-10-30",
+  "reason": "네이밍만 하는 공모라 관심 대상이 아님. 굿즈·디자인 상품화 요소가 없음.",
+  "status": "skipped"
+ },
+ "https://contestkorea.com/sub/view.php?Txt_bcode=030210001&int_gbn=1&str_no=202610230042": {
+  "date": "2026-10-30",
+  "reason": "네이밍만 하는 공모라 관심 범위(굿즈·디자인·작가·창업 등)에 해당하지 않음. 전북 도민 한정.",
+  "status": "skipped"
+ },
+ "https://contestkorea.com/sub/view.php?Txt_bcode=030210001&int_gbn=1&str_no=202610240004": {
+  "date": "2026-10-30",
+  "reason": "네이밍만 하는 공모이고 동작구민 대상이라 관심 범위 밖이다.",
+  "status": "skipped"
+ },
+ "https://contestkorea.com/sub/view.php?Txt_bcode=030210001&int_gbn=1&str_no=202610280032": {
+  "date": "2026-10-30",
+  "reason": "모두의 KISA 슬로건·캐릭터·사업 아이디어 공모",
+  "status": "kept"
+ },
+ "https://contestkorea.com/sub/view.php?Txt_bcode=030610001&int_gbn=1&str_no=202610010030": {
+  "date": "2026-10-30",
+  "reason": "유치원·초등학생(5~13세) 대상 어린이 미술대회라 관심 없는 범주(어린이·초중고생 대상 대회)에 해당함.",
+  "status": "skipped"
+ },
+ "https://contestkorea.com/sub/view.php?Txt_bcode=030610001&int_gbn=1&str_no=202610220009": {
+  "date": "2026-10-30",
+  "reason": "2027 전시작가 공개모집",
+  "status": "kept"
+ },
+ "https://contestkorea.com/sub/view.php?Txt_bcode=030610001&int_gbn=1&str_no=202610220019": {
+  "date": "2026-10-30",
+  "reason": "유치원·초중고생 대상 사생대회로 프로필(성인 작가·1인 사업자)과 무관하며, 관심 없는 '어린이·초중고생 대상 대회' 유형에 해당함",
+  "status": "skipped"
+ },
+ "https://contestkorea.com/sub/view.php?Txt_bcode=030610001&int_gbn=1&str_no=202610230007": {
+  "date": "2026-10-30",
+  "reason": "'젊은 시각 새로운 시선 2027' 참여 작가 공모",
+  "status": "kept"
+ },
+ "https://contestkorea.com/sub/view.php?Txt_bcode=030610001&int_gbn=1&str_no=202610230020": {
+  "date": "2026-10-30",
+  "reason": "2026 제2회 대한민국 AI 창조공모대전",
+  "status": "kept"
+ },
+ "https://contestkorea.com/sub/view.php?Txt_bcode=030610001&int_gbn=1&str_no=202610230037": {
+  "date": "2026-10-30",
+  "reason": "포스터만 제작하는 공모이고 굿즈·제품·가구·조명 등과 무관하며, 참가 대상이 대구·경북 초·중·고생 중심이라 관심 없는 공고 기준에 해당함.",
+  "status": "skipped"
+ },
+ "https://contestkorea.com/sub/view.php?Txt_bcode=030610001&int_gbn=1&str_no=202610270006": {
+  "date": "2026-10-30",
+  "reason": "2026 힐로웨이브 아트 프로젝트 <결을 읽는 사람들> 참여 작가 공모",
+  "status": "kept"
+ },
+ "https://contestkorea.com/sub/view.php?Txt_bcode=030610001&int_gbn=1&str_no=202610270031": {
+  "date": "2026-10-30",
+  "reason": "패션·텍스타일·액세서리 중심 공모라 가구·조명·굿즈 작업과 거리가 멀다. 다만 일반인 대상 디자인 어워드라 참고용으로 기록.",
+  "status": "skipped"
+ },
+ "https://contestkorea.com/sub/view.php?Txt_bcode=030610001&int_gbn=1&str_no=202610280023": {
+  "date": "2026-10-30",
+  "reason": "참가 자격이 한·중·일 국적의 초·중·고 학생 및 동일 연령 청소년으로 성인 작가와 1인 사업자는 신청할 수 없다. 포스터 일러스트 공모라 굿즈·가구·조명 관련성도 없다.",
+  "status": "skipped"
+ },
+ "https://contestkorea.com/sub/view.php?Txt_bcode=030610001&int_gbn=1&str_no=202610280025": {
+  "date": "2026-10-30",
+  "reason": "서울미래인재재단 대표 캐릭터 공모전 서울의 미래, 새로운 얼굴",
+  "status": "kept"
+ },
+ "https://contestkorea.com/sub/view.php?Txt_bcode=030610001&int_gbn=1&str_no=202610290002": {
+  "date": "2026-10-30",
+  "reason": "2027 CICA 영 코리안 아티스트 개인전 시리즈 작가 공모",
+  "status": "kept"
+ },
+ "https://contestkorea.com/sub/view.php?Txt_bcode=030610001&int_gbn=1&str_no=202610290021": {
+  "date": "2026-10-30",
+  "reason": "귀 쫑긋! '우리' 활용 공모전",
+  "status": "kept"
+ },
+ "https://contestkorea.com/sub/view.php?Txt_bcode=030610001&int_gbn=1&str_no=202610290036": {
+  "date": "2026-10-30",
+  "reason": "참가 대상이 9~24세 청소년이라 성인 작가인 프로필과 맞지 않고, 어린이·청소년 대상 공모는 관심 없는 범위. 굿즈·가구·조명·상품화와도 무관하며 상금 없이 상장만 수여됨.",
+  "status": "skipped"
+ },
+ "https://contestkorea.com/sub/view.php?Txt_bcode=030610001&int_gbn=1&str_no=202610300023": {
+  "date": "2026-10-30",
+  "reason": "참가 대상이 강남구 거주 청소년·관내 중고생으로 제한되어 사용자(성인 작가·1인 사업자)는 신청할 수 없음. 캐릭터·굿즈 주제는 관련이 있으나 자격이 맞지 않음.",
+  "status": "skipped"
+ },
+ "https://contestkorea.com/sub/view.php?Txt_bcode=030910001&int_gbn=1&str_no=202610290008": {
+  "date": "2026-10-30",
+  "reason": "음악 연주 경연으로 프로필의 가구·조명·굿즈·시각예술 범위와 무관하며, 관심 없음 기준의 '음악만' 공고에 해당함.",
+  "status": "skipped"
+ },
+ "https://contestkorea.com/sub/view.php?Txt_bcode=031210001&int_gbn=1&str_no=202607200008": {
+  "date": "2026-10-30",
+  "reason": "접수가 2026.10.19에 마감되었고 수상자 발표(2026.10.23)까지 끝난 결과 공고다. 또한 생성형 AI 영상 공모로 영상·숏폼 분야라 관심 분야와 맞지 않는다.",
+  "status": "skipped"
+ },
+ "https://contestkorea.com/sub/view.php?Txt_bcode=031210001&int_gbn=1&str_no=202610150006": {
+  "date": "2026-10-30",
+  "reason": "영상·숏폼 전용 공모(사진·영상 분야)로 미술·디자인 관심 분야와 맞지 않음. 목록에 표시된 미술·디자인 분류와 실제 분야가 다름. 굿즈·가구·조명·시각예술과 무관.",
+  "status": "skipped"
+ },
+ "https://contestkorea.com/sub/view.php?Txt_bcode=031210001&int_gbn=1&str_no=202610180002": {
+  "date": "2026-10-30",
+  "reason": "관광 홍보용 숏폼 영상과 블로그·카드뉴스 아티클을 만드는 공모로, 굿즈·디자인·가구·조명·작가 공모가 아니다. 영상·숏폼 비중이 커서 관심 분야와 거리가 있다.",
+  "status": "skipped"
+ },
+ "https://contestkorea.com/sub/view.php?Txt_bcode=031210001&int_gbn=1&str_no=202610280005": {
+  "date": "2026-10-30",
+  "reason": "영상·숏폼 전용 공모(여행 콘텐츠 촬영)로, 굿즈·가구·조명·공예·시각예술 등 관심 분야와 무관함",
+  "status": "skipped"
+ },
+ "https://contestkorea.com/sub/view.php?Txt_bcode=031210001&int_gbn=1&str_no=202610280054": {
+  "date": "2026-10-30",
+  "reason": "영상·숏폼 공모로 관심 분야(굿즈, 디자인, 시각예술 등)와 무관하고, 대상이 자립준비청년이라 작가·1인 사업자 자격에도 해당하지 않음",
+  "status": "skipped"
+ },
+ "https://contestkorea.com/sub/view.php?Txt_bcode=031210001&int_gbn=1&str_no=202610290001": {
+  "date": "2026-10-30",
+  "reason": "영상 공모 전용이며 관심 분야(굿즈·디자인·시각예술·창업)와 무관. 부산 주민 자격 요건도 맞는지 확인되지 않음.",
+  "status": "skipped"
+ },
+ "https://contestkorea.com/sub/view.php?Txt_bcode=031210001&int_gbn=1&str_no=202610290003": {
+  "date": "2026-10-30",
+  "reason": "사진·영상 분야 공모로, 턱살 케어 제품을 사용하는 숏폼 영상 제작이 핵심이라 굿즈·디자인·시각예술·창업 지원과 무관함",
+  "status": "skipped"
+ },
+ "https://contestkorea.com/sub/view.php?Txt_bcode=031210001&int_gbn=1&str_no=202610300001": {
+  "date": "2026-10-30",
+  "reason": "AI 활용 영상(60~90초 MP4) 출품 전용 공모로, 관심 제외 대상인 '영상·숏폼만' 공모에 해당. 굿즈·가구·조명·공예 등 프로필 관련 분야 아님.",
+  "status": "skipped"
+ },
+ "https://contestkorea.com/sub/view.php?Txt_bcode=031210001&int_gbn=1&str_no=202610300002": {
+  "date": "2026-10-30",
+  "reason": "영상 제작 공모로 굿즈·가구·조명·공예 작업과 직접 연결되지 않음. 캐릭터 활용 요소만 일부 관련.",
+  "status": "skipped"
+ },
+ "https://contestkorea.com/sub/view.php?Txt_bcode=031410001&int_gbn=1&str_no=202610280053": {
+  "date": "2026-10-30",
+  "reason": "유휴공간의 운영·프로그램 활성화 아이디어를 묻는 공모라 굿즈, 제품, 가구, 조명 디자인과 직접 맞지 않음. 관련성 약함.",
+  "status": "skipped"
+ },
+ "https://contestkorea.com/sub/view.php?Txt_bcode=031610001&int_gbn=1&str_no=202610080033": {
+  "date": "2026-10-30",
+  "reason": "요리 경연과 반려동물 음식 레시피 공모로, 굿즈·가구·조명·디자인·시각예술 관심 분야와 무관함",
+  "status": "skipped"
+ },
+ "https://contestkorea.com/sub/view.php?Txt_bcode=031610001&int_gbn=1&str_no=202610270019": {
+  "date": "2026-10-30",
+  "reason": "요리 분야 공모로, 관심 분야인 굿즈·가구·조명·디자인·시각예술과 무관하다.",
+  "status": "skipped"
+ },
+ "https://contestkorea.com/sub/view.php?Txt_bcode=040110001&int_gbn=2&str_no=202610200018": {
+  "date": "2026-10-30",
+  "reason": "생활무전기 정책 SNS 홍보 콘텐츠 제작 중심의 대외활동 서포터즈로, 굿즈·디자인·시각예술·창업 공모와 관련이 없음",
+  "status": "skipped"
+ },
+ "https://contestkorea.com/sub/view.php?Txt_bcode=040110001&int_gbn=2&str_no=202610210022": {
+  "date": "2026-10-30",
+  "reason": "온라인 홍보 서포터즈 활동으로, 제작·상품화·전시 지원 공모가 아니어서 관련성이 약함",
+  "status": "skipped"
+ },
+ "https://contestkorea.com/sub/view.php?Txt_bcode=040110001&int_gbn=2&str_no=202610220002": {
+  "date": "2026-10-30",
+  "reason": "대외활동(서포터즈·봉사) 성격으로 굿즈·디자인 상품화나 작가 지원이 아니며, 콘텐츠 홍보 활동 중심이라 관련성 약함.",
+  "status": "skipped"
+ },
+ "https://contestkorea.com/sub/view.php?Txt_bcode=040110001&int_gbn=2&str_no=202610220031": {
+  "date": "2026-10-30",
+  "reason": "IT 스토리지 제품(Seagate, LaCie) 체험과 리뷰 콘텐츠를 만드는 서포터즈 활동으로, 굿즈·디자인·작가 공모나 지원사업이 아니어서 프로필과 무관함.",
+  "status": "skipped"
+ },
+ "https://contestkorea.com/sub/view.php?Txt_bcode=040110001&int_gbn=2&str_no=202610220047": {
+  "date": "2026-10-30",
+  "reason": "국민 의견 제안과 기관 홍보 영상 기획·제작을 맡는 대외활동(참여단)으로, 굿즈·가구·조명·시각예술 공모나 창업 지원이 아님. 영상 제작 중심이라 관심 없는 영역에 해당.",
+  "status": "skipped"
+ },
+ "https://contestkorea.com/sub/view.php?Txt_bcode=040110001&int_gbn=2&str_no=202610290044": {
+  "date": "2026-10-30",
+  "reason": "게임 쇼케이스 홍보 서포터즈 모집으로, 굿즈·디자인·작가·창업 지원과 무관함",
+  "status": "skipped"
+ },
+ "https://contestkorea.com/sub/view.php?Txt_bcode=040410001&int_gbn=2&str_no=202610200050": {
+  "date": "2026-10-30",
+  "reason": "행사 참가·세미나 안내이며 작가 공모나 지원사업이 아님. 굿즈·가구·조명·창업 지원과 무관해 관련성 없음.",
+  "status": "skipped"
+ },
+ "https://contestkorea.com/sub/view.php?Txt_bcode=040410001&int_gbn=2&str_no=202610220037": {
+  "date": "2026-10-30",
+  "reason": "유료 세미나 참가 안내로 지원·응모 공고가 아님. 전력시장 제도 주제로 프로필(가구·조명·굿즈·3D 프린팅)과 무관함.",
+  "status": "skipped"
+ },
+ "https://contestkorea.com/sub/view.php?Txt_bcode=040410001&int_gbn=2&str_no=202610230017": {
+  "date": "2026-10-30",
+  "reason": "유료 교육 세미나 참가 모집으로, 공모·지원사업이 아닙니다. 생성형 AI 업무 활용 교육이라 굿즈, 디자인, 작가, 창업지원 관심사와도 무관합니다.",
+  "status": "skipped"
+ },
+ "https://contestkorea.com/sub/view.php?Txt_bcode=040410001&int_gbn=2&str_no=202610260002": {
+  "date": "2026-10-30",
+  "reason": "세미나·교육 참가 접수이며 지원·공모가 아닌 유료 강연. 관심 분야(굿즈, 디자인, 시각예술, 창업지원 등)와 무관하고 AI 연구개발 교육 내용임.",
+  "status": "skipped"
+ },
+ "https://contestkorea.com/sub/view.php?Txt_bcode=040410001&int_gbn=2&str_no=202610260016": {
+  "date": "2026-10-30",
+  "reason": "교육생·수강생 모집 공고이고 반도체·AI 실무 교육이라 굿즈, 디자인, 작가, 창업 지원과 무관함",
+  "status": "skipped"
+ },
+ "https://contestkorea.com/sub/view.php?Txt_bcode=040410001&int_gbn=2&str_no=202610260021": {
+  "date": "2026-10-30",
+  "reason": "음악·영상음악 분야 교육생 모집이라 관심 분야(굿즈, 가구·조명, 시각예술, 창업 지원)와 무관하며, 교육 참가 신청 공고에 해당함",
+  "status": "skipped"
+ },
+ "https://contestkorea.com/sub/view.php?Txt_bcode=040410001&int_gbn=2&str_no=202610260032": {
+  "date": "2026-10-30",
+  "reason": "교육생 모집 공고로 관심 없는 유형이며, K-POP 아티스트 비주얼 AI 제작 교육이라 굿즈·가구·조명·전시 등 관심 분야와도 무관함.",
+  "status": "skipped"
+ },
+ "https://contestkorea.com/sub/view.php?Txt_bcode=040410001&int_gbn=2&str_no=202610270015": {
+  "date": "2026-10-30",
+  "reason": "교육생·수강생 모집이며 수강료를 내는 상담원 양성 과정으로, 굿즈·디자인·작가·창업 관련이 없어 관심 대상에서 제외된다.",
+  "status": "skipped"
+ },
+ "https://contestkorea.com/sub/view.php?Txt_bcode=040410001&int_gbn=2&str_no=202610270034": {
+  "date": "2026-10-30",
+  "reason": "교육생 모집 공고이며 AI·임베디드 SW 교육으로 디자인·굿즈·공예·시각예술과 무관함.",
+  "status": "skipped"
+ },
+ "https://contestkorea.com/sub/view.php?Txt_bcode=040410001&int_gbn=2&str_no=202610290018": {
+  "date": "2026-10-30",
+  "reason": "대학생 대상 온라인 학교생활 멘토링 활동 모집이라 굿즈·디자인·작가·창업 지원과 무관함. 참가 대상도 146개 대학 26학번 이상 재학생.",
+  "status": "skipped"
+ },
+ "https://contestkorea.com/sub/view.php?Txt_bcode=040410001&int_gbn=2&str_no=202610300017": {
+  "date": "2026-10-30",
+  "reason": "방산·우주 분야 취업 교육과정 교육생 모집으로, 관심 대상(굿즈·가구·조명·창업·작가 공모)과 무관하며 교육생 모집은 제외 대상임",
+  "status": "skipped"
+ },
+ "https://contestkorea.com/sub/view.php?Txt_bcode=040610001&int_gbn=2&str_no=202610220028": {
+  "date": "2026-10-30",
+  "reason": "중·고·대학생 대상 온라인 외교 활동 프로그램으로, 굿즈·디자인·가구·조명·시각예술 지원과 무관함. 수료증과 물품 제공만 있음.",
+  "status": "skipped"
+ },
+ "https://contestkorea.com/sub/view.php?Txt_bcode=040710001&int_gbn=2&str_no=202610270038": {
+  "date": "2026-10-30",
+  "reason": "대학생 전용 대외활동이며 브랜드 기획·마케팅 교육 프로그램으로, 굿즈·가구·조명·시각예술 등 프로필 관심 분야와 무관함",
+  "status": "skipped"
+ },
+ "https://contestkorea.com/sub/view.php?Txt_bcode=040710001&int_gbn=2&str_no=202610290043": {
+  "date": "2026-10-30",
+  "reason": "관광 콘텐츠 제작 크리에이터를 뽑는 공모로, 굿즈·디자인·시각예술 창작과는 거리가 멀다.",
+  "status": "skipped"
+ },
+ "https://wevity.com?c=find&cidx=19&gbn=view&gp=1&gub=1&ix=109516&s=1": {
+  "date": "2026-10-30",
+  "reason": "2026 디자인 크리에이션 챌린지(DCC) 3D프린팅 제품디자인 공모전",
+  "status": "kept"
+ },
+ "https://wevity.com?c=find&cidx=19&gbn=view&gp=1&gub=1&ix=109966&s=1": {
+  "date": "2026-10-30",
+  "reason": "건축·한옥 설계 공모라 가구·조명·오브제 중심 관심 분야와 거리가 있고, 준공부문은 실제 건축물 설계자·시공자·건축주만 응모 가능해 작가 본인 적용이 제한적임",
+  "status": "skipped"
+ },
+ "https://wevity.com?c=find&cidx=19&gbn=view&gp=1&gub=1&ix=111663&s=1": {
+  "date": "2026-10-30",
+  "reason": "2026년 단양 유네스코 세계지질공원 기념우표 디자인 공모전",
+  "status": "kept"
+ },
+ "https://wevity.com?c=find&cidx=19&gbn=view&gp=1&gub=1&ix=111684&s=1": {
+  "date": "2026-10-30",
+  "reason": "초등학생 대상 어린이 공모이고 주제가 화재 예방 포스터뿐이라 사용자(성인 작가·1인 사업자)가 응모할 수 없고 굿즈·가구·조명 관심사와도 무관함. 접수는 오늘 마감.",
+  "status": "skipped"
+ },
+ "https://wevity.com?c=find&cidx=19&gbn=view&gp=1&gub=1&ix=111710&s=1": {
+  "date": "2026-10-30",
+  "reason": "참가 자격이 부산·경남 초·중·고등학생으로 제한되어 성인 작가가 응모할 수 없고, 포스터 그리기 공모라 굿즈·가구·조명·전시 관련성이 없어 관심 범위에서 제외된다.",
+  "status": "skipped"
+ },
+ "https://wevity.com?c=find&cidx=19&gbn=view&gp=1&gub=1&ix=111749&s=1": {
+  "date": "2026-10-30",
+  "reason": "웹툰 작품 공모로, 굿즈·가구·조명·캐릭터 상품화나 시각예술 창작과 거리가 멂. 관심 목록의 '웹툰만' 제외 조건에 해당.",
+  "status": "skipped"
+ },
+ "https://wevity.com?c=find&cidx=19&gbn=view&gp=1&gub=1&ix=111776&s=1": {
+  "date": "2026-10-30",
+  "reason": "어린이(만 6~12세) 대상 그림 대회로, 프로필 작가·사업자가 신청할 수 없고 관심 없는 '어린이 대상 대회'에 해당함",
+  "status": "skipped"
+ },
+ "https://wevity.com?c=find&cidx=19&gbn=view&gp=1&gub=1&ix=111785&s=1": {
+  "date": "2026-10-30",
+  "reason": "항공보안 문화 확산용 AI 캠페인 이미지 공모로, 굿즈·제품 디자인이나 순수 미술 창작 지원이 아님. 수상작은 홍보·캠페인·인쇄물에 쓰이는 구조라 프로필과 거리가 있음.",
+  "status": "skipped"
+ },
+ "https://wevity.com?c=find&cidx=19&gbn=view&gp=1&gub=1&ix=111868&s=1": {
+  "date": "2026-10-30",
+  "reason": "드골2: 자유의 시대 포스터·굿즈 공모전",
+  "status": "kept"
+ },
+ "https://wevity.com?c=find&cidx=19&gbn=view&gp=1&gub=1&ix=111939&s=1": {
+  "date": "2026-10-30",
+  "reason": "타구·바쿠와 함께하는 신규 캐릭터 기념품 디자인 공모전",
+  "status": "kept"
+ },
+ "https://wevity.com?c=find&cidx=19&gbn=view&gp=1&gub=1&ix=111977&s=1": {
+  "date": "2026-10-30",
+  "reason": "서울미래인재재단 대표 캐릭터 공모전 (서울의 미래, 새로운 얼굴)",
+  "status": "kept"
+ },
+ "https://wevity.com?c=find&cidx=19&gbn=view&gp=1&gub=1&ix=111979&s=1": {
+  "date": "2026-10-30",
+  "reason": "2D 삽화 그림 공모로 상금이 소액이고, 가구·조명·굿즈 상품화나 3D 피규어와는 거리가 있음",
+  "status": "skipped"
+ },
+ "https://wevity.com?c=find&cidx=19&gbn=view&gp=1&gub=1&ix=111983&s=1": {
+  "date": "2026-10-30",
+  "reason": "부산 방언 만화 창작 공모라 가구·조명·굿즈 제작 연계가 약함",
+  "status": "skipped"
+ },
+ "https://wevity.com?c=find&cidx=19&gbn=view&gp=1&gub=1&ix=112016&s=1": {
+  "date": "2026-10-30",
+  "reason": "응모 대상이 9~24세 청소년으로 제한되어 작가 본인이 신청할 수 없음. 만화·일러스트 주제의 청소년 대상 대회라 관심 없는 공고 기준(어린이·초중고생 대상 대회)에도 해당.",
+  "status": "skipped"
+ },
+ "https://wevity.com?c=find&cidx=19&gbn=view&gp=1&gub=1&ix=112034&s=1": {
+  "date": "2026-10-30",
+  "reason": "미미홈 제품을 소비자가 자유롭게 꾸미는 사진·영상 콘테스트라 디자인 창작이나 상품화, 납품 연계와 거리가 멂. 사진·영상 중심 공모로 관심 분야에서 벗어남.",
+  "status": "skipped"
+ },
+ "https://wevity.com?c=find&cidx=20&gbn=view&gp=1&gub=1&ix=110179&s=1": {
+  "date": "2026-10-30",
+  "reason": "단편영화(영상) 전용 공모로, 시각예술·디자인·굿즈·상품화 관심사와 무관함. 영상만 대상이라 제외.",
+  "status": "skipped"
+ },
+ "https://wevity.com?c=find&cidx=20&gbn=view&gp=1&gub=1&ix=111612&s=1": {
+  "date": "2026-10-30",
+  "reason": "슬로건 한 줄만 쓰는 네이밍·슬로건 공모로, 관심 없는 공고 기준(포스터·슬로건·표어만 하는 공모)에 해당함",
+  "status": "skipped"
+ },
+ "https://wevity.com?c=find&cidx=20&gbn=view&gp=1&gub=1&ix=111647&s=1": {
+  "date": "2026-10-30",
+  "reason": "만 34세 이하 대학(원)생 대상이라 프로필상 지원 자격이 확인되지 않음. 대학생 창업 IR 공모로 작가·굿즈 사업과 직접 관련은 낮음.",
+  "status": "skipped"
+ },
+ "https://wevity.com?c=find&cidx=20&gbn=view&gp=1&gub=1&ix=111750&s=1": {
+  "date": "2026-10-30",
+  "reason": "논산 선샤인스튜디오를 소재로 한 세로형 숏폼 영상 공모로, 관심 없는 '영상·숏폼만' 범주에 해당함",
+  "status": "skipped"
+ },
+ "https://wevity.com?c=find&cidx=20&gbn=view&gp=1&gub=1&ix=111768&s=1": {
+  "date": "2026-10-30",
+  "reason": "대구·경북 대학 재학·졸업생 팀 한정이고 팀 단위 IR 창업 공모라 개인 작가 및 굿즈·가구·조명 창작과 거리가 멂",
+  "status": "skipped"
+ },
+ "https://wevity.com?c=find&cidx=20&gbn=view&gp=1&gub=1&ix=111837&s=1": {
+  "date": "2026-10-30",
+  "reason": "AI로 만든 이미지·영상 작품을 겨루는 공모라 직접 제작하는 가구·조명·공예 작업과 거리가 멀다. 영상 부문은 관심 밖이다.",
+  "status": "skipped"
+ },
+ "https://wevity.com?c=find&cidx=20&gbn=view&gp=1&gub=1&ix=111912&s=1": {
+  "date": "2026-10-30",
+  "reason": "식품 기업의 SNS 마케팅용 AI 이미지·영상 공모로, 굿즈·가구·조명·순수 시각예술 창작과 거리가 멀다. 상금 규모는 크지만 프로필 적합도는 낮다.",
+  "status": "skipped"
+ },
+ "https://wevity.com?c=find&cidx=20&gbn=view&gp=1&gub=1&ix=112029&s=1": {
+  "date": "2026-10-30",
+  "reason": "AI 프롬프트 설계·LLM 안전성 평가 대회로, 굿즈·가구·조명·시각예술·디자인 창업 등 관심 분야와 무관함",
+  "status": "skipped"
+ }
+}

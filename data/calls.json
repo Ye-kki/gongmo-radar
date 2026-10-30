@@ -2,6 +2,40 @@
  "calls": [
   {
    "ageLimit": null,
+   "announceDate": null,
+   "cats": [
+    "goods",
+    "design"
+   ],
+   "checkReasons": [],
+   "confidence": "high",
+   "deadline": "2026-10-30",
+   "deadlineNote": "마감 시각 원문 없음. 오늘(10-30)이 마감일이라 당일 접수 가능",
+   "eligibility": "전 국민 누구나 개인으로 참가 가능, 1인 1작품",
+   "fit": [
+    "pixel"
+   ],
+   "foundAt": "2026-10-30",
+   "id": "cdab81db7539",
+   "individualOk": true,
+   "needsCheck": false,
+   "org": "단양군, (사)단양군관광지질협의회",
+   "region": "충북",
+   "relevance": 2,
+   "sources": [
+    "위비티 디자인·캐릭터"
+   ],
+   "startDate": "2026-10-19",
+   "summary": "단양 유네스코 세계지질공원과 주요 지질명소의 가치·매력을 한 장의 기념우표 디자인으로 표현하는 작품을 모집한다. 지질·자연·문화·관광 요소를 창의적으로 담은 개인 출품작이 대상이다.",
+   "support": [
+    "prize"
+   ],
+   "supportAmount": "대상 150만원(1명), 최우수상 80만원(2명), 우수상 50만원(3명), 장려상 10만원(5명)",
+   "title": "2026년 단양 유네스코 세계지질공원 기념우표 디자인 공모전",
+   "url": "https://www.wevity.com/?c=find&s=1&gub=1&cidx=19&gbn=view&gp=1&ix=111663"
+  },
+  {
+   "ageLimit": null,
    "announceDate": "2026-12-10",
    "cats": [
     "overseas",
@@ -32,12 +66,15 @@
   },
   {
    "ageLimit": null,
+   "announceDate": "2026-11-13",
    "cats": [
     "design",
     "goods"
    ],
    "checkReasons": [],
+   "confidence": "high",
    "deadline": "2026-11-01",
+   "deadlineNote": "홈페이지(designcreationchallenge.com) 온라인 접수",
    "eligibility": "일반부 누구나 / 학생부 경기도 대학 재학생",
    "fit": [
     "pixel"
@@ -48,16 +85,59 @@
    "needsCheck": false,
    "org": "단국대-스트라타시스 첨단제조융합연구센터",
    "region": "전국",
+   "relevance": 3,
    "sources": [
-    "초기 조사"
+    "초기 조사",
+    "위비티 디자인·캐릭터"
    ],
    "startDate": "2026-10-01",
    "summary": "3D프린팅 제품디자인 공모. 일반부 대상 500만원.",
    "support": [
     "prize"
    ],
+   "supportAmount": "일반부 대상 500만원, 금상 100만원, 은상 60만원, 동상 30만원 / 학생부 대상 300만원 (수상작 시작품 제작 지원 포함)",
    "title": "2026 디자인 크리에이션 챌린지(DCC) 3D프린팅 제품디자인 공모전",
+   "updatedAt": "2026-10-30",
    "url": "https://www.wevity.com/index_university.php?c=find&s=_university&gub=1&cidx=19&gbn=view&gp=1&ix=109516"
+  },
+  {
+   "ageLimit": null,
+   "announceDate": "2026-11-06",
+   "cats": [
+    "goods",
+    "art",
+    "design"
+   ],
+   "checkReasons": [],
+   "confidence": "high",
+   "deadline": "2026-11-04",
+   "deadlineNote": "11월 4일 23시 59분 마감, 온라인 접수",
+   "eligibility": "신진 작가·장인, 대학(원)생, 예비 창작자, 졸업예정자 및 초기 경력 창작자 (참가대상: 대학생, 대학원생, 일반인), 1인(1팀) 1작품, 중복 접수 불가",
+   "fit": [
+    "pixel",
+    "yekki"
+   ],
+   "foundAt": "2026-10-30",
+   "id": "4f6bbb26f010",
+   "individualOk": true,
+   "needsCheck": false,
+   "org": "힐로웨이브",
+   "region": "전국",
+   "relevance": 3,
+   "sources": [
+    "콘테스트코리아 미술·디자인"
+   ],
+   "startDate": "2026-10-21",
+   "summary": "한국 전통 가치를 자신만의 방식으로 해석한 작품을 공모하는 작가 프로젝트로, 금속·목공·도자·가구·오브제·디지털 제작 등 다양한 분야의 신진 작가와 장인을 총 20명 뽑는다. 선정작은 굿즈·에디션 개발과 성수동 전시로 이어진다.",
+   "support": [
+    "prize",
+    "fund",
+    "exhibit",
+    "commercial"
+   ],
+   "supportAmount": "제작비 1인(1팀)당 최대 25만원 실비 지원, 우수팀 총상금 1,000만원(1등 500만원, 2등 300만원, 3등 100만원 2명)",
+   "title": "2026 힐로웨이브 아트 프로젝트 <결을 읽는 사람들> 참여 작가 공모",
+   "url": "https://www.contestkorea.com/sub/view.php?int_gbn=1&Txt_bcode=030610001&str_no=202610270006"
   },
   {
    "ageLimit": null,
@@ -90,12 +170,48 @@
   },
   {
    "ageLimit": null,
+   "announceDate": null,
+   "cats": [
+    "goods",
+    "design"
+   ],
+   "checkReasons": [],
+   "confidence": "high",
+   "deadline": "2026-11-10",
+   "deadlineNote": "23시 59분 마감. 접수 기간 이후 제출 건은 미인정. 제출은 이메일(idea@kisa.or.kr)",
+   "eligibility": "누구나 참가 가능한 것으로 표기(유치원생~외국인 포함), 온라인 이메일 접수, 참가비 무료",
+   "fit": [
+    "pixel"
+   ],
+   "foundAt": "2026-10-30",
+   "id": "3d8656838fd6",
+   "individualOk": true,
+   "needsCheck": false,
+   "org": "한국인터넷진흥원(KISA)",
+   "region": "전국",
+   "relevance": 2,
+   "sources": [
+    "콘테스트코리아 미술·디자인"
+   ],
+   "startDate": "2026-10-28",
+   "summary": "한국인터넷진흥원이 기관 슬로건, 기관 캐릭터, 국민참여예산 사업 아이디어를 국민에게 공모한다. 캐릭터 공모는 픽셀 캐릭터 상품화 관점에서 관련이 있으나, 슬로건과 아이디어 부문이 섞여 있어 캐릭터 부문만 노리는 것이 현실적이다.",
+   "support": [
+    "prize"
+   ],
+   "supportAmount": "총상금 200만원 (부문별 최우수: 슬로건 30만원, 캐릭터 30만원, 국민참여예산 아이디어 50만원 등)",
+   "title": "모두의 KISA 슬로건·캐릭터·사업 아이디어 공모",
+   "url": "https://www.contestkorea.com/sub/view.php?int_gbn=1&Txt_bcode=030210001&str_no=202610280032"
+  },
+  {
+   "ageLimit": null,
    "announceDate": "2026-11-18",
    "cats": [
     "goods"
    ],
    "checkReasons": [],
+   "confidence": "high",
    "deadline": "2026-11-11",
+   "deadlineNote": "2026-11-11 23시 59분 마감",
    "eligibility": "누구나, 개인 또는 3인 이하 팀",
    "fit": [
     "pixel"
@@ -106,15 +222,19 @@
    "needsCheck": false,
    "org": "(주)모비데이즈",
    "region": "전국",
+   "relevance": 2,
    "sources": [
-    "초기 조사"
+    "초기 조사",
+    "위비티 디자인·캐릭터"
    ],
    "startDate": "2026-10-22",
    "summary": "영화 포스터·굿즈 디자인 공모. 상금 규모는 작음(대상 15만원), 공식 활용 협의.",
    "support": [
     "prize"
    ],
+   "supportAmount": "총상금 30만 원 (대상 부문별 15만 원, 우수 4명에게 영화 예매권과 기념 굿즈)",
    "title": "드골2: 자유의 시대 포스터·굿즈 공모전",
+   "updatedAt": "2026-10-30",
    "url": "https://www.wevity.com/index_university.php?c=find&s=_university&gub=1&cidx=19&gbn=view&gp=1&ix=111868"
   },
   {
@@ -148,6 +268,143 @@
    "url": "https://www.straightnews.co.kr/news/articleView.html?idxno=313714"
   },
   {
+   "ageLimit": null,
+   "announceDate": null,
+   "cats": [
+    "art"
+   ],
+   "checkReasons": [],
+   "confidence": "high",
+   "deadline": "2026-11-18",
+   "deadlineNote": null,
+   "eligibility": "한국에서 활동 중인 국내외 작가와 해외에서 활동하는 한국 작가 및 한국계 작가",
+   "fit": [
+    "yekki"
+   ],
+   "foundAt": "2026-10-30",
+   "id": "8eb01c788eea",
+   "individualOk": true,
+   "needsCheck": false,
+   "org": "CICA 미술관",
+   "region": "전국",
+   "relevance": 2,
+   "sources": [
+    "콘테스트코리아 미술·디자인"
+   ],
+   "startDate": "2026-10-29",
+   "summary": "CICA 미술관이 회화, 사진, 조각·설치, 퍼포먼스, 뉴미디어, 디자인 분야 작가를 뽑아 일주일간의 개인전 기회를 주고, 작가 소개를 e북 시리즈와 해외 출판물에 싣는 공모다. 선정 작가는 전시실 개인전과 선택적 영상 발표를 진행할 수 있으며 참가비는 무료다.",
+   "support": [
+    "exhibit"
+   ],
+   "supportAmount": null,
+   "title": "2027 CICA 영 코리안 아티스트 개인전 시리즈 작가 공모",
+   "url": "https://www.contestkorea.com/sub/view.php?int_gbn=1&Txt_bcode=030610001&str_no=202610290002"
+  },
+  {
+   "ageLimit": "만 20-40세",
+   "announceDate": null,
+   "cats": [
+    "art",
+    "local"
+   ],
+   "checkReasons": [],
+   "confidence": "high",
+   "deadline": "2026-11-22",
+   "deadlineNote": "KST 기준 마감일 23시 59분까지 접수, 이메일 접수",
+   "eligibility": "만 20-40세이며 부산 출생(1986.1.1~2006.1.1 출생), 부산 초·중·고·대 출신, 부산 3년 이상 거주, 부산 작업실 1년 이상 활동 중 1가지 이상 충족. 재학생 지원 불가",
+   "fit": [
+    "yekki"
+   ],
+   "foundAt": "2026-10-30",
+   "id": "4998d6e24d28",
+   "individualOk": true,
+   "needsCheck": false,
+   "org": "부산시립미술관",
+   "region": "부산",
+   "relevance": 2,
+   "sources": [
+    "콘테스트코리아 미술·디자인"
+   ],
+   "startDate": "2026-10-23",
+   "summary": "부산시립미술관 전시 《젊은시각 새로운 시선 2027》에 참여할 시각예술 전 분야 작가를 최대 8인(개인·팀 포함) 선정한다. 서류와 포트폴리오 심사를 거쳐 2027년 4월 전시에 참여하며, 자격 증빙과 함께 이메일로 지원한다.",
+   "support": [
+    "exhibit"
+   ],
+   "supportAmount": null,
+   "title": "'젊은 시각 새로운 시선 2027' 참여 작가 공모",
+   "url": "https://www.contestkorea.com/sub/view.php?int_gbn=1&Txt_bcode=030610001&str_no=202610230007"
+  },
+  {
+   "ageLimit": null,
+   "announceDate": null,
+   "cats": [
+    "art",
+    "local"
+   ],
+   "checkReasons": [],
+   "confidence": "high",
+   "deadline": "2026-11-22",
+   "deadlineNote": "이메일 접수 (rlacofls21@385.co.kr), 메일 제목 '2027 카페385 전시작가 지원_000'",
+   "eligibility": "부산 지역 신진·청년 예술가(개인 또는 팀), 자체 전시 기획·운영 가능자, 카페385와 전시 일정 협의 가능자",
+   "fit": [
+    "yekki"
+   ],
+   "foundAt": "2026-10-30",
+   "id": "a1b70417dca2",
+   "individualOk": true,
+   "needsCheck": false,
+   "org": "카페385",
+   "region": "부산",
+   "relevance": 2,
+   "sources": [
+    "콘테스트코리아 미술·디자인"
+   ],
+   "startDate": "2026-10-21",
+   "summary": "부산 카페385의 'Art Space'(3·4층)에서 2027년 전시를 할 작가를 모집한다. 부산 지역 신진·청년 예술가를 대상으로 하며, 장르 제한 없이 작가가 직접 전시를 기획·운영하고 카페 측과 일정을 협의해야 한다. 이메일로 프로필 양식과 자유 형식 포트폴리오를 함께 제출한다.",
+   "support": [
+    "exhibit",
+    "space"
+   ],
+   "supportAmount": "전시 공간 1개월 무상 제공, 전시 포스터·배너 제작비 지원, 작품·굿즈 판매 지원(협의 시). 현금 지원금 없음",
+   "title": "2027 전시작가 공개모집",
+   "url": "https://www.contestkorea.com/sub/view.php?int_gbn=1&Txt_bcode=030610001&str_no=202610220009"
+  },
+  {
+   "ageLimit": null,
+   "announceDate": null,
+   "cats": [
+    "goods",
+    "design",
+    "art"
+   ],
+   "checkReasons": [],
+   "confidence": "high",
+   "deadline": "2026-11-22",
+   "deadlineNote": "18시까지 (11월 22일 일요일)",
+   "eligibility": "대한민국 국민 누구나 (개인 또는 팀, 부문별 개인 1작품·팀 1작품)",
+   "fit": [
+    "pixel"
+   ],
+   "foundAt": "2026-10-30",
+   "id": "7aa6b7008153",
+   "individualOk": true,
+   "needsCheck": false,
+   "org": "대전광역시 사회혁신센터",
+   "region": "전국",
+   "relevance": 2,
+   "sources": [
+    "콘테스트코리아 미술·디자인"
+   ],
+   "startDate": "2026-10-27",
+   "summary": "대전사회혁신센터 공식 캐릭터 '우리'를 활용해 센터를 소개하는 인스타툰·만화, 홍보 굿즈 디자인, 영상·애니메이션 중 한 부문을 응모받는 공모다. 부문별 개인 1작품 또는 팀 1작품까지 낼 수 있다.",
+   "support": [
+    "prize"
+   ],
+   "supportAmount": "총 상금 370만원 (대상 100만원, 최우수상 2명 각 50만원, 우수상 3명 각 30만원, 입선 4명 각 20만원)",
+   "title": "귀 쫑긋! '우리' 활용 공모전",
+   "url": "https://www.contestkorea.com/sub/view.php?int_gbn=1&Txt_bcode=030610001&str_no=202610290021"
+  },
+  {
    "ageLimit": "20~40세",
    "cats": [
     "art",
@@ -178,13 +435,85 @@
   },
   {
    "ageLimit": null,
+   "announceDate": null,
+   "cats": [
+    "art",
+    "design"
+   ],
+   "checkReasons": [],
+   "confidence": "high",
+   "deadline": "2026-11-27",
+   "deadlineNote": "접수 방법: 이메일, 웹하드, 온라인 접수. 출품료 없음. 1차 심사 통과자에 한해 전시비 별도 청구.",
+   "eligibility": "전국민 누구나 참가 가능 (유치원생부터 일반인·외국인까지)",
+   "fit": [
+    "yekki"
+   ],
+   "foundAt": "2026-10-30",
+   "id": "bd595825c9f0",
+   "individualOk": true,
+   "needsCheck": false,
+   "org": "사단법인 한국창조미술협회 / 대한민국 AI 창조공모대전 운영위원회",
+   "region": "전국",
+   "relevance": 2,
+   "sources": [
+    "콘테스트코리아 미술·디자인"
+   ],
+   "startDate": "2026-11-23",
+   "summary": "AI 기술을 활용한 미술·디자인 작품을 공모하며, 수상작은 2026년 12월 23일~28일 서울 인사동 갤러리 라메르에서 전시된다. 작가 개인의 시각예술 작품을 무료로 출품할 수 있고, 1위에게는 2027년 개인부스전 지원이 주어진다. 가구·조명 작업과 직접 맞닿은 공모는 아니어서 적합도는 중간 정도다.",
+   "support": [
+    "prize",
+    "exhibit"
+   ],
+   "supportAmount": "총상금 150만원 (1위 100만원) + 2027년 개인부스전 지원",
+   "title": "2026 제2회 대한민국 AI 창조공모대전",
+   "url": "https://www.contestkorea.com/sub/view.php?int_gbn=1&Txt_bcode=030610001&str_no=202610230020"
+  },
+  {
+   "ageLimit": null,
+   "announceDate": null,
+   "cats": [
+    "goods",
+    "design",
+    "local"
+   ],
+   "checkReasons": [],
+   "confidence": "high",
+   "deadline": "2026-11-29",
+   "deadlineNote": "마감 시각 원문 없음",
+   "eligibility": "대한민국 국민 누구나, 개인(팀)당 1건 제출, 미성년자는 법정대리인 동의 필요",
+   "fit": [
+    "pixel"
+   ],
+   "foundAt": "2026-10-30",
+   "id": "100dea5eff93",
+   "individualOk": true,
+   "needsCheck": false,
+   "org": "대구교통공사",
+   "region": "전국",
+   "relevance": 3,
+   "sources": [
+    "위비티 디자인·캐릭터"
+   ],
+   "startDate": "2026-10-29",
+   "summary": "대구교통공사 캐릭터 타구·바쿠를 활용해 신규 기념품 아이디어와 디자인을 제안받는 공모다. 굿즈 상품화와 캐릭터 디자인 역량이 맞는 공고다.",
+   "support": [
+    "prize"
+   ],
+   "supportAmount": "대상 50만원(1명), 최우수상 30만원(1명), 우수상 20만원(2명), 장려상 10만원(4명)",
+   "title": "타구·바쿠와 함께하는 신규 캐릭터 기념품 디자인 공모전",
+   "url": "https://www.wevity.com/?c=find&s=1&gub=1&cidx=19&gbn=view&gp=1&ix=111939"
+  },
+  {
+   "ageLimit": null,
    "announceDate": "2026-12-15",
    "cats": [
     "goods",
     "local"
    ],
    "checkReasons": [],
+   "confidence": "high",
    "deadline": "2026-11-30",
+   "deadlineNote": "11월 30일 23:59 마감",
    "eligibility": "누구나, 4인 이하 팀, 1인 1작품",
    "fit": [
     "pixel"
@@ -195,16 +524,55 @@
    "needsCheck": false,
    "org": "서울미래인재재단",
    "region": "서울",
+   "relevance": 2,
    "sources": [
-    "초기 조사"
+    "초기 조사",
+    "위비티 디자인·캐릭터"
    ],
    "startDate": "2026-11-16",
    "summary": "기관 대표 캐릭터 공모. 총 440만원(상품권), 선정작은 2단계 개발에 활용. 발표는 12월 중.",
    "support": [
     "prize"
    ],
+   "supportAmount": "대상 200만원, 최우수상 100만원, 우수상 50만원, 장려상 20만원 (총 440만원, 상품권 지급)",
    "title": "서울미래인재재단 대표 캐릭터 공모전",
+   "updatedAt": "2026-10-30",
    "url": "https://www.wevity.com/index_university.php?c=find&s=_university&gub=1&cidx=19&gbn=view&gp=1&ix=111977"
+  },
+  {
+   "ageLimit": null,
+   "announceDate": null,
+   "cats": [
+    "goods",
+    "design",
+    "local"
+   ],
+   "checkReasons": [],
+   "confidence": "high",
+   "deadline": "2026-11-30",
+   "deadlineNote": "23:59 마감. 접수 사이트는 접수일 전에 개설 예정이라고 적혀 있음",
+   "eligibility": "개인 또는 4인 이하 팀 누구나 참가 가능, 1인(팀) 1작품",
+   "fit": [
+    "pixel"
+   ],
+   "foundAt": "2026-10-30",
+   "id": "d9e484094283",
+   "individualOk": true,
+   "needsCheck": false,
+   "org": "서울미래인재재단",
+   "region": "서울",
+   "relevance": 3,
+   "sources": [
+    "콘테스트코리아 미술·디자인"
+   ],
+   "startDate": "2026-11-16",
+   "summary": "서울미래인재재단 대표 캐릭터의 기본 디자인, 스토리텔링과 네이밍, 활용 아이디어를 모집한다. 선정작은 2단계 개발에 활용될 예정이라 캐릭터 상품화로 이어질 수 있는 공모다.",
+   "support": [
+    "prize"
+   ],
+   "supportAmount": "총 440만원 (대상 200만원, 최우수상 100만원, 우수상 50만원, 장려상 20만원), 상품권 지급",
+   "title": "서울미래인재재단 대표 캐릭터 공모전 서울의 미래, 새로운 얼굴",
+   "url": "https://www.contestkorea.com/sub/view.php?int_gbn=1&Txt_bcode=030610001&str_no=202610280025"
   },
   {
    "ageLimit": null,
@@ -299,5 +667,5 @@
    "url": "https://www.sfac.or.kr/site/SFAC_KOR/12/11202220000002022092210.jsp"
   }
  ],
- "updatedAt": "2026-10-30 19:58"
+ "updatedAt": "2026-10-30 20:10"
 }
