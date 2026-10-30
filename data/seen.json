@@ -1,13 +1,1018 @@
 {
+ "https://archivist.kr": {
+  "date": "2026-10-30",
+  "reason": "본문이 비어 있음",
+  "status": "skipped"
+ },
+ "https://archivist.kr/log": {
+  "date": "2026-10-30",
+  "reason": "첫 실행 이전 글",
+  "status": "baseline"
+ },
+ "https://archivist.kr/log?w=find": {
+  "date": "2026-10-30",
+  "reason": "첫 실행 이전 글",
+  "status": "baseline"
+ },
+ "https://archivist.kr/log?w=signup": {
+  "date": "2026-10-30",
+  "reason": "첫 실행 이전 글",
+  "status": "baseline"
+ },
+ "https://archivist.kr/map?f=Residency": {
+  "date": "2026-10-30",
+  "reason": "본문에 신청·접수 관련 내용 없음",
+  "status": "filtered"
+ },
+ "https://archivist.kr/svc": {
+  "date": "2026-10-30",
+  "reason": "본문에 신청·접수 관련 내용 없음",
+  "status": "filtered"
+ },
+ "https://archivist.kr/write?d=biz&f=Residency&i=1793365589&l=dbs&w=new": {
+  "date": "2026-10-30",
+  "reason": "첫 실행 이전 글",
+  "status": "baseline"
+ },
+ "https://archivist.kr?d=biz": {
+  "date": "2026-10-30",
+  "reason": "본문이 비어 있음",
+  "status": "skipped"
+ },
+ "https://archivist.kr?d=biz&f=Acquisition&l=dbs": {
+  "date": "2026-10-30",
+  "reason": "첫 실행 이전 글",
+  "status": "baseline"
+ },
+ "https://archivist.kr?d=biz&f=Activity&l=dbs": {
+  "date": "2026-10-30",
+  "reason": "첫 실행 이전 글",
+  "status": "baseline"
+ },
+ "https://archivist.kr?d=biz&f=Business&l=dbs": {
+  "date": "2026-10-30",
+  "reason": "첫 실행 이전 글",
+  "status": "baseline"
+ },
+ "https://archivist.kr?d=biz&f=Education&l=dbs": {
+  "date": "2026-10-30",
+  "reason": "첫 실행 이전 글",
+  "status": "baseline"
+ },
+ "https://archivist.kr?d=biz&f=Event": {
+  "date": "2026-10-30",
+  "reason": "본문이 비어 있음",
+  "status": "skipped"
+ },
+ "https://archivist.kr?d=biz&f=Event&l=dbs": {
+  "date": "2026-10-30",
+  "reason": "첫 실행 이전 글",
+  "status": "baseline"
+ },
+ "https://archivist.kr?d=biz&f=Exhibition&l=dbs": {
+  "date": "2026-10-30",
+  "reason": "첫 실행 이전 글",
+  "status": "baseline"
+ },
+ "https://archivist.kr?d=biz&f=Housing&l=dbs": {
+  "date": "2026-10-30",
+  "reason": "첫 실행 이전 글",
+  "status": "baseline"
+ },
+ "https://archivist.kr?d=biz&f=Recruiting": {
+  "date": "2026-10-30",
+  "reason": "본문이 비어 있음",
+  "status": "skipped"
+ },
+ "https://archivist.kr?d=biz&f=Recruiting&l=dbs": {
+  "date": "2026-10-30",
+  "reason": "첫 실행 이전 글",
+  "status": "baseline"
+ },
+ "https://archivist.kr?d=biz&f=Research&l=dbs": {
+  "date": "2026-10-30",
+  "reason": "첫 실행 이전 글",
+  "status": "baseline"
+ },
+ "https://archivist.kr?d=biz&f=Residency&l=dbs": {
+  "date": "2026-10-30",
+  "reason": "본문이 비어 있음",
+  "status": "skipped"
+ },
+ "https://archivist.kr?d=biz&f=Service&l=dbs": {
+  "date": "2026-10-30",
+  "reason": "첫 실행 이전 글",
+  "status": "baseline"
+ },
+ "https://archivist.kr?d=biz&l=dbs": {
+  "date": "2026-10-30",
+  "reason": "첫 실행 이전 글",
+  "status": "baseline"
+ },
+ "https://archivist.kr?d=exi": {
+  "date": "2026-10-30",
+  "reason": "본문이 비어 있음",
+  "status": "skipped"
+ },
+ "https://archivist.kr?d=exi&l=dbs": {
+  "date": "2026-10-30",
+  "reason": "첫 실행 이전 글",
+  "status": "baseline"
+ },
+ "https://archivist.kr?d=hpt": {
+  "date": "2026-10-30",
+  "reason": "본문이 비어 있음",
+  "status": "skipped"
+ },
+ "https://archivist.kr?d=hpt&l=dbs": {
+  "date": "2026-10-30",
+  "reason": "첫 실행 이전 글",
+  "status": "baseline"
+ },
+ "https://archivist.kr?d=ntc": {
+  "date": "2026-10-30",
+  "reason": "본문이 비어 있음",
+  "status": "skipped"
+ },
+ "https://archivist.kr?d=org&l=dbs": {
+  "date": "2026-10-30",
+  "reason": "첫 실행 이전 글",
+  "status": "baseline"
+ },
+ "https://archivist.kr?d=spc&l=dbs": {
+  "date": "2026-10-30",
+  "reason": "본문에 신청·접수 관련 내용 없음",
+  "status": "filtered"
+ },
+ "https://archivist.kr?d=wrks": {
+  "date": "2026-10-30",
+  "reason": "본문이 비어 있음",
+  "status": "skipped"
+ },
+ "https://archivist.kr?d=wrks&l=dbs": {
+  "date": "2026-10-30",
+  "reason": "첫 실행 이전 글",
+  "status": "baseline"
+ },
+ "https://archivist.kr?d=wrt": {
+  "date": "2026-10-30",
+  "reason": "본문이 비어 있음",
+  "status": "skipped"
+ },
+ "https://archivist.kr?d=wrt&l=dbs": {
+  "date": "2026-10-30",
+  "reason": "첫 실행 이전 글",
+  "status": "baseline"
+ },
+ "https://arko.or.kr/board/view/4013?bid=463&cid=1811270": {
+  "date": "2026-10-30",
+  "reason": "제목상 모집 공고 아님",
+  "status": "filtered"
+ },
+ "https://arko.or.kr/board/view/4013?bid=463&cid=1811276": {
+  "date": "2026-10-30",
+  "reason": "선정 결과 발표이며 신청 가능한 공모가 아님. 창작 뮤지컬 공연 분야로 관련도도 낮음",
+  "status": "skipped"
+ },
+ "https://arko.or.kr/board/view/4013?bid=463&cid=1811309": {
+  "date": "2026-10-30",
+  "reason": "제목상 모집 공고 아님",
+  "status": "filtered"
+ },
+ "https://art-culture.co.kr/magazine_contest/1438": {
+  "date": "2026-10-30",
+  "reason": "첫 실행 이전 글",
+  "status": "baseline"
+ },
+ "https://art-culture.co.kr/magazine_contest/1455": {
+  "date": "2026-10-30",
+  "reason": "첫 실행 이전 글",
+  "status": "baseline"
+ },
+ "https://art-culture.co.kr/magazine_contest/1458": {
+  "date": "2026-10-30",
+  "reason": "첫 실행 이전 글",
+  "status": "baseline"
+ },
+ "https://art-culture.co.kr/magazine_contest/1608": {
+  "date": "2026-10-30",
+  "reason": "첫 실행 이전 글",
+  "status": "baseline"
+ },
+ "https://art-culture.co.kr/magazine_contest/1800": {
+  "date": "2026-10-30",
+  "reason": "첫 실행 이전 글",
+  "status": "baseline"
+ },
+ "https://art-culture.co.kr/magazine_contest/1841": {
+  "date": "2026-10-30",
+  "reason": "첫 실행 이전 글",
+  "status": "baseline"
+ },
+ "https://art-culture.co.kr/magazine_contest/1923": {
+  "date": "2026-10-30",
+  "reason": "첫 실행 이전 글",
+  "status": "baseline"
+ },
+ "https://art-culture.co.kr/magazine_contest/1931": {
+  "date": "2026-10-30",
+  "reason": "첫 실행 이전 글",
+  "status": "baseline"
+ },
+ "https://art-culture.co.kr/magazine_contest/1938": {
+  "date": "2026-10-30",
+  "reason": "첫 실행 이전 글",
+  "status": "baseline"
+ },
+ "https://art-culture.co.kr/magazine_contest/1944": {
+  "date": "2026-10-30",
+  "reason": "첫 실행 이전 글",
+  "status": "baseline"
+ },
+ "https://art-culture.co.kr/magazine_contest/1997": {
+  "date": "2026-10-30",
+  "reason": "첫 실행 이전 글",
+  "status": "baseline"
+ },
+ "https://art-culture.co.kr/magazine_contest/2003": {
+  "date": "2026-10-30",
+  "reason": "첫 실행 이전 글",
+  "status": "baseline"
+ },
+ "https://art-culture.co.kr/magazine_contest/2030": {
+  "date": "2026-10-30",
+  "reason": "첫 실행 이전 글",
+  "status": "baseline"
+ },
+ "https://art-culture.co.kr/magazine_contest/2044": {
+  "date": "2026-10-30",
+  "reason": "첫 실행 이전 글",
+  "status": "baseline"
+ },
+ "https://art-culture.co.kr/magazine_contest/2049": {
+  "date": "2026-10-30",
+  "reason": "첫 실행 이전 글",
+  "status": "baseline"
+ },
+ "https://art-culture.co.kr/magazine_contest/2055": {
+  "date": "2026-10-30",
+  "reason": "첫 실행 이전 글",
+  "status": "baseline"
+ },
+ "https://art-culture.co.kr/magazine_contest/2057": {
+  "date": "2026-10-30",
+  "reason": "첫 실행 이전 글",
+  "status": "baseline"
+ },
+ "https://art-culture.co.kr/magazine_contest/2062": {
+  "date": "2026-10-30",
+  "reason": "첫 실행 이전 글",
+  "status": "baseline"
+ },
+ "https://art-culture.co.kr/magazine_contest/2063": {
+  "date": "2026-10-30",
+  "reason": "첫 실행 이전 글",
+  "status": "baseline"
+ },
+ "https://art-culture.co.kr/magazine_contest/2066": {
+  "date": "2026-10-30",
+  "reason": "첫 실행 이전 글",
+  "status": "baseline"
+ },
+ "https://art-culture.co.kr/magazine_contest/2067": {
+  "date": "2026-10-30",
+  "reason": "첫 실행 이전 글",
+  "status": "baseline"
+ },
+ "https://art-culture.co.kr/magazine_contest/2069": {
+  "date": "2026-10-30",
+  "reason": "첫 실행 이전 글",
+  "status": "baseline"
+ },
+ "https://art-culture.co.kr/magazine_contest/2070": {
+  "date": "2026-10-30",
+  "reason": "첫 실행 이전 글",
+  "status": "baseline"
+ },
+ "https://art-culture.co.kr/magazine_contest/2077": {
+  "date": "2026-10-30",
+  "reason": "첫 실행 이전 글",
+  "status": "baseline"
+ },
+ "https://art-culture.co.kr/magazine_contest/2078": {
+  "date": "2026-10-30",
+  "reason": "첫 실행 이전 글",
+  "status": "baseline"
+ },
+ "https://art-culture.co.kr/magazine_contest/2087": {
+  "date": "2026-10-30",
+  "reason": "첫 실행 이전 글",
+  "status": "baseline"
+ },
+ "https://art-culture.co.kr/magazine_contest/2104": {
+  "date": "2026-10-30",
+  "reason": "첫 실행 이전 글",
+  "status": "baseline"
+ },
+ "https://art-culture.co.kr/magazine_contest/2107": {
+  "date": "2026-10-30",
+  "reason": "첫 실행 이전 글",
+  "status": "baseline"
+ },
+ "https://art-culture.co.kr/magazine_contest/2112": {
+  "date": "2026-10-30",
+  "reason": "첫 실행 이전 글",
+  "status": "baseline"
+ },
+ "https://art-culture.co.kr/magazine_contest/2114": {
+  "date": "2026-10-30",
+  "reason": "첫 실행 이전 글",
+  "status": "baseline"
+ },
+ "https://art-culture.co.kr/magazine_contest/2118": {
+  "date": "2026-10-30",
+  "reason": "첫 실행 이전 글",
+  "status": "baseline"
+ },
+ "https://art-culture.co.kr/magazine_contest/2119": {
+  "date": "2026-10-30",
+  "reason": "첫 실행 이전 글",
+  "status": "baseline"
+ },
+ "https://art-culture.co.kr/magazine_contest/2120": {
+  "date": "2026-10-30",
+  "reason": "첫 실행 이전 글",
+  "status": "baseline"
+ },
+ "https://art-culture.co.kr/magazine_contest/2121": {
+  "date": "2026-10-30",
+  "reason": "첫 실행 이전 글",
+  "status": "baseline"
+ },
+ "https://art-culture.co.kr/magazine_contest/2129": {
+  "date": "2026-10-30",
+  "reason": "첫 실행 이전 글",
+  "status": "baseline"
+ },
+ "https://art-culture.co.kr/magazine_contest/2132": {
+  "date": "2026-10-30",
+  "reason": "첫 실행 이전 글",
+  "status": "baseline"
+ },
+ "https://art-culture.co.kr/magazine_contest/2135": {
+  "date": "2026-10-30",
+  "reason": "첫 실행 이전 글",
+  "status": "baseline"
+ },
+ "https://art-culture.co.kr/magazine_contest/2137": {
+  "date": "2026-10-30",
+  "reason": "첫 실행 이전 글",
+  "status": "baseline"
+ },
+ "https://art-culture.co.kr/magazine_contest/2139": {
+  "date": "2026-10-30",
+  "reason": "첫 실행 이전 글",
+  "status": "baseline"
+ },
+ "https://art-culture.co.kr/magazine_contest/2140": {
+  "date": "2026-10-30",
+  "reason": "첫 실행 이전 글",
+  "status": "baseline"
+ },
+ "https://art-culture.co.kr/magazine_contest/2141": {
+  "date": "2026-10-30",
+  "reason": "첫 실행 이전 글",
+  "status": "baseline"
+ },
+ "https://art-culture.co.kr/magazine_contest/2148": {
+  "date": "2026-10-30",
+  "reason": "첫 실행 이전 글",
+  "status": "baseline"
+ },
+ "https://art-culture.co.kr/magazine_contest/2151": {
+  "date": "2026-10-30",
+  "reason": "첫 실행 이전 글",
+  "status": "baseline"
+ },
+ "https://art-culture.co.kr/magazine_contest/2152": {
+  "date": "2026-10-30",
+  "reason": "첫 실행 이전 글",
+  "status": "baseline"
+ },
+ "https://art-culture.co.kr/magazine_contest/2153": {
+  "date": "2026-10-30",
+  "reason": "첫 실행 이전 글",
+  "status": "baseline"
+ },
+ "https://art-culture.co.kr/magazine_contest/2160": {
+  "date": "2026-10-30",
+  "reason": "첫 실행 이전 글",
+  "status": "baseline"
+ },
+ "https://art-culture.co.kr/magazine_contest/2161": {
+  "date": "2026-10-30",
+  "reason": "첫 실행 이전 글",
+  "status": "baseline"
+ },
+ "https://art-culture.co.kr/magazine_contest/2162": {
+  "date": "2026-10-30",
+  "reason": "첫 실행 이전 글",
+  "status": "baseline"
+ },
+ "https://art-culture.co.kr/magazine_contest/2168": {
+  "date": "2026-10-30",
+  "reason": "첫 실행 이전 글",
+  "status": "baseline"
+ },
+ "https://art-culture.co.kr/magazine_contest/2170": {
+  "date": "2026-10-30",
+  "reason": "첫 실행 이전 글",
+  "status": "baseline"
+ },
+ "https://art-culture.co.kr/magazine_contest/2171": {
+  "date": "2026-10-30",
+  "reason": "첫 실행 이전 글",
+  "status": "baseline"
+ },
+ "https://art-culture.co.kr/magazine_contest/2172": {
+  "date": "2026-10-30",
+  "reason": "첫 실행 이전 글",
+  "status": "baseline"
+ },
+ "https://art-culture.co.kr/magazine_contest/2173": {
+  "date": "2026-10-30",
+  "reason": "첫 실행 이전 글",
+  "status": "baseline"
+ },
+ "https://art-culture.co.kr/magazine_contest/2176": {
+  "date": "2026-10-30",
+  "reason": "첫 실행 이전 글",
+  "status": "baseline"
+ },
+ "https://art-culture.co.kr/magazine_contest/2177": {
+  "date": "2026-10-30",
+  "reason": "첫 실행 이전 글",
+  "status": "baseline"
+ },
+ "https://art-culture.co.kr/magazine_contest/2179": {
+  "date": "2026-10-30",
+  "reason": "첫 실행 이전 글",
+  "status": "baseline"
+ },
+ "https://art-culture.co.kr/magazine_contest/2180": {
+  "date": "2026-10-30",
+  "reason": "첫 실행 이전 글",
+  "status": "baseline"
+ },
+ "https://art-culture.co.kr/magazine_contest/2181": {
+  "date": "2026-10-30",
+  "reason": "첫 실행 이전 글",
+  "status": "baseline"
+ },
+ "https://art-culture.co.kr/magazine_contest/2182": {
+  "date": "2026-10-30",
+  "reason": "첫 실행 이전 글",
+  "status": "baseline"
+ },
+ "https://art-culture.co.kr/magazine_contest/2183": {
+  "date": "2026-10-30",
+  "reason": "첫 실행 이전 글",
+  "status": "baseline"
+ },
+ "https://art-culture.co.kr/magazine_contest/2184": {
+  "date": "2026-10-30",
+  "reason": "첫 실행 이전 글",
+  "status": "baseline"
+ },
+ "https://art-culture.co.kr/magazine_contest/2185": {
+  "date": "2026-10-30",
+  "reason": "첫 실행 이전 글",
+  "status": "baseline"
+ },
+ "https://art-culture.co.kr/magazine_contest/2186": {
+  "date": "2026-10-30",
+  "reason": "첫 실행 이전 글",
+  "status": "baseline"
+ },
+ "https://art-culture.co.kr/magazine_contest/2187": {
+  "date": "2026-10-30",
+  "reason": "첫 실행 이전 글",
+  "status": "baseline"
+ },
+ "https://art-culture.co.kr/magazine_contest/2188": {
+  "date": "2026-10-30",
+  "reason": "첫 실행 이전 글",
+  "status": "baseline"
+ },
+ "https://art-culture.co.kr/magazine_contest/2189": {
+  "date": "2026-10-30",
+  "reason": "첫 실행 이전 글",
+  "status": "baseline"
+ },
+ "https://art-culture.co.kr/magazine_contest/2190": {
+  "date": "2026-10-30",
+  "reason": "첫 실행 이전 글",
+  "status": "baseline"
+ },
+ "https://art-culture.co.kr/magazine_contest/2191": {
+  "date": "2026-10-30",
+  "reason": "첫 실행 이전 글",
+  "status": "baseline"
+ },
+ "https://art-culture.co.kr/magazine_contest/2192": {
+  "date": "2026-10-30",
+  "reason": "첫 실행 이전 글",
+  "status": "baseline"
+ },
+ "https://art-culture.co.kr/magazine_contest/2193": {
+  "date": "2026-10-30",
+  "reason": "첫 실행 이전 글",
+  "status": "baseline"
+ },
+ "https://art-culture.co.kr/magazine_contest/2194": {
+  "date": "2026-10-30",
+  "reason": "첫 실행 이전 글",
+  "status": "baseline"
+ },
+ "https://art-culture.co.kr/magazine_contest/2195": {
+  "date": "2026-10-30",
+  "reason": "첫 실행 이전 글",
+  "status": "baseline"
+ },
+ "https://art-culture.co.kr/magazine_contest/2196": {
+  "date": "2026-10-30",
+  "reason": "첫 실행 이전 글",
+  "status": "baseline"
+ },
+ "https://art-culture.co.kr/magazine_contest/2197": {
+  "date": "2026-10-30",
+  "reason": "첫 실행 이전 글",
+  "status": "baseline"
+ },
+ "https://art-culture.co.kr/magazine_contest/2198": {
+  "date": "2026-10-30",
+  "reason": "첫 실행 이전 글",
+  "status": "baseline"
+ },
+ "https://art-culture.co.kr/magazine_contest/2199": {
+  "date": "2026-10-30",
+  "reason": "첫 실행 이전 글",
+  "status": "baseline"
+ },
+ "https://art-culture.co.kr/magazine_contest/2200": {
+  "date": "2026-10-30",
+  "reason": "첫 실행 이전 글",
+  "status": "baseline"
+ },
+ "https://art-culture.co.kr/magazine_contest/2201": {
+  "date": "2026-10-30",
+  "reason": "첫 실행 이전 글",
+  "status": "baseline"
+ },
+ "https://art-culture.co.kr/magazine_contest/2202": {
+  "date": "2026-10-30",
+  "reason": "첫 실행 이전 글",
+  "status": "baseline"
+ },
+ "https://art-culture.co.kr/magazine_contest/2203": {
+  "date": "2026-10-30",
+  "reason": "첫 실행 이전 글",
+  "status": "baseline"
+ },
+ "https://art-culture.co.kr/magazine_contest/2204": {
+  "date": "2026-10-30",
+  "reason": "첫 실행 이전 글",
+  "status": "baseline"
+ },
+ "https://art-culture.co.kr/magazine_contest/2205": {
+  "date": "2026-10-30",
+  "reason": "첫 실행 이전 글",
+  "status": "baseline"
+ },
+ "https://art-culture.co.kr/magazine_contest/2206": {
+  "date": "2026-10-30",
+  "reason": "첫 실행 이전 글",
+  "status": "baseline"
+ },
+ "https://art-culture.co.kr/magazine_contest/2207": {
+  "date": "2026-10-30",
+  "reason": "첫 실행 이전 글",
+  "status": "baseline"
+ },
+ "https://art-culture.co.kr/magazine_contest/2208": {
+  "date": "2026-10-30",
+  "reason": "첫 실행 이전 글",
+  "status": "baseline"
+ },
+ "https://art-culture.co.kr/magazine_contest/2209": {
+  "date": "2026-10-30",
+  "reason": "첫 실행 이전 글",
+  "status": "baseline"
+ },
+ "https://art-culture.co.kr/magazine_contest/2210": {
+  "date": "2026-10-30",
+  "reason": "첫 실행 이전 글",
+  "status": "baseline"
+ },
+ "https://art-culture.co.kr/magazine_contest/2211": {
+  "date": "2026-10-30",
+  "reason": "첫 실행 이전 글",
+  "status": "baseline"
+ },
+ "https://art-culture.co.kr/magazine_contest/2212": {
+  "date": "2026-10-30",
+  "reason": "《젊은 시각 새로운 시선 2027》참여 작가 공개 모집",
+  "status": "kept"
+ },
+ "https://art-culture.co.kr/magazine_contest/2213": {
+  "date": "2026-10-30",
+  "reason": "2026 충남 문화CF 스타상 (청년예술부문) 공모",
+  "status": "kept"
+ },
+ "https://art-culture.co.kr/magazine_contest/2214": {
+  "date": "2026-10-30",
+  "reason": "2026 힐로웨이브 아트 프로젝트 <결을 읽는 사람들> 참여 작가 공모",
+  "status": "kept"
+ },
+ "https://art-culture.co.kr/magazine_contest/2215": {
+  "date": "2026-10-30",
+  "reason": "포스터 공모이며 초·중·고 학생 및 2008년 이후 출생 대상이라 관심 대상이 아님",
+  "status": "skipped"
+ },
+ "https://art-culture.co.kr/magazine_contest/2216": {
+  "date": "2026-10-30",
+  "reason": "타구·바쿠와 함께하는 신규 캐릭터 기념품 디자인 공모전",
+  "status": "kept"
+ },
+ "https://art-culture.co.kr/magazine_contest/2217": {
+  "date": "2026-10-30",
+  "reason": "CICA 미술관 디자인 국제전 “Designer Now 2027” 공모",
+  "status": "kept"
+ },
+ "https://art-culture.co.kr/magazine_contest/2218": {
+  "date": "2026-10-30",
+  "reason": "초중고생 대상 대회라 프로필 대상이 아님",
+  "status": "skipped"
+ },
+ "https://art-culture.co.kr/magazine_contest/2219": {
+  "date": "2026-10-30",
+  "reason": "2027 CICA 영 코리안 아티스트 개인전 시리즈 작가 공모",
+  "status": "kept"
+ },
+ "https://art-culture.co.kr/magazine_contest/2220": {
+  "date": "2026-10-30",
+  "reason": "포스터·웹툰 중심의 환경 공모로 디자인·굿즈 연계가 약함",
+  "status": "skipped"
+ },
+ "https://art-culture.co.kr/magazine_contest/2221": {
+  "date": "2026-10-30",
+  "reason": "영상 공모 전용이라 프로필과 무관",
+  "status": "skipped"
+ },
+ "https://art-culture.co.kr/magazine_contest/2222": {
+  "date": "2026-10-30",
+  "reason": "[한국인터넷진흥원] 슬로건·캐릭터·사업 아이디어 공모!",
+  "status": "kept"
+ },
+ "https://art-culture.co.kr/magazine_contest/2223": {
+  "date": "2026-10-30",
+  "reason": "귀 쫑긋! '우리' 활용 공모전",
+  "status": "kept"
+ },
  "https://arthub.co.kr/sub04/board01_view.htm?No=27355&sType1=1&sType2=2&sType3=3": {
   "date": "2026-10-30",
   "reason": "아티스트 프롤로그 2027 작가 공모",
   "status": "kept"
  },
+ "https://artnuri.or.kr": {
+  "date": "2026-10-30",
+  "reason": "본문에 신청·접수 관련 내용 없음",
+  "status": "filtered"
+ },
+ "https://artnuri.or.kr/content.do?key=2409100002": {
+  "date": "2026-10-30",
+  "reason": "첫 실행 이전 글",
+  "status": "baseline"
+ },
+ "https://artnuri.or.kr/content.do?key=2409100004": {
+  "date": "2026-10-30",
+  "reason": "본문에 신청·접수 관련 내용 없음",
+  "status": "filtered"
+ },
+ "https://artnuri.or.kr/crawler/info/search.do?key=2301170002": {
+  "date": "2026-10-30",
+  "reason": "구체적인 공모 내용 없이 검색 메뉴 화면만 있음",
+  "status": "skipped"
+ },
+ "https://artnuri.or.kr/crawler/info/view.do?docid=BPCF_NOTICE_20261029172354001&key=2301170002&seNo=001&source=%EC%9D%B8%EC%B2%9C%EC%8B%9C%EB%B6%80%ED%8F%89%EA%B5%AC%EB%AC%B8%ED%99%94%EC%9E%AC%EB%8B%A8": {
+  "date": "2026-10-30",
+  "reason": "예술단체 대상 콘텐츠 공동개발이라 개인 작가 및 프로필과 거리가 멂",
+  "status": "skipped"
+ },
+ "https://artnuri.or.kr/crawler/info/view.do?docid=BPCF_NOTICE_20261029230007001&key=2301170002&seNo=001&source=%EC%9D%B8%EC%B2%9C%EC%8B%9C%EB%B6%80%ED%8F%89%EA%B5%AC%EB%AC%B8%ED%99%94%EC%9E%AC%EB%8B%A8": {
+  "date": "2026-10-30",
+  "reason": "제목상 모집 공고 아님",
+  "status": "filtered"
+ },
+ "https://artnuri.or.kr/crawler/info/view.do?docid=BPCF_NOTICE_20261029230014001&key=2301170002&seNo=001&source=%EC%9D%B8%EC%B2%9C%EC%8B%9C%EB%B6%80%ED%8F%89%EA%B5%AC%EB%AC%B8%ED%99%94%EC%9E%AC%EB%8B%A8": {
+  "date": "2026-10-30",
+  "reason": "2027년 부평아트센터 공연장 및 전시장 대관 지원 사업 공모",
+  "status": "kept"
+ },
+ "https://artnuri.or.kr/crawler/info/view.do?docid=S65865&key=2301170002&seNo=001&source=%EC%B6%A9%EB%B6%81%EB%AC%B8%ED%99%94%EC%9E%AC%EB%8B%A8": {
+  "date": "2026-10-30",
+  "reason": "본문에 신청·접수 관련 내용 없음",
+  "status": "filtered"
+ },
+ "https://artnuri.or.kr/crawler/info/view.do?docid=S65883&key=2301170002&seNo=001&source=%EA%B4%91%EC%A3%BC%EB%AC%B8%ED%99%94%EC%9E%AC%EB%8B%A8": {
+  "date": "2026-10-30",
+  "reason": "교육·강의 참여자(수강생) 모집이라 관심 없음",
+  "status": "skipped"
+ },
+ "https://artnuri.or.kr/crawler/info/view.do?docid=S65888&key=2301170002&seNo=001&source=%EA%B2%BD%EB%82%A8%EB%AC%B8%ED%99%94%EC%98%88%EC%88%A0%EC%A7%84%ED%9D%A5%EC%9B%90": {
+  "date": "2026-10-30",
+  "reason": "제목상 모집 공고 아님",
+  "status": "filtered"
+ },
+ "https://artnuri.or.kr/crawler/info/view.do?docid=SFAC_NOTICE_20261029043803001&key=2301170002&seNo=001&source=%EC%84%9C%EC%9A%B8%EB%AC%B8%ED%99%94%EC%9E%AC%EB%8B%A8": {
+  "date": "2026-10-30",
+  "reason": "미술 담론·연구 참여 멤버 모집이라 작가 지원이나 전시 지원과 거리가 멂",
+  "status": "skipped"
+ },
+ "https://artnuri.or.kr/crawler/info/view.do?docid=YJCF_NOTICE_20261030091007001&key=2301170002&seNo=001&source=%EC%97%AC%EC%A3%BC%EC%84%B8%EC%A2%85%EB%AC%B8%ED%99%94%EA%B4%80%EA%B4%91%EC%9E%AC%EB%8B%A8": {
+  "date": "2026-10-30",
+  "reason": "공연예술(버스킹) 공연자 모집이라 관심 분야가 아님",
+  "status": "skipped"
+ },
+ "https://artnuri.or.kr/crawler/info/view.do?encData=sUiBAI0l4sHqoD%2B2npmyD7ZWeZtpj3GI8RlPbxJnmJ8PBZm1EJpnMlsBwvsh76BM&key=2301170002": {
+  "date": "2026-10-30",
+  "reason": "현재 신청 접수 중이 아니고 2027년 별도 공모 예정. 공연 중심 사업으로 보여 관련도 낮음",
+  "status": "skipped"
+ },
+ "https://artnuri.or.kr/crawler/info/view.do?encData=sUiBAI0l4sHqoD%2B2npmyD8KCZRuK3BLLPelAz0mYGXYPBZm1EJpnMlsBwvsh76BM&key=2301170002": {
+  "date": "2026-10-30",
+  "reason": "2026년 크라우드펀딩 확산사업 <크라우드펀딩 챌린지> 2차 공모(공고연장)",
+  "status": "kept"
+ },
+ "https://artnuri.or.kr/crawler/info/view.do?encData=sUiBAI0l4sHqoD%2B2npmyDxKypodMmnHu2n3XD1oG4XgPBZm1EJpnMlsBwvsh76BM&key=2301170002": {
+  "date": "2026-10-30",
+  "reason": "댄스 분야 해외 레지던시라 시각예술·가구 조명 작업과 거리가 멂. 마감일은 원문이 잘려 확인 불가",
+  "status": "skipped"
+ },
+ "https://artnuri.or.kr/crawler/info/view.do?encData=sUiBAI0l4sHqoD%2B2npmyDxfggl%2BQfK4LboAEnelw3QsPBZm1EJpnMlsBwvsh76BM&key=2301170002": {
+  "date": "2026-10-30",
+  "reason": "2027년 오스트리아 임펄스탄츠 아틀라스 레지던시 참가 신청안내",
+  "status": "kept"
+ },
+ "https://artnuri.or.kr/crawler/info/view.do?encData=sUiBAI0l4sHqoD%2B2npmyDyhT8R%2FrREV1FR1b%2FnOuXSUPBZm1EJpnMlsBwvsh76BM&key=2301170002": {
+  "date": "2026-10-30",
+  "reason": "문학 분야만 해당해 관심 없는 공고 (문학만)",
+  "status": "skipped"
+ },
+ "https://artnuri.or.kr/crawler/info/www.yjcf.or.kr": {
+  "date": "2026-10-30",
+  "reason": "첫 실행 이전 글",
+  "status": "baseline"
+ },
+ "https://artnuri.or.kr/user/myBsns.do?key=2301170004": {
+  "date": "2026-10-30",
+  "reason": "본문이 비어 있음",
+  "status": "skipped"
+ },
  "https://bcf.or.kr/base/board/read?boardManagementNo=25&boardNo=153237&menuLevel=2&menuNo=86": {
   "date": "2026-10-30",
   "reason": "2026 부천문화재단×크라이치즈버거 예술상품 개발 공모전",
   "status": "kept"
+ },
+ "https://bscf.or.kr/view.do?no=1000": {
+  "date": "2026-10-30",
+  "reason": "본문에 신청·접수 관련 내용 없음",
+  "status": "filtered"
+ },
+ "https://bscf.or.kr/view.do?no=1005": {
+  "date": "2026-10-30",
+  "reason": "본문에 신청·접수 관련 내용 없음",
+  "status": "filtered"
+ },
+ "https://bscf.or.kr/view.do?no=1008": {
+  "date": "2026-10-30",
+  "reason": "본문에 신청·접수 관련 내용 없음",
+  "status": "filtered"
+ },
+ "https://bscf.or.kr/view.do?no=1009": {
+  "date": "2026-10-30",
+  "reason": "본문에 신청·접수 관련 내용 없음",
+  "status": "filtered"
+ },
+ "https://bscf.or.kr/view.do?no=1010": {
+  "date": "2026-10-30",
+  "reason": "목록 페이지라 단일 공고가 아님. 상세 공고 확인 필요",
+  "status": "skipped"
+ },
+ "https://bscf.or.kr/view.do?no=1016": {
+  "date": "2026-10-30",
+  "reason": "본문에 신청·접수 관련 내용 없음",
+  "status": "filtered"
+ },
+ "https://bscf.or.kr/view.do?no=1030": {
+  "date": "2026-10-30",
+  "reason": "본문에 신청·접수 관련 내용 없음",
+  "status": "filtered"
+ },
+ "https://bscf.or.kr/view.do?no=1031": {
+  "date": "2026-10-30",
+  "reason": "지원 공모가 아닌 후원·기부 회원 모집",
+  "status": "skipped"
+ },
+ "https://bscf.or.kr/view.do?no=1032": {
+  "date": "2026-10-30",
+  "reason": "신청 공모가 아니라 이의신청 절차 안내. 이의신청 기간(2026.7.15~7.29)도 이미 종료",
+  "status": "skipped"
+ },
+ "https://bscf.or.kr/view.do?no=1105": {
+  "date": "2026-10-30",
+  "reason": "과거 선정 결과 조회 페이지이며 모집 공고 아님. 공연예술 중심",
+  "status": "skipped"
+ },
+ "https://bscf.or.kr/view.do?no=1106": {
+  "date": "2026-10-30",
+  "reason": "본문에 신청·접수 관련 내용 없음",
+  "status": "filtered"
+ },
+ "https://bscf.or.kr/view.do?no=996": {
+  "date": "2026-10-30",
+  "reason": "본문에 신청·접수 관련 내용 없음",
+  "status": "filtered"
+ },
+ "https://bscf.or.kr/view.do?no=998": {
+  "date": "2026-10-30",
+  "reason": "본문에 신청·접수 관련 내용 없음",
+  "status": "filtered"
+ },
+ "https://cfsc.or.kr/contents/arch/hr0101.asp": {
+  "date": "2026-10-30",
+  "reason": "본문에 신청·접수 관련 내용 없음",
+  "status": "filtered"
+ },
+ "https://cfsc.or.kr/contents/arch/hr0102.asp": {
+  "date": "2026-10-30",
+  "reason": "본문에 신청·접수 관련 내용 없음",
+  "status": "filtered"
+ },
+ "https://cfsc.or.kr/contents/arch/hr0301.asp": {
+  "date": "2026-10-30",
+  "reason": "본문에 신청·접수 관련 내용 없음",
+  "status": "filtered"
+ },
+ "https://cfsc.or.kr/contents/arch/news0503.asp": {
+  "date": "2026-10-30",
+  "reason": "본문에 신청·접수 관련 내용 없음",
+  "status": "filtered"
+ },
+ "https://cfsc.or.kr/contents/biz/biz0101.asp": {
+  "date": "2026-10-30",
+  "reason": "기획자 대상 공모이고 개인 작가 자격(선정이력 요건)과 맞지 않아 관련성이 약함",
+  "status": "skipped"
+ },
+ "https://cfsc.or.kr/contents/biz/biz0202.asp": {
+  "date": "2026-10-30",
+  "reason": "창작예술지원 공모사업",
+  "status": "kept"
+ },
+ "https://cfsc.or.kr/contents/biz/biz0203.asp": {
+  "date": "2026-10-30",
+  "reason": "순천시 소재 단체 대상이라 개인 작가는 신청 불가, 공간운영비 지원이라 관련 약함",
+  "status": "skipped"
+ },
+ "https://cfsc.or.kr/contents/biz/biz0204.asp": {
+  "date": "2026-10-30",
+  "reason": "공모·지원금 신청이 아닌 상시 복지 서비스이며 대상 지역이 순천·동부권으로 제한됨",
+  "status": "skipped"
+ },
+ "https://cfsc.or.kr/contents/biz/biz0206.asp": {
+  "date": "2026-10-30",
+  "reason": "단체 대상이고 2026년 접수 공고가 없으며, 프로필(개인 작가·1인 사업체)과 지역 연관성이 낮음",
+  "status": "skipped"
+ },
+ "https://cfsc.or.kr/contents/cfsc/cfsc0108.asp": {
+  "date": "2026-10-30",
+  "reason": "본문에 신청·접수 관련 내용 없음",
+  "status": "filtered"
+ },
+ "https://cfsc.or.kr/contents/open/open0101.asp?aseq=4205&bseq=1&cat=-1&mode=view&yy=2026": {
+  "date": "2026-10-30",
+  "reason": "본문에 신청·접수 관련 내용 없음",
+  "status": "filtered"
+ },
+ "https://cfsc.or.kr/contents/open/open0101.asp?aseq=4220&bseq=1&cat=-1&mode=view&yy=2026": {
+  "date": "2026-10-30",
+  "reason": "교육 프로그램 참여자 모집이라 관심 대상 아님. 상세 본문 없음",
+  "status": "skipped"
+ },
+ "https://cfsc.or.kr/contents/open/open0101.asp?aseq=4222&bseq=1&cat=-1&mode=view&yy=2026": {
+  "date": "2026-10-30",
+  "reason": "음악 행사 참여 이벤트 안내. 공모·지원 아님",
+  "status": "skipped"
+ },
+ "https://cfsc.or.kr/contents/open/open0101.asp?aseq=4225&bseq=1&cat=-1&mode=view&yy=2026": {
+  "date": "2026-10-30",
+  "reason": "본문에 신청·접수 관련 내용 없음",
+  "status": "filtered"
+ },
+ "https://cfsc.or.kr/contents/open/open0101.asp?aseq=4226&bseq=1&cat=-1&mode=view&yy=2026": {
+  "date": "2026-10-30",
+  "reason": "수강생 모집이라 관심 대상(공모·지원) 아님",
+  "status": "skipped"
+ },
+ "https://cfsc.or.kr/contents/open/open0101.asp?aseq=4247&bseq=1&cat=-1&mode=view&yy=2026": {
+  "date": "2026-10-30",
+  "reason": "교육 프로그램 참여자 모집으로 관심 유형이 아님. 본문에 일정·자격 정보 없음",
+  "status": "skipped"
+ },
+ "https://cfsc.or.kr/contents/open/open0101.asp?aseq=4282&bseq=1&cat=-1&mode=view&yy=2026": {
+  "date": "2026-10-30",
+  "reason": "프로그램 참여자 모집이라 작가 공모·지원 아님. 본문 상세 없음",
+  "status": "skipped"
+ },
+ "https://cfsc.or.kr/contents/open/open0101.asp?aseq=4300&bseq=1&cat=-1&mode=view&yy=2026": {
+  "date": "2026-10-30",
+  "reason": "본문에 신청·접수 관련 내용 없음",
+  "status": "filtered"
+ },
+ "https://cfsc.or.kr/contents/open/open0101.asp?aseq=4301&bseq=1&cat=-1&mode=view&yy=2026": {
+  "date": "2026-10-30",
+  "reason": "애니메이션·웹툰 중심 IP 제작 공고로 굿즈·피규어 상품화와 직접 연결이 약함. 본문에 금액·일정 없음",
+  "status": "skipped"
+ },
+ "https://cfsc.or.kr/contents/open/open0102.asp?aseq=4141&bseq=1&cat=39&mode=view&yy=2026": {
+  "date": "2026-10-30",
+  "reason": "용역 발주 관련 평가위원 모집으로 관심 없는 유형",
+  "status": "skipped"
+ },
+ "https://cfsc.or.kr/contents/open/open0102.asp?aseq=4173&bseq=1&cat=39&mode=view&yy=2026": {
+  "date": "2026-10-30",
+  "reason": "축제 사전 참여자 모집으로 작가 지원이나 창작 지원이 아님. 본문에 일정·자격 정보 없음",
+  "status": "skipped"
+ },
+ "https://cfsc.or.kr/contents/open/open0102.asp?aseq=4187&bseq=1&cat=39&mode=view&yy=2026": {
+  "date": "2026-10-30",
+  "reason": "제목상 모집 공고 아님",
+  "status": "filtered"
+ },
+ "https://cfsc.or.kr/contents/open/open0102.asp?aseq=4188&bseq=1&cat=39&mode=view&yy=2026": {
+  "date": "2026-10-30",
+  "reason": "제목상 모집 공고 아님",
+  "status": "filtered"
+ },
+ "https://cfsc.or.kr/contents/open/open0102.asp?aseq=4201&bseq=1&cat=39&mode=view&yy=2026": {
+  "date": "2026-10-30",
+  "reason": "제목상 모집 공고 아님",
+  "status": "filtered"
+ },
+ "https://cfsc.or.kr/contents/open/open0102.asp?aseq=4205&bseq=1&cat=39&mode=view&yy=2026": {
+  "date": "2026-10-30",
+  "reason": "본문에 신청·접수 관련 내용 없음",
+  "status": "filtered"
+ },
+ "https://cfsc.or.kr/contents/open/open0102.asp?aseq=4219&bseq=1&cat=39&mode=view&yy=2026": {
+  "date": "2026-10-30",
+  "reason": "교육 프로그램 수강생·참여자 모집이라 관심 유형이 아님. 본문에 일정·자격 정보 없음",
+  "status": "skipped"
+ },
+ "https://cfsc.or.kr/contents/open/open0102.asp?aseq=4225&bseq=1&cat=39&mode=view&yy=2026": {
+  "date": "2026-10-30",
+  "reason": "본문에 신청·접수 관련 내용 없음",
+  "status": "filtered"
+ },
+ "https://cfsc.or.kr/contents/open/open0102.asp?aseq=4226&bseq=1&cat=39&mode=view&yy=2026": {
+  "date": "2026-10-30",
+  "reason": "수강생 모집 공고이며 접수 시작일(2026-10-28)이 이미 지나 신청할 수 없음",
+  "status": "skipped"
+ },
+ "https://cfsc.or.kr/contents/open/open0102.asp?aseq=4247&bseq=1&cat=39&mode=view&yy=2026": {
+  "date": "2026-10-30",
+  "reason": "교육생·수강생 모집 공고이므로 관심 대상에서 제외",
+  "status": "skipped"
+ },
+ "https://cfsc.or.kr/contents/open/open0102.asp?aseq=4282&bseq=1&cat=39&mode=view&yy=2026": {
+  "date": "2026-10-30",
+  "reason": "치유 프로그램 참여자 모집으로 작가 지원이나 상품화 대상이 아님. 본문에 일정·자격 정보 없음",
+  "status": "skipped"
+ },
+ "https://cfsc.or.kr/contents/open/open0102.asp?aseq=4300&bseq=1&cat=39&mode=view&yy=2026": {
+  "date": "2026-10-30",
+  "reason": "본문에 신청·접수 관련 내용 없음",
+  "status": "filtered"
+ },
+ "https://cfsc.or.kr/contents/open/open0102.asp?aseq=4301&bseq=1&cat=39&mode=view&yy=2026": {
+  "date": "2026-10-30",
+  "reason": "지원 분야가 애니메이션·웹툰 제작 중심이고 마감일이 본문에 없어 관련성이 낮음",
+  "status": "skipped"
+ },
+ "https://cfsc.or.kr/contents/space/space0103_3.asp": {
+  "date": "2026-10-30",
+  "reason": "본문에 신청·접수 관련 내용 없음",
+  "status": "filtered"
  },
  "https://contestkorea.com/sub/view.php?Txt_bcode=030110001&int_gbn=1&str_no=202610140072": {
   "date": "2026-10-30",
@@ -294,10 +1299,1090 @@
   "reason": "관광 콘텐츠 제작 크리에이터를 뽑는 공모로, 굿즈·디자인·시각예술 창작과는 거리가 멀다.",
   "status": "skipped"
  },
+ "https://cwcf.or.kr/academy/academy_gallery_list.asp?BCATE=BD00020&BSUBCATE=%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%C4%AB%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD": {
+  "date": "2026-10-30",
+  "reason": "본문에 신청·접수 관련 내용 없음",
+  "status": "filtered"
+ },
+ "https://cwcf.or.kr/academy/academy_notice_view.asp?BCATE=BD00006&bidx=28&idx=20645": {
+  "date": "2026-10-30",
+  "reason": "수강생 모집이라 관심 제외 대상이고 2025년 공고로 지났음",
+  "status": "skipped"
+ },
+ "https://cwcf.or.kr/academy/academy_notice_view.asp?BCATE=BD00006&bidx=29&idx=22774": {
+  "date": "2026-10-30",
+  "reason": "대상과 조건이 텍스트에 없고 교육 참여 성격이라 작가 지원과 관련성이 낮음",
+  "status": "skipped"
+ },
+ "https://cwcf.or.kr/commu/notice_list.asp?BCATE=BD00001&BSUBCATE=%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD+%EF%BF%BD%EF%BF%BD+%EF%BF%BD%EF%BF%BD%EF%BF%BD": {
+  "date": "2026-10-30",
+  "reason": "개별 공고가 아닌 게시판 목록 페이지이며, 채용·대관·수강생 모집이 섞여 있음",
+  "status": "skipped"
+ },
+ "https://cwcf.or.kr/cwcf/cwcf_315art_intro.asp": {
+  "date": "2026-10-30",
+  "reason": "본문에 신청·접수 관련 내용 없음",
+  "status": "filtered"
+ },
+ "https://cwcf.or.kr/cwcf/cwcf_map_315art.asp": {
+  "date": "2026-10-30",
+  "reason": "본문에 신청·접수 관련 내용 없음",
+  "status": "filtered"
+ },
+ "https://cwcf.or.kr/facility/facility_315art.asp": {
+  "date": "2026-10-30",
+  "reason": "본문에 신청·접수 관련 내용 없음",
+  "status": "filtered"
+ },
+ "https://cwcf.or.kr/rental/rental_315art.asp": {
+  "date": "2026-10-30",
+  "reason": "본문에 신청·접수 관련 내용 없음",
+  "status": "filtered"
+ },
+ "https://cwcf.or.kr/rental/rental_315art_4.asp": {
+  "date": "2026-10-30",
+  "reason": "본문에 신청·접수 관련 내용 없음",
+  "status": "filtered"
+ },
+ "https://cwcf.or.kr/rental/rental_315art_5.asp": {
+  "date": "2026-10-30",
+  "reason": "본문에 신청·접수 관련 내용 없음",
+  "status": "filtered"
+ },
+ "https://designboom.com/competition/2026-london-design-awards-season-2": {
+  "date": "2026-10-30",
+  "reason": "2026 London Design Awards Season 2",
+  "status": "kept"
+ },
+ "https://designboom.com/competition/2026-ny-architectural-interior-design-awards-season-2": {
+  "date": "2026-10-30",
+  "reason": "첫 실행 이전 글",
+  "status": "baseline"
+ },
+ "https://designboom.com/competition/2026-ny-product-design-awards-season-2": {
+  "date": "2026-10-30",
+  "reason": "첫 실행 이전 글",
+  "status": "baseline"
+ },
+ "https://designboom.com/competition/2026-rome-design-awards-season-2": {
+  "date": "2026-10-30",
+  "reason": "첫 실행 이전 글",
+  "status": "baseline"
+ },
+ "https://designboom.com/competition/2026-titan-property-awards-season-2": {
+  "date": "2026-10-30",
+  "reason": "첫 실행 이전 글",
+  "status": "baseline"
+ },
+ "https://designboom.com/competition/2027-french-design-awards": {
+  "date": "2026-10-30",
+  "reason": "2027 French Design Awards",
+  "status": "kept"
+ },
+ "https://designboom.com/competition/2027-muse-design-awards": {
+  "date": "2026-10-30",
+  "reason": "2027 MUSE Design Awards",
+  "status": "kept"
+ },
+ "https://designboom.com/competition/architectural-competition-for-the-design-and-supervision-of-the-construction-of-the-project-limassol-arts-centre": {
+  "date": "2026-10-30",
+  "reason": "건축사 면허 보유자 대상 건축 설계 공모로, 가구·조명 작가의 신청 자격과 거리가 있음",
+  "status": "skipped"
+ },
+ "https://designboom.com/competition/call-for-entries-ux-design-awards-spring-2027": {
+  "date": "2026-10-30",
+  "reason": "관련 낮음",
+  "status": "skipped"
+ },
+ "https://designboom.com/competition/classics-the-small-luxury-design-award-2027": {
+  "date": "2026-10-30",
+  "reason": "design CLASSICS the Small Luxury Design Award 2027",
+  "status": "kept"
+ },
+ "https://designboom.com/competition/compasso-doro-international-design-award-2027": {
+  "date": "2026-10-30",
+  "reason": "Compasso d'Oro International Design Award 2027",
+  "status": "kept"
+ },
+ "https://designboom.com/competition/grippin": {
+  "date": "2026-10-30",
+  "reason": "grippin’ – Arakawa International Design Competition 'New GRIPS'",
+  "status": "kept"
+ },
+ "https://designboom.com/competition/international-furniture-design-competition-asahikawa-ifda": {
+  "date": "2026-10-30",
+  "reason": "International Furniture Design Competition Asahikawa [IFDA]",
+  "status": "kept"
+ },
+ "https://designboom.com/competition/l-a-m-p-international-lighting-design-competition-2": {
+  "date": "2026-10-30",
+  "reason": "L A M P International Lighting Design Competition",
+  "status": "kept"
+ },
+ "https://designboom.com/competition/marca-corona-award-2027-contest-for-artists-and-designers-under-35": {
+  "date": "2026-10-30",
+  "reason": "Marca Corona Award 2027 (5th Edition: Segni Comuni)",
+  "status": "kept"
+ },
+ "https://designboom.com/competition/wonder-global-design-awards-2026-season-2": {
+  "date": "2026-10-30",
+  "reason": "Wonder Global Design Awards 2026 Season 2",
+  "status": "kept"
+ },
+ "https://gbcf.or.kr/load.asp?idx=1901&subPage=510.view": {
+  "date": "2026-10-30",
+  "reason": "마을 축제 참여 모집으로 굿즈·디자인·작가 지원과 직접 관련이 없다.",
+  "status": "skipped"
+ },
+ "https://gbcf.or.kr/load.asp?idx=1905&subPage=510.view": {
+  "date": "2026-10-30",
+  "reason": "결과 발표 공고이며 음악·무용 등 공연 분야라 관심 없음.",
+  "status": "skipped"
+ },
+ "https://gbcf.or.kr/load.asp?idx=1908&subPage=510.view": {
+  "date": "2026-10-30",
+  "reason": "작가 지원 공모가 아니라 행사 참여 안내이며, 포럼 참여 대상은 공무원·학계·기업 중심이다.",
+  "status": "skipped"
+ },
+ "https://gbcf.or.kr/load.asp?idx=1912&subPage=510.view": {
+  "date": "2026-10-30",
+  "reason": "[강북미술협회 30주년 기념] 청년작가 특별기획 공모(2차모집)",
+  "status": "kept"
+ },
+ "https://gbcf.or.kr/load.asp?idx=1924&subPage=510.view": {
+  "date": "2026-10-30",
+  "reason": "네이밍만 하는 공모이고 공연장 관련이며, 마감(10/21)이 이미 지났다.",
+  "status": "skipped"
+ },
+ "https://gbcf.or.kr/load.asp?idx=1926&subPage=510.view": {
+  "date": "2026-10-30",
+  "reason": "교육생·수강생 모집이라 관심 없는 유형이며, 마감이 오늘(10/30)이다.",
+  "status": "skipped"
+ },
+ "https://gbcf.or.kr/load.asp?idx=1927&subPage=510.view": {
+  "date": "2026-10-30",
+  "reason": "본문에 신청·접수 관련 내용 없음",
+  "status": "filtered"
+ },
+ "https://gbcf.or.kr/load.asp?subPage=110": {
+  "date": "2026-10-30",
+  "reason": "관련 낮음",
+  "status": "skipped"
+ },
+ "https://gbcf.or.kr/load.asp?subPage=310": {
+  "date": "2026-10-30",
+  "reason": "본문에 신청·접수 관련 내용 없음",
+  "status": "filtered"
+ },
+ "https://gbcf.or.kr/load.asp?subPage=320": {
+  "date": "2026-10-30",
+  "reason": "본문에 신청·접수 관련 내용 없음",
+  "status": "filtered"
+ },
+ "https://gbcf.or.kr/load.asp?subPage=330": {
+  "date": "2026-10-30",
+  "reason": "본문에 신청·접수 관련 내용 없음",
+  "status": "filtered"
+ },
+ "https://gbcf.or.kr/load.asp?subPage=410": {
+  "date": "2026-10-30",
+  "reason": "본문에 신청·접수 관련 내용 없음",
+  "status": "filtered"
+ },
+ "https://gcf.or.kr/main/content/view.do?sn=306": {
+  "date": "2026-10-30",
+  "reason": "본문에 신청·접수 관련 내용 없음",
+  "status": "filtered"
+ },
+ "https://gcf.or.kr/main/content/view.do?sn=319": {
+  "date": "2026-10-30",
+  "reason": "본문에 신청·접수 관련 내용 없음",
+  "status": "filtered"
+ },
+ "https://gcf.or.kr/main/pst/view.do?pst_id=notice&pst_sn=4811&search=ajR6eHNSV05Pc0UrNjZEd1NFVnNIZkduNGFKTVBHZVRMbTJ1bnFaYk5uY1RYZGJBV1NWWE1XZVpLS2VkcjIzbnlGR2MxTlRNd0xiaDZWOEI3OGthQUE9PQ%3D%3D": {
+  "date": "2026-10-30",
+  "reason": "결과 발표 글이며 영상 공모라 관심 분야와 무관",
+  "status": "skipped"
+ },
+ "https://gcf.or.kr/main/pst/view.do?pst_id=notice&pst_sn=5015&search=ajR6eHNSV05Pc0UrNjZEd1NFVnNIZkduNGFKTVBHZVRMbTJ1bnFaYk5uY1RYZGJBV1NWWE1XZVpLS2VkcjIzbnlGR2MxTlRNd0xiaDZWOEI3OGthQUE9PQ%3D%3D": {
+  "date": "2026-10-30",
+  "reason": "어린이 대상 교육 견학 프로그램이고 운영 일정이 지났으며 작가·제품 관련성이 없음",
+  "status": "skipped"
+ },
+ "https://gcf.or.kr/main/pst/view.do?pst_id=notice&pst_sn=5321&search=ajR6eHNSV05Pc0UrNjZEd1NFVnNIZkduNGFKTVBHZVRMbTJ1bnFaYk5uY1RYZGJBV1NWWE1XZVpLS2VkcjIzbnlGR2MxTlRNd0xiaDZWOEI3OGthQUE9PQ%3D%3D": {
+  "date": "2026-10-30",
+  "reason": "AI 시민 참여 프로그램으로 작가·디자인 분야와 거리가 있음",
+  "status": "skipped"
+ },
+ "https://gcf.or.kr/main/pst/view.do?pst_id=notice&pst_sn=5362&search=ajR6eHNSV05Pc0UrNjZEd1NFVnNIZkduNGFKTVBHZVRMbTJ1bnFaYk5uY1RYZGJBV1NWWE1XZVpLS2VkcjIzbnlGR2MxTlRNd0xiaDZWOEI3OGthQUE9PQ%3D%3D": {
+  "date": "2026-10-30",
+  "reason": "공연예술 작품 공모라 관심 분야(시각예술·디자인·굿즈)에서 벗어남",
+  "status": "skipped"
+ },
+ "https://gcf.or.kr/main/pst/view.do?pst_id=notice&pst_sn=5372&search=ajR6eHNSV05Pc0UrNjZEd1NFVnNIZkduNGFKTVBHZVRMbTJ1bnFaYk5uY1RYZGJBV1NWWE1XZVpLS2VkcjIzbnlGR2MxTlRNd0xiaDZWOEI3OGthQUE9PQ%3D%3D": {
+  "date": "2026-10-30",
+  "reason": "접수 마감이 지났고, 공연 동아리 대상이라 시각예술·굿즈 관심과 무관함",
+  "status": "skipped"
+ },
  "https://gdfac.or.kr/community/ko/notice/102403": {
   "date": "2026-10-30",
   "reason": "2026 강동문화재단 GAC Creative Bridge 아트 굿즈 창작지원 프로젝트 공모",
   "status": "kept"
+ },
+ "https://gjfac.org/gjfac/template.php?intnum=105185&midx=348&mode=view": {
+  "date": "2026-10-30",
+  "reason": "2025년 게시물이라 마감 여부 불명. 거주지 조건이 있어 부산 금정구 거주자에게만 해당",
+  "status": "skipped"
+ },
+ "https://gjfac.org/gjfac/template.php?intnum=106366&midx=348&mode=view": {
+  "date": "2026-10-30",
+  "reason": "플리마켓·체험 운영자 모집으로 상품화·작가 공모와 거리가 있음",
+  "status": "skipped"
+ },
+ "https://gjfac.org/gjfac/template.php?intnum=106367&midx=348&mode=view": {
+  "date": "2026-10-30",
+  "reason": "모집 기간이 이미 끝났고, 수강·참여자 모집 성격이라 관련 낮음",
+  "status": "skipped"
+ },
+ "https://gjfac.org/gjfac/template.php?intnum=106378&midx=348&mode=view": {
+  "date": "2026-10-30",
+  "reason": "공연예술(뮤지컬) 시민 참여 모집으로 관심 분야 아님",
+  "status": "skipped"
+ },
+ "https://gjfac.org/gjfac/template.php?intnum=106379&midx=348&mode=view": {
+  "date": "2026-10-30",
+  "reason": "제목상 모집 공고 아님",
+  "status": "filtered"
+ },
+ "https://gjfac.org/gjfac/template.php?intnum=106382&midx=348&mode=view": {
+  "date": "2026-10-30",
+  "reason": "수강형 워크숍 참여자 모집으로 교육생 모집에 해당하며 굿즈·공예 공모가 아님",
+  "status": "skipped"
+ },
+ "https://gjfac.org/gjfac/template.php?intnum=106462&midx=348&mode=view": {
+  "date": "2026-10-30",
+  "reason": "음악·공연 참가자 모집으로 프로필의 관심 분야와 무관",
+  "status": "skipped"
+ },
+ "https://gjfac.org/gjfac/template.php?intnum=106475&midx=348&mode=view": {
+  "date": "2026-10-30",
+  "reason": "상점 참여형 이벤트로 디자인·제조·창업 지원과 거리가 멂",
+  "status": "skipped"
+ },
+ "https://gjfac.org/gjfac/template.php?intnum=106497&midx=348&mode=view": {
+  "date": "2026-10-30",
+  "reason": "본문에 사업 내용과 자격이 없어 작가 지원 성격인지 확인 불가",
+  "status": "skipped"
+ },
+ "https://gjfac.org/gjfac/template.php?intnum=106580&midx=347&mode=view": {
+  "date": "2026-10-30",
+  "reason": "일반 시민 대상 치유 프로그램 참가자 모집으로 작가 지원과 무관. 신청 마감일 미기재",
+  "status": "skipped"
+ },
+ "https://gjfac.org/gjfac/template.php?intnum=106645&midx=347&mode=view": {
+  "date": "2026-10-30",
+  "reason": "행사 일정 변경 안내이며 신청·지원 대상 공고가 아님",
+  "status": "skipped"
+ },
+ "https://gjfac.org/gjfac/template.php?midx=325": {
+  "date": "2026-10-30",
+  "reason": "본문에 신청·접수 관련 내용 없음",
+  "status": "filtered"
+ },
+ "https://gjfac.org/gjfac/template.php?midx=330": {
+  "date": "2026-10-30",
+  "reason": "본문에 신청·접수 관련 내용 없음",
+  "status": "filtered"
+ },
+ "https://gjfac.org/gjfac/template.php?midx=341": {
+  "date": "2026-10-30",
+  "reason": "본문에 신청·접수 관련 내용 없음",
+  "status": "filtered"
+ },
+ "https://gjfac.org/gjfac/template.php?midx=342": {
+  "date": "2026-10-30",
+  "reason": "본문에 신청·접수 관련 내용 없음",
+  "status": "filtered"
+ },
+ "https://gjfac.org/gjfac/template.php?midx=343": {
+  "date": "2026-10-30",
+  "reason": "본문에 신청·접수 관련 내용 없음",
+  "status": "filtered"
+ },
+ "https://gjfac.org/gjfac/template.php?midx=402": {
+  "date": "2026-10-30",
+  "reason": "본문에 신청·접수 관련 내용 없음",
+  "status": "filtered"
+ },
+ "https://gncaf.or.kr/ko/community/notice?a=view&id=349": {
+  "date": "2026-10-30",
+  "reason": "제목상 모집 공고 아님",
+  "status": "filtered"
+ },
+ "https://gncaf.or.kr/ko/community/notice?a=view&id=444": {
+  "date": "2026-10-30",
+  "reason": "본문에 신청·접수 관련 내용 없음",
+  "status": "filtered"
+ },
+ "https://gncaf.or.kr/ko/community/notice?a=view&id=450": {
+  "date": "2026-10-30",
+  "reason": "어린이 대상 대회라 관심 없는 유형이다.",
+  "status": "skipped"
+ },
+ "https://gncaf.or.kr/ko/community/notice?a=view&id=451": {
+  "date": "2026-10-30",
+  "reason": "교육 참여자 모집이며 어린이 대상 프로그램이라 관심 대상이 아니다.",
+  "status": "skipped"
+ },
+ "https://gncaf.or.kr/ko/community/notice?a=view&id=452": {
+  "date": "2026-10-30",
+  "reason": "[공고] 제17회 박준용 청년예술문화상 후보자 모집 공고",
+  "status": "kept"
+ },
+ "https://gncaf.or.kr/ko/community/notice?a=view&id=453": {
+  "date": "2026-10-30",
+  "reason": "어린이·청소년 대상 대회에 해당해 관심 대상이 아님",
+  "status": "skipped"
+ },
+ "https://gncaf.or.kr/ko/community/notice?a=view&id=456": {
+  "date": "2026-10-30",
+  "reason": "교육생·수강생 모집이라 관심 없는 유형이며, 신청 기간도 이미 지났다.",
+  "status": "skipped"
+ },
+ "https://gncaf.or.kr/ko/community/notice?a=view&id=461": {
+  "date": "2026-10-30",
+  "reason": "축제 시민평가단 모집으로 작가 지원사업이 아님",
+  "status": "skipped"
+ },
+ "https://gncaf.or.kr/ko/community/notice?a=view&id=466": {
+  "date": "2026-10-30",
+  "reason": "지원·공모가 아닌 행사 참가 안내이며 행사일(2026-10-29)이 이미 지남",
+  "status": "skipped"
+ },
+ "https://gncaf.or.kr/ko/community/notice?a=view&id=469": {
+  "date": "2026-10-30",
+  "reason": "청소년 대상 사업으로 관심 대상(성인 작가·사업자)이 아님",
+  "status": "skipped"
+ },
+ "https://gncaf.or.kr/ko/community/notice?a=view&id=470": {
+  "date": "2026-10-30",
+  "reason": "공연예술(연극) 시민배우 모집으로 관심 분야가 아님",
+  "status": "skipped"
+ },
+ "https://gncaf.or.kr/ko/community/notice?a=view&id=473": {
+  "date": "2026-10-30",
+  "reason": "시민 예산 제안 공모로 디자인·작가·제품 분야가 아님. 마감일 원문 없음",
+  "status": "skipped"
+ },
+ "https://gncaf.or.kr/ko/community/notice?a=view&id=474": {
+  "date": "2026-10-30",
+  "reason": "교육생 모집이라 관심 대상 아님. 마감일 원문 없음",
+  "status": "skipped"
+ },
+ "https://i-sh.co.kr/main/lay2/S1T219C230/sublink.do": {
+  "date": "2026-10-30",
+  "reason": "본문에 신청·접수 관련 내용 없음",
+  "status": "filtered"
+ },
+ "https://i-sh.co.kr/main/lay2/S1T219C3352/sublink.do": {
+  "date": "2026-10-30",
+  "reason": "본문에 신청·접수 관련 내용 없음",
+  "status": "filtered"
+ },
+ "https://i-sh.co.kr/main/lay2/S1T220C1649/sublink.do": {
+  "date": "2026-10-30",
+  "reason": "본문에 신청·접수 관련 내용 없음",
+  "status": "filtered"
+ },
+ "https://i-sh.co.kr/main/lay2/S1T221C2412/sublink.do": {
+  "date": "2026-10-30",
+  "reason": "첫 실행 이전 글",
+  "status": "baseline"
+ },
+ "https://i-sh.co.kr/main/lay2/S1T230C231/contents.do": {
+  "date": "2026-10-30",
+  "reason": "본문에 신청·접수 관련 내용 없음",
+  "status": "filtered"
+ },
+ "https://i-sh.co.kr/main/lay2/S1T230C310/sublink.do": {
+  "date": "2026-10-30",
+  "reason": "본문에 신청·접수 관련 내용 없음",
+  "status": "filtered"
+ },
+ "https://i-sh.co.kr/main/lay2/S1T243C2811/contents.do": {
+  "date": "2026-10-30",
+  "reason": "본문에 신청·접수 관련 내용 없음",
+  "status": "filtered"
+ },
+ "https://i-sh.co.kr/main/lay2/S1T305C1652/sublink.do": {
+  "date": "2026-10-30",
+  "reason": "본문에 신청·접수 관련 내용 없음",
+  "status": "filtered"
+ },
+ "https://i-sh.co.kr/main/lay2/S1T305C306/sublink.do": {
+  "date": "2026-10-30",
+  "reason": "본문에 신청·접수 관련 내용 없음",
+  "status": "filtered"
+ },
+ "https://i-sh.co.kr/main/lay2/S1T3352C3375/contents.do": {
+  "date": "2026-10-30",
+  "reason": "관련 낮음",
+  "status": "skipped"
+ },
+ "https://i-sh.co.kr/main/lay2/S1T3352C4412/contents.do": {
+  "date": "2026-10-30",
+  "reason": "관련 낮음",
+  "status": "skipped"
+ },
+ "https://i-sh.co.kr/main/lay2/S1T5832C5893/contents.do": {
+  "date": "2026-10-30",
+  "reason": "본문에 신청·접수 관련 내용 없음",
+  "status": "filtered"
+ },
+ "https://i-sh.co.kr/main/lay2/program/S1T344C7632/www/brd/m_2427/list.do": {
+  "date": "2026-10-30",
+  "reason": "첫 실행 이전 글",
+  "status": "baseline"
+ },
+ "https://i-sh.co.kr/main/lay2/program/S1T5832C5833/www/m_2395/intro/vid/landLease_list.do": {
+  "date": "2026-10-30",
+  "reason": "본문에 신청·접수 관련 내용 없음",
+  "status": "filtered"
+ },
+ "https://jccf.or.kr/bbs/board.php?bo_table=w2_c&wr_id=1": {
+  "date": "2026-10-30",
+  "reason": "본문에 신청·접수 관련 내용 없음",
+  "status": "filtered"
+ },
+ "https://jccf.or.kr/bbs/board.php?bo_table=w5_c&wr_id=1": {
+  "date": "2026-10-30",
+  "reason": "본문에 신청·접수 관련 내용 없음",
+  "status": "filtered"
+ },
+ "https://jccf.or.kr/bbs/board.php?bo_table=w6_1&wr_id=669": {
+  "date": "2026-10-30",
+  "reason": "AI 영상 공모라 영상 분야로 작가 관심 분야(가구·조명·굿즈·시각예술)와 거리가 있음",
+  "status": "skipped"
+ },
+ "https://jccf.or.kr/bbs/board.php?bo_table=w6_1&wr_id=675": {
+  "date": "2026-10-30",
+  "reason": "용역 평가위원 모집이며 e-스포츠 분야라 관심 없음",
+  "status": "skipped"
+ },
+ "https://jccf.or.kr/bbs/board.php?bo_table=w6_1&wr_id=677": {
+  "date": "2026-10-30",
+  "reason": "본문에 신청·접수 관련 내용 없음",
+  "status": "filtered"
+ },
+ "https://jccf.or.kr/bbs/board.php?bo_table=w6_1&wr_id=679": {
+  "date": "2026-10-30",
+  "reason": "본문에 신청·접수 관련 내용 없음",
+  "status": "filtered"
+ },
+ "https://jccf.or.kr/bbs/board.php?bo_table=w6_1&wr_id=681": {
+  "date": "2026-10-30",
+  "reason": "제목상 모집 공고 아님",
+  "status": "filtered"
+ },
+ "https://jccf.or.kr/bbs/board.php?bo_table=w6_1&wr_id=682": {
+  "date": "2026-10-30",
+  "reason": "본문에 신청·접수 관련 내용 없음",
+  "status": "filtered"
+ },
+ "https://jccf.or.kr/bbs/board.php?bo_table=w6_1&wr_id=684": {
+  "date": "2026-10-30",
+  "reason": "본문에 신청·접수 관련 내용 없음",
+  "status": "filtered"
+ },
+ "https://jccf.or.kr/bbs/board.php?bo_table=w6_1&wr_id=686": {
+  "date": "2026-10-30",
+  "reason": "용역 평가위원 모집이라 사업 신청 대상이 아님",
+  "status": "skipped"
+ },
+ "https://jccf.or.kr/bbs/board.php?bo_table=w6_1&wr_id=687": {
+  "date": "2026-10-30",
+  "reason": "채용·위촉 모집이라 관심 없음. 마감일은 원문에 없음",
+  "status": "skipped"
+ },
+ "https://jccf.or.kr/bbs/board.php?bo_table=w6_6&wr_id=55": {
+  "date": "2026-10-30",
+  "reason": "용역 발주 결과 발표이므로 신청 대상이 아님",
+  "status": "skipped"
+ },
+ "https://jccf.or.kr/bbs/board.php?bo_table=w6_6&wr_id=56": {
+  "date": "2026-10-30",
+  "reason": "먹거리 부스 운영자 모집으로 요리·먹거리 분야라 관심 없음. 2024년 9월 공고라 이미 마감된 것으로 보임",
+  "status": "skipped"
+ },
+ "https://jccf.or.kr/bbs/board.php?bo_table=w6_6&wr_id=57": {
+  "date": "2026-10-30",
+  "reason": "이미 마감되었고 요식 업종 공유주방 입주 공고라 관심 분야와 거리가 멀다",
+  "status": "skipped"
+ },
+ "https://jccf.or.kr/bbs/board.php?bo_table=w6_6&wr_id=58": {
+  "date": "2026-10-30",
+  "reason": "요리 레시피 공모로 굿즈·가구·조명·디자인 분야와 무관하며 이미 마감됨",
+  "status": "skipped"
+ },
+ "https://jccf.or.kr/bbs/board.php?bo_table=w6_6&wr_id=61": {
+  "date": "2026-10-30",
+  "reason": "영화·드라마 제작사 대상 촬영 인센티브로 작가·디자인 분야와 무관하며 이미 마감됨",
+  "status": "skipped"
+ },
+ "https://jccf.or.kr/bbs/board.php?bo_table=w6_6&wr_id=62": {
+  "date": "2026-10-30",
+  "reason": "영상 제작만 대상이고 개인 작가·가구·굿즈 분야와 무관하며 2025년 3월 마감",
+  "status": "skipped"
+ },
+ "https://jccf.or.kr/bbs/board.php?bo_table=w6_6&wr_id=63": {
+  "date": "2026-10-30",
+  "reason": "본문에 신청·접수 관련 내용 없음",
+  "status": "filtered"
+ },
+ "https://jccf.or.kr/bbs/board.php?bo_table=w6_6&wr_id=64": {
+  "date": "2026-10-30",
+  "reason": "본문에 신청·접수 관련 내용 없음",
+  "status": "filtered"
+ },
+ "https://jccf.or.kr/bbs/board.php?bo_table=w6_6&wr_id=66": {
+  "date": "2026-10-30",
+  "reason": "이미 마감되었고 본문에 자격·지원내용이 없어 확인 불가",
+  "status": "skipped"
+ },
+ "https://jccf.or.kr/bbs/board.php?bo_table=w6_6&wr_id=67": {
+  "date": "2026-10-30",
+  "reason": "축제 매대 운영자 모집으로 디자인·작가·굿즈 분야와 무관하며 이미 마감됨",
+  "status": "skipped"
+ },
+ "https://jccf.or.kr/bbs/board.php?bo_table=w6_6&wr_id=68": {
+  "date": "2026-10-30",
+  "reason": "모집 종료된 2025년 공고이며, 지역 상권 창업 지원이라 관심 분야와 부분 일치",
+  "status": "skipped"
+ },
+ "https://jccf.or.kr/bbs/board.php?bo_table=w6_6&wr_id=71": {
+  "date": "2026-10-30",
+  "reason": "주류·먹거리 매대 운영자 모집으로 관심 분야(굿즈·가구·조명·공예·지원사업)와 무관",
+  "status": "skipped"
+ },
+ "https://k-startup.go.kr/magicsso/requestAuthEx.jsp?RelayState=https%3A%2F%2Fcert.k-startup.go.kr%2Fmagicsso%2FrequestConnect.jsp%3FRelayState%3D%2Fuat%2Fuia%2FssoLoginByCi.do": {
+  "date": "2026-10-30",
+  "reason": "첫 실행 이전 글",
+  "status": "baseline"
+ },
+ "https://k-startup.go.kr/web/contents/bizpbanc-ongoing.do?pbancSn=175783&schM=view": {
+  "date": "2026-10-30",
+  "reason": "첫 실행 이전 글",
+  "status": "baseline"
+ },
+ "https://k-startup.go.kr/web/contents/bizpbanc-ongoing.do?pbancSn=176076&schM=view": {
+  "date": "2026-10-30",
+  "reason": "첫 실행 이전 글",
+  "status": "baseline"
+ },
+ "https://k-startup.go.kr/web/contents/bizpbanc-ongoing.do?pbancSn=178802&schM=view": {
+  "date": "2026-10-30",
+  "reason": "첫 실행 이전 글",
+  "status": "baseline"
+ },
+ "https://k-startup.go.kr/web/contents/bizpbanc-ongoing.do?pbancSn=178803&schM=view": {
+  "date": "2026-10-30",
+  "reason": "첫 실행 이전 글",
+  "status": "baseline"
+ },
+ "https://k-startup.go.kr/web/contents/bizpbanc-ongoing.do?pbancSn=179408&schM=view": {
+  "date": "2026-10-30",
+  "reason": "첫 실행 이전 글",
+  "status": "baseline"
+ },
+ "https://k-startup.go.kr/web/contents/bizpbanc-ongoing.do?pbancSn=179572&schM=view": {
+  "date": "2026-10-30",
+  "reason": "첫 실행 이전 글",
+  "status": "baseline"
+ },
+ "https://k-startup.go.kr/web/contents/bizpbanc-ongoing.do?pbancSn=179595&schM=view": {
+  "date": "2026-10-30",
+  "reason": "첫 실행 이전 글",
+  "status": "baseline"
+ },
+ "https://k-startup.go.kr/web/contents/bizpbanc-ongoing.do?pbancSn=179636&schM=view": {
+  "date": "2026-10-30",
+  "reason": "첫 실행 이전 글",
+  "status": "baseline"
+ },
+ "https://k-startup.go.kr/web/contents/bizpbanc-ongoing.do?pbancSn=179637&schM=view": {
+  "date": "2026-10-30",
+  "reason": "첫 실행 이전 글",
+  "status": "baseline"
+ },
+ "https://k-startup.go.kr/web/contents/bizpbanc-ongoing.do?pbancSn=179649&schM=view": {
+  "date": "2026-10-30",
+  "reason": "첫 실행 이전 글",
+  "status": "baseline"
+ },
+ "https://k-startup.go.kr/web/contents/bizpbanc-ongoing.do?pbancSn=179654&schM=view": {
+  "date": "2026-10-30",
+  "reason": "첫 실행 이전 글",
+  "status": "baseline"
+ },
+ "https://k-startup.go.kr/web/contents/bizpbanc-ongoing.do?pbancSn=179656&schM=view": {
+  "date": "2026-10-30",
+  "reason": "첫 실행 이전 글",
+  "status": "baseline"
+ },
+ "https://k-startup.go.kr/web/contents/bizpbanc-ongoing.do?pbancSn=179660&schM=view": {
+  "date": "2026-10-30",
+  "reason": "첫 실행 이전 글",
+  "status": "baseline"
+ },
+ "https://k-startup.go.kr/web/contents/bizpbanc-ongoing.do?pbancSn=179662&schM=view": {
+  "date": "2026-10-30",
+  "reason": "첫 실행 이전 글",
+  "status": "baseline"
+ },
+ "https://k-startup.go.kr/web/contents/bizpbanc-ongoing.do?pbancSn=179664&schM=view": {
+  "date": "2026-10-30",
+  "reason": "첫 실행 이전 글",
+  "status": "baseline"
+ },
+ "https://k-startup.go.kr/web/contents/bizpbanc-ongoing.do?pbancSn=179668&schM=view": {
+  "date": "2026-10-30",
+  "reason": "첫 실행 이전 글",
+  "status": "baseline"
+ },
+ "https://k-startup.go.kr/web/contents/bizpbanc-ongoing.do?pbancSn=179672&schM=view": {
+  "date": "2026-10-30",
+  "reason": "첫 실행 이전 글",
+  "status": "baseline"
+ },
+ "https://k-startup.go.kr/web/contents/webFBMN.do": {
+  "date": "2026-10-30",
+  "reason": "본문에 신청·접수 관련 내용 없음",
+  "status": "filtered"
+ },
+ "https://k-startup.go.kr/web/contents/webFND_GUIDE.do": {
+  "date": "2026-10-30",
+  "reason": "본문에 신청·접수 관련 내용 없음",
+  "status": "filtered"
+ },
+ "https://k-startup.go.kr/web/contents/webFND_RGLT_CVL_MAIN.do": {
+  "date": "2026-10-30",
+  "reason": "본문에 신청·접수 관련 내용 없음",
+  "status": "filtered"
+ },
+ "https://k-startup.go.kr/web/contents/webFND_SCS_CASE.do": {
+  "date": "2026-10-30",
+  "reason": "본문에 신청·접수 관련 내용 없음",
+  "status": "filtered"
+ },
+ "https://k-startup.go.kr/web/contents/webFND_STATS_RSCH_DATA.do": {
+  "date": "2026-10-30",
+  "reason": "본문에 신청·접수 관련 내용 없음",
+  "status": "filtered"
+ },
+ "https://k-startup.go.kr/web/contents/webFSBIPBANC.do": {
+  "date": "2026-10-30",
+  "reason": "여러 사업을 묶은 통합 목록 페이지이며 단일 모집 공고가 아님. 관심 사업은 개별 공고에서 확인 필요",
+  "status": "skipped"
+ },
+ "https://kcdf.or.kr/brd/board/337/L/menu/284?bbIdx=9127&brdType=R&thisPage=1": {
+  "date": "2026-10-30",
+  "reason": "교육생·수강생 모집이며 이미 마감됨",
+  "status": "skipped"
+ },
+ "https://kcdf.or.kr/brd/board/337/L/menu/284?bbIdx=9134&brdType=R&thisPage=1": {
+  "date": "2026-10-30",
+  "reason": "본문이 푸터만 있어 공고 내용과 자격·기간을 확인할 수 없음",
+  "status": "skipped"
+ },
+ "https://kcdf.or.kr/brd/board/337/L/menu/284?bbIdx=9135&brdType=R&thisPage=1": {
+  "date": "2026-10-30",
+  "reason": "후보자 추천 공모로 본인 신청 대상이 아닌 것으로 보이며, 본문에 상세 내용이 없고 이미 마감됨",
+  "status": "skipped"
+ },
+ "https://kcdf.or.kr/brd/board/337/L/menu/284?bbIdx=9148&brdType=R&thisPage=1": {
+  "date": "2026-10-30",
+  "reason": "마감 지남, 전통문화 기업 대상 서비스 공급 공모로 사업 적합성 낮음",
+  "status": "skipped"
+ },
+ "https://kcdf.or.kr/brd/board/337/L/menu/284?bbIdx=9159&brdType=R&thisPage=1": {
+  "date": "2026-10-30",
+  "reason": "수강생 모집이며 마감됨",
+  "status": "skipped"
+ },
+ "https://kcdf.or.kr/brd/board/337/L/menu/284?bbIdx=9161&brdType=R&thisPage=1": {
+  "date": "2026-10-30",
+  "reason": "교육생 모집이며 마감됨 (#1과 같은 프로그램)",
+  "status": "skipped"
+ },
+ "https://kcdf.or.kr/brd/board/337/L/menu/284?bbIdx=9168&brdType=R&thisPage=1": {
+  "date": "2026-10-30",
+  "reason": "교육·수강생 모집이며 마감됨",
+  "status": "skipped"
+ },
+ "https://kcdf.or.kr/brd/board/337/L/menu/284?bbIdx=9178&brdType=R&thisPage=1": {
+  "date": "2026-10-30",
+  "reason": "수강생 모집이며 마감됨",
+  "status": "skipped"
+ },
+ "https://kcdf.or.kr/brd/board/337/L/menu/284?bbIdx=9213&brdType=R&thisPage=1": {
+  "date": "2026-10-30",
+  "reason": "교육생 모집이며 신청이 마감됨",
+  "status": "skipped"
+ },
+ "https://kcdf.or.kr/brd/board/337/L/menu/284?bbIdx=9218&brdType=R&thisPage=1": {
+  "date": "2026-10-30",
+  "reason": "2027 KCDF 공예·디자인 공모전시 모집 공고",
+  "status": "kept"
+ },
+ "https://kidp.or.kr?act=view&bbsno=19299&menuno=1202&siteno=16&ztag=rO0ABXQAMzxjYWxsIHR5cGU9ImJvYXJkIiBubz0iNjIyIiBza2luPSJraWRwX2JicyI%2BPC9jYWxsPg%3D%3D": {
+  "date": "2026-10-30",
+  "reason": "본문에 신청·접수 관련 내용 없음",
+  "status": "filtered"
+ },
+ "https://kidp.or.kr?act=view&bbsno=19300&menuno=1202&siteno=16&ztag=rO0ABXQAMzxjYWxsIHR5cGU9ImJvYXJkIiBubz0iNjIyIiBza2luPSJraWRwX2JicyI%2BPC9jYWxsPg%3D%3D": {
+  "date": "2026-10-30",
+  "reason": "본문에 신청·접수 관련 내용 없음",
+  "status": "filtered"
+ },
+ "https://kidp.or.kr?act=view&bbsno=19301&menuno=1202&siteno=16&ztag=rO0ABXQAMzxjYWxsIHR5cGU9ImJvYXJkIiBubz0iNjIyIiBza2luPSJraWRwX2JicyI%2BPC9jYWxsPg%3D%3D": {
+  "date": "2026-10-30",
+  "reason": "본문에 신청·접수 관련 내용 없음",
+  "status": "filtered"
+ },
+ "https://kidp.or.kr?act=view&bbsno=19302&menuno=1202&siteno=16&ztag=rO0ABXQAMzxjYWxsIHR5cGU9ImJvYXJkIiBubz0iNjIyIiBza2luPSJraWRwX2JicyI%2BPC9jYWxsPg%3D%3D": {
+  "date": "2026-10-30",
+  "reason": "2026년 디자인-기술기업 3차 밋업 참가기업 모집",
+  "status": "kept"
+ },
+ "https://kidp.or.kr?act=view&bbsno=19304&menuno=1202&siteno=16&ztag=rO0ABXQAMzxjYWxsIHR5cGU9ImJvYXJkIiBubz0iNjIyIiBza2luPSJraWRwX2JicyI%2BPC9jYWxsPg%3D%3D": {
+  "date": "2026-10-30",
+  "reason": "본문에 신청·접수 관련 내용 없음",
+  "status": "filtered"
+ },
+ "https://kidp.or.kr?act=view&bbsno=19305&menuno=1202&siteno=16&ztag=rO0ABXQAMzxjYWxsIHR5cGU9ImJvYXJkIiBubz0iNjIyIiBza2luPSJraWRwX2JicyI%2BPC9jYWxsPg%3D%3D": {
+  "date": "2026-10-30",
+  "reason": "본문에 신청·접수 관련 내용 없음",
+  "status": "filtered"
+ },
+ "https://kidp.or.kr?act=view&bbsno=19306&menuno=1202&siteno=16&ztag=rO0ABXQAMzxjYWxsIHR5cGU9ImJvYXJkIiBubz0iNjIyIiBza2luPSJraWRwX2JicyI%2BPC9jYWxsPg%3D%3D": {
+  "date": "2026-10-30",
+  "reason": "본문에 신청·접수 관련 내용 없음",
+  "status": "filtered"
+ },
+ "https://kidp.or.kr?act=view&bbsno=19307&menuno=1202&siteno=16&ztag=rO0ABXQAMzxjYWxsIHR5cGU9ImJvYXJkIiBubz0iNjIyIiBza2luPSJraWRwX2JicyI%2BPC9jYWxsPg%3D%3D": {
+  "date": "2026-10-30",
+  "reason": "본문에 신청·접수 관련 내용 없음",
+  "status": "filtered"
+ },
+ "https://kidp.or.kr?act=view&bbsno=19309&menuno=1202&siteno=16&ztag=rO0ABXQAMzxjYWxsIHR5cGU9ImJvYXJkIiBubz0iNjIyIiBza2luPSJraWRwX2JicyI%2BPC9jYWxsPg%3D%3D": {
+  "date": "2026-10-30",
+  "reason": "본문에 신청·접수 관련 내용 없음",
+  "status": "filtered"
+ },
+ "https://mcst.go.kr/site/s_comms/youthC/youthVote.jsp": {
+  "date": "2026-10-30",
+  "reason": "본문에 신청·접수 관련 내용 없음",
+  "status": "filtered"
+ },
+ "https://mcst.go.kr/site/s_comms/youthV/youthVoice.jsp": {
+  "date": "2026-10-30",
+  "reason": "본문에 신청·접수 관련 내용 없음",
+  "status": "filtered"
+ },
+ "https://mcst.go.kr/site/s_culture/culture/cultureList.jsp": {
+  "date": "2026-10-30",
+  "reason": "본문에 신청·접수 관련 내용 없음",
+  "status": "filtered"
+ },
+ "https://mcst.go.kr/site/s_minwon/eCulture/artSinmungo/artSinmungo.jsp": {
+  "date": "2026-10-30",
+  "reason": "본문에 신청·접수 관련 내용 없음",
+  "status": "filtered"
+ },
+ "https://mcst.go.kr/site/s_notice/award/development.jsp": {
+  "date": "2026-10-30",
+  "reason": "본문에 신청·접수 관련 내용 없음",
+  "status": "filtered"
+ },
+ "https://mcst.go.kr/site/s_notice/award/disability.jsp": {
+  "date": "2026-10-30",
+  "reason": "본문에 신청·접수 관련 내용 없음",
+  "status": "filtered"
+ },
+ "https://mcst.go.kr/site/s_notice/award/meritPerson.jsp": {
+  "date": "2026-10-30",
+  "reason": "본문에 신청·접수 관련 내용 없음",
+  "status": "filtered"
+ },
+ "https://mcst.go.kr/site/s_policy/dept/deptList.jsp?pType=01": {
+  "date": "2026-10-30",
+  "reason": "본문에 신청·접수 관련 내용 없음",
+  "status": "filtered"
+ },
+ "https://mfac.or.kr/communication/notice_all_view.jsp?pk_seq=9123&sc_b_code=BOARD_1207683401&sc_cond=b_subject&sc_type=1": {
+  "date": "2026-10-30",
+  "reason": "본문이 비어 있음",
+  "status": "skipped"
+ },
+ "https://mfac.or.kr/localculture/art_healing2024.jsp": {
+  "date": "2026-10-30",
+  "reason": "본문이 비어 있음",
+  "status": "skipped"
+ },
+ "https://mfac.or.kr/localculture/art_story2024.jsp": {
+  "date": "2026-10-30",
+  "reason": "본문이 비어 있음",
+  "status": "skipped"
+ },
+ "https://mfac.or.kr/localculture/forum_info_2019.jsp": {
+  "date": "2026-10-30",
+  "reason": "본문이 비어 있음",
+  "status": "skipped"
+ },
+ "https://mfac.or.kr/localculture/info2024.jsp": {
+  "date": "2026-10-30",
+  "reason": "본문이 비어 있음",
+  "status": "skipped"
+ },
+ "https://mfac.or.kr/localculture/info2024_picture.jsp": {
+  "date": "2026-10-30",
+  "reason": "본문이 비어 있음",
+  "status": "skipped"
+ },
+ "https://mfac.or.kr/localculture/literacym2024.jsp": {
+  "date": "2026-10-30",
+  "reason": "본문이 비어 있음",
+  "status": "skipped"
+ },
+ "https://mfac.or.kr/localculture/mapo2022.jsp": {
+  "date": "2026-10-30",
+  "reason": "본문이 비어 있음",
+  "status": "skipped"
+ },
+ "https://mfac.or.kr/localculture/photo_school2024.jsp": {
+  "date": "2026-10-30",
+  "reason": "본문이 비어 있음",
+  "status": "skipped"
+ },
+ "https://mfac.or.kr/localculture/zero_info2021.jsp": {
+  "date": "2026-10-30",
+  "reason": "본문이 비어 있음",
+  "status": "skipped"
+ },
+ "https://nowonarts.kr/channels/notice/posts/4919": {
+  "date": "2026-10-30",
+  "reason": "본문에 신청·접수 관련 내용 없음",
+  "status": "filtered"
+ },
+ "https://nowonarts.kr/channels/notice/posts/5109": {
+  "date": "2026-10-30",
+  "reason": "본문에 신청·접수 관련 내용 없음",
+  "status": "filtered"
+ },
+ "https://nowonarts.kr/channels/notice/posts/6451": {
+  "date": "2026-10-30",
+  "reason": "해설사 인력 모집이라 작가 공모·지원이 아님",
+  "status": "skipped"
+ },
+ "https://nowonarts.kr/channels/notice/posts/6453": {
+  "date": "2026-10-30",
+  "reason": "채용 공고",
+  "status": "skipped"
+ },
+ "https://nowonarts.kr/channels/notice/posts/6458": {
+  "date": "2026-10-30",
+  "reason": "대학생 전용 대외활동(자원봉사)이며 마감 지남",
+  "status": "skipped"
+ },
+ "https://nowonarts.kr/channels/notice/posts/6460": {
+  "date": "2026-10-30",
+  "reason": "영화 상영 운영 중심, 본문 정보 부족",
+  "status": "skipped"
+ },
+ "https://nowonarts.kr/channels/notice/posts/6469": {
+  "date": "2026-10-30",
+  "reason": "2026년 지역문화행사 지원(전시분야) 사업 운영단체 공모",
+  "status": "kept"
+ },
+ "https://nowonarts.kr/channels/notice/posts/6470": {
+  "date": "2026-10-30",
+  "reason": "관람객 신청 안내이며 작가나 사업자가 지원하는 공모가 아니다.",
+  "status": "skipped"
+ },
+ "https://nowonarts.kr/channels/notice/posts/6483": {
+  "date": "2026-10-30",
+  "reason": "제목상 모집 공고 아님",
+  "status": "filtered"
+ },
+ "https://nowonarts.kr/channels/notice/posts/6484": {
+  "date": "2026-10-30",
+  "reason": "제목상 모집 공고 아님",
+  "status": "filtered"
+ },
+ "https://nowonarts.kr/channels/notice/posts/6492": {
+  "date": "2026-10-30",
+  "reason": "교육 특강 참여자 모집이며 작품 지원이나 공모가 아니라 관련성이 낮다.",
+  "status": "skipped"
+ },
+ "https://sba.seoul.kr/Pages/BizGuide/D/bizd1.aspx": {
+  "date": "2026-10-30",
+  "reason": "본문이 비어 있음",
+  "status": "skipped"
+ },
+ "https://sba.seoul.kr/Pages/BizGuide/D/bizd2.aspx": {
+  "date": "2026-10-30",
+  "reason": "본문이 비어 있음",
+  "status": "skipped"
+ },
+ "https://sba.seoul.kr/Pages/ContentsMenu/Seoul_Product.aspx?C=018F3F07-6A77-EC11-80E8-9418827691E2": {
+  "date": "2026-10-30",
+  "reason": "본문이 비어 있음",
+  "status": "skipped"
+ },
+ "https://sesac.seoul.kr": {
+  "date": "2026-10-30",
+  "reason": "본문이 비어 있음",
+  "status": "skipped"
+ },
+ "https://swcf.or.kr?idx=113805&p=113&viewMode=view": {
+  "date": "2026-10-30",
+  "reason": "본문에 신청·접수 관련 내용 없음",
+  "status": "filtered"
+ },
+ "https://swcf.or.kr?idx=113867&p=113&viewMode=view": {
+  "date": "2026-10-30",
+  "reason": "본문에 신청·접수 관련 내용 없음",
+  "status": "filtered"
+ },
+ "https://swcf.or.kr?idx=113874&p=113&viewMode=view": {
+  "date": "2026-10-30",
+  "reason": "본문에 신청·접수 관련 내용 없음",
+  "status": "filtered"
+ },
+ "https://swcf.or.kr?idx=113877&p=113&viewMode=view": {
+  "date": "2026-10-30",
+  "reason": "본문에 신청·접수 관련 내용 없음",
+  "status": "filtered"
+ },
+ "https://swcf.or.kr?idx=113879&p=113&viewMode=view": {
+  "date": "2026-10-30",
+  "reason": "본문에 신청·접수 관련 내용 없음",
+  "status": "filtered"
+ },
+ "https://swcf.or.kr?idx=113886&p=113&viewMode=view": {
+  "date": "2026-10-30",
+  "reason": "본문에 신청·접수 관련 내용 없음",
+  "status": "filtered"
+ },
+ "https://swcf.or.kr?idx=113896&p=113&viewMode=view": {
+  "date": "2026-10-30",
+  "reason": "본문에 신청·접수 관련 내용 없음",
+  "status": "filtered"
+ },
+ "https://swcf.or.kr?p=135": {
+  "date": "2026-10-30",
+  "reason": "본문에 신청·접수 관련 내용 없음",
+  "status": "filtered"
+ },
+ "https://swcf.or.kr?p=213": {
+  "date": "2026-10-30",
+  "reason": "본문에 신청·접수 관련 내용 없음",
+  "status": "filtered"
+ },
+ "https://swcf.or.kr?p=214": {
+  "date": "2026-10-30",
+  "reason": "본문에 신청·접수 관련 내용 없음",
+  "status": "filtered"
+ },
+ "https://swcf.or.kr?p=305": {
+  "date": "2026-10-30",
+  "reason": "본문에 신청·접수 관련 내용 없음",
+  "status": "filtered"
+ },
+ "https://swcf.or.kr?p=317": {
+  "date": "2026-10-30",
+  "reason": "본문에 신청·접수 관련 내용 없음",
+  "status": "filtered"
+ },
+ "https://swcf.or.kr?p=325": {
+  "date": "2026-10-30",
+  "reason": "본문에 신청·접수 관련 내용 없음",
+  "status": "filtered"
+ },
+ "https://swcf.or.kr?p=326": {
+  "date": "2026-10-30",
+  "reason": "본문에 신청·접수 관련 내용 없음",
+  "status": "filtered"
+ },
+ "https://swcf.or.kr?p=395": {
+  "date": "2026-10-30",
+  "reason": "본문에 신청·접수 관련 내용 없음",
+  "status": "filtered"
+ },
+ "https://swcf.or.kr?p=396": {
+  "date": "2026-10-30",
+  "reason": "본문에 신청·접수 관련 내용 없음",
+  "status": "filtered"
+ },
+ "https://touraz.kr/announcementList/pssrpView?curPage=1&pssrpSeqEnc=%2AQ9GUtsIMcO2FWkFGvsYYA%3D%3D": {
+  "date": "2026-10-30",
+  "reason": "여행사·관광시설 대상이며 사업자등록 기반 자격이라 작가 활동과 연결되지 않음",
+  "status": "skipped"
+ },
+ "https://touraz.kr/announcementList/pssrpView?curPage=1&pssrpSeqEnc=BqYv93EnITTjxzExadxCkA%3D%3D": {
+  "date": "2026-10-30",
+  "reason": "근로자 휴가비 복지 사업으로 굿즈·창작·상품화와 무관",
+  "status": "skipped"
+ },
+ "https://touraz.kr/announcementList/pssrpView?curPage=1&pssrpSeqEnc=OSX35NQ0qo0%2ApGmgJq%2AEWg%3D%3D": {
+  "date": "2026-10-30",
+  "reason": "교육 수료자 대상 업무 개선 사례 공모로 프로필과 무관. 접수 마감(10-26) 지남",
+  "status": "skipped"
+ },
+ "https://touraz.kr/announcementList/pssrpView?curPage=1&pssrpSeqEnc=QlqgfcJQNDWHBrvGybTFEA%3D%3D": {
+  "date": "2026-10-30",
+  "reason": "지자체·공공기관만 신청 가능하고 접수 마감(10-16) 지남. 프로필과 무관",
+  "status": "skipped"
+ },
+ "https://touraz.kr/announcementList/pssrpView?curPage=1&pssrpSeqEnc=W%2AZoWlTfXb4QLPtCbKvWEw%3D%3D": {
+  "date": "2026-10-30",
+  "reason": "접수 마감(10-27) 지남. 관광 관련 사업자로 대상이 한정되어 관련성 낮음",
+  "status": "skipped"
+ },
+ "https://touraz.kr/announcementList/pssrpView?curPage=1&pssrpSeqEnc=bwoXhjgx7Mkr%5ERXLygjsqw%3D%3D": {
+  "date": "2026-10-30",
+  "reason": "신청 주체가 인구감소지역 기초지자체로 개인·기업이 신청할 수 없음",
+  "status": "skipped"
+ },
+ "https://touraz.kr/announcementList/pssrpView?curPage=1&pssrpSeqEnc=dAh8ffRTR%5EZP%5E%5EfmQ7SjUQ%3D%3D": {
+  "date": "2026-10-30",
+  "reason": "충남 도내 신규 등록 예정 예비창업자 대상이라 이미 사업을 운영 중인 경우 해당이 어렵고, 관광 분야 한정",
+  "status": "skipped"
+ },
+ "https://touraz.kr/announcementList/pssrpView?curPage=1&pssrpSeqEnc=dLnGLBWfJdUDllJV%5EvLv1g%3D%3D": {
+  "date": "2026-10-30",
+  "reason": "관광 기업의 인재 채용 지원으로 프로필의 제조·디자인·창작과 거리가 멂",
+  "status": "skipped"
+ },
+ "https://touraz.kr/announcementList/pssrpView?curPage=1&pssrpSeqEnc=fnxGWxBo%2AjBvwRsMaqeLZg%3D%3D": {
+  "date": "2026-10-30",
+  "reason": "관광 분야 사업 아이템과 창업 7년 이하 조건이 필요하고, 굿즈·제조 사업과 직접 연결이 약함",
+  "status": "skipped"
+ },
+ "https://touraz.kr/announcementList/pssrpView?curPage=1&pssrpSeqEnc=kaJNktzxMf9wltHJCu6UJQ%3D%3D": {
+  "date": "2026-10-30",
+  "reason": "온라인 여행사(OTA) 대상이며 기업 신청 자격이라 개인 작가·굿즈 사업과 무관",
+  "status": "skipped"
+ },
+ "https://touraz.kr/announcementList?cntPerPage=12&curPage=1&tabMode=ktoip": {
+  "date": "2026-10-30",
+  "reason": "여러 공고가 섞인 목록 페이지이며 단일 모집 공고가 아님. 관광 분야 공고가 많아 관심 항목은 개별 확인 필요",
+  "status": "skipped"
+ },
+ "https://touraz.kr/announcementList?cntPerPage=12&curPage=1&tabMode=other": {
+  "date": "2026-10-30",
+  "reason": "개별 공모가 아닌 목록 페이지이며, 관광 단체객 유치 인센티브 중심이라 작가·굿즈 사업과 무관",
+  "status": "skipped"
  },
  "https://wevity.com?c=find&cidx=19&gbn=view&gp=1&gub=1&ix=109516&s=1": {
   "date": "2026-10-30",
@@ -349,6 +2434,11 @@
   "reason": "타구·바쿠와 함께하는 신규 캐릭터 기념품 디자인 공모전",
   "status": "kept"
  },
+ "https://wevity.com?c=find&cidx=19&gbn=view&gp=1&gub=1&ix=111942&s=1": {
+  "date": "2026-10-30",
+  "reason": "강남구 청소년·중고생 전용 공모라 대상이 아님",
+  "status": "skipped"
+ },
  "https://wevity.com?c=find&cidx=19&gbn=view&gp=1&gub=1&ix=111977&s=1": {
   "date": "2026-10-30",
   "reason": "서울미래인재재단 대표 캐릭터 공모전 (서울의 미래, 새로운 얼굴)",
@@ -394,9 +2484,29 @@
   "reason": "논산 선샤인스튜디오를 소재로 한 세로형 숏폼 영상 공모로, 관심 없는 '영상·숏폼만' 범주에 해당함",
   "status": "skipped"
  },
+ "https://wevity.com?c=find&cidx=20&gbn=view&gp=1&gub=1&ix=111765&s=1": {
+  "date": "2026-10-30",
+  "reason": "전국 고교·대학 재학생 전용 공모라 대상이 아님",
+  "status": "skipped"
+ },
  "https://wevity.com?c=find&cidx=20&gbn=view&gp=1&gub=1&ix=111768&s=1": {
   "date": "2026-10-30",
   "reason": "대구·경북 대학 재학·졸업생 팀 한정이고 팀 단위 IR 창업 공모라 개인 작가 및 굿즈·가구·조명 창작과 거리가 멂",
+  "status": "skipped"
+ },
+ "https://wevity.com?c=find&cidx=20&gbn=view&gp=1&gub=1&ix=111797&s=1": {
+  "date": "2026-10-30",
+  "reason": "캐릭터 주제지만 결과물이 AI 영상·컷툰 중심이라 관련성 약함",
+  "status": "skipped"
+ },
+ "https://wevity.com?c=find&cidx=20&gbn=view&gp=1&gub=1&ix=111800&s=1": {
+  "date": "2026-10-30",
+  "reason": "K-MOOC 강좌 이수자 한정이고 웹 미니게임 공모라 관심 분야와 무관",
+  "status": "skipped"
+ },
+ "https://wevity.com?c=find&cidx=20&gbn=view&gp=1&gub=1&ix=111802&s=1": {
+  "date": "2026-10-30",
+  "reason": "차량용 앱 개발 공모로 프로필 관심 분야(디자인·굿즈·공예 등)와 무관",
   "status": "skipped"
  },
  "https://wevity.com?c=find&cidx=20&gbn=view&gp=1&gub=1&ix=111837&s=1": {
@@ -413,5 +2523,275 @@
   "date": "2026-10-30",
   "reason": "AI 프롬프트 설계·LLM 안전성 평가 대회로, 굿즈·가구·조명·시각예술·디자인 창업 등 관심 분야와 무관함",
   "status": "skipped"
+ },
+ "https://youth.seoul.go.kr/content.do?key=2310100006": {
+  "date": "2026-10-30",
+  "reason": "본문에 신청·접수 관련 내용 없음",
+  "status": "filtered"
+ },
+ "https://youth.seoul.go.kr/content.do?key=2310100009": {
+  "date": "2026-10-30",
+  "reason": "본문에 신청·접수 관련 내용 없음",
+  "status": "filtered"
+ },
+ "https://youth.seoul.go.kr/content.do?key=2310100012": {
+  "date": "2026-10-30",
+  "reason": "서울형 청년인턴 직무캠프",
+  "status": "kept"
+ },
+ "https://youth.seoul.go.kr/content.do?key=2310100017": {
+  "date": "2026-10-30",
+  "reason": "국민취업지원제도",
+  "status": "kept"
+ },
+ "https://youth.seoul.go.kr/content.do?key=2310100018": {
+  "date": "2026-10-30",
+  "reason": "본문에 신청·접수 관련 내용 없음",
+  "status": "filtered"
+ },
+ "https://youth.seoul.go.kr/content.do?key=2310100019": {
+  "date": "2026-10-30",
+  "reason": "본문에 신청·접수 관련 내용 없음",
+  "status": "filtered"
+ },
+ "https://youth.seoul.go.kr/content.do?key=2310100024": {
+  "date": "2026-10-30",
+  "reason": "관련 낮음",
+  "status": "skipped"
+ },
+ "https://youth.seoul.go.kr/content.do?key=2310100025": {
+  "date": "2026-10-30",
+  "reason": "첫 실행 이전 글",
+  "status": "baseline"
+ },
+ "https://youth.seoul.go.kr/content.do?key=2310100026": {
+  "date": "2026-10-30",
+  "reason": "첫 실행 이전 글",
+  "status": "baseline"
+ },
+ "https://youth.seoul.go.kr/content.do?key=2310100027": {
+  "date": "2026-10-30",
+  "reason": "첫 실행 이전 글",
+  "status": "baseline"
+ },
+ "https://youth.seoul.go.kr/content.do?key=2310100028": {
+  "date": "2026-10-30",
+  "reason": "관련 낮음",
+  "status": "skipped"
+ },
+ "https://youth.seoul.go.kr/content.do?key=2310100029": {
+  "date": "2026-10-30",
+  "reason": "첫 실행 이전 글",
+  "status": "baseline"
+ },
+ "https://youth.seoul.go.kr/content.do?key=2310100033": {
+  "date": "2026-10-30",
+  "reason": "첫 실행 이전 글",
+  "status": "baseline"
+ },
+ "https://youth.seoul.go.kr/content.do?key=2310100034": {
+  "date": "2026-10-30",
+  "reason": "첫 실행 이전 글",
+  "status": "baseline"
+ },
+ "https://youth.seoul.go.kr/content.do?key=2310100041": {
+  "date": "2026-10-30",
+  "reason": "첫 실행 이전 글",
+  "status": "baseline"
+ },
+ "https://youth.seoul.go.kr/content.do?key=2310100042": {
+  "date": "2026-10-30",
+  "reason": "첫 실행 이전 글",
+  "status": "baseline"
+ },
+ "https://youth.seoul.go.kr/content.do?key=2310100043": {
+  "date": "2026-10-30",
+  "reason": "첫 실행 이전 글",
+  "status": "baseline"
+ },
+ "https://youth.seoul.go.kr/content.do?key=2310100046": {
+  "date": "2026-10-30",
+  "reason": "첫 실행 이전 글",
+  "status": "baseline"
+ },
+ "https://youth.seoul.go.kr/content.do?key=2310100047": {
+  "date": "2026-10-30",
+  "reason": "첫 실행 이전 글",
+  "status": "baseline"
+ },
+ "https://youth.seoul.go.kr/content.do?key=2310100049": {
+  "date": "2026-10-30",
+  "reason": "첫 실행 이전 글",
+  "status": "baseline"
+ },
+ "https://youth.seoul.go.kr/content.do?key=2310100063": {
+  "date": "2026-10-30",
+  "reason": "첫 실행 이전 글",
+  "status": "baseline"
+ },
+ "https://youth.seoul.go.kr/content.do?key=2310100064": {
+  "date": "2026-10-30",
+  "reason": "첫 실행 이전 글",
+  "status": "baseline"
+ },
+ "https://youth.seoul.go.kr/content.do?key=2310100067": {
+  "date": "2026-10-30",
+  "reason": "첫 실행 이전 글",
+  "status": "baseline"
+ },
+ "https://youth.seoul.go.kr/content.do?key=2310100069": {
+  "date": "2026-10-30",
+  "reason": "첫 실행 이전 글",
+  "status": "baseline"
+ },
+ "https://youth.seoul.go.kr/content.do?key=2310100070": {
+  "date": "2026-10-30",
+  "reason": "첫 실행 이전 글",
+  "status": "baseline"
+ },
+ "https://youth.seoul.go.kr/content.do?key=2310100082": {
+  "date": "2026-10-30",
+  "reason": "첫 실행 이전 글",
+  "status": "baseline"
+ },
+ "https://youth.seoul.go.kr/content.do?key=2310100084": {
+  "date": "2026-10-30",
+  "reason": "첫 실행 이전 글",
+  "status": "baseline"
+ },
+ "https://youth.seoul.go.kr/content.do?key=2310200001": {
+  "date": "2026-10-30",
+  "reason": "첫 실행 이전 글",
+  "status": "baseline"
+ },
+ "https://youth.seoul.go.kr/content.do?key=2310200003": {
+  "date": "2026-10-30",
+  "reason": "첫 실행 이전 글",
+  "status": "baseline"
+ },
+ "https://youth.seoul.go.kr/content.do?key=2310200021": {
+  "date": "2026-10-30",
+  "reason": "첫 실행 이전 글",
+  "status": "baseline"
+ },
+ "https://youth.seoul.go.kr/content.do?key=2310200025": {
+  "date": "2026-10-30",
+  "reason": "첫 실행 이전 글",
+  "status": "baseline"
+ },
+ "https://youth.seoul.go.kr/content.do?key=2311130002": {
+  "date": "2026-10-30",
+  "reason": "본문에 신청·접수 관련 내용 없음",
+  "status": "filtered"
+ },
+ "https://youth.seoul.go.kr/content.do?key=2502130001": {
+  "date": "2026-10-30",
+  "reason": "첫 실행 이전 글",
+  "status": "baseline"
+ },
+ "https://youth.seoul.go.kr/content.do?key=2505080001": {
+  "date": "2026-10-30",
+  "reason": "첫 실행 이전 글",
+  "status": "baseline"
+ },
+ "https://youth.seoul.go.kr/content.do?key=2508270001": {
+  "date": "2026-10-30",
+  "reason": "첫 실행 이전 글",
+  "status": "baseline"
+ },
+ "https://youth.seoul.go.kr/infoData/grpData/list.do?key=2309230001": {
+  "date": "2026-10-30",
+  "reason": "본문에 신청·접수 관련 내용 없음",
+  "status": "filtered"
+ },
+ "https://youth.seoul.go.kr/infoData/spacInfo/list.do?key=2309200006": {
+  "date": "2026-10-30",
+  "reason": "첫 실행 이전 글",
+  "status": "baseline"
+ },
+ "https://youth.seoul.go.kr/infoData/sprtInfo/list.do?key=2309130006": {
+  "date": "2026-10-30",
+  "reason": "본문에 신청·접수 관련 내용 없음",
+  "status": "filtered"
+ },
+ "https://youth.seoul.go.kr/mypage/mySprtList.do?key=2312180001": {
+  "date": "2026-10-30",
+  "reason": "첫 실행 이전 글",
+  "status": "baseline"
+ },
+ "https://youth.seoul.go.kr/mypage/plcyAply/main.do?key=2306200001": {
+  "date": "2026-10-30",
+  "reason": "첫 실행 이전 글",
+  "status": "baseline"
+ },
+ "https://youth.seoul.go.kr/orgc/orgcList.do?key=2311080003": {
+  "date": "2026-10-30",
+  "reason": "첫 실행 이전 글",
+  "status": "baseline"
+ },
+ "https://youth.seoul.go.kr/youthConts.do?key=2310100011&sc_bbsCtgrySn=2310200004&sc_bbsStngSn=2212200001&sc_faqCtgryCd=011&sc_pbancSeCd=003": {
+  "date": "2026-10-30",
+  "reason": "본문에 신청·접수 관련 내용 없음",
+  "status": "filtered"
+ },
+ "https://youth.seoul.go.kr/youthConts.do?key=2310100044&sc_bbsCtgrySn=2310200013&sc_bbsStngSn=2212200001&sc_faqCtgryCd=003&sc_pbancSeCd=015&sc_qnaCtgryCd=002": {
+  "date": "2026-10-30",
+  "reason": "첫 실행 이전 글",
+  "status": "baseline"
+ },
+ "https://youth.seoul.go.kr/youthConts.do?key=2310100045&sc_bbsCtgrySn=2310200009&sc_bbsStngSn=2212200001&sc_faqCtgryCd=004&sc_pbancSeCd=010": {
+  "date": "2026-10-30",
+  "reason": "첫 실행 이전 글",
+  "status": "baseline"
+ },
+ "https://youth.seoul.go.kr/youthConts.do?key=2310100062&sc_bbsCtgrySn=2310200007&sc_bbsStngSn=2212200001&sc_faqCtgryCd=013&sc_pbancSeCd=008": {
+  "date": "2026-10-30",
+  "reason": "첫 실행 이전 글",
+  "status": "baseline"
+ },
+ "https://youth.seoul.go.kr/youthConts.do?key=2310100065&sc_bbsCtgrySn=0&sc_bbsStngSn=0&sc_faqCtgryCd=016&sc_pbancSeCd=103&sc_qnaCtgryCd=001": {
+  "date": "2026-10-30",
+  "reason": "첫 실행 이전 글",
+  "status": "baseline"
+ },
+ "https://youth.seoul.go.kr/youthConts.do?key=2310100066&sc_bbsCtgrySn=0&sc_bbsStngSn=2310160001&sc_pbancSeCd=300": {
+  "date": "2026-10-30",
+  "reason": "첫 실행 이전 글",
+  "status": "baseline"
+ },
+ "https://youth.seoul.go.kr/youthConts.do?key=2310100074&sc_bbsCtgrySn=2310200003&sc_bbsStngSn=2212200001&sc_faqCtgryCd=006&sc_pbancSeCd=002": {
+  "date": "2026-10-30",
+  "reason": "첫 실행 이전 글",
+  "status": "baseline"
+ },
+ "https://youth.seoul.go.kr/youthConts.do?key=2310100076&sc_bbsCtgrySn=2310200008&sc_bbsStngSn=2212200001&sc_faqCtgryCd=010&sc_hwCtgrySn=0&sc_hwStngSn=2501030001&sc_pbancSeCd=009": {
+  "date": "2026-10-30",
+  "reason": "첫 실행 이전 글",
+  "status": "baseline"
+ },
+ "https://youth.seoul.go.kr/youthConts.do?key=2310200020&sc_bbsCtgrySn=2310200012&sc_bbsStngSn=2212200001&sc_faqCtgryCd=008&sc_pbancSeCd=013": {
+  "date": "2026-10-30",
+  "reason": "첫 실행 이전 글",
+  "status": "baseline"
+ },
+ "https://youth.seoul.go.kr/youthConts.do?key=2310200023&sc_bbsCtgrySn=2310200005&sc_bbsStngSn=2212200001&sc_faqCtgryCd=002&sc_pbancSeCd=005": {
+  "date": "2026-10-30",
+  "reason": "첫 실행 이전 글",
+  "status": "baseline"
+ },
+ "https://youth.seoul.go.kr/youthConts.do?key=2311120001&sc_bbsCtgrySn=2310200014&sc_bbsStngSn=2212200001&sc_faqCtgryCd=001&sc_pbancSeCd=020&sc_qnaCtgryCd=001": {
+  "date": "2026-10-30",
+  "reason": "첫 실행 이전 글",
+  "status": "baseline"
+ },
+ "https://youth.seoul.go.kr/youthConts.do?key=2503190001&sc_bbsCtgrySn=2503180018&sc_bbsStngSn=2212200001&sc_faqCtgryCd=099&sc_pbancSeCd=027": {
+  "date": "2026-10-30",
+  "reason": "첫 실행 이전 글",
+  "status": "baseline"
+ },
+ "https://youth.seoul.go.kr/youthContsInterView.do?bbsStngSn=2407050001&key=2407050002": {
+  "date": "2026-10-30",
+  "reason": "첫 실행 이전 글",
+  "status": "baseline"
  }
 }
