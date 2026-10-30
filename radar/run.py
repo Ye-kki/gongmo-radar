@@ -82,9 +82,13 @@ def main(argv=None, ai_factory=None, fetcher=None, data_dir=None):
     manual_path = (Path(data_dir).parent if data_dir else ROOT) / "config" / "manual.yaml"
     if manual_path.exists() and (not args.only or args.only == "manual"):
         for u in (yaml.safe_load(manual_path.read_text("utf-8")) or {}).get("urls") or []:
+            text = ""
+            if isinstance(u, dict):
+                u, text = u.get("url", ""), (u.get("text") or "")
             if isinstance(u, str) and u.startswith("http") and not store.is_seen(u):
                 candidates.insert(0, {"title": "", "url": u.strip(), "source_id": "manual",
-                                      "source_name": "직접 추가", "cats": [], "region": "전국"})
+                                      "source_name": "직접 추가", "cats": [], "region": "전국",
+                                      "pasted_text": text.strip()})
 
     if args.dry_run:
         for c in candidates:
@@ -118,12 +122,19 @@ def main(argv=None, ai_factory=None, fetcher=None, data_dir=None):
             continue
         try:
             post = read_post(fetcher, c["url"])
+            if c.get("pasted_text") and len(post["text"]) < 400:
+                post["text"] = (post["text"] + "\n\n[직접 붙여넣은 공고 내용]\n" + c["pasted_text"]).strip()
         except (FetchError, Exception) as e:
-            counts["read_failed"] += 1
-            # board posts: try again tomorrow; search finds: forget after one failure
-            if c["source_id"].startswith("search:"):
-                store.mark_seen(c["url"], "failed", str(e), today.isoformat())
-            continue
+            if c.get("pasted_text"):
+                post = {"url": c["url"], "text": c["pasted_text"], "attachments": [], "attachment_text": ""}
+            else:
+                counts["read_failed"] += 1
+                health.setdefault("read_errors", []).append(f"{c['source_name']}: {c['url'][:90]} → {str(e)[:120]}")
+                health["read_errors"] = health["read_errors"][:30]
+                # board posts: try again tomorrow; search finds: forget after one failure
+                if c["source_id"].startswith("search:"):
+                    store.mark_seen(c["url"], "failed", str(e), today.isoformat())
+                continue
         if len(post["text"]) < 80 and not post.get("attachment_text"):
             counts["read_failed"] += 1
             store.mark_seen(c["url"], "skipped", "본문이 비어 있음", today.isoformat())

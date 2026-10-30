@@ -336,7 +336,7 @@ function renderHealth(){const h=S.health,el=$("healthbody");if(!h){el.textConten
     <div class="hwrap"><table><thead><tr><th>소스</th><th>상태</th><th>링크</th><th>새 글</th><th>메모</th></tr></thead><tbody>
     ${(h.sources||[]).map(s=>`<tr><td><a href="${esc(safeUrl(s.url))}" target="_blank" rel="noopener">${esc(s.name)}</a></td><td class="${s.status==="ok"?"okc":"bad"}">${label[s.status]||esc(s.status)}</td><td>${s.links}</td><td>${s.new}</td><td>${esc(s.detail||"")}</td></tr>`).join("")}
     ${(h.discovery||[]).map(d=>`<tr><td>웹 검색 · ${esc(d.id)}</td><td class="okc">정상</td><td>${d.found}</td><td>${d.new}</td><td></td></tr>`).join("")}
-    </tbody></table></div>`}
+    </tbody></table></div>${(h.read_errors||[]).length?`<p>열지 못한 글: ${h.read_errors.map(esc).join("<br>")}</p>`:""}`}
 
 loadMarks();render();
 Promise.all([fetch("data/calls.json",{cache:"no-store"}).then(r=>r.ok?r.json():null).catch(()=>null),

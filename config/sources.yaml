@@ -81,6 +81,7 @@ sources:
 
   - id: arthub-contest
     name: 아트허브 공모
+    enabled: false   # robots.txt가 검색엔진 외 수집을 금지. 직접 추가(manual.yaml)로만 사용
     url: https://arthub.co.kr/sub04/board01_list.htm
     cats: [art, residency]
     region: 전국

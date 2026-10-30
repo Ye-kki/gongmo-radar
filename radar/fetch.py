@@ -2,7 +2,6 @@
 from __future__ import annotations
 
 import time
-import urllib.robotparser
 from dataclasses import dataclass
 from urllib.parse import urlsplit
 
@@ -44,18 +43,19 @@ class Fetcher:
         p = urlsplit(url)
         root = f"{p.scheme}://{p.netloc}"
         if root not in self._robots:
-            rp = urllib.robotparser.RobotFileParser()
+            rules = None
             try:
                 r = self.s.get(root + "/robots.txt", timeout=10)
                 if r.status_code == 200 and "text/html" not in r.headers.get("content-type", ""):
-                    rp.parse(r.text.splitlines())
-                else:
-                    rp = None  # no robots file: allowed
+                    rules = parse_robots(r.text)
             except requests.RequestException:
-                rp = None
-            self._robots[root] = rp
-        rp = self._robots[root]
-        return True if rp is None else rp.can_fetch(UA, url)
+                pass
+            self._robots[root] = rules
+        rules = self._robots[root]
+        path = p.path or "/"
+        if p.query:
+            path += "?" + p.query
+        return True if rules is None else robots_allows(rules, path)
 
     def _wait(self, host: str):
         last = self._last.get(host)
@@ -113,3 +113,47 @@ def decode(content: bytes, declared: str | None, ctype: str) -> str:
         except (LookupError, UnicodeDecodeError):
             continue
     return content.decode("utf-8", "replace")
+
+
+def parse_robots(text: str) -> list[tuple[str, str]]:
+    """Return the (allow|disallow, path) rules that apply to a generic crawler (User-agent: *)."""
+    groups, agents, rules, in_rules = [], [], [], False
+    for raw in text.splitlines():
+        line = raw.split("#", 1)[0].strip()
+        if ":" not in line:
+            continue
+        key, val = (x.strip() for x in line.split(":", 1))
+        key = key.lower()
+        if key == "user-agent":
+            if in_rules:
+                groups.append((agents, rules))
+                agents, rules, in_rules = [], [], False
+            agents.append(val.lower())
+        elif key in ("allow", "disallow"):
+            in_rules = True
+            if val or key == "allow":
+                rules.append((key, val))
+    groups.append((agents, rules))
+    picked = [r for a, r in groups if "*" in a]
+    return [x for r in picked for x in r]
+
+
+def _rule_match(pattern: str, path: str) -> bool:
+    import re as _re
+    if not pattern:
+        return False
+    rx = _re.escape(pattern).replace(r"\*", ".*")
+    if rx.endswith(r"\$"):
+        rx = rx[:-2] + "$"
+    return _re.match(rx, path) is not None
+
+
+def robots_allows(rules: list[tuple[str, str]], path: str) -> bool:
+    """Longest matching rule wins; Allow wins a tie (RFC 9309)."""
+    best_len, allowed = -1, True
+    for kind, pat in rules:
+        if _rule_match(pat, path):
+            n = len(pat)
+            if n > best_len or (n == best_len and kind == "allow"):
+                best_len, allowed = n, kind == "allow"
+    return allowed

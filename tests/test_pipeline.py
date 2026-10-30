@@ -164,3 +164,11 @@ def test_manual_links_are_read_first(tmp_path, monkeypatch):
     runmod.main(["--no-discover"], ai_factory=lambda p, t: fake, fetcher=FakeFetcher(), data_dir=tmp_path / "data")
     data = json.loads((tmp_path / "data" / "calls.json").read_text("utf-8"))
     assert data["calls"][0]["sources"] == ["직접 추가"]
+
+
+def test_robots_longest_match():
+    from radar.fetch import parse_robots, robots_allows
+    rules = parse_robots("User-agent: *\nDisallow: /\nAllow: /community/\n")
+    assert robots_allows(rules, "/community/ko/notice/1") and not robots_allows(rules, "/member")
+    only_named = parse_robots("User-Agent : *\nDisallow : /\n\nUser-Agent : Yeti\nAllow : /\n")
+    assert not robots_allows(only_named, "/sub04/board01_view.htm")
