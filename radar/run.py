@@ -78,6 +78,14 @@ def main(argv=None, ai_factory=None, fetcher=None, data_dir=None):
         health["sources"].append(h)
         print(f"[{h['status']:>6}] {src['id']}: links={h['links']} new={h['new']}", file=sys.stderr)
 
+    # 1b) links added by hand in config/manual.yaml
+    manual_path = (Path(data_dir).parent if data_dir else ROOT) / "config" / "manual.yaml"
+    if manual_path.exists() and (not args.only or args.only == "manual"):
+        for u in (yaml.safe_load(manual_path.read_text("utf-8")) or {}).get("urls") or []:
+            if isinstance(u, str) and u.startswith("http") and not store.is_seen(u):
+                candidates.insert(0, {"title": "", "url": u.strip(), "source_id": "manual",
+                                      "source_name": "직접 추가", "cats": [], "region": "전국"})
+
     if args.dry_run:
         for c in candidates:
             print(f"{c['source_id']}\t{c['title']}\t{c['url']}")

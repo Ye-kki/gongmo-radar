@@ -152,3 +152,15 @@ def test_parse_date_accepts_datetime_prefix():
     assert parse_date("2026-11-20T18:00:00+09:00") == date(2026, 11, 20)
     assert parse_date("2026-11-20") == date(2026, 11, 20)
     assert parse_date("2026-02-30") is None and parse_date("11월 20일") is None
+
+
+def test_manual_links_are_read_first(tmp_path, monkeypatch):
+    (tmp_path / "config").mkdir()
+    (tmp_path / "config" / "manual.yaml").write_text(
+        "urls:\n  - https://www.site.go.kr/board/view.do?pblancId=PB001&page=2\n", "utf-8")
+    monkeypatch.setattr(runmod, "load", lambda n: {"title_keywords": [], "sources": []} if n == "sources.yaml"
+                        else runmod.yaml.safe_load((runmod.ROOT / "config" / n).read_text("utf-8")))
+    fake = FakeAI()
+    runmod.main(["--no-discover"], ai_factory=lambda p, t: fake, fetcher=FakeFetcher(), data_dir=tmp_path / "data")
+    data = json.loads((tmp_path / "data" / "calls.json").read_text("utf-8"))
+    assert data["calls"][0]["sources"] == ["직접 추가"]

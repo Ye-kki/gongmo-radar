@@ -1,0 +1,8 @@
+# 직접 추가할 공고 링크
+# 어디선가 본 공고 링크를 아래에 한 줄씩 넣어두면, 다음 자동 실행 때 읽어서 공고판에 넣습니다.
+# 한 번 읽은 링크는 다시 읽지 않으니 지우지 않아도 됩니다.
+
+urls:
+  - https://www.bcf.or.kr/base/board/read?boardManagementNo=25&boardNo=153237&searchCategory=&page=1&searchType=&searchWord=&menuLevel=2&menuNo=86
+  - https://arthub.co.kr/sub04/board01_view.htm?No=27355&sType1=1&sType2=2&sType3=3
+  - https://www.gdfac.or.kr/community/ko/notice/102403

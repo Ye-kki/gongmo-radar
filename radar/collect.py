@@ -42,7 +42,9 @@ def extract_links(html: str, base_url: str, source: dict) -> list[dict]:
         if oc_re:
             m = oc_re.search((a.get("onclick") or "") + " " + href)
             if m:
-                url = onclick["template"].format(id=m.group(1))
+                from urllib.parse import quote
+                g = [quote(x, safe="") for x in m.groups()]
+                url = onclick["template"].format(id=g[0], id2=g[1] if len(g) > 1 else "", id3=g[2] if len(g) > 2 else "")
         if url is None:
             if not href or href.startswith(("#", "mailto:", "tel:")) or href.lower().startswith("javascript"):
                 continue
