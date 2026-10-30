@@ -37,8 +37,10 @@ def main(argv=None, ai_factory=None, fetcher=None, data_dir=None):
     ap.add_argument("--discover", action="store_true")
     ap.add_argument("--no-discover", action="store_true")
     ap.add_argument("--max-new", type=int, default=80, help="하루에 AI로 읽을 최대 게시글 수 (비용 상한)")
+    ap.add_argument("--budget-min", type=float, default=35, help="이 시간(분)이 지나면 읽기를 멈추고 저장")
     args = ap.parse_args(argv)
 
+    started = time.monotonic()
     now = datetime.now(KST)
     today = now.date()
     sources_cfg, profile, disc = load("sources.yaml"), load("profile.yaml"), load("discovery.yaml")
@@ -103,7 +105,7 @@ def main(argv=None, ai_factory=None, fetcher=None, data_dir=None):
               "read_failed": 0, "over_limit": 0}
     fails = 0
     for c in candidates:
-        if counts["read"] >= args.max_new:
+        if counts["read"] >= args.max_new or time.monotonic() - started > args.budget_min * 60:
             counts["over_limit"] += 1
             continue
         try:
@@ -142,6 +144,8 @@ def main(argv=None, ai_factory=None, fetcher=None, data_dir=None):
         result = store.upsert(out, today.isoformat())
         counts[result] += 1
         store.mark_seen(c["url"], "kept", out["title"], today.isoformat())
+        if counts["read"] % 10 == 0:
+            print(f"  read {counts['read']}: new={counts['new']} skipped={counts['skipped']}", file=sys.stderr, flush=True)
         time.sleep(0.2)
 
     store.prune(today)
