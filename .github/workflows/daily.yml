@@ -1,0 +1,95 @@
+name: daily-radar
+
+on:
+  schedule:
+    - cron: "50 21 * * *"   # 매일 06:50 KST (GitHub 사정으로 수십 분 늦어질 수 있음)
+  workflow_dispatch:
+    inputs:
+      args:
+        description: "추가 옵션 (예: --discover, --only bizinfo, --dry-run)"
+        required: false
+        default: ""
+  push:
+    branches: [main]
+    paths: ["site/**"]
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: radar
+  cancel-in-progress: false
+
+jobs:
+  collect:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - run: pip install -r requirements.txt
+
+      - name: Offline tests
+        run: python -m pytest -q
+
+      - name: Collect
+        if: github.event_name != 'push'
+        env:
+          # 둘 중 하나만 있으면 됩니다. 구독 토큰이면 Claude 구독 사용량을, API 키면 종량제 요금을 씁니다.
+          CLAUDE_CODE_OAUTH_TOKEN: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          RUN_ARGS: ${{ github.event.inputs.args }}
+        run: |
+          if [ -n "$ANTHROPIC_API_KEY" ]; then
+            echo "AI: Claude API (종량제)"
+          elif [ -n "$CLAUDE_CODE_OAUTH_TOKEN" ]; then
+            echo "AI: Claude 구독 (Claude Code CLI)"
+            npm install -g @anthropic-ai/claude-code >/dev/null
+            claude --version
+          else
+            echo "::error::CLAUDE_CODE_OAUTH_TOKEN 또는 ANTHROPIC_API_KEY secret이 필요합니다. README의 설정 방법을 보세요."
+            exit 1
+          fi
+          python -m radar.run $RUN_ARGS
+
+      - name: Save data
+        if: github.event_name != 'push'
+        run: |
+          git config user.name "gongmo-radar-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add data
+          git diff --cached --quiet || git commit -m "data: $(TZ=Asia/Seoul date '+%Y-%m-%d %H:%M')"
+          git push
+
+      - name: Build site
+        run: |
+          mkdir -p _site
+          cp -r site/* _site/
+          cp -r data _site/data
+          rm -f _site/data/seen.json
+
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+  deploy:
+    needs: collect
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

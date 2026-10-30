@@ -1,0 +1,28 @@
+# 게시판에 없는 공고를 웹 검색으로 찾는 설정
+# 검색 1회당 약 $0.01 (1,000회 $10). 아래 기본값이면 한 달 약 $2~3.
+
+# 검색을 돌릴 요일 (월=0 ... 일=6). 매일이면 [0,1,2,3,4,5,6]
+weekdays: [0, 3]       # 월, 목
+
+# 질문 하나당 최대 검색 횟수
+max_searches_per_query: 3
+
+queries:
+  - id: goods-kr
+    cats: [goods]
+    ask: 지금 접수 중인 한국의 굿즈·캐릭터 굿즈·관광기념품·박물관 굿즈·마스코트 디자인 공모전 (시·군·구, 공공기관 포함)
+  - id: art-kr
+    cats: [art]
+    ask: 지금 접수 중인 한국의 시각예술 창작 지원, 전시 지원, 작가 공모, 청년·신진 예술인 지원사업 (광역·기초 문화재단, 시립미술관 포함)
+  - id: design-kr
+    cats: [design]
+    ask: 지금 접수 중인 한국의 가구·조명·공예·제품디자인·3D프린팅 디자인 공모와 디자인 어워드
+  - id: residency
+    cats: [residency]
+    ask: 지금 모집 중인 국내외 시각예술·디자인 레지던시와 창작스튜디오 입주작가 모집
+  - id: startup-kr
+    cats: [startup]
+    ask: 지금 접수 중인 한국의 디자인·제조·문화콘텐츠 분야 청년 창업 및 사업화 지원사업
+  - id: overseas
+    cats: [overseas]
+    ask: international furniture, lighting, object and product design competitions, awards and emerging-designer exhibition open calls currently accepting entries

@@ -1,0 +1,115 @@
+"""HTTP fetching with polite defaults: robots.txt, per-host delay, retries, Korean encodings."""
+from __future__ import annotations
+
+import time
+import urllib.robotparser
+from dataclasses import dataclass
+from urllib.parse import urlsplit
+
+import requests
+
+UA = "GongmoRadar/1.0 (personal open-call tracker; once a day)"
+BROWSER_UA = ("Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
+              "(KHTML, like Gecko) Chrome/124.0 Safari/537.36")
+
+
+class FetchError(Exception):
+    pass
+
+
+class RobotsBlocked(FetchError):
+    pass
+
+
+@dataclass
+class Page:
+    url: str
+    text: str
+    content_type: str
+    content: bytes
+
+
+class Fetcher:
+    def __init__(self, delay: float = 2.0, timeout: float = 20.0, retries: int = 2):
+        self.delay = delay
+        self.timeout = timeout
+        self.retries = retries
+        self.s = requests.Session()
+        self.s.headers.update({"User-Agent": BROWSER_UA, "Accept-Language": "ko-KR,ko;q=0.9,en;q=0.7",
+                               "From": UA})
+        self._last: dict[str, float] = {}
+        self._robots: dict[str, urllib.robotparser.RobotFileParser | None] = {}
+
+    def _allowed(self, url: str) -> bool:
+        p = urlsplit(url)
+        root = f"{p.scheme}://{p.netloc}"
+        if root not in self._robots:
+            rp = urllib.robotparser.RobotFileParser()
+            try:
+                r = self.s.get(root + "/robots.txt", timeout=10)
+                if r.status_code == 200 and "text/html" not in r.headers.get("content-type", ""):
+                    rp.parse(r.text.splitlines())
+                else:
+                    rp = None  # no robots file: allowed
+            except requests.RequestException:
+                rp = None
+            self._robots[root] = rp
+        rp = self._robots[root]
+        return True if rp is None else rp.can_fetch(UA, url)
+
+    def _wait(self, host: str):
+        last = self._last.get(host)
+        if last is not None:
+            gap = time.monotonic() - last
+            if gap < self.delay:
+                time.sleep(self.delay - gap)
+        self._last[host] = time.monotonic()
+
+    def get(self, url: str, max_bytes: int = 8_000_000) -> Page:
+        if not self._allowed(url):
+            raise RobotsBlocked(f"robots.txt가 수집을 막음: {url}")
+        host = urlsplit(url).netloc
+        err: Exception | None = None
+        for attempt in range(self.retries + 1):
+            self._wait(host)
+            try:
+                r = self.s.get(url, timeout=self.timeout, stream=True)
+                content = r.raw.read(max_bytes + 1, decode_content=True)
+                if len(content) > max_bytes:
+                    raise FetchError(f"파일이 너무 큼: {url}")
+                if r.status_code >= 500 or r.status_code == 429:
+                    raise FetchError(f"HTTP {r.status_code}")
+                if r.status_code >= 400:
+                    raise FetchError(f"HTTP {r.status_code}: {url}")
+                ctype = r.headers.get("content-type", "")
+                return Page(url=r.url, text=decode(content, r.encoding, ctype), content_type=ctype, content=content)
+            except (requests.RequestException, FetchError) as e:
+                err = e
+                if isinstance(e, FetchError) and "HTTP 4" in str(e):
+                    break
+                time.sleep(2 * (attempt + 1))
+        raise FetchError(str(err))
+
+
+def decode(content: bytes, declared: str | None, ctype: str) -> str:
+    """Decode bytes, handling the euc-kr/cp949 pages common on Korean public sites."""
+    if "html" not in ctype and "text" not in ctype and ctype:
+        return ""
+    head = content[:3000].decode("ascii", "ignore").lower()
+    candidates = []
+    for marker in ("charset=", 'charset="', "charset='"):
+        i = head.find(marker)
+        if i != -1:
+            cs = head[i + len(marker):].split('"')[0].split("'")[0].split(";")[0].split(">")[0].strip()
+            if cs:
+                candidates.append(cs)
+    if declared and declared.lower() != "iso-8859-1":
+        candidates.append(declared)
+    candidates += ["utf-8", "cp949"]
+    for cs in candidates:
+        cs = {"euc-kr": "cp949", "ks_c_5601-1987": "cp949"}.get(cs, cs)
+        try:
+            return content.decode(cs)
+        except (LookupError, UnicodeDecodeError):
+            continue
+    return content.decode("utf-8", "replace")

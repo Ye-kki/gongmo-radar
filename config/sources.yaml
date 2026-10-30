@@ -1,0 +1,167 @@
+# 매일 확인할 게시판 목록
+#
+# 항목 설명
+#   id        짧은 영문 이름 (중복 불가)
+#   name      표시 이름
+#   url       공고 '목록' 페이지 주소
+#   cats      이 소스의 기본 분야 (goods, art, design, startup, overseas, residency, local)
+#   region    기본 지역 (전국, 서울, 부산 ..., 해외)
+#   filter    true면 제목에 아래 title_keywords 중 하나가 있어야 후보로 봄
+#             (공지사항처럼 잡다한 글이 섞인 게시판에 사용)
+#   link_regex   (선택) 상세 링크 주소가 맞아야 하는 정규식. 메뉴 링크를 거를 때 사용
+#   onclick      (선택) 상세 링크가 javascript 함수로 되어 있을 때
+#                  regex: onclick/href 안에서 글 번호를 뽑는 정규식 (그룹 1개)
+#                  template: 글 번호를 넣어 만들 상세 주소, {id} 자리에 들어감
+#   enabled   false면 건너뜀
+#
+# 처음 넣은 주소 중 일부는 사이트 구조를 직접 확인하지 못했습니다.
+# 매일 실행 후 페이지 아래 '수집 상태'에 실패나 0건으로 뜨는 소스는 주소나 link_regex를 고치면 됩니다.
+
+title_keywords: [공모, 모집, 지원, 굿즈, 기념품, 캐릭터, 마스코트, 디자인, 공예, 가구, 조명,
+  작가, 전시, 입주, 레지던시, 창작, 예술, 창업, 사업화, 청년, 시제품, 상품화, 3D, 피규어,
+  아트, 페어, 어워드, 콘테스트, competition, award, open call, residency]
+
+sources:
+  # ── 공모전 모음 ───────────────────────────────
+  - id: contestkorea-design
+    name: 콘테스트코리아 미술·디자인
+    url: https://www.contestkorea.com/sub/list.php?int_gbn=1&Txt_bcode=030610001
+    cats: [goods, design]
+    region: 전국
+    filter: false
+    link_regex: 'view\.php\?.*str_no='
+
+  - id: wevity-design
+    name: 위비티 디자인·캐릭터
+    url: https://www.wevity.com/?c=find&s=1&gub=1&cidx=19
+    cats: [goods, design]
+    region: 전국
+    filter: false
+    link_regex: 'gbn=view.*ix=\d+'
+
+  - id: wevity-art
+    name: 위비티 예체능·미술
+    url: https://www.wevity.com/?c=find&s=1&gub=1&cidx=20
+    cats: [art]
+    region: 전국
+    filter: true
+    link_regex: 'gbn=view.*ix=\d+'
+
+  - id: artculture-contest
+    name: 아트앤컬처 공모란
+    url: https://www.art-culture.co.kr/magazine_contest
+    cats: [art, residency]
+    region: 전국
+    filter: false
+    link_regex: 'magazine_contest/\d+'
+
+  - id: archivist-residency
+    name: 아키비스트 레지던시
+    url: https://archivist.kr/?d=biz&f=Residency&l=dbs
+    cats: [residency]
+    region: 전국
+    filter: false
+
+  - id: archivist-contest
+    name: 아키비스트 공모
+    url: https://archivist.kr/?d=biz&f=Contest&l=dbs
+    cats: [art]
+    region: 전국
+    filter: true
+
+  # ── 예술·전시 지원 ───────────────────────────
+  - id: arko-notice
+    name: 한국문화예술위원회 공지
+    url: https://www.arko.or.kr/board/list/4013
+    cats: [art]
+    region: 전국
+    filter: true
+    link_regex: 'board/view/'
+
+  - id: gokams-event
+    name: 예술경영지원센터 공모
+    url: https://www.gokams.or.kr/01_news/event.aspx
+    cats: [art]
+    region: 전국
+    filter: true
+    link_regex: 'event_view\.aspx\?Idx=\d+'
+
+  - id: mcst-culture-support
+    name: 문화체육관광부 문화예술 지원사업
+    url: https://www.mcst.go.kr/site/s_culture/cultureSp/cultureSpList.jsp
+    cats: [art]
+    region: 전국
+    filter: true
+
+  - id: sema-notice
+    name: 서울시립미술관 공지
+    url: https://sema.seoul.go.kr/kr/notice/notice/list
+    cats: [art, residency]
+    region: 서울
+    filter: true
+
+  # ── 디자인·공예 ──────────────────────────────
+  - id: kidp-notice
+    name: 한국디자인진흥원 공지
+    url: https://kidp.or.kr/?menuno=1202
+    cats: [design, startup]
+    region: 전국
+    filter: true
+    link_regex: 'act=view'
+
+  - id: seouldesign-notice
+    name: 서울디자인재단 공지
+    url: https://www.seouldesign.or.kr/board/notice
+    cats: [design, goods]
+    region: 서울
+    filter: true
+
+  - id: kcdf-notice
+    name: 공예디자인문화진흥원 공지
+    url: https://www.kcdf.kr/web/board/notice
+    cats: [design]
+    region: 전국
+    filter: true
+
+  # ── 창업 지원 ────────────────────────────────
+  - id: kstartup-ongoing
+    name: K-Startup 사업공고
+    url: https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do
+    cats: [startup]
+    region: 전국
+    filter: true
+    onclick:
+      regex: "go_view\\((\\d+)\\)"
+      template: "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn={id}"
+
+  - id: bizinfo
+    name: 기업마당 지원사업
+    url: https://www.bizinfo.go.kr/web/lay1/bbs/S1T122C128/AS/74/list.do
+    cats: [startup]
+    region: 전국
+    filter: true
+    link_regex: 'view\.do\?pblancId='
+
+  - id: sba-notice
+    name: 서울경제진흥원 사업공고
+    url: https://www.sba.seoul.kr/Pages/ContentsMenu/Company_Support.aspx?C=6FA70790-6677-EC11-80E8-9418827691E2
+    cats: [startup]
+    region: 서울
+    filter: true
+
+  # ── 관광기념품 ───────────────────────────────
+  - id: touraz-announce
+    name: 투어라즈 공고·공모
+    url: https://touraz.kr/announcementList/pssrpList
+    cats: [goods]
+    region: 전국
+    filter: true
+
+  # ── 해외 ─────────────────────────────────────
+  - id: designboom-competitions
+    name: designboom competitions
+    url: https://www.designboom.com/competitions/design/
+    cats: [overseas, design]
+    region: 해외
+    filter: false
+    link_regex: 'designboom\.com/competition/'

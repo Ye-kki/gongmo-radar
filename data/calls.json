@@ -1,0 +1,303 @@
+{
+ "calls": [
+  {
+   "ageLimit": null,
+   "announceDate": "2026-12-10",
+   "cats": [
+    "overseas",
+    "design"
+   ],
+   "checkReasons": [],
+   "deadline": "2026-10-31",
+   "eligibility": "학생·전문가·양산 부문, 국제 누구나",
+   "fit": [
+    "yekki"
+   ],
+   "foundAt": "2026-10-30",
+   "id": "lamp-2026",
+   "individualOk": true,
+   "needsCheck": false,
+   "org": "L A M P the Competition",
+   "region": "해외",
+   "sources": [
+    "초기 조사"
+   ],
+   "summary": "조명 디자인 국제 공모. 10/31 접수분까지 심사하며 선정작은 2027년 2월 멕시코시티 Alcova 전시에 초대됩니다(배송비·참가비 자부담).",
+   "support": [
+    "prize",
+    "exhibit"
+   ],
+   "title": "L A M P 국제 조명디자인 공모전 2026 (최종 연장 마감)",
+   "url": "https://lampthecompetition.com/home-2026"
+  },
+  {
+   "ageLimit": null,
+   "cats": [
+    "design",
+    "goods"
+   ],
+   "checkReasons": [],
+   "deadline": "2026-11-01",
+   "eligibility": "일반부 누구나 / 학생부 경기도 대학 재학생",
+   "fit": [
+    "pixel"
+   ],
+   "foundAt": "2026-10-30",
+   "id": "dcc-3dprint-2026",
+   "individualOk": true,
+   "needsCheck": false,
+   "org": "단국대-스트라타시스 첨단제조융합연구센터",
+   "region": "전국",
+   "sources": [
+    "초기 조사"
+   ],
+   "startDate": "2026-10-01",
+   "summary": "3D프린팅 제품디자인 공모. 일반부 대상 500만원.",
+   "support": [
+    "prize"
+   ],
+   "title": "2026 디자인 크리에이션 챌린지(DCC) 3D프린팅 제품디자인 공모전",
+   "url": "https://www.wevity.com/index_university.php?c=find&s=_university&gub=1&cidx=19&gbn=view&gp=1&ix=109516"
+  },
+  {
+   "ageLimit": null,
+   "cats": [
+    "art"
+   ],
+   "checkReasons": [],
+   "deadline": "2026-11-05",
+   "deadlineNote": "15시",
+   "eligibility": "분야별 공고 확인 (국가문화예술지원시스템 신청)",
+   "fit": [
+    "yekki"
+   ],
+   "foundAt": "2026-10-30",
+   "id": "arko-2027-fund",
+   "individualOk": true,
+   "needsCheck": false,
+   "org": "한국문화예술위원회",
+   "region": "전국",
+   "sources": [
+    "초기 조사"
+   ],
+   "startDate": "2026-10-08",
+   "summary": "현장진입·시각예술·다원예술·국제교류 등 6개 분야 공모. 세부 사업과 지원 규모는 분야별 공고문 확인.",
+   "support": [
+    "fund"
+   ],
+   "title": "2027년 문예진흥기금 정기공모 (시각예술 분야 포함)",
+   "url": "https://www.fnnews.com/news/202610081013073925"
+  },
+  {
+   "ageLimit": null,
+   "announceDate": "2026-11-18",
+   "cats": [
+    "goods"
+   ],
+   "checkReasons": [],
+   "deadline": "2026-11-11",
+   "eligibility": "누구나, 개인 또는 3인 이하 팀",
+   "fit": [
+    "pixel"
+   ],
+   "foundAt": "2026-10-30",
+   "id": "degaulle2-goods",
+   "individualOk": true,
+   "needsCheck": false,
+   "org": "(주)모비데이즈",
+   "region": "전국",
+   "sources": [
+    "초기 조사"
+   ],
+   "startDate": "2026-10-22",
+   "summary": "영화 포스터·굿즈 디자인 공모. 상금 규모는 작음(대상 15만원), 공식 활용 협의.",
+   "support": [
+    "prize"
+   ],
+   "title": "드골2: 자유의 시대 포스터·굿즈 공모전",
+   "url": "https://www.wevity.com/index_university.php?c=find&s=_university&gub=1&cidx=19&gbn=view&gp=1&ix=111868"
+  },
+  {
+   "ageLimit": null,
+   "cats": [
+    "residency",
+    "local"
+   ],
+   "checkReasons": [],
+   "deadline": "2026-11-13",
+   "eligibility": "입주 경험 없는 국내외 시각예술 작가 (입체·설치 포함)",
+   "fit": [
+    "yekki"
+   ],
+   "foundAt": "2026-10-30",
+   "id": "yeongcheon-residency-19",
+   "individualOk": true,
+   "needsCheck": false,
+   "org": "영천시",
+   "region": "경북",
+   "sources": [
+    "초기 조사"
+   ],
+   "startDate": "2026-11-09",
+   "summary": "2027년 1~12월 개인 작업실 무상 제공, 대구아트페어 부스 참가 특전. 신청서는 영천시청 고시/공고에서.",
+   "support": [
+    "space",
+    "exhibit"
+   ],
+   "title": "2027 영천예술창작스튜디오 제19기 입주작가 모집",
+   "url": "https://www.straightnews.co.kr/news/articleView.html?idxno=313714"
+  },
+  {
+   "ageLimit": "20~40세",
+   "cats": [
+    "art",
+    "local"
+   ],
+   "checkReasons": [],
+   "deadline": "2026-11-22",
+   "eligibility": "부산 연고(출생·거주·출향) 20~40세 시각예술 작가",
+   "fit": [
+    "yekki"
+   ],
+   "foundAt": "2026-10-30",
+   "id": "busan-young-vision-2027",
+   "individualOk": true,
+   "needsCheck": false,
+   "org": "부산시립미술관",
+   "region": "부산",
+   "sources": [
+    "초기 조사"
+   ],
+   "summary": "최대 8명(팀) 선정, 2027년 4월 전시와 국외 활동 지원.",
+   "support": [
+    "exhibit",
+    "fund"
+   ],
+   "title": "부산시립미술관 ‘젊은 시각 새로운 시선 2027’ 작가 공모",
+   "url": "https://www.news1.kr/life-culture/performance-exhibition/6331303"
+  },
+  {
+   "ageLimit": null,
+   "announceDate": "2026-12-15",
+   "cats": [
+    "goods",
+    "local"
+   ],
+   "checkReasons": [],
+   "deadline": "2026-11-30",
+   "eligibility": "누구나, 4인 이하 팀, 1인 1작품",
+   "fit": [
+    "pixel"
+   ],
+   "foundAt": "2026-10-30",
+   "id": "sfmt-character",
+   "individualOk": true,
+   "needsCheck": false,
+   "org": "서울미래인재재단",
+   "region": "서울",
+   "sources": [
+    "초기 조사"
+   ],
+   "startDate": "2026-11-16",
+   "summary": "기관 대표 캐릭터 공모. 총 440만원(상품권), 선정작은 2단계 개발에 활용. 발표는 12월 중.",
+   "support": [
+    "prize"
+   ],
+   "title": "서울미래인재재단 대표 캐릭터 공모전",
+   "url": "https://www.wevity.com/index_university.php?c=find&s=_university&gub=1&cidx=19&gbn=view&gp=1&ix=111977"
+  },
+  {
+   "ageLimit": null,
+   "announceDate": "2027-04-01",
+   "cats": [
+    "overseas",
+    "design"
+   ],
+   "checkReasons": [],
+   "deadline": "2026-12-11",
+   "deadlineNote": "(늦은 접수 1/15)",
+   "eligibility": "출시 제품 대상, 출품료 €725/점 (늦은 접수 €935)",
+   "fit": [
+    "yekki",
+    "pixel"
+   ],
+   "foundAt": "2026-10-30",
+   "id": "reddot-pd-2027",
+   "individualOk": true,
+   "needsCheck": false,
+   "org": "Red Dot",
+   "region": "해외",
+   "sources": [
+    "초기 조사"
+   ],
+   "startDate": "2026-10-10",
+   "summary": "가구·조명·소품 부문 포함 제품디자인 어워드. 2027년 3월 심사, 4월 초 결과 통보.",
+   "support": [
+    "exhibit"
+   ],
+   "title": "Red Dot Award: Product Design 2027 (일반 접수)",
+   "url": "https://www.red-dot.org/pd/dates-fees"
+  },
+  {
+   "ageLimit": null,
+   "announceDate": "2027-02-15",
+   "cats": [
+    "design"
+   ],
+   "checkReasons": [],
+   "deadline": "2026-12-28",
+   "deadlineNote": "18시",
+   "eligibility": "계획부문 일반부(신인 디자이너 포함) / 학생부",
+   "fit": [
+    "yekki"
+   ],
+   "foundAt": "2026-10-30",
+   "id": "hanok-design-14",
+   "individualOk": true,
+   "needsCheck": false,
+   "org": "(사)한옥건축학회",
+   "region": "전국",
+   "sources": [
+    "초기 조사"
+   ],
+   "startDate": "2026-10-01",
+   "summary": "주제 ‘목구조의 확장’: 목재+금속·유리·복합재와 CNC·파라메트릭 제작 결합 제안. 건축 중심이라 가구 부문은 없음.",
+   "support": [
+    "prize"
+   ],
+   "title": "제14회 한옥디자인 국제 공모전",
+   "url": "https://www.wevity.com/index_university.php?c=find&s=_university&gub=1&cidx=19&gbn=view&gp=1&ix=109966"
+  },
+  {
+   "ageLimit": "사업별 상이",
+   "cats": [
+    "art",
+    "residency",
+    "local"
+   ],
+   "checkReasons": [],
+   "eligibility": "사업별 상이 (청년예술지원은 데뷔 경험 없는 청년)",
+   "fit": [
+    "yekki"
+   ],
+   "foundAt": "2026-10-30",
+   "id": "sfac-2027-support",
+   "individualOk": true,
+   "needsCheck": false,
+   "org": "서울문화재단",
+   "region": "서울",
+   "sources": [
+    "초기 조사"
+   ],
+   "startDate": "2026-09-30",
+   "summary": "시각예술 창작지원 최대 3,500만원, 청년예술지원 최대 1,000만원, 금천예술공장 입주 등. 사업별 마감일은 서울문화예술지원시스템(SCAS)에서 확인.",
+   "support": [
+    "fund",
+    "space"
+   ],
+   "title": "서울문화재단 2027 예술지원 통합공모 (예술창작·청년예술·창작공간 입주)",
+   "url": "https://www.sfac.or.kr/site/SFAC_KOR/12/11202220000002022092210.jsp"
+  }
+ ],
+ "updatedAt": "2026-10-30 19:10"
+}
