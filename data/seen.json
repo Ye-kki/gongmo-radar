@@ -2239,6 +2239,66 @@
   "reason": "본문이 비어 있음",
   "status": "skipped"
  },
+ "https://scas.kr/biz/detail/495": {
+  "date": "2026-10-30",
+  "reason": "접수가 2026-10-23에 이미 마감되어 지금은 신청할 수 없음",
+  "status": "skipped"
+ },
+ "https://scas.kr/biz/detail/496": {
+  "date": "2026-10-30",
+  "reason": "접수가 2026-10-23에 이미 마감되어 지금은 신청할 수 없음",
+  "status": "skipped"
+ },
+ "https://scas.kr/biz/detail/497": {
+  "date": "2026-10-30",
+  "reason": "접수가 2026-10-23에 이미 마감되어 지금은 신청할 수 없음",
+  "status": "skipped"
+ },
+ "https://scas.kr/biz/detail/498": {
+  "date": "2026-10-30",
+  "reason": "<제5회 서울예술상> 스팍 포커스상 후보작 공모",
+  "status": "kept"
+ },
+ "https://scas.kr/biz/detail/504": {
+  "date": "2026-10-30",
+  "reason": "청년예술지원",
+  "status": "kept"
+ },
+ "https://scas.kr/biz/detail/505": {
+  "date": "2026-10-30",
+  "reason": "문학 전용 공고라 무관. 접수 마감(2026-10-23 18시)으로 현재 신청 불가",
+  "status": "skipped"
+ },
+ "https://scas.kr/biz/detail/506": {
+  "date": "2026-10-30",
+  "reason": "문학 전용 공고라 무관. 접수 마감(2026-10-23 18시)으로 현재 신청 불가",
+  "status": "skipped"
+ },
+ "https://scas.kr/biz/detail/507": {
+  "date": "2026-10-30",
+  "reason": "장르가 다원예술이라 관련성 낮음. 접수 마감(2026-10-23 18시)으로 현재 신청 불가",
+  "status": "skipped"
+ },
+ "https://scas.kr/biz/detail/508": {
+  "date": "2026-10-30",
+  "reason": "작가가 아닌 기획자 대상이라 관련성 낮음. 접수 마감(2026-10-23 18시)으로 현재 신청 불가",
+  "status": "skipped"
+ },
+ "https://scas.kr/biz/detail/509": {
+  "date": "2026-10-30",
+  "reason": "공연장 대상 공연예술 사업이라 무관. 접수 마감(2026-10-19 18시)으로 현재 신청 불가",
+  "status": "skipped"
+ },
+ "https://scas.kr/biz/detail/510": {
+  "date": "2026-10-30",
+  "reason": "공연예술 전용 공모라 시각예술·가구·조명 작업과 무관함",
+  "status": "skipped"
+ },
+ "https://scas.kr/biz/detail/518": {
+  "date": "2026-10-30",
+  "reason": "연극 단체 전용 입주라 시각예술 작가인 YEKKI에게 해당되지 않음",
+  "status": "skipped"
+ },
  "https://sesac.seoul.kr": {
   "date": "2026-10-30",
   "reason": "본문이 비어 있음",

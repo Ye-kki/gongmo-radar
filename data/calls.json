@@ -3,6 +3,43 @@
   {
    "ageLimit": null,
    "announceDate": null,
+   "board": "art",
+   "cats": [
+    "art",
+    "youth"
+   ],
+   "checkReasons": [],
+   "confidence": "high",
+   "deadline": "2026-10-23",
+   "deadlineNote": "18시 마감(KST). 발표 2027년 1월 예정",
+   "eligibility": "데뷔 경험이 없는 청년예술인(청년 계층), 예술가 또는 예술단체",
+   "fit": [
+    "yekki"
+   ],
+   "foundAt": "2026-10-30",
+   "fp": "7145e58617dd155d",
+   "id": "46f11c3b0570",
+   "individualOk": true,
+   "needsCheck": false,
+   "org": "서울문화재단",
+   "region": "서울",
+   "relevance": 2,
+   "sources": [
+    "서울문화재단 지원사업 (SCAS)"
+   ],
+   "startDate": "2026-09-30",
+   "summary": "데뷔 경험이 없는 청년 예술인의 첫 작품 발표를 지원하는 공모다. 청년 신진 작가 지원이라 관심 분야에 해당한다. 접수는 이미 마감됐다.",
+   "support": [
+    "fund",
+    "exhibit"
+   ],
+   "supportAmount": null,
+   "title": "청년예술지원",
+   "url": "https://www.scas.kr/biz/detail/504?page=1"
+  },
+  {
+   "ageLimit": null,
+   "announceDate": null,
    "cats": [
     "goods",
     "art",
@@ -1131,6 +1168,41 @@
    "url": "https://www.wevity.com/index_university.php?c=find&s=_university&gub=1&cidx=19&gbn=view&gp=1&ix=109966"
   },
   {
+   "ageLimit": null,
+   "announceDate": null,
+   "board": "art",
+   "cats": [
+    "art"
+   ],
+   "checkReasons": [],
+   "confidence": "high",
+   "deadline": "2027-01-05",
+   "deadlineNote": "18시 마감",
+   "eligibility": "예술가 또는 예술단체 (시각·연극·무용·음악·전통·다원), 청년부터 원로까지 계층 무관",
+   "fit": [
+    "yekki"
+   ],
+   "foundAt": "2026-10-30",
+   "fp": "2297b2b62121f3c9",
+   "id": "e28a75f8fd15",
+   "individualOk": true,
+   "needsCheck": false,
+   "org": "서울문화재단",
+   "region": "서울",
+   "relevance": 2,
+   "sources": [
+    "서울문화재단 지원사업 (SCAS)"
+   ],
+   "startDate": "2026-08-31",
+   "summary": "시각을 포함한 여러 장르의 예술가를 대상으로 서울예술상 스팍 포커스상 후보작을 모집하는 공모이다.",
+   "support": [
+    "fund"
+   ],
+   "supportAmount": null,
+   "title": "<제5회 서울예술상> 스팍 포커스상 후보작 공모",
+   "url": "https://www.scas.kr/biz/detail/498?page=1"
+  },
+  {
    "ageLimit": "18~35세",
    "announceDate": "2027-02-05",
    "board": "art",
@@ -1690,5 +1762,5 @@
    "url": "https://www.cfsc.or.kr/contents/biz/biz0202.asp"
   }
  ],
- "updatedAt": "2026-10-30 22:06"
+ "updatedAt": "2026-10-30 23:03"
 }
