@@ -1,0 +1,229 @@
+{
+ "ai": {
+  "calls": 86,
+  "cli_cost_usd": 0.0,
+  "errors": [
+   "claude cli error: Invalid auth token · Fix external auth token · Invalid Authorization header value from CLAUDE_CODE_OAUTH_TOKEN: it contains a line break at character 80 (110 characters on 2 lines).",
+   "claude cli error: Invalid auth token · Fix external auth token · Invalid Authorization header value from CLAUDE_CODE_OAUTH_TOKEN: it contains a line break at character 80 (110 characters on 2 lines).",
+   "claude cli error: Invalid auth token · Fix external auth token · Invalid Authorization header value from CLAUDE_CODE_OAUTH_TOKEN: it contains a line break at character 80 (110 characters on 2 lines).",
+   "claude cli error: Invalid auth token · Fix external auth token · Invalid Authorization header value from CLAUDE_CODE_OAUTH_TOKEN: it contains a line break at character 80 (110 characters on 2 lines).",
+   "claude cli error: Invalid auth token · Fix external auth token · Invalid Authorization header value from CLAUDE_CODE_OAUTH_TOKEN: it contains a line break at character 80 (110 characters on 2 lines).",
+   "claude cli error: Invalid auth token · Fix external auth token · Invalid Authorization header value from CLAUDE_CODE_OAUTH_TOKEN: it contains a line break at character 80 (110 characters on 2 lines).",
+   "claude cli error: Invalid auth token · Fix external auth token · Invalid Authorization header value from CLAUDE_CODE_OAUTH_TOKEN: it contains a line break at character 80 (110 characters on 2 lines).",
+   "claude cli error: Invalid auth token · Fix external auth token · Invalid Authorization header value from CLAUDE_CODE_OAUTH_TOKEN: it contains a line break at character 80 (110 characters on 2 lines).",
+   "claude cli error: Invalid auth token · Fix external auth token · Invalid Authorization header value from CLAUDE_CODE_OAUTH_TOKEN: it contains a line break at character 80 (110 characters on 2 lines).",
+   "claude cli error: Invalid auth token · Fix external auth token · Invalid Authorization header value from CLAUDE_CODE_OAUTH_TOKEN: it contains a line break at character 80 (110 characters on 2 lines).",
+   "claude cli error: Invalid auth token · Fix external auth token · Invalid Authorization header value from CLAUDE_CODE_OAUTH_TOKEN: it contains a line break at character 80 (110 characters on 2 lines).",
+   "claude cli error: Invalid auth token · Fix external auth token · Invalid Authorization header value from CLAUDE_CODE_OAUTH_TOKEN: it contains a line break at character 80 (110 characters on 2 lines).",
+   "claude cli error: Invalid auth token · Fix external auth token · Invalid Authorization header value from CLAUDE_CODE_OAUTH_TOKEN: it contains a line break at character 80 (110 characters on 2 lines).",
+   "claude cli error: Invalid auth token · Fix external auth token · Invalid Authorization header value from CLAUDE_CODE_OAUTH_TOKEN: it contains a line break at character 80 (110 characters on 2 lines).",
+   "claude cli error: Invalid auth token · Fix external auth token · Invalid Authorization header value from CLAUDE_CODE_OAUTH_TOKEN: it contains a line break at character 80 (110 characters on 2 lines).",
+   "claude cli error: Invalid auth token · Fix external auth token · Invalid Authorization header value from CLAUDE_CODE_OAUTH_TOKEN: it contains a line break at character 80 (110 characters on 2 lines).",
+   "claude cli error: Invalid auth token · Fix external auth token · Invalid Authorization header value from CLAUDE_CODE_OAUTH_TOKEN: it contains a line break at character 80 (110 characters on 2 lines).",
+   "claude cli error: Invalid auth token · Fix external auth token · Invalid Authorization header value from CLAUDE_CODE_OAUTH_TOKEN: it contains a line break at character 80 (110 characters on 2 lines).",
+   "claude cli error: Invalid auth token · Fix external auth token · Invalid Authorization header value from CLAUDE_CODE_OAUTH_TOKEN: it contains a line break at character 80 (110 characters on 2 lines).",
+   "claude cli error: Invalid auth token · Fix external auth token · Invalid Authorization header value from CLAUDE_CODE_OAUTH_TOKEN: it contains a line break at character 80 (110 characters on 2 lines)."
+  ],
+  "est_cost_usd": 0.0,
+  "input_tokens": 0,
+  "mode": "subscription",
+  "output_tokens": 0,
+  "searches": 0
+ },
+ "counts": {
+  "candidates": 292,
+  "new": 0,
+  "over_limit": 212,
+  "read": 80,
+  "read_failed": 0,
+  "same": 0,
+  "skipped": 0,
+  "updated": 0
+ },
+ "discovery": [
+  {
+   "found": 0,
+   "id": "goods-kr",
+   "new": 0
+  },
+  {
+   "found": 0,
+   "id": "art-kr",
+   "new": 0
+  },
+  {
+   "found": 0,
+   "id": "design-kr",
+   "new": 0
+  },
+  {
+   "found": 0,
+   "id": "residency",
+   "new": 0
+  },
+  {
+   "found": 0,
+   "id": "startup-kr",
+   "new": 0
+  },
+  {
+   "found": 0,
+   "id": "overseas",
+   "new": 0
+  }
+ ],
+ "runAt": "2026-10-30 19:58",
+ "sources": [
+  {
+   "id": "contestkorea-design",
+   "links": 57,
+   "name": "콘테스트코리아 미술·디자인",
+   "new": 57,
+   "status": "ok",
+   "url": "https://www.contestkorea.com/sub/list.php?int_gbn=1&Txt_bcode=030610001"
+  },
+  {
+   "id": "wevity-design",
+   "links": 15,
+   "name": "위비티 디자인·캐릭터",
+   "new": 15,
+   "status": "ok",
+   "url": "https://www.wevity.com/?c=find&s=1&gub=1&cidx=19"
+  },
+  {
+   "id": "wevity-art",
+   "links": 15,
+   "name": "위비티 예체능·미술",
+   "new": 12,
+   "status": "ok",
+   "url": "https://www.wevity.com/?c=find&s=1&gub=1&cidx=20"
+  },
+  {
+   "id": "artculture-contest",
+   "links": 100,
+   "name": "아트앤컬처 공모란",
+   "new": 100,
+   "status": "ok",
+   "url": "https://www.art-culture.co.kr/magazine_contest"
+  },
+  {
+   "id": "archivist-residency",
+   "links": 32,
+   "name": "아키비스트 레지던시",
+   "new": 32,
+   "status": "ok",
+   "url": "https://archivist.kr/?d=biz&f=Residency&l=dbs"
+  },
+  {
+   "id": "archivist-contest",
+   "links": 33,
+   "name": "아키비스트 공모",
+   "new": 6,
+   "status": "ok",
+   "url": "https://archivist.kr/?d=biz&f=Contest&l=dbs"
+  },
+  {
+   "detail": "목록에서 게시글 링크를 찾지 못함. 자바스크립트로 그리는 페이지이거나 link_regex 확인 필요",
+   "id": "arko-notice",
+   "links": 0,
+   "name": "한국문화예술위원회 공지",
+   "new": 0,
+   "status": "empty",
+   "url": "https://www.arko.or.kr/board/list/4013"
+  },
+  {
+   "detail": "목록에서 게시글 링크를 찾지 못함. 자바스크립트로 그리는 페이지이거나 link_regex 확인 필요",
+   "id": "gokams-event",
+   "links": 0,
+   "name": "예술경영지원센터 공모",
+   "new": 0,
+   "status": "empty",
+   "url": "https://www.gokams.or.kr/01_news/event.aspx"
+  },
+  {
+   "id": "mcst-culture-support",
+   "links": 69,
+   "name": "문화체육관광부 문화예술 지원사업",
+   "new": 8,
+   "status": "ok",
+   "url": "https://www.mcst.go.kr/site/s_culture/cultureSp/cultureSpList.jsp"
+  },
+  {
+   "detail": "robots.txt가 수집을 막음: https://sema.seoul.go.kr/kr/notice/notice/list",
+   "id": "sema-notice",
+   "links": 0,
+   "name": "서울시립미술관 공지",
+   "new": 0,
+   "status": "robots",
+   "url": "https://sema.seoul.go.kr/kr/notice/notice/list"
+  },
+  {
+   "detail": "목록에서 게시글 링크를 찾지 못함. 자바스크립트로 그리는 페이지이거나 link_regex 확인 필요",
+   "id": "kidp-notice",
+   "links": 0,
+   "name": "한국디자인진흥원 공지",
+   "new": 0,
+   "status": "empty",
+   "url": "https://kidp.or.kr/?menuno=1202"
+  },
+  {
+   "detail": "HTTP 404: https://www.seouldesign.or.kr/board/notice",
+   "id": "seouldesign-notice",
+   "links": 0,
+   "name": "서울디자인재단 공지",
+   "new": 0,
+   "status": "error",
+   "url": "https://www.seouldesign.or.kr/board/notice"
+  },
+  {
+   "detail": "HTTPSConnectionPool(host='www.kcdf.kr', port=443): Max retries exceeded with url: /web/board/notice (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.kcdf.kr', port=443) at 0x72f3f2fcd730>, 'C",
+   "id": "kcdf-notice",
+   "links": 0,
+   "name": "공예디자인문화진흥원 공지",
+   "new": 0,
+   "status": "error",
+   "url": "https://www.kcdf.kr/web/board/notice"
+  },
+  {
+   "id": "kstartup-ongoing",
+   "links": 57,
+   "name": "K-Startup 사업공고",
+   "new": 30,
+   "status": "ok",
+   "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do"
+  },
+  {
+   "detail": "목록에서 게시글 링크를 찾지 못함. 자바스크립트로 그리는 페이지이거나 link_regex 확인 필요",
+   "id": "bizinfo",
+   "links": 0,
+   "name": "기업마당 지원사업",
+   "new": 0,
+   "status": "empty",
+   "url": "https://www.bizinfo.go.kr/web/lay1/bbs/S1T122C128/AS/74/list.do"
+  },
+  {
+   "id": "sba-notice",
+   "links": 62,
+   "name": "서울경제진흥원 사업공고",
+   "new": 4,
+   "status": "ok",
+   "url": "https://www.sba.seoul.kr/Pages/ContentsMenu/Company_Support.aspx?C=6FA70790-6677-EC11-80E8-9418827691E2"
+  },
+  {
+   "id": "touraz-announce",
+   "links": 65,
+   "name": "투어라즈 공고·공모",
+   "new": 12,
+   "status": "ok",
+   "url": "https://touraz.kr/announcementList/pssrpList"
+  },
+  {
+   "id": "designboom-competitions",
+   "links": 16,
+   "name": "designboom competitions",
+   "new": 16,
+   "status": "ok",
+   "url": "https://www.designboom.com/competitions/design/"
+  }
+ ]
+}
