@@ -73,9 +73,9 @@ def keyword_match(title: str, keywords: list[str]) -> bool:
     return any(k.lower() in t for k in keywords)
 
 
-BOARD_NAME_RX = re.compile(r"^\s*(공지\s*사항|공지|사업\s*공모|공모\s*사업|공모\s*안내|공모|모집\s*공고|공고|새\s*소식|알림\s*마당|재단\s*소식|"
+BOARD_NAME_RX = re.compile(r"^\s*(공모\s*소식|지원\s*사업\s*공모|입주\s*작가\s*공모|공지\s*사항|공지|사업\s*공모|공모\s*사업|공모\s*안내|공모|모집\s*공고|공고|새\s*소식|알림\s*마당|재단\s*소식|"
                            r"지원\s*사업|공모\s*/\s*모집|모집|공고\s*/\s*공모)\s*$")
-BOARD_RANK = ["사업공모", "공모사업", "공모안내", "공모", "모집공고", "지원사업", "공고", "공지사항", "공지", "알림마당", "새소식", "재단소식", "모집"]
+BOARD_RANK = ["공모소식", "지원사업공모", "사업공모", "입주작가공모", "공모사업", "공모안내", "공모", "모집공고", "지원사업", "공고", "공지사항", "공지", "알림마당", "새소식", "재단소식", "모집"]
 
 
 def find_boards(html: str, base_url: str, limit: int = 2) -> list[str]:
@@ -88,6 +88,10 @@ def find_boards(html: str, base_url: str, limit: int = 2) -> list[str]:
         if not BOARD_NAME_RX.match(name):
             continue
         href = (a.get("href") or "").strip()
+        m = re.search(r"""(?:goPage\w*|location\.href\s*=|window\.open)\s*\(?\s*['"]([^'"]+)['"]""",
+                      (a.get("onclick") or "") + " " + href)
+        if m:
+            href = m.group(1)  # menus that navigate by script, e.g. onclick="goPage('/notice/list.do')"
         if not href or href.startswith(("#", "mailto:")) or href.lower().startswith("javascript"):
             continue
         url = urljoin(base_url, href)

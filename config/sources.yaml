@@ -140,6 +140,15 @@ sources:
     region: 서울
     filter: true
 
+  - id: scas
+    name: 서울문화재단 지원사업 (SCAS)
+    # 서울문화재단·신당창작아케이드·금천예술공장 등 서울 창작공간 공모가 모두 여기로 신청받음
+    url: https://www.scas.kr/biz/list
+    link_regex: '/biz/detail/\d+'
+    cats: [art, residency, local]
+    region: 서울
+    filter: false
+
   - id: kcdf-notice
     name: 공예디자인문화진흥원 사업공모
     url: https://www.kcdf.or.kr/brd/board/337/L/menu/284
