@@ -44,39 +44,58 @@
    "https://www.ansanart.com/lay1/bbs/S1T84C85/A/14/list.do"
   ],
   "boards_checked": "2026-10-30",
+  "scanned": "2026-10-31",
   "since": "2026-10-30"
  },
- "org-arte": {},
- "org-artgy": {},
- "org-ayac": {},
+ "org-arte": {
+  "scanned": "2026-10-31"
+ },
+ "org-artgy": {
+  "scanned": "2026-10-31"
+ },
+ "org-ayac": {
+  "scanned": "2026-10-31"
+ },
  "org-bscf": {
   "boards": [
    "https://www.bscf.or.kr/view.do?no=1024"
   ],
   "boards_checked": "2026-10-30",
+  "scanned": "2026-10-31",
   "since": "2026-10-30"
+ },
+ "org-bsjincf": {
+  "scanned": "2026-10-31"
  },
  "org-cacf": {
   "boards": [],
-  "boards_checked": "2026-10-30"
+  "boards_checked": "2026-10-31",
+  "scanned": "2026-10-31"
  },
- "org-cbfc": {},
- "org-cccf": {},
+ "org-cbfc": {
+  "scanned": "2026-10-31"
+ },
+ "org-cccf": {
+  "scanned": "2026-10-31"
+ },
  "org-cfsc": {
   "boards": [
    "https://www.cfsc.or.kr/contents/open/open0102.asp?cat=39",
    "https://www.cfsc.or.kr/contents/open/open0101.asp"
   ],
   "boards_checked": "2026-10-30",
+  "scanned": "2026-10-31",
   "since": "2026-10-30"
  },
  "org-cjcf": {
   "boards": [],
-  "boards_checked": "2026-10-30"
+  "boards_checked": "2026-10-31",
+  "scanned": "2026-10-31"
  },
  "org-cjculture": {
   "boards": [],
-  "boards_checked": "2026-10-30"
+  "boards_checked": "2026-10-31",
+  "scanned": "2026-10-31"
  },
  "org-cwcf": {
   "boards": [
@@ -84,6 +103,7 @@
    "https://www.cwcf.or.kr/commu/notice_list.asp"
   ],
   "boards_checked": "2026-10-30",
+  "scanned": "2026-10-31",
   "since": "2026-10-30"
  },
  "org-damyangcf": {
@@ -91,44 +111,62 @@
    "https://www.damyangcf.or.kr/user/board/lists/board_cd/4010"
   ],
   "boards_checked": "2026-10-30",
+  "scanned": "2026-10-31",
   "since": "2026-10-30"
  },
- "org-dangjinart": {},
+ "org-dangjinart": {
+  "scanned": "2026-10-31"
+ },
  "org-dbfac": {
   "boards": [
    "https://www.dbfac.or.kr/front/board/boardContentsListPage.do?board_id=1"
   ],
-  "boards_checked": "2026-10-30"
+  "boards_checked": "2026-10-30",
+  "scanned": "2026-10-31"
  },
- "org-dcaf": {},
+ "org-dcaf": {
+  "scanned": "2026-10-31"
+ },
  "org-ddmac": {
   "boards": [
    "https://www.ddmac.or.kr/sub04/sub01.php"
   ],
-  "boards_checked": "2026-10-30"
+  "boards_checked": "2026-10-30",
+  "scanned": "2026-10-31"
  },
  "org-dgdgcf": {
   "boards": [
    "https://www.dgdgcf.or.kr/front/board/list.php?code=notice"
   ],
   "boards_checked": "2026-10-30",
+  "scanned": "2026-10-31",
   "since": "2026-10-30"
  },
- "org-dsart": {},
+ "org-dgfca": {
+  "boards": [],
+  "boards_checked": "2026-10-31",
+  "scanned": "2026-10-31"
+ },
+ "org-dsart": {
+  "scanned": "2026-10-31"
+ },
  "org-dscf": {
   "boards": [],
-  "boards_checked": "2026-10-30"
+  "boards_checked": "2026-10-31",
+  "scanned": "2026-10-31"
  },
  "org-efac": {
   "boards": [
    "https://www.efac.or.kr/page08/sub01.php"
   ],
   "boards_checked": "2026-10-30",
+  "scanned": "2026-10-31",
   "since": "2026-10-30"
  },
  "org-gacf": {
   "boards": [],
-  "boards_checked": "2026-10-30"
+  "boards_checked": "2026-10-31",
+  "scanned": "2026-10-31"
  },
  "org-gangnam": {
   "boards": [
@@ -136,36 +174,48 @@
    "https://www.gangnam.go.kr/office/gfac/board/gfac_notice/list.do?mid=gfac_notice01"
   ],
   "boards_checked": "2026-10-30",
+  "scanned": "2026-10-31",
   "since": "2026-10-30"
  },
  "org-garts": {
-  "boards": [],
-  "boards_checked": "2026-10-30"
+  "boards": [
+   "https://www.garts.kr/index.do?menuId=00000171",
+   "https://www.garts.kr/index.do?menuId=00000780"
+  ],
+  "boards_checked": "2026-10-31",
+  "scanned": "2026-10-31",
+  "since": "2026-10-31"
  },
  "org-gbcf": {
   "boards": [
    "https://www.gbcf.or.kr/load.asp?subPage=510"
   ],
   "boards_checked": "2026-10-30",
+  "scanned": "2026-10-31",
   "since": "2026-10-30"
  },
- "org-gcaf": {},
+ "org-gcaf": {
+  "scanned": "2026-10-31"
+ },
  "org-gcart": {
   "boards": [
    "https://www.gcart.or.kr/kr/commu/noticeList.do"
   ],
   "boards_checked": "2026-10-30",
+  "scanned": "2026-10-31",
   "since": "2026-10-30"
  },
  "org-gccf": {
   "boards": [],
-  "boards_checked": "2026-10-30"
+  "boards_checked": "2026-10-31",
+  "scanned": "2026-10-31"
  },
  "org-gcf": {
   "boards": [
    "https://www.gcf.or.kr/main/pst/list.do?pst_id=notice"
   ],
   "boards_checked": "2026-10-30",
+  "scanned": "2026-10-31",
   "since": "2026-10-30"
  },
  "org-gctf": {
@@ -173,6 +223,7 @@
    "https://gctf.or.kr/web/board/1/postList"
   ],
   "boards_checked": "2026-10-30",
+  "scanned": "2026-10-31",
   "since": "2026-10-30"
  },
  "org-gfac": {
@@ -180,76 +231,130 @@
    "https://gfac.or.kr/site/main/archive/post/category/재단소식"
   ],
   "boards_checked": "2026-10-30",
+  "scanned": "2026-10-31",
   "since": "2026-10-30"
  },
- "org-ggcf": {},
- "org-gjcf": {},
+ "org-ggcf": {
+  "boards": [
+   "https://www.ggcf.kr/boards/donateNotice",
+   "https://www.ggcf.kr/boards/bulletinBoards/articles?category=01"
+  ],
+  "boards_checked": "2026-10-31",
+  "scanned": "2026-10-31",
+  "since": "2026-10-31"
+ },
+ "org-gjcf": {
+  "scanned": "2026-10-31"
+ },
  "org-gjfac": {
   "boards": [
    "https://www.gjfac.org/gjfac/template.php?midx=347",
    "https://www.gjfac.org/gjfac/template.php?midx=348"
   ],
   "boards_checked": "2026-10-30",
+  "scanned": "2026-10-31",
   "since": "2026-10-30"
  },
- "org-gmcf": {},
+ "org-gmcf": {
+  "scanned": "2026-10-31"
+ },
  "org-gncaf": {
   "boards": [
    "https://www.gncaf.or.kr/ko/support/gongmo/supportinfo",
    "https://www.gncaf.or.kr/ko/community/notice"
   ],
   "boards_checked": "2026-10-30",
+  "scanned": "2026-10-31",
   "since": "2026-10-30"
  },
  "org-gongjucf": {
   "boards": [],
-  "boards_checked": "2026-10-30"
+  "boards_checked": "2026-10-31",
+  "scanned": "2026-10-31"
  },
  "org-gunpocf": {
   "boards": [
    "https://www.gunpocf.or.kr/cf/ntt/nttList/BBS001"
   ],
   "boards_checked": "2026-10-30",
+  "scanned": "2026-10-31",
   "since": "2026-10-30"
+ },
+ "org-gunwi3964": {
+  "scanned": "2026-10-31"
+ },
+ "org-guroartsvalley": {
+  "boards": [
+   "https://www.guroartsvalley.or.kr/user/board/mn011801.do"
+  ],
+  "boards_checked": "2026-10-31",
+  "scanned": "2026-10-31",
+  "since": "2026-10-31"
  },
  "org-gwcf": {
   "boards": [
    "https://gwcf.or.kr/ko/foundation-news/notice.html?no=0"
   ],
   "boards_checked": "2026-10-30",
+  "scanned": "2026-10-31",
   "since": "2026-10-30"
  },
- "org-hbcf": {},
+ "org-hbcf": {
+  "scanned": "2026-10-31"
+ },
  "org-hcf": {
   "boards": [
    "https://www.hcf.or.kr/hcf/61?chathead=%ED%99%94%EC%84%B1%EC%8B%9C%EB%AC%B8%ED%99%94%EC%9E%AC%EB%8B%A8",
    "https://www.hcf.or.kr/hcf/59?chathead=%ED%99%94%EC%84%B1%EC%8B%9C%EB%AC%B8%ED%99%94%EC%9E%AC%EB%8B%A8"
   ],
   "boards_checked": "2026-10-30",
+  "scanned": "2026-10-31",
   "since": "2026-10-30"
  },
- "org-hub-cfac": {},
- "org-i-eum": {},
- "org-ictf": {},
- "org-idfac": {},
+ "org-hongju": {
+  "boards": [
+   "https://hongju.or.kr/home/board/brdList.do?menu_cd=000030"
+  ],
+  "boards_checked": "2026-10-31",
+  "scanned": "2026-10-31",
+  "since": "2026-10-31"
+ },
+ "org-hub-cfac": {
+  "scanned": "2026-10-31"
+ },
+ "org-i-eum": {
+  "scanned": "2026-10-31"
+ },
+ "org-ictf": {
+  "scanned": "2026-10-31"
+ },
+ "org-idfac": {
+  "scanned": "2026-10-31"
+ },
  "org-ifac": {
   "boards": [],
-  "boards_checked": "2026-10-30"
+  "boards_checked": "2026-10-31",
+  "scanned": "2026-10-31"
  },
- "org-injeart": {},
+ "org-injeart": {
+  "scanned": "2026-10-31"
+ },
  "org-iscf": {
   "boards": [],
-  "boards_checked": "2026-10-30"
+  "boards_checked": "2026-10-31",
+  "scanned": "2026-10-31"
  },
  "org-jacf": {
   "boards": [
    "https://www.jacf.or.kr/jacf/bbsNew_list.php?code=sub05a&keyvalue=sub05"
   ],
-  "boards_checked": "2026-10-30"
+  "boards_checked": "2026-10-30",
+  "scanned": "2026-10-31"
  },
  "org-jbct": {
   "boards": [],
-  "boards_checked": "2026-10-30"
+  "boards_checked": "2026-10-31",
+  "scanned": "2026-10-31"
  },
  "org-jccf": {
   "boards": [
@@ -257,25 +362,46 @@
    "https://www.jccf.or.kr/bbs/board.php?bo_table=w6_1"
   ],
   "boards_checked": "2026-10-30",
+  "scanned": "2026-10-31",
   "since": "2026-10-30"
  },
  "org-jfac": {
   "boards": [],
-  "boards_checked": "2026-10-30"
+  "boards_checked": "2026-10-31",
+  "scanned": "2026-10-31"
  },
- "org-jjcf": {},
- "org-jncf": {},
+ "org-jjcf": {
+  "scanned": "2026-10-31"
+ },
+ "org-jjct": {
+  "scanned": "2026-10-31"
+ },
+ "org-jncf": {
+  "scanned": "2026-10-31"
+ },
  "org-jnfac": {
   "boards": [],
-  "boards_checked": "2026-10-30"
+  "boards_checked": "2026-10-31",
+  "scanned": "2026-10-31"
  },
  "org-kawf": {
   "boards": [],
-  "boards_checked": "2026-10-30"
+  "boards_checked": "2026-10-31",
+  "scanned": "2026-10-31"
  },
  "org-kocaca": {
   "boards": [],
-  "boards_checked": "2026-10-30"
+  "boards_checked": "2026-10-31",
+  "scanned": "2026-10-31"
+ },
+ "org-kotpa": {
+  "boards": [
+   "https://www.kotpa.org/ucms/bbs/B0000021/list.do?menuNo=300008",
+   "https://www.kotpa.org/ucms/bbs/B0000001/list.do?menuNo=300017"
+  ],
+  "boards_checked": "2026-10-31",
+  "scanned": "2026-10-31",
+  "since": "2026-10-31"
  },
  "org-mfac": {
   "boards": [
@@ -283,37 +409,56 @@
    "https://www.mfac.or.kr/academy/notice2.jsp"
   ],
   "boards_checked": "2026-10-30",
+  "scanned": "2026-10-31",
   "since": "2026-10-30"
  },
- "org-mycf": {},
+ "org-mycf": {
+  "scanned": "2026-10-31"
+ },
  "org-nowonarts": {
   "boards": [
    "https://www.nowonarts.kr/support-programs",
    "https://www.nowonarts.kr/channels/notice/posts"
   ],
   "boards_checked": "2026-10-30",
+  "scanned": "2026-10-31",
   "since": "2026-10-30"
  },
- "org-osan": {},
+ "org-osan": {
+  "scanned": "2026-10-31"
+ },
  "org-pccf": {
   "boards": [],
-  "boards_checked": "2026-10-30"
+  "boards_checked": "2026-10-31",
+  "scanned": "2026-10-31"
+ },
+ "org-pcfac": {
+  "boards": [
+   "https://www.pcfac.or.kr/sub07/sub04.php",
+   "https://www.pcfac.or.kr/sub07/sub01.php"
+  ],
+  "boards_checked": "2026-10-31",
+  "scanned": "2026-10-31"
  },
  "org-phcf": {
   "boards": [],
-  "boards_checked": "2026-10-30"
+  "boards_checked": "2026-10-31",
+  "scanned": "2026-10-31"
  },
  "org-rcda": {
   "boards": [],
-  "boards_checked": "2026-10-30"
+  "boards_checked": "2026-10-31",
+  "scanned": "2026-10-31"
  },
  "org-sccf": {
   "boards": [],
-  "boards_checked": "2026-10-30"
+  "boards_checked": "2026-10-31",
+  "scanned": "2026-10-31"
  },
  "org-sdfac": {
   "boards": [],
-  "boards_checked": "2026-10-30"
+  "boards_checked": "2026-10-31",
+  "scanned": "2026-10-31"
  },
  "org-seochocf": {
   "boards": [
@@ -321,7 +466,11 @@
    "https://www.seochocf.or.kr/site/main/archive/post/category/독서실-공지사항?id=notice"
   ],
   "boards_checked": "2026-10-30",
+  "scanned": "2026-10-31",
   "since": "2026-10-30"
+ },
+ "org-seosancf": {
+  "scanned": "2026-10-31"
  },
  "org-sfac": {
   "boards": [],
@@ -329,13 +478,19 @@
  },
  "org-sjcf": {
   "boards": [],
-  "boards_checked": "2026-10-30"
+  "boards_checked": "2026-10-31",
+  "scanned": "2026-10-31"
  },
- "org-sokchocf": {},
- "org-songpafac": {},
+ "org-sokchocf": {
+  "scanned": "2026-10-31"
+ },
+ "org-songpafac": {
+  "scanned": "2026-10-31"
+ },
  "org-sscf": {
   "boards": [],
-  "boards_checked": "2026-10-30"
+  "boards_checked": "2026-10-31",
+  "scanned": "2026-10-31"
  },
  "org-swcf": {
   "boards": [
@@ -343,42 +498,72 @@
    "https://www.swcf.or.kr/?p=113"
   ],
   "boards_checked": "2026-10-30",
+  "scanned": "2026-10-31",
   "since": "2026-10-30"
  },
  "org-uac": {
   "boards": [],
-  "boards_checked": "2026-10-30"
+  "boards_checked": "2026-10-31",
+  "scanned": "2026-10-31"
  },
- "org-uacf": {},
- "org-ucf": {},
+ "org-uacf": {
+  "scanned": "2026-10-31"
+ },
+ "org-ucf": {
+  "scanned": "2026-10-31"
+ },
  "org-wcf": {
   "boards": [
    "https://www.wcf.or.kr/community/notice.php?tsort=4&msort=23&ssort="
   ],
   "boards_checked": "2026-10-30",
+  "scanned": "2026-10-31",
   "since": "2026-10-30"
  },
- "org-ydct": {},
- "org-ydft": {},
+ "org-yctf": {
+  "boards": [],
+  "boards_checked": "2026-10-31",
+  "scanned": "2026-10-31"
+ },
+ "org-ydct": {
+  "scanned": "2026-10-31"
+ },
+ "org-ydft": {
+  "scanned": "2026-10-31"
+ },
  "org-ydpcf": {
   "boards": [
    "https://www.ydpcf.or.kr/board.do?bid=3&category=17",
    "https://www.ydpcf.or.kr/board.do?bid=1"
   ],
   "boards_checked": "2026-10-30",
+  "scanned": "2026-10-31",
   "since": "2026-10-30"
  },
- "org-yfac": {},
+ "org-yfac": {
+  "scanned": "2026-10-31"
+ },
  "org-yicf": {
   "boards": [],
-  "boards_checked": "2026-10-30"
+  "boards_checked": "2026-10-31",
+  "scanned": "2026-10-31"
+ },
+ "org-ypcf": {
+  "boards": [
+   "https://www.ypcf.or.kr/support",
+   "https://www.ypcf.or.kr/ypcenter-notice"
+  ],
+  "boards_checked": "2026-10-31",
+  "scanned": "2026-10-31",
+  "since": "2026-10-31"
  },
  "org-ysfac": {
   "boards": [
    "https://www.ysfac.or.kr/user/board/list.php?board_code=announcement&cat=4&srchValue=",
    "https://www.ysfac.or.kr/user/board/list.php?board_code=announcement"
   ],
-  "boards_checked": "2026-10-30"
+  "boards_checked": "2026-10-30",
+  "scanned": "2026-10-31"
  },
  "org-ywcf": {
   "boards": [
@@ -386,6 +571,7 @@
    "https://www.ywcf.or.kr/notices/board/4"
   ],
   "boards_checked": "2026-10-30",
+  "scanned": "2026-10-31",
   "since": "2026-10-30"
  },
  "sba-notice": {
