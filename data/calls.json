@@ -2,6 +2,48 @@
  "calls": [
   {
    "ageLimit": null,
+   "altUrls": [
+    "https://www.gbcf.or.kr/load.asp?subPage=510.view&cate=&idx=1912&searchValue=&searchType=&page=1"
+   ],
+   "announceDate": null,
+   "board": "art",
+   "cats": [
+    "art",
+    "youth"
+   ],
+   "checkReasons": [
+    "마감일 원문 대조 실패",
+    "AI 확신 낮음"
+   ],
+   "confidence": "low",
+   "deadline": "2026-10-17",
+   "deadlineNote": "18:00 종료. 현재(2026-11-01) 이미 마감됨",
+   "eligibility": "청년작가 대상 (세부 자격은 원문에 없음, 첨부 원서 서식 확인 필요)",
+   "fit": [
+    "yekki"
+   ],
+   "foundAt": "2026-10-30",
+   "fp": "97ed6855b565ec37",
+   "id": "4efa36fa9fdd",
+   "individualOk": null,
+   "needsCheck": true,
+   "org": "미확인 (원문에 주최 기관 미기재, 관련 링크 gbcf.or.kr)",
+   "region": "전국",
+   "relevance": 2,
+   "sources": [
+    "강북문화재단",
+    "아트앤컬처 공모란"
+   ],
+   "startDate": "2026-10-12",
+   "summary": "청년 작가를 대상으로 한 시각예술 특별기획 공모다. 원문에 세부 자격과 지원 내용이 없고 접수는 이미 끝났다.",
+   "support": [],
+   "supportAmount": null,
+   "title": "청년작가 특별기획 공모",
+   "updatedAt": "2026-11-01",
+   "url": "https://www.art-culture.co.kr/magazine_contest/2178"
+  },
+  {
+   "ageLimit": null,
    "announceDate": null,
    "board": "art",
    "cats": [
@@ -76,6 +118,43 @@
    "supportAmount": "팀당 50만 원 (작품·굿즈 매입 및 협업 비용), 10팀 선정",
    "title": "YDP EDITION에 함께할 TOWN MATE 추천 모집",
    "url": "https://www.ydpcf.or.kr/postview.do?bid=1&pid=2850"
+  },
+  {
+   "ageLimit": "만 19세 이상 ~ 39세 이하 (공고일 기준)",
+   "announceDate": "2026-11-06",
+   "board": "art",
+   "cats": [
+    "goods",
+    "youth",
+    "art"
+   ],
+   "checkReasons": [],
+   "confidence": "medium",
+   "deadline": "2026-10-28",
+   "deadlineNote": "23:59 마감. 현재(2026-11-01) 이미 마감됨",
+   "eligibility": "서울을 주재로 활동하는 만 19~39세 청년 크리에이터(개인/단체), 자체 창작 상품 보유, 양산·납품 가능",
+   "fit": [
+    "pixel"
+   ],
+   "foundAt": "2026-11-01",
+   "fp": "efacf41a3bffdbe0",
+   "id": "1b262e065c29",
+   "individualOk": true,
+   "needsCheck": false,
+   "org": "원문 미기재 (DDP디자인스토어 입점 공모, 주최 재단명 미표기)",
+   "region": "서울",
+   "relevance": 2,
+   "sources": [
+    "아트앤컬처 공모란"
+   ],
+   "startDate": "2026-10-09",
+   "summary": "자체 일러스트 상품을 DDP디자인스토어 라운지점에 입점시키는 공모다. 상품화와 판로 연계가 목적이며 지금은 접수가 끝났다.",
+   "support": [
+    "commercial"
+   ],
+   "supportAmount": null,
+   "title": "DDP 청년 크리에이터 입점 공모(일러스트 부문)",
+   "url": "https://www.art-culture.co.kr/magazine_contest/2175"
   },
   {
    "ageLimit": null,
@@ -519,13 +598,13 @@
    "checkReasons": [],
    "confidence": "medium",
    "deadline": "2026-11-10",
-   "deadlineNote": "본문 기준 23:59. 목록 메타 정보에는 18시로 표기되어 있음",
+   "deadlineNote": "본문은 23:59, 게시판 헤더 종료는 18:00으로 표기가 다름. 본문 기준으로 기록",
    "eligibility": null,
    "fit": [
     "pixel"
    ],
    "foundAt": "2026-10-30",
-   "fp": "f4b1974eb3db9271",
+   "fp": "4c833a85c2df6892",
    "id": "dddd121ab3dd",
    "individualOk": null,
    "needsCheck": false,
@@ -536,12 +615,13 @@
     "아트앤컬처 공모란"
    ],
    "startDate": "2026-10-28",
-   "summary": "기관 슬로건, 기관 캐릭터, 국민참여예산 아이디어 3개 부문을 공모한다. 캐릭터 부문은 상품화 연계 여지가 있으나 슬로건 부문은 프로필과 무관하다.",
+   "summary": "기관 캐릭터 공모 부문에 참여해 캐릭터를 제안하는 공모다. 슬로건과 국민참여예산 아이디어 부문도 함께 있으나, 슬로건은 제외 대상이고 제출 형식은 A4 2페이지 내외의 국민제안서다.",
    "support": [
     "prize"
    ],
-   "supportAmount": "기관 캐릭터 공모 최우수 30만 원 등 (부문별 상이)",
-   "title": "[한국인터넷진흥원] 슬로건·캐릭터·사업 아이디어 공모!",
+   "supportAmount": "기관 캐릭터 공모 최우수 30만 원 등",
+   "title": "[한국인터넷진흥원] 슬로건·캐릭터·사업 아이디어 공모",
+   "updatedAt": "2026-11-01",
    "url": "https://www.art-culture.co.kr/magazine_contest/2222"
   },
   {
@@ -612,6 +692,43 @@
    "title": "드골2: 자유의 시대 포스터·굿즈 공모전",
    "updatedAt": "2026-10-30",
    "url": "https://www.wevity.com/index_university.php?c=find&s=_university&gub=1&cidx=19&gbn=view&gp=1&ix=111868"
+  },
+  {
+   "ageLimit": null,
+   "announceDate": "2026-11-17",
+   "board": "art",
+   "cats": [
+    "startup",
+    "design"
+   ],
+   "checkReasons": [],
+   "confidence": "high",
+   "deadline": "2026-11-13",
+   "deadlineNote": "23시59분 마감, 이메일 또는 온라인 접수",
+   "eligibility": "예비창업자 또는 사업 개시 7년 이내 창업기업(일반기업, 1인 창조기업). 사업자등록증 제출 필수, 입주 후 30일 내 본점 이전 가능해야 함",
+   "fit": [
+    "pixel"
+   ],
+   "foundAt": "2026-11-01",
+   "fp": "776a967500831273",
+   "id": "00462a46bac8",
+   "individualOk": false,
+   "needsCheck": false,
+   "org": "홍익대학교 아트앤디자인테크 창업보육센터",
+   "region": "서울",
+   "relevance": 2,
+   "sources": [
+    "K-Startup 사업공고"
+   ],
+   "startDate": "2026-11-01",
+   "summary": "마포구 홍익대 예문관 6층 창업보육센터의 독립 사무실 3곳(619·620·624호) 입주기업을 모집한다. 사무공간과 경영·기술·마케팅 멘토링을 제공한다.",
+   "support": [
+    "space",
+    "service"
+   ],
+   "supportAmount": null,
+   "title": "2026 홍익대 아트앤디자인테크 창업보육센터 입주기업 모집(2차) 공고문",
+   "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179665"
   },
   {
    "ageLimit": null,
@@ -693,13 +810,13 @@
    "checkReasons": [],
    "confidence": "high",
    "deadline": "2026-11-19",
-   "deadlineNote": "16시 마감, 충남문화관광재단 홈페이지 접수",
-   "eligibility": "만 19~39세 청년 예비예술인이면서 주민등록상 충남 거주 또는 충남 소재 대학 재학, 도내에서 예술 창작활동 중인 자",
+   "deadlineNote": "마감 16:00 (게시판 헤더 종료는 18:00으로 표기)",
+   "eligibility": "만 19~39세 청년(예비)예술인, 주민등록상 충남 거주 또는 충남 소재 대학 재학 예비예술인, 도내에서 해당 분야 창작활동 중인 자",
    "fit": [
     "yekki"
    ],
    "foundAt": "2026-10-30",
-   "fp": "942e2d2a37208684",
+   "fp": "51516647f1ab5132",
    "id": "0f6fafddad65",
    "individualOk": true,
    "needsCheck": false,
@@ -710,12 +827,14 @@
     "아트앤컬처 공모란"
    ],
    "startDate": "2026-11-02",
-   "summary": "충남 거주 청년 예술인의 시각·공연·문학예술 창작활동을 지원하는 건이다. 시각예술 분야가 포함되지만 충남 거주 요건을 확인해야 한다.",
+   "summary": "충남에서 활동하는 청년 예술인을 대상으로 시각·공연·문학예술 분야 작품을 공모해 성장후원금을 지원하는 사업이다. 지역 거주 요건이 있어 지역 조건 충족 여부를 확인해야 한다.",
    "support": [
+    "prize",
     "fund"
    ],
-   "supportAmount": "청년예술 성장후원금 100만원",
+   "supportAmount": "청년예술 성장후원금 100만원 시상금",
    "title": "2026 충남 문화CF 스타상 (청년예술부문) 공모",
+   "updatedAt": "2026-11-01",
    "url": "https://www.art-culture.co.kr/magazine_contest/2213"
   },
   {
@@ -974,18 +1093,19 @@
    "board": "art",
    "cats": [
     "design",
-    "art"
+    "art",
+    "overseas"
    ],
    "checkReasons": [],
    "confidence": "high",
    "deadline": "2026-11-24",
-   "deadlineNote": "목록 메타 정보에는 18시로 표기되어 있음",
+   "deadlineNote": "게시판 헤더 종료는 18:00으로 표기",
    "eligibility": "전 세계 디자이너, 아티스트, 일러스트레이터 및 콘텐츠 크리에이터",
    "fit": [
     "yekki"
    ],
    "foundAt": "2026-10-30",
-   "fp": "df50764a317865ab",
+   "fp": "34dc7335e1a649cc",
    "id": "c604cdda1acd",
    "individualOk": true,
    "needsCheck": false,
@@ -996,12 +1116,13 @@
     "아트앤컬처 공모란"
    ],
    "startDate": "2026-10-29",
-   "summary": "제품과 3D 프로토타입을 포함한 다양한 형식의 디자인 작품을 모아 국제전을 여는 공모이다. 제품 디자인 출품이 가능해 해외 전시 기회로 볼 만하다.",
+   "summary": "전 세계 디자이너와 아티스트를 대상으로 디자인 국제전 작품을 공모하는 사업이다. 3D 프로토타입과 제품 디자인도 대상에 포함되지만 사진, 애니메이션, 웹 디자인 등 폭넓은 장르를 다룬다.",
    "support": [
     "exhibit"
    ],
    "supportAmount": null,
    "title": "CICA 미술관 디자인 국제전 “Designer Now 2027” 공모",
+   "updatedAt": "2026-11-01",
    "url": "https://www.art-culture.co.kr/magazine_contest/2217"
   },
   {
@@ -1859,42 +1980,6 @@
     "youth"
    ],
    "checkReasons": [
-    "마감일 없음"
-   ],
-   "confidence": "medium",
-   "deadline": null,
-   "deadlineNote": "2차 모집. 마감일은 본문에 없고 첨부 원서 서식에만 있을 수 있음",
-   "eligibility": "청년작가 대상 (세부 자격은 원문에 없음, 첨부 원서 서식 확인 필요)",
-   "fit": [
-    "yekki"
-   ],
-   "foundAt": "2026-10-30",
-   "fp": "f2f7d1c5421309d8",
-   "id": "4efa36fa9fdd",
-   "individualOk": null,
-   "needsCheck": true,
-   "org": "강북미술협회 (강북문화재단 공지)",
-   "region": "서울",
-   "relevance": 3,
-   "sources": [
-    "강북문화재단"
-   ],
-   "startDate": null,
-   "summary": "강북미술협회 30주년을 기념해 청년작가를 대상으로 한 특별기획 공모의 2차 모집이다. 세부 내용은 첨부된 원서 서식에 담겨 있다.",
-   "support": [],
-   "supportAmount": null,
-   "title": "[강북미술협회 30주년 기념] 청년작가 특별기획 공모(2차모집)",
-   "url": "https://www.gbcf.or.kr/load.asp?subPage=510.view&cate=&idx=1912&searchValue=&searchType=&page=1"
-  },
-  {
-   "ageLimit": null,
-   "announceDate": null,
-   "board": "art",
-   "cats": [
-    "art",
-    "youth"
-   ],
-   "checkReasons": [
     "마감일 없음",
     "AI 확신 낮음"
    ],
@@ -2105,5 +2190,5 @@
    "url": "https://www.damyangcf.or.kr/user/sub207040"
   }
  ],
- "updatedAt": "2026-10-31 10:06"
+ "updatedAt": "2026-11-01 09:28"
 }

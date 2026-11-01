@@ -69,6 +69,11 @@
   "reason": "본문이 비어 있음",
   "status": "skipped"
  },
+ "https://archivist.kr/write?d=biz&f=Residency&i=1793492939&l=dbs&w=new": {
+  "date": "2026-11-01",
+  "reason": "본문이 비어 있음",
+  "status": "skipped"
+ },
  "https://archivist.kr?d=biz": {
   "date": "2026-10-30",
   "reason": "본문이 비어 있음",
@@ -439,6 +444,21 @@
   "reason": "첫 실행 이전 글",
   "status": "baseline"
  },
+ "https://art-culture.co.kr/magazine_contest/2157": {
+  "date": "2026-11-01",
+  "reason": "1단계 접수 마감(2026-10-26) 지나 현재 신청 불가. 사업자 등록 필요",
+  "status": "skipped"
+ },
+ "https://art-culture.co.kr/magazine_contest/2158": {
+  "date": "2026-11-01",
+  "reason": "숏폼 영상 공모이며 학생 대상이라 관심 분야와 무관하고, 마감도 지남",
+  "status": "skipped"
+ },
+ "https://art-culture.co.kr/magazine_contest/2159": {
+  "date": "2026-11-01",
+  "reason": "접수 마감(2026-10-30) 지남. 그래픽 카드 디자인이라 프로필(가구·조명·굿즈)과 거리가 있음",
+  "status": "skipped"
+ },
  "https://art-culture.co.kr/magazine_contest/2160": {
   "date": "2026-10-30",
   "reason": "첫 실행 이전 글",
@@ -458,6 +478,11 @@
   "date": "2026-10-30",
   "reason": "첫 실행 이전 글",
   "status": "baseline"
+ },
+ "https://art-culture.co.kr/magazine_contest/2169": {
+  "date": "2026-11-01",
+  "reason": "영상·숏폼만 다루는 공모이고 접수도 마감됨",
+  "status": "skipped"
  },
  "https://art-culture.co.kr/magazine_contest/2170": {
   "date": "2026-10-30",
@@ -479,6 +504,16 @@
   "reason": "첫 실행 이전 글",
   "status": "baseline"
  },
+ "https://art-culture.co.kr/magazine_contest/2174": {
+  "date": "2026-11-01",
+  "reason": "접수 마감(2026-10-25) 지나 현재 신청 불가. 캐릭터 공모라 마감 전이라면 관련성 있었음",
+  "status": "skipped"
+ },
+ "https://art-culture.co.kr/magazine_contest/2175": {
+  "date": "2026-11-01",
+  "reason": "DDP 청년 크리에이터 입점 공모(일러스트 부문)",
+  "status": "kept"
+ },
  "https://art-culture.co.kr/magazine_contest/2176": {
   "date": "2026-10-30",
   "reason": "첫 실행 이전 글",
@@ -488,6 +523,11 @@
   "date": "2026-10-30",
   "reason": "첫 실행 이전 글",
   "status": "baseline"
+ },
+ "https://art-culture.co.kr/magazine_contest/2178": {
+  "date": "2026-11-01",
+  "reason": "청년작가 특별기획 공모",
+  "status": "kept"
  },
  "https://art-culture.co.kr/magazine_contest/2179": {
   "date": "2026-10-30",
@@ -660,7 +700,7 @@
   "status": "kept"
  },
  "https://art-culture.co.kr/magazine_contest/2213": {
-  "date": "2026-10-30",
+  "date": "2026-11-01",
   "reason": "2026 충남 문화CF 스타상 (청년예술부문) 공모",
   "status": "kept"
  },
@@ -680,7 +720,7 @@
   "status": "kept"
  },
  "https://art-culture.co.kr/magazine_contest/2217": {
-  "date": "2026-10-30",
+  "date": "2026-11-01",
   "reason": "CICA 미술관 디자인 국제전 “Designer Now 2027” 공모",
   "status": "kept"
  },
@@ -705,8 +745,8 @@
   "status": "skipped"
  },
  "https://art-culture.co.kr/magazine_contest/2222": {
-  "date": "2026-10-30",
-  "reason": "[한국인터넷진흥원] 슬로건·캐릭터·사업 아이디어 공모!",
+  "date": "2026-11-01",
+  "reason": "[한국인터넷진흥원] 슬로건·캐릭터·사업 아이디어 공모",
   "status": "kept"
  },
  "https://art-culture.co.kr/magazine_contest/2223": {
@@ -754,6 +794,11 @@
   "reason": "2027년 부평아트센터 공연장 및 전시장 대관 지원 사업 공모",
   "status": "kept"
  },
+ "https://artnuri.or.kr/crawler/info/view.do?docid=GOKAMS_NEWS_20261030043303001&key=2301170002&seNo=001&source=%EC%98%88%EC%88%A0%EA%B2%BD%EC%98%81%EC%A7%80%EC%9B%90%EC%84%BC%ED%84%B0": {
+  "date": "2026-11-01",
+  "reason": "본문 없이 첨부 파일만 있어 자격·접수기간·지원 규모를 확인할 수 없음",
+  "status": "skipped"
+ },
  "https://artnuri.or.kr/crawler/info/view.do?docid=S65865&key=2301170002&seNo=001&source=%EC%B6%A9%EB%B6%81%EB%AC%B8%ED%99%94%EC%9E%AC%EB%8B%A8": {
   "date": "2026-10-30",
   "reason": "본문에 신청·접수 관련 내용 없음",
@@ -766,6 +811,11 @@
  },
  "https://artnuri.or.kr/crawler/info/view.do?docid=S65888&key=2301170002&seNo=001&source=%EA%B2%BD%EB%82%A8%EB%AC%B8%ED%99%94%EC%98%88%EC%88%A0%EC%A7%84%ED%9D%A5%EC%9B%90": {
   "date": "2026-10-30",
+  "reason": "제목상 모집 공고 아님",
+  "status": "filtered"
+ },
+ "https://artnuri.or.kr/crawler/info/view.do?docid=S65890&key=2301170002&seNo=001&source=%EA%B3%BC%EC%B2%9C%EB%AC%B8%ED%99%94%EC%9E%AC%EB%8B%A8": {
+  "date": "2026-11-01",
   "reason": "제목상 모집 공고 아님",
   "status": "filtered"
  },
@@ -818,6 +868,91 @@
   "date": "2026-10-30",
   "reason": "2026 부천문화재단×크라이치즈버거 예술상품 개발 공모전",
   "status": "kept"
+ },
+ "https://bpcf.or.kr/bpcf/bbs/BMSR00001/view.do?boardId=13056&gubunCd=BBS1_001&menuNo=200059": {
+  "date": "2026-11-01",
+  "reason": "첫 실행 이전 글",
+  "status": "baseline"
+ },
+ "https://bpcf.or.kr/bpcf/bbs/BMSR00001/view.do?boardId=13093&gubunCd=BBS1_001&menuNo=200059": {
+  "date": "2026-11-01",
+  "reason": "첫 실행 이전 글",
+  "status": "baseline"
+ },
+ "https://bpcf.or.kr/bpcf/bbs/BMSR00001/view.do?boardId=14031&gubunCd=BBS1_001&menuNo=200059": {
+  "date": "2026-11-01",
+  "reason": "첫 실행 이전 글",
+  "status": "baseline"
+ },
+ "https://bpcf.or.kr/bpcf/bbs/BMSR00001/view.do?boardId=14043&gubunCd=BBS1_002&menuNo=200059": {
+  "date": "2026-11-01",
+  "reason": "첫 실행 이전 글",
+  "status": "baseline"
+ },
+ "https://bpcf.or.kr/bpcf/bbs/BMSR00001/view.do?boardId=14047&gubunCd=BBS1_003&menuNo=200059": {
+  "date": "2026-11-01",
+  "reason": "첫 실행 이전 글",
+  "status": "baseline"
+ },
+ "https://bpcf.or.kr/bpcf/bbs/BMSR00001/view.do?boardId=14051&gubunCd=BBS1_001&menuNo=200059": {
+  "date": "2026-11-01",
+  "reason": "첫 실행 이전 글",
+  "status": "baseline"
+ },
+ "https://bpcf.or.kr/bpcf/bbs/BMSR00001/view.do?boardId=14053&gubunCd=BBS1_001&menuNo=200059": {
+  "date": "2026-11-01",
+  "reason": "첫 실행 이전 글",
+  "status": "baseline"
+ },
+ "https://bpcf.or.kr/bpcf/main/contents.do?menuNo=200037": {
+  "date": "2026-11-01",
+  "reason": "첫 실행 이전 글",
+  "status": "baseline"
+ },
+ "https://bpcf.or.kr/bpcf/main/contents.do?menuNo=200082": {
+  "date": "2026-11-01",
+  "reason": "본문에 신청·접수 관련 내용 없음",
+  "status": "filtered"
+ },
+ "https://bpcf.or.kr/bpcf/main/contents.do?menuNo=200116": {
+  "date": "2026-11-01",
+  "reason": "첫 실행 이전 글",
+  "status": "baseline"
+ },
+ "https://bpcf.or.kr/bpcf/main/contents.do?menuNo=200140": {
+  "date": "2026-11-01",
+  "reason": "첫 실행 이전 글",
+  "status": "baseline"
+ },
+ "https://bpcf.or.kr/bpcf/main/contents.do?menuNo=200202": {
+  "date": "2026-11-01",
+  "reason": "첫 실행 이전 글",
+  "status": "baseline"
+ },
+ "https://bpcf.or.kr/bpcf/main/contents.do?menuNo=200206": {
+  "date": "2026-11-01",
+  "reason": "본문에 신청·접수 관련 내용 없음",
+  "status": "filtered"
+ },
+ "https://bpcf.or.kr/bpcf/main/contents.do?menuNo=200235": {
+  "date": "2026-11-01",
+  "reason": "본문에 신청·접수 관련 내용 없음",
+  "status": "filtered"
+ },
+ "https://bpcf.or.kr/bpcf/pgm/artistGroup/list.do?menuNo=200193": {
+  "date": "2026-11-01",
+  "reason": "첫 실행 이전 글",
+  "status": "baseline"
+ },
+ "https://bpcf.or.kr/bpcf/pgm/lectureMng/list.do?menuNo=200236": {
+  "date": "2026-11-01",
+  "reason": "본문에 신청·접수 관련 내용 없음",
+  "status": "filtered"
+ },
+ "https://bpcf.or.kr/bpcf/pgm/perform/all/calendar.do?menuNo=200026": {
+  "date": "2026-11-01",
+  "reason": "본문에 신청·접수 관련 내용 없음",
+  "status": "filtered"
  },
  "https://bscf.or.kr/view.do?no=1000": {
   "date": "2026-10-30",
@@ -1059,6 +1194,11 @@
   "reason": "문학 원고 공모라 시각예술·디자인·굿즈 분야와 무관함",
   "status": "skipped"
  },
+ "https://contestkorea.com/sub/view.php?Txt_bcode=030110001&int_gbn=1&str_no=202610150046": {
+  "date": "2026-11-01",
+  "reason": "관련 낮음",
+  "status": "skipped"
+ },
  "https://contestkorea.com/sub/view.php?Txt_bcode=030110001&int_gbn=1&str_no=202610200060": {
   "date": "2026-10-30",
   "reason": "문학(시·수필·소설) 전용 공모로, 굿즈·가구·조명·시각예술 등 관심 분야와 무관함",
@@ -1072,6 +1212,11 @@
  "https://contestkorea.com/sub/view.php?Txt_bcode=030110001&int_gbn=1&str_no=202610230001": {
   "date": "2026-10-30",
   "reason": "문학 분야(소설·에세이·시) 원고 공모로, 굿즈·디자인·시각예술·창업 관심 범위와 무관함",
+  "status": "skipped"
+ },
+ "https://contestkorea.com/sub/view.php?Txt_bcode=030110001&int_gbn=1&str_no=202610270016": {
+  "date": "2026-11-01",
+  "reason": "관련 낮음",
   "status": "skipped"
  },
  "https://contestkorea.com/sub/view.php?Txt_bcode=030110001&int_gbn=1&str_no=202610270028": {
@@ -1287,6 +1432,11 @@
  "https://contestkorea.com/sub/view.php?Txt_bcode=040210001&int_gbn=2&str_no=202610180003": {
   "date": "2026-10-31",
   "reason": "여행·체험 프로그램 모집이라 작가 지원이나 창업 지원이 아님",
+  "status": "skipped"
+ },
+ "https://contestkorea.com/sub/view.php?Txt_bcode=040310001&int_gbn=2&str_no=202610190039": {
+  "date": "2026-11-01",
+  "reason": "관련 낮음",
   "status": "skipped"
  },
  "https://contestkorea.com/sub/view.php?Txt_bcode=040410001&int_gbn=2&str_no=202610200050": {
@@ -2309,6 +2459,46 @@
   "reason": "교육생 모집이라 관심 대상 아님. 마감일 원문 없음",
   "status": "skipped"
  },
+ "https://goseongcf.or.kr/notify/1000": {
+  "date": "2026-11-01",
+  "reason": "참여자 모집 공고이며 작가 공모나 창작 지원이 아니다. 본문에 기간 정보가 없다.",
+  "status": "skipped"
+ },
+ "https://goseongcf.or.kr/notify/1008": {
+  "date": "2026-11-01",
+  "reason": "포럼·팸투어 참여자 모집으로 디자인·예술 지원과 무관하다. 본문에 모집 기간이 없다.",
+  "status": "skipped"
+ },
+ "https://goseongcf.or.kr/notify/1009": {
+  "date": "2026-11-01",
+  "reason": "교육 프로그램 참여자 모집이며 작가 지원이나 상품화 공모가 아니다. 본문에 모집 기간과 대상이 없다.",
+  "status": "skipped"
+ },
+ "https://goseongcf.or.kr/notify/1011": {
+  "date": "2026-11-01",
+  "reason": "초·중학생 대상 체험 프로그램 참여자 모집이라 관심 대상이 아니며, 마감(2026-10-14)도 이미 지났다.",
+  "status": "skipped"
+ },
+ "https://goseongcf.or.kr/notify/1013": {
+  "date": "2026-11-01",
+  "reason": "어린이·청소년 대상 체험 프로그램 참여자 모집이며 공모·지원사업이 아님",
+  "status": "skipped"
+ },
+ "https://goseongcf.or.kr/notify/954": {
+  "date": "2026-11-01",
+  "reason": "첫 실행 이전 글",
+  "status": "baseline"
+ },
+ "https://goseongcf.or.kr/notify/997": {
+  "date": "2026-11-01",
+  "reason": "첫 실행 이전 글",
+  "status": "baseline"
+ },
+ "https://goseongcf.or.kr/notify/999": {
+  "date": "2026-11-01",
+  "reason": "첫 실행 이전 글",
+  "status": "baseline"
+ },
  "https://gunpocf.or.kr/cf/lctre/regularLctre/100002": {
   "date": "2026-10-31",
   "reason": "본문에 신청·접수 관련 내용 없음",
@@ -3014,6 +3204,11 @@
   "reason": "첫 실행 이전 글",
   "status": "baseline"
  },
+ "https://k-startup.go.kr/web/contents/bizpbanc-ongoing.do?pbancSn=179665&schM=view": {
+  "date": "2026-11-01",
+  "reason": "2026 홍익대 아트앤디자인테크 창업보육센터 입주기업 모집(2차) 공고문",
+  "status": "kept"
+ },
  "https://k-startup.go.kr/web/contents/bizpbanc-ongoing.do?pbancSn=179668&schM=view": {
   "date": "2026-10-30",
   "reason": "첫 실행 이전 글",
@@ -3146,6 +3341,26 @@
  },
  "https://kidp.or.kr?act=view&bbsno=19309&menuno=1202&siteno=16&ztag=rO0ABXQAMzxjYWxsIHR5cGU9ImJvYXJkIiBubz0iNjIyIiBza2luPSJraWRwX2JicyI%2BPC9jYWxsPg%3D%3D": {
   "date": "2026-10-30",
+  "reason": "본문에 신청·접수 관련 내용 없음",
+  "status": "filtered"
+ },
+ "https://kofice.or.kr/www/conts/view.do?mnucd=158": {
+  "date": "2026-11-01",
+  "reason": "본문에 신청·접수 관련 내용 없음",
+  "status": "filtered"
+ },
+ "https://kofice.or.kr/www/conts/view.do?mnucd=161": {
+  "date": "2026-11-01",
+  "reason": "본문에 신청·접수 관련 내용 없음",
+  "status": "filtered"
+ },
+ "https://kofice.or.kr/www/conts/view.do?mnucd=334": {
+  "date": "2026-11-01",
+  "reason": "본문에 신청·접수 관련 내용 없음",
+  "status": "filtered"
+ },
+ "https://kofice.or.kr/www/conts/view.do?mnucd=335": {
+  "date": "2026-11-01",
   "reason": "본문에 신청·접수 관련 내용 없음",
   "status": "filtered"
  },
@@ -3469,6 +3684,216 @@
   "reason": "본문이 비어 있음",
   "status": "skipped"
  },
+ "https://namhaetour.org/01245/01330.web": {
+  "date": "2026-11-01",
+  "reason": "재단 자체 추진 사업 소개이며 외부 모집 공고가 아님",
+  "status": "skipped"
+ },
+ "https://namhaetour.org/01254/01255.web?amode=view&gcode=1001&idx=1145": {
+  "date": "2026-11-01",
+  "reason": "첫 실행 이전 글",
+  "status": "baseline"
+ },
+ "https://namhaetour.org/01254/01255.web?amode=view&gcode=1001&idx=1148": {
+  "date": "2026-11-01",
+  "reason": "첫 실행 이전 글",
+  "status": "baseline"
+ },
+ "https://namhaetour.org/01254/01255.web?amode=view&gcode=1001&idx=1158": {
+  "date": "2026-11-01",
+  "reason": "첫 실행 이전 글",
+  "status": "baseline"
+ },
+ "https://namhaetour.org/01254/01255.web?amode=view&gcode=1001&idx=1173": {
+  "date": "2026-11-01",
+  "reason": "첫 실행 이전 글",
+  "status": "baseline"
+ },
+ "https://namhaetour.org/01254/01255.web?amode=view&gcode=1001&idx=1174": {
+  "date": "2026-11-01",
+  "reason": "첫 실행 이전 글",
+  "status": "baseline"
+ },
+ "https://namhaetour.org/01254/01255.web?amode=view&gcode=1001&idx=1175": {
+  "date": "2026-11-01",
+  "reason": "달리기 대회 참가 모집이며 접수 마감됨. 관심 분야 아님",
+  "status": "skipped"
+ },
+ "https://namhaetour.org/01254/01255.web?amode=view&gcode=1001&idx=1177": {
+  "date": "2026-11-01",
+  "reason": "걷기 프로그램 모집이며 행사일이 지나 마감됨. 관심 분야 아님",
+  "status": "skipped"
+ },
+ "https://namhaetour.org/01254/01255.web?amode=view&gcode=1001&idx=1180": {
+  "date": "2026-11-01",
+  "reason": "남해군 거주민 한정 문화 행사이며 마감·종료됨. 관심 분야와 거리 멀음",
+  "status": "skipped"
+ },
+ "https://namhaetour.org/01254/01255.web?amode=view&gcode=1001&idx=1195": {
+  "date": "2026-11-01",
+  "reason": "걷기 행사 참가 모집으로 작가·디자인·굿즈 관련성 없음",
+  "status": "skipped"
+ },
+ "https://namhaetour.org/01254/01255/01255.web?amode=view&gcode=1001&idx=1145": {
+  "date": "2026-11-01",
+  "reason": "행사 종료된 참가자 모집이며 작가 공모·지원과 무관",
+  "status": "skipped"
+ },
+ "https://namhaetour.org/01254/01255/01255.web?amode=view&gcode=1001&idx=1148": {
+  "date": "2026-11-01",
+  "reason": "신청 마감(2026-09-16) 및 행사 종료, 프로필과 무관한 걷기 행사",
+  "status": "skipped"
+ },
+ "https://namhaetour.org/01254/01255/01255.web?amode=view&gcode=1001&idx=1158": {
+  "date": "2026-11-01",
+  "reason": "행사 종료된 참가자 모집이며 작가 지원이 아닌 체험형 행사",
+  "status": "skipped"
+ },
+ "https://namhaetour.org/01254/01255/01255.web?amode=view&gcode=1001&idx=1173": {
+  "date": "2026-11-01",
+  "reason": "제목상 모집 공고 아님",
+  "status": "filtered"
+ },
+ "https://namhaetour.org/01254/01255/01255.web?amode=view&gcode=1001&idx=1174": {
+  "date": "2026-11-01",
+  "reason": "행사 종료된 걷기 참가자 모집이며 프로필과 무관",
+  "status": "skipped"
+ },
+ "https://namhaetour.org/01254/01255/01255.web?amode=view&gcode=1001&idx=1175": {
+  "date": "2026-11-01",
+  "reason": "접수 마감(2026-10-10) 지난 유료 달리기 대회이며 프로필과 무관",
+  "status": "skipped"
+ },
+ "https://namhaetour.org/01254/01255/01255.web?amode=view&gcode=1001&idx=1177": {
+  "date": "2026-11-01",
+  "reason": "행사 종료된 참가자 모집이며 프로필과 무관한 걷기 프로그램",
+  "status": "skipped"
+ },
+ "https://namhaetour.org/01254/01255/01255.web?amode=view&gcode=1001&idx=1180": {
+  "date": "2026-11-01",
+  "reason": "남해군 거주민 한정 문화 행사이며 마감·종료됨. 관심 분야와 거리 멀음 (게시글 #1 중복)",
+  "status": "skipped"
+ },
+ "https://namhaetour.org/01254/01255/01255.web?amode=view&gcode=1001&idx=1195": {
+  "date": "2026-11-01",
+  "reason": "걷기 행사 참가 모집으로 작가·디자인·굿즈 관련성 없음 (게시글 #0 중복)",
+  "status": "skipped"
+ },
+ "https://naruart.or.kr/community/notice_view.php?idx=13158": {
+  "date": "2026-11-01",
+  "reason": "첫 실행 이전 글",
+  "status": "baseline"
+ },
+ "https://naruart.or.kr/community/notice_view.php?idx=13185": {
+  "date": "2026-11-01",
+  "reason": "첫 실행 이전 글",
+  "status": "baseline"
+ },
+ "https://naruart.or.kr/community/notice_view.php?idx=13194": {
+  "date": "2026-11-01",
+  "reason": "첫 실행 이전 글",
+  "status": "baseline"
+ },
+ "https://naruart.or.kr/community/notice_view.php?idx=13195": {
+  "date": "2026-11-01",
+  "reason": "구민 심사단 모집이라 관심 대상 아님. 마감(10월 12일)도 지남",
+  "status": "skipped"
+ },
+ "https://naruart.or.kr/community/notice_view.php?idx=13212": {
+  "date": "2026-11-01",
+  "reason": "제목상 모집 공고 아님",
+  "status": "filtered"
+ },
+ "https://naruart.or.kr/community/notice_view.php?idx=13236": {
+  "date": "2026-11-01",
+  "reason": "제목상 모집 공고 아님",
+  "status": "filtered"
+ },
+ "https://naruart.or.kr/community/notice_view.php?idx=13239": {
+  "date": "2026-11-01",
+  "reason": "제목상 모집 공고 아님",
+  "status": "filtered"
+ },
+ "https://naruart.or.kr/community/notice_view.php?idx=13255": {
+  "date": "2026-11-01",
+  "reason": "청소년 대상 단원 선발이라 관심 대상 아님",
+  "status": "skipped"
+ },
+ "https://njcf.or.kr/www/community/notice?idx=181&mode=view": {
+  "date": "2026-11-01",
+  "reason": "관람객 대상 부대프로그램 참여자 모집이며 작가 공모나 지원사업이 아님. 일정도 2026년 1월로 이미 지남.",
+  "status": "skipped"
+ },
+ "https://njcf.or.kr/www/community/notice?idx=380&mode=view": {
+  "date": "2026-11-01",
+  "reason": "도슨트 근로계약 채용 성격이라 관심 대상 아님. 접수 마감(3월 24일)도 지남",
+  "status": "skipped"
+ },
+ "https://njcf.or.kr/www/community/notice?idx=66&mode=view": {
+  "date": "2026-11-01",
+  "reason": "본문에 신청·접수 관련 내용 없음",
+  "status": "filtered"
+ },
+ "https://njcf.or.kr/www/community/notice?idx=879&mode=view": {
+  "date": "2026-11-01",
+  "reason": "도슨트 근로계약 채용 성격이라 관심 대상 아님. 접수 마감(10월 2일)도 지남",
+  "status": "skipped"
+ },
+ "https://njcf.or.kr/www/community/notices?idx=163&mode=view": {
+  "date": "2026-11-01",
+  "reason": "제목상 모집 공고 아님",
+  "status": "filtered"
+ },
+ "https://njcf.or.kr/www/community/notices?idx=323&mode=view": {
+  "date": "2026-11-01",
+  "reason": "접수 마감(2026-03-13), 사업자등록 필수, 나주 한정이라 관련성 낮음",
+  "status": "skipped"
+ },
+ "https://njcf.or.kr/www/community/notices?idx=324&mode=view": {
+  "date": "2026-11-01",
+  "reason": "2026 지역문화 활성화 지원사업 공모 안내",
+  "status": "kept"
+ },
+ "https://njcf.or.kr/www/community/notices?idx=349&mode=view": {
+  "date": "2026-11-01",
+  "reason": "2026 나빌레라 문화센터 창작실 1기 입주작가 공모",
+  "status": "kept"
+ },
+ "https://njcf.or.kr/www/community/notices?idx=350&mode=view": {
+  "date": "2026-11-01",
+  "reason": "2026 나빌레라 문화센터 전시공간 지원사업 공모",
+  "status": "kept"
+ },
+ "https://njcf.or.kr/www/community/notices?idx=401&mode=view": {
+  "date": "2026-11-01",
+  "reason": "제목상 모집 공고 아님",
+  "status": "filtered"
+ },
+ "https://njcf.or.kr/www/community/notices?idx=410&mode=view": {
+  "date": "2026-11-01",
+  "reason": "제목상 모집 공고 아님",
+  "status": "filtered"
+ },
+ "https://njcf.or.kr/www/community/notices?idx=415&mode=view": {
+  "date": "2026-11-01",
+  "reason": "제목상 모집 공고 아님",
+  "status": "filtered"
+ },
+ "https://njcf.or.kr/www/community/notices?idx=592&mode=view": {
+  "date": "2026-11-01",
+  "reason": "2026 나주형 국제예술 레지던시 입주작가 모집",
+  "status": "kept"
+ },
+ "https://njcf.or.kr/www/community/notices?idx=641&mode=view": {
+  "date": "2026-11-01",
+  "reason": "제목상 모집 공고 아님",
+  "status": "filtered"
+ },
+ "https://njcf.or.kr/www/community/notices?idx=684&mode=view": {
+  "date": "2026-11-01",
+  "reason": "마감일이 지났고 원문에 자격 요건이 없으며 기업 후원 연계형이라 관련성이 낮음.",
+  "status": "skipped"
+ },
  "https://nowonarts.kr/channels/notice/posts/4919": {
   "date": "2026-10-30",
   "reason": "본문에 신청·접수 관련 내용 없음",
@@ -3522,6 +3947,31 @@
  "https://nowonarts.kr/channels/notice/posts/6492": {
   "date": "2026-10-30",
   "reason": "교육 특강 참여자 모집이며 작품 지원이나 공모가 아니라 관련성이 낮다.",
+  "status": "skipped"
+ },
+ "https://nsart.or.kr/board/notice.do?act=read&bcaId=0&bpoId=1709": {
+  "date": "2026-11-01",
+  "reason": "교육생 연수 모집이라 관심 대상 아님. 신청 마감(8월 31일)도 지남",
+  "status": "skipped"
+ },
+ "https://nsart.or.kr/board/notice.do?act=read&bcaId=0&bpoId=1733": {
+  "date": "2026-11-01",
+  "reason": "본문에 신청·접수 관련 내용 없음",
+  "status": "filtered"
+ },
+ "https://nsart.or.kr/board/notice.do?act=read&bcaId=0&bpoId=1764": {
+  "date": "2026-11-01",
+  "reason": "어린이 대상 체험 수업 참여자 모집이라 관심 분야 아님. 행사 일정(10월)도 이미 지남",
+  "status": "skipped"
+ },
+ "https://nsart.or.kr/board/notice.do?act=read&bcaId=0&bpoId=1770": {
+  "date": "2026-11-01",
+  "reason": "본문에 신청·접수 관련 내용 없음",
+  "status": "filtered"
+ },
+ "https://nsart.or.kr/content/111.do": {
+  "date": "2026-11-01",
+  "reason": "사업 소개만 있고 신청 기간과 방법이 없어 모집 공고로 보기 어렵다. 시각예술이 포함되지만 구체적 공모 내용이 없다.",
   "status": "skipped"
  },
  "https://sba.seoul.kr/Pages/BizGuide/D/bizd1.aspx": {
@@ -3704,9 +4154,24 @@
   "reason": "근로자 휴가비 복지 사업으로 굿즈·창작·상품화와 무관",
   "status": "skipped"
  },
+ "https://touraz.kr/announcementList/pssrpView?curPage=1&pssrpSeqEnc=FtF0WfIhlicz1rPYeAOgsw%3D%3D": {
+  "date": "2026-11-01",
+  "reason": "지자체 대상 관광 인프라 사업으로 개인 작가·기업 신청 대상이 아니며 이미 마감됨",
+  "status": "skipped"
+ },
+ "https://touraz.kr/announcementList/pssrpView?curPage=1&pssrpSeqEnc=J9ADEH7BJO9%2Aqs4Xh%5EtF3A%3D%3D": {
+  "date": "2026-11-01",
+  "reason": "여행사·관광시설 대상 여행상품 할인 공모로 굿즈·가구·조명 작가 활동과 무관",
+  "status": "skipped"
+ },
  "https://touraz.kr/announcementList/pssrpView?curPage=1&pssrpSeqEnc=OSX35NQ0qo0%2ApGmgJq%2AEWg%3D%3D": {
   "date": "2026-10-30",
   "reason": "교육 수료자 대상 업무 개선 사례 공모로 프로필과 무관. 접수 마감(10-26) 지남",
+  "status": "skipped"
+ },
+ "https://touraz.kr/announcementList/pssrpView?curPage=1&pssrpSeqEnc=QjEcES6m%5EnHruVkfw6lRUw%3D%3D": {
+  "date": "2026-11-01",
+  "reason": "기업 대상 직원 휴가비 지원으로, 굿즈·디자인·작가 활동과 직접 관련이 없음",
   "status": "skipped"
  },
  "https://touraz.kr/announcementList/pssrpView?curPage=1&pssrpSeqEnc=QlqgfcJQNDWHBrvGybTFEA%3D%3D": {
@@ -3714,9 +4179,34 @@
   "reason": "지자체·공공기관만 신청 가능하고 접수 마감(10-16) 지남. 프로필과 무관",
   "status": "skipped"
  },
+ "https://touraz.kr/announcementList/pssrpView?curPage=1&pssrpSeqEnc=QppbbHBP2ayMYNnjSW7M3Q%3D%3D": {
+  "date": "2026-11-01",
+  "reason": "관광 인재 인턴 매칭 사업으로 작가·굿즈 사업과 무관하며 이미 마감됨",
+  "status": "skipped"
+ },
+ "https://touraz.kr/announcementList/pssrpView?curPage=1&pssrpSeqEnc=SyJ1yU1taYDEyUwvH9%2AODg%3D%3D": {
+  "date": "2026-11-01",
+  "reason": "관광 관련 사업자 대상이라 굿즈·가구 작업과 연결이 약하며 이미 마감됨",
+  "status": "skipped"
+ },
+ "https://touraz.kr/announcementList/pssrpView?curPage=1&pssrpSeqEnc=UwbHmXW07k%5E7gP1YRdW7Ig%3D%3D": {
+  "date": "2026-11-01",
+  "reason": "관광 분야 예비창업 한정이라 굿즈·가구 활동과 직접 연관이 약함",
+  "status": "skipped"
+ },
  "https://touraz.kr/announcementList/pssrpView?curPage=1&pssrpSeqEnc=W%2AZoWlTfXb4QLPtCbKvWEw%3D%3D": {
   "date": "2026-10-30",
   "reason": "접수 마감(10-27) 지남. 관광 관련 사업자로 대상이 한정되어 관련성 낮음",
+  "status": "skipped"
+ },
+ "https://touraz.kr/announcementList/pssrpView?curPage=1&pssrpSeqEnc=b0M6BNXjMKnQIKSB90z3WQ%3D%3D": {
+  "date": "2026-11-01",
+  "reason": "관광 사업 영위 기업 대상이라 굿즈·가구 작가와 직접 연관이 약함",
+  "status": "skipped"
+ },
+ "https://touraz.kr/announcementList/pssrpView?curPage=1&pssrpSeqEnc=bRlQrlSxuZSAvTsogaUNWg%3D%3D": {
+  "date": "2026-11-01",
+  "reason": "기초지자체만 신청 가능한 공모라 개인 작가·1인 사업자는 신청 불가",
   "status": "skipped"
  },
  "https://touraz.kr/announcementList/pssrpView?curPage=1&pssrpSeqEnc=bwoXhjgx7Mkr%5ERXLygjsqw%3D%3D": {
@@ -3739,9 +4229,19 @@
   "reason": "관광 분야 사업 아이템과 창업 7년 이하 조건이 필요하고, 굿즈·제조 사업과 직접 연결이 약함",
   "status": "skipped"
  },
+ "https://touraz.kr/announcementList/pssrpView?curPage=1&pssrpSeqEnc=htcoLNQlLuB4OUwKiXzmWQ%3D%3D": {
+  "date": "2026-11-01",
+  "reason": "온라인 여행사 대상 관광 마케팅 공모로 작가·굿즈 활동과 무관",
+  "status": "skipped"
+ },
  "https://touraz.kr/announcementList/pssrpView?curPage=1&pssrpSeqEnc=kaJNktzxMf9wltHJCu6UJQ%3D%3D": {
   "date": "2026-10-30",
   "reason": "온라인 여행사(OTA) 대상이며 기업 신청 자격이라 개인 작가·굿즈 사업과 무관",
+  "status": "skipped"
+ },
+ "https://touraz.kr/announcementList/pssrpView?curPage=1&pssrpSeqEnc=wy4KJDR2bot2a99TZxzCBw%3D%3D": {
+  "date": "2026-11-01",
+  "reason": "여행업 종사자 교육 수료자 대상 업무 사례 공모로 작가·디자인 활동과 무관하며 이미 마감됨",
   "status": "skipped"
  },
  "https://touraz.kr/announcementList?cntPerPage=12&curPage=1&tabMode=ktoip": {
@@ -3753,6 +4253,76 @@
   "date": "2026-10-30",
   "reason": "개별 공모가 아닌 목록 페이지이며, 관광 단체객 유치 인센티브 중심이라 작가·굿즈 사업과 무관",
   "status": "skipped"
+ },
+ "https://uwcf.or.kr/menu_05/01.jsp?catgry=CAT001&n=434&pg=1&prc=view": {
+  "date": "2026-11-01",
+  "reason": "첫 실행 이전 글",
+  "status": "baseline"
+ },
+ "https://uwcf.or.kr/menu_05/01.jsp?catgry=CAT001&n=435&pg=1&prc=view": {
+  "date": "2026-11-01",
+  "reason": "첫 실행 이전 글",
+  "status": "baseline"
+ },
+ "https://uwcf.or.kr/menu_05/01.jsp?catgry=CAT001&n=438&pg=1&prc=view": {
+  "date": "2026-11-01",
+  "reason": "첫 실행 이전 글",
+  "status": "baseline"
+ },
+ "https://uwcf.or.kr/menu_05/01.jsp?catgry=CAT001&n=454&pg=1&prc=view": {
+  "date": "2026-11-01",
+  "reason": "첫 실행 이전 글",
+  "status": "baseline"
+ },
+ "https://uwcf.or.kr/menu_05/01.jsp?catgry=CAT001&n=464&pg=1&prc=view": {
+  "date": "2026-11-01",
+  "reason": "첫 실행 이전 글",
+  "status": "baseline"
+ },
+ "https://uwcf.or.kr/menu_05/01.jsp?catgry=CAT001&n=465&pg=1&prc=view": {
+  "date": "2026-11-01",
+  "reason": "제목상 모집 공고 아님",
+  "status": "filtered"
+ },
+ "https://uwcf.or.kr/menu_05/01.jsp?catgry=CAT001&n=466&pg=1&prc=view": {
+  "date": "2026-11-01",
+  "reason": "첫 실행 이전 글",
+  "status": "baseline"
+ },
+ "https://uwcf.or.kr/menu_05/01.jsp?catgry=CAT001&n=468&pg=1&prc=view": {
+  "date": "2026-11-01",
+  "reason": "첫 실행 이전 글",
+  "status": "baseline"
+ },
+ "https://uwcf.or.kr/menu_05/01.jsp?catgry=CAT001&n=473&pg=1&prc=view": {
+  "date": "2026-11-01",
+  "reason": "제목상 모집 공고 아님",
+  "status": "filtered"
+ },
+ "https://uwcf.or.kr/menu_05/01.jsp?catgry=CAT001&n=475&pg=1&prc=view": {
+  "date": "2026-11-01",
+  "reason": "개인 작가는 신청할 수 없고 교육 운영 단체만 대상이다. 접수가 2026년 5월에 끝나 이미 마감되었다.",
+  "status": "skipped"
+ },
+ "https://uwcf.or.kr/menu_05/01.jsp?catgry=CAT001&n=476&pg=1&prc=view": {
+  "date": "2026-11-01",
+  "reason": "첫 실행 이전 글",
+  "status": "baseline"
+ },
+ "https://uwcf.or.kr/menu_05/01.jsp?catgry=CAT001&n=477&pg=1&prc=view": {
+  "date": "2026-11-01",
+  "reason": "제목상 모집 공고 아님",
+  "status": "filtered"
+ },
+ "https://uwcf.or.kr/menu_05/01.jsp?catgry=CAT001&n=496&pg=1&prc=view": {
+  "date": "2026-11-01",
+  "reason": "제목상 모집 공고 아님",
+  "status": "filtered"
+ },
+ "https://uwcf.or.kr/menu_05/01.jsp?catgry=CAT001&n=504&pg=1&prc=view": {
+  "date": "2026-11-01",
+  "reason": "첫 실행 이전 글",
+  "status": "baseline"
  },
  "https://wcf.or.kr/bus/bus01.php?msort=52&msort=52&ssort=117&ssort=117tsort%3D6&tsort=6": {
   "date": "2026-10-31",
@@ -3872,6 +4442,11 @@
  "https://wevity.com?c=find&cidx=19&gbn=view&gp=1&gub=1&ix=109966&s=1": {
   "date": "2026-10-30",
   "reason": "건축·한옥 설계 공모라 가구·조명·오브제 중심 관심 분야와 거리가 있고, 준공부문은 실제 건축물 설계자·시공자·건축주만 응모 가능해 작가 본인 적용이 제한적임",
+  "status": "skipped"
+ },
+ "https://wevity.com?c=find&cidx=19&gbn=view&gp=1&gub=1&ix=111586&s=1": {
+  "date": "2026-11-01",
+  "reason": "관련 낮음",
   "status": "skipped"
  },
  "https://wevity.com?c=find&cidx=19&gbn=view&gp=1&gub=1&ix=111654&s=1": {
@@ -4148,6 +4723,111 @@
   "date": "2026-10-31",
   "reason": "제목상 모집 공고 아님",
   "status": "filtered"
+ },
+ "https://yjcf.or.kr/brd/board/200/L/menu/341?bbIdx=2523&brdType=R&thisPage=1": {
+  "date": "2026-11-01",
+  "reason": "첫 실행 이전 글",
+  "status": "baseline"
+ },
+ "https://yjcf.or.kr/brd/board/200/L/menu/341?bbIdx=2544&brdType=R&thisPage=1": {
+  "date": "2026-11-01",
+  "reason": "첫 실행 이전 글",
+  "status": "baseline"
+ },
+ "https://yjcf.or.kr/brd/board/200/L/menu/341?bbIdx=2548&brdType=R&thisPage=1": {
+  "date": "2026-11-01",
+  "reason": "첫 실행 이전 글",
+  "status": "baseline"
+ },
+ "https://yjcf.or.kr/brd/board/200/L/menu/341?bbIdx=2555&brdType=R&thisPage=1": {
+  "date": "2026-11-01",
+  "reason": "첫 실행 이전 글",
+  "status": "baseline"
+ },
+ "https://yjcf.or.kr/brd/board/200/L/menu/341?bbIdx=2564&brdType=R&thisPage=1": {
+  "date": "2026-11-01",
+  "reason": "첫 실행 이전 글",
+  "status": "baseline"
+ },
+ "https://yjcf.or.kr/brd/board/200/L/menu/341?bbIdx=2567&brdType=R&thisPage=1": {
+  "date": "2026-11-01",
+  "reason": "첫 실행 이전 글",
+  "status": "baseline"
+ },
+ "https://yjcf.or.kr/cms/content/view/267": {
+  "date": "2026-11-01",
+  "reason": "공모·지원 신청 공고가 아닌 시설 소개 페이지",
+  "status": "skipped"
+ },
+ "https://yjcf.or.kr/cms/content/view/272": {
+  "date": "2026-11-01",
+  "reason": "사업 목록 페이지이며 개별 모집 공고가 아님",
+  "status": "skipped"
+ },
+ "https://yjcf.or.kr/cms/content/view/585": {
+  "date": "2026-11-01",
+  "reason": "여주 거주 조건이 강하고 접수 기간이 원문에 없어 관련성 낮음",
+  "status": "skipped"
+ },
+ "https://yjcf.or.kr/cms/content/view/587": {
+  "date": "2026-11-01",
+  "reason": "경기도 내 거주와 지역공동체 연계 조건이 강하고 접수 기간이 원문에 없어 관련성 낮음",
+  "status": "skipped"
+ },
+ "https://yjcf.or.kr/cms/content/view/588": {
+  "date": "2026-11-01",
+  "reason": "첫 실행 이전 글",
+  "status": "baseline"
+ },
+ "https://yjcf.or.kr/cms/content/view/589": {
+  "date": "2026-11-01",
+  "reason": "첫 실행 이전 글",
+  "status": "baseline"
+ },
+ "https://yjcf.or.kr/cms/content/view/590": {
+  "date": "2026-11-01",
+  "reason": "첫 실행 이전 글",
+  "status": "baseline"
+ },
+ "https://yjcf.or.kr/cms/content/view/591": {
+  "date": "2026-11-01",
+  "reason": "첫 실행 이전 글",
+  "status": "baseline"
+ },
+ "https://yjcf.or.kr/cms/content/view/608": {
+  "date": "2026-11-01",
+  "reason": "첫 실행 이전 글",
+  "status": "baseline"
+ },
+ "https://yjcf.or.kr/cms/content/view/611": {
+  "date": "2026-11-01",
+  "reason": "첫 실행 이전 글",
+  "status": "baseline"
+ },
+ "https://yjcf.or.kr/cms/content/view/616": {
+  "date": "2026-11-01",
+  "reason": "첫 실행 이전 글",
+  "status": "baseline"
+ },
+ "https://yjcf.or.kr/cms/content/view/623": {
+  "date": "2026-11-01",
+  "reason": "첫 실행 이전 글",
+  "status": "baseline"
+ },
+ "https://yjcf.or.kr/cms/content/view/625": {
+  "date": "2026-11-01",
+  "reason": "첫 실행 이전 글",
+  "status": "baseline"
+ },
+ "https://yjcf.or.kr/edu/board/1/M/menu/442": {
+  "date": "2026-11-01",
+  "reason": "본문에 신청·접수 관련 내용 없음",
+  "status": "filtered"
+ },
+ "https://yjcf.or.kr/reserve/board/3/M/L/menu/630": {
+  "date": "2026-11-01",
+  "reason": "첫 실행 이전 글",
+  "status": "baseline"
  },
  "https://youth.seoul.go.kr/content.do?key=2310100006": {
   "date": "2026-10-30",
