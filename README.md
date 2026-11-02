@@ -65,3 +65,14 @@ python -m pytest -q                 # 오프라인 테스트
 python -m radar.run --dry-run       # AI 없이 새 후보 글만 출력
 ANTHROPIC_API_KEY=... python -m radar.run
 ```
+
+## 한국 IP에서 수집하기 (내 Mac을 실행기로)
+
+해외 접속을 막는 국내 사이트를 읽으려면 수집을 한국에 있는 컴퓨터에서 돌립니다.
+
+1. 저장소 **Settings → Actions → Runners → New self-hosted runner** 에서 `--token` 뒤의 값을 복사합니다 (1시간 유효).
+2. Mac 터미널에 붙여 넣습니다:
+   `curl -fsSL https://raw.githubusercontent.com/Ye-kki/gongmo-radar/main/tools/setup-runner-mac.sh | bash -s -- <토큰>`
+3. **Settings → Secrets and variables → Actions → Variables** 에 `RUNNER` = `self-hosted` 를 추가합니다.
+
+Mac이 꺼져 있거나 잠든 동안의 수집은 깨어나면 실행됩니다 (최대 24시간 대기). 되돌리려면 `RUNNER` 변수를 지우면 됩니다.
