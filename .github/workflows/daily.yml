@@ -11,7 +11,7 @@ on:
         default: ""
   push:
     branches: [main]
-    paths: ["site/**"]
+    paths: ["site/**", ".github/workflows/**"]
 
 permissions:
   contents: write
@@ -19,7 +19,8 @@ permissions:
   id-token: write
 
 concurrency:
-  group: radar
+  # page-only updates (push) must not wait behind a 40-minute collection run
+  group: radar-${{ github.event_name == 'push' && 'page' || 'collect' }}
   cancel-in-progress: false
 
 jobs:
