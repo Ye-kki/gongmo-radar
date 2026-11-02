@@ -695,6 +695,44 @@
   },
   {
    "ageLimit": null,
+   "announceDate": null,
+   "board": "art",
+   "cats": [
+    "startup",
+    "youth",
+    "local"
+   ],
+   "checkReasons": [],
+   "confidence": "high",
+   "deadline": "2026-11-12",
+   "deadlineNote": "18시까지, 이메일 접수",
+   "eligibility": "대구 남구에서 창업하려는 청년 예비창업자(팀) 등 유형별 대상. 공유오피스·자택 사업장 제외, 세부 자격은 공고문 참조",
+   "fit": [
+    "pixel"
+   ],
+   "foundAt": "2026-11-02",
+   "fp": "b0c0730f5d584f12",
+   "id": "58c37a415fad",
+   "individualOk": true,
+   "needsCheck": false,
+   "org": "(사)대구경북고용복지연구원",
+   "region": "대구",
+   "relevance": 2,
+   "sources": [
+    "웹 검색"
+   ],
+   "startDate": "2026-10-02",
+   "summary": "대구 남구의 청년 창업과 지역 로컬브랜드 육성을 위해 예비창업, 기창업, 협업, 로컬브랜드 유형별로 사업화 지원금과 멘토링을 주는 사업이다.",
+   "support": [
+    "fund",
+    "service"
+   ],
+   "supportAmount": "사업화 지원금 1개사당 최대 2,000만원 (지원유형별 상이, 자부담금 5% 이상)",
+   "title": "2026년 남구다운 청년 창업 지원사업 통합공고(수정)",
+   "url": "https://www.venturesquare.net/announcement/1119312"
+  },
+  {
+   "ageLimit": null,
    "announceDate": "2026-11-17",
    "board": "art",
    "cats": [
@@ -872,6 +910,41 @@
    "supportAmount": null,
    "title": "2027 MUSE Design Awards",
    "url": "https://www.designboom.com/competition/2027-muse-design-awards/"
+  },
+  {
+   "ageLimit": null,
+   "announceDate": null,
+   "board": "art",
+   "cats": [
+    "startup"
+   ],
+   "checkReasons": [],
+   "confidence": "high",
+   "deadline": "2026-11-20",
+   "deadlineNote": "18시 마감, 이메일 접수",
+   "eligibility": "2023~2026년 초기창업패키지 선정·졸업 기업 (사업자등록증 필요, 창업업력 7년 미만)",
+   "fit": [
+    "pixel"
+   ],
+   "foundAt": "2026-11-02",
+   "fp": "7b8235087872fcc1",
+   "id": "543283dd32ef",
+   "individualOk": false,
+   "needsCheck": false,
+   "org": "씨엔티테크(주) (초기창업패키지 운영사무국)",
+   "region": "전국",
+   "relevance": 2,
+   "sources": [
+    "K-Startup 사업공고"
+   ],
+   "startDate": "2026-11-02",
+   "summary": "SM엔터테인먼트·SMCP와 협업할 문화산업 스타트업을 모집하는 오픈이노베이션 프로그램이다. 사전·현장 밋업과 협업 과제 도출, 컨설팅을 지원한다. 초기창업패키지 선정·졸업 이력이 있어야 신청할 수 있다.",
+   "support": [
+    "service"
+   ],
+   "supportAmount": null,
+   "title": "2026년 초기창업패키지 SM엔터테인먼트 오픈이노베이션 밋업 CultureTech Challenge",
+   "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179661"
   },
   {
    "ageLimit": "신진 연나이 39세 이하(기준일 2027.1.1), 중견 연나이 40세 이상, 기획자 연령 제한 없음",
@@ -2190,5 +2263,5 @@
    "url": "https://www.damyangcf.or.kr/user/sub207040"
   }
  ],
- "updatedAt": "2026-11-01 09:28"
+ "updatedAt": "2026-11-02 10:04"
 }

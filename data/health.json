@@ -1,31 +1,61 @@
 {
  "ai": {
   "calls": 11,
-  "cli_cost_usd": 0.0642,
+  "cli_cost_usd": 0.2777,
   "errors": [],
-  "est_cost_usd": 0.0513,
-  "input_tokens": 188574,
+  "est_cost_usd": 0.0441,
+  "input_tokens": 215446,
   "mode": "subscription",
-  "output_tokens": 64859,
+  "output_tokens": 45173,
   "searches": 0
  },
  "counts": {
-  "baseline": 48,
-  "candidates": 106,
-  "changed": 3,
-  "changed_applied": 3,
-  "fetched": 88,
-  "filtered": 27,
-  "new": 6,
+  "baseline": 0,
+  "candidates": 48,
+  "changed": 0,
+  "fetched": 30,
+  "filtered": 1,
+  "new": 2,
   "over_limit": 0,
-  "read_failed": 19,
-  "rechecked": 19,
+  "read_failed": 21,
+  "rechecked": 20,
   "same": 0,
-  "sent": 63,
-  "skipped": 53,
-  "updated": 4
+  "sent": 26,
+  "skipped": 24,
+  "updated": 0
  },
- "discovery": [],
+ "discovery": [
+  {
+   "found": 0,
+   "id": "goods-kr",
+   "new": 0
+  },
+  {
+   "found": 0,
+   "id": "art-kr",
+   "new": 0
+  },
+  {
+   "found": 1,
+   "id": "design-kr",
+   "new": 1
+  },
+  {
+   "found": 0,
+   "id": "residency",
+   "new": 0
+  },
+  {
+   "found": 1,
+   "id": "startup-kr",
+   "new": 1
+  },
+  {
+   "found": 0,
+   "id": "overseas",
+   "new": 0
+  }
+ ],
  "read_errors": [
   "K-Startup 사업공고: https://www.k-startup.go.kr/magicsso/requestAuthEx.jsp?RelayState=https://www.bizinfo.go.k → HTTP 404: https://www.k-startup.go.kr/magicsso/requestAuthEx.jsp?RelayState=https://www.bizinfo.go.kr/magicsso/requestCo",
   "K-Startup 사업공고: https://www.k-startup.go.kr/magicsso/requestAuthEx.jsp?RelayState=https://sso.sbiz.or.kr/m → HTTP 404: https://www.k-startup.go.kr/magicsso/requestAuthEx.jsp?RelayState=https://sso.sbiz.or.kr/magicsso/requestConne",
@@ -33,7 +63,6 @@
   "K-Startup 사업공고: https://www.k-startup.go.kr/magicsso/requestAuthEx.jsp?RelayState=https://www.smes.go.kr/s → HTTP 404: https://www.k-startup.go.kr/magicsso/requestAuthEx.jsp?RelayState=https://www.smes.go.kr/sanhakin/magicsso/req",
   "K-Startup 사업공고: https://www.k-startup.go.kr/magicsso/requestAuthEx.jsp?RelayState=https://www.kosmes.or.kr → HTTP 404: https://www.k-startup.go.kr/magicsso/requestAuthEx.jsp?RelayState=https://www.kosmes.or.kr/magicsso/requestCon",
   "K-Startup 사업공고: https://www.k-startup.go.kr/magicsso/requestAuthEx.jsp?RelayState=https://www.smes.go.kr/b → HTTP 404: https://www.k-startup.go.kr/magicsso/requestAuthEx.jsp?RelayState=https://www.smes.go.kr/binet/magicsso/reques",
-  "한국국제문화교류진흥원: https://kofice.or.kr/www/bbs/list.do?mnucd=176&scBbsMngSn=25 → robots.txt가 수집을 막음: https://kofice.or.kr/www/bbs/list.do?mnucd=176&scBbsMngSn=25",
   "강남문화재단: https://www.gangnam.go.kr/file/1/get/31af8c16-af17-42cb-bacb-3d1c1073626e/download.do → robots.txt가 수집을 막음: https://www.gangnam.go.kr/file/1/get/31af8c16-af17-42cb-bacb-3d1c1073626e/download.do",
   "강남문화재단: https://www.gangnam.go.kr/file/2/get/31af8c16-af17-42cb-bacb-3d1c1073626e/download.do → robots.txt가 수집을 막음: https://www.gangnam.go.kr/file/2/get/31af8c16-af17-42cb-bacb-3d1c1073626e/download.do",
   "강남문화재단: https://www.gangnam.go.kr/file/3/get/31af8c16-af17-42cb-bacb-3d1c1073626e/download.do → robots.txt가 수집을 막음: https://www.gangnam.go.kr/file/3/get/31af8c16-af17-42cb-bacb-3d1c1073626e/download.do",
@@ -44,16 +73,17 @@
   "강남문화재단: https://www.gangnam.go.kr/file/1/get/acfdcbfa-b154-4040-abb9-f948eb3aaf70/download.do → robots.txt가 수집을 막음: https://www.gangnam.go.kr/file/1/get/acfdcbfa-b154-4040-abb9-f948eb3aaf70/download.do",
   "강남문화재단: https://www.gangnam.go.kr/file/2/get/acfdcbfa-b154-4040-abb9-f948eb3aaf70/download.do → robots.txt가 수집을 막음: https://www.gangnam.go.kr/file/2/get/acfdcbfa-b154-4040-abb9-f948eb3aaf70/download.do",
   "강남문화재단: https://www.gangnam.go.kr/file/1/get/0518db8e-5a8c-4d3e-bcdd-ebcaf4580a48/download.do → robots.txt가 수집을 막음: https://www.gangnam.go.kr/file/1/get/0518db8e-5a8c-4d3e-bcdd-ebcaf4580a48/download.do",
-  "강남문화재단: https://www.gangnam.go.kr/file/2/get/0518db8e-5a8c-4d3e-bcdd-ebcaf4580a48/download.do → robots.txt가 수집을 막음: https://www.gangnam.go.kr/file/2/get/0518db8e-5a8c-4d3e-bcdd-ebcaf4580a48/download.do"
+  "강남문화재단: https://www.gangnam.go.kr/file/2/get/0518db8e-5a8c-4d3e-bcdd-ebcaf4580a48/download.do → robots.txt가 수집을 막음: https://www.gangnam.go.kr/file/2/get/0518db8e-5a8c-4d3e-bcdd-ebcaf4580a48/download.do",
+  "웹 검색: https://www.theteams.kr/activities/page/337599/lc → HTTP 403: https://www.theteams.kr/activities/page/337599/lc"
  ],
- "runAt": "2026-11-01 09:28",
+ "runAt": "2026-11-02 10:04",
  "sources": [
   {
    "board": "art",
    "id": "contestkorea-design",
-   "links": 54,
+   "links": 52,
    "name": "콘테스트코리아 미술·디자인",
-   "new": 3,
+   "new": 5,
    "status": "ok",
    "url": "https://www.contestkorea.com/sub/list.php?int_gbn=1&Txt_bcode=030610001"
   },
@@ -71,7 +101,7 @@
    "id": "wevity-art",
    "links": 15,
    "name": "위비티 예체능·미술",
-   "new": 0,
+   "new": 1,
    "status": "ok",
    "url": "https://www.wevity.com/?c=find&s=1&gub=1&cidx=20"
   },
@@ -80,7 +110,7 @@
    "id": "artculture-contest",
    "links": 100,
    "name": "아트앤컬처 공모란",
-   "new": 7,
+   "new": 3,
    "status": "ok",
    "url": "https://www.art-culture.co.kr/magazine_contest"
   },
@@ -107,7 +137,7 @@
    "id": "artnuri",
    "links": 22,
    "name": "아트누리 (전국 문화재단 지원사업 모음)",
-   "new": 2,
+   "new": 1,
    "status": "ok",
    "url": "https://artnuri.or.kr/crawler/info/search.do?key=2301170002&sc_isDo=I&sc_isDo=T&recordCountPerPage=50&pageIndex=1"
   },
@@ -171,7 +201,7 @@
    "id": "kstartup-ongoing",
    "links": 57,
    "name": "K-Startup 사업공고",
-   "new": 7,
+   "new": 8,
    "status": "ok",
    "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do"
   },
@@ -216,7 +246,7 @@
   {
    "board": "art",
    "id": "designboom-competitions",
-   "links": 17,
+   "links": 16,
    "name": "designboom competitions",
    "new": 0,
    "status": "ok",
@@ -252,237 +282,396 @@
   },
   {
    "board": "art",
-   "detail": "HTTPSConnectionPool(host='www.namdongcf.or.kr', port=443): Max retries exceeded with url: /user/index.php (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.namdongcf.or.kr', port=443) at 0x742",
-   "id": "org-namdongcf",
+   "detail": "홈페이지에서 공지·공모 게시판을 찾지 못함. orgs.yaml에 board_url을 적어주세요",
+   "id": "org-pccf",
    "kind": "org",
    "links": 0,
-   "name": "남동문화재단",
+   "name": "평택시문화재단",
+   "new": 0,
+   "status": "empty",
+   "url": "https://www.pccf.or.kr"
+  },
+  {
+   "board": "art",
+   "detail": "HTTPSConnectionPool(host='www.gjcf.or.kr', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unab",
+   "id": "org-gjcf",
+   "kind": "org",
+   "links": 0,
+   "name": "광주문화재단",
    "new": 0,
    "status": "error",
-   "url": "https://www.namdongcf.or.kr/user/index.php"
+   "url": "https://www.gjcf.or.kr"
+  },
+  {
+   "board": "art",
+   "id": "org-gwcf",
+   "kind": "org",
+   "links": 20,
+   "name": "강원문화재단",
+   "new": 0,
+   "status": "ok",
+   "url": "https://gwcf.or.kr/ko/foundation-news/notice.html?no=0"
   },
   {
    "board": "art",
    "detail": "홈페이지에서 공지·공모 게시판을 찾지 못함. orgs.yaml에 board_url을 적어주세요",
-   "id": "org-guriart",
+   "id": "org-jfac",
    "kind": "org",
    "links": 0,
-   "name": "구리문화재단",
+   "name": "제주문화예술재단",
    "new": 0,
    "status": "empty",
-   "url": "https://www.guriart.or.kr"
+   "url": "https://www.jfac.kr"
   },
   {
    "board": "art",
-   "id": "org-goseongcf",
+   "detail": "홈페이지에서 공지·공모 게시판을 찾지 못함. orgs.yaml에 board_url을 적어주세요",
+   "id": "org-ifac",
+   "kind": "org",
+   "links": 0,
+   "name": "인천문화재단",
+   "new": 0,
+   "status": "empty",
+   "url": "https://www.ifac.or.kr"
+  },
+  {
+   "board": "art",
+   "id": "org-hcf",
+   "kind": "org",
+   "links": 172,
+   "name": "화성시문화재단",
+   "new": 4,
+   "status": "ok",
+   "url": "https://www.hcf.or.kr/hcf/61?chathead=%ED%99%94%EC%84%B1%EC%8B%9C%EB%AC%B8%ED%99%94%EC%9E%AC%EB%8B%A8"
+  },
+  {
+   "board": "art",
+   "detail": "홈페이지에서 공지·공모 게시판을 찾지 못함. orgs.yaml에 board_url을 적어주세요",
+   "id": "org-sscf",
+   "kind": "org",
+   "links": 0,
+   "name": "수성문화재단",
+   "new": 0,
+   "status": "empty",
+   "url": "https://www.sscf.or.kr"
+  },
+  {
+   "board": "art",
+   "detail": "홈페이지에서 공지·공모 게시판을 찾지 못함. orgs.yaml에 board_url을 적어주세요",
+   "id": "org-sccf",
+   "kind": "org",
+   "links": 0,
+   "name": "사천문화재단",
+   "new": 0,
+   "status": "empty",
+   "url": "https://www.sccf.or.kr"
+  },
+  {
+   "board": "art",
+   "id": "org-gctf",
+   "kind": "org",
+   "links": 26,
+   "name": "고창문화관광재단",
+   "new": 0,
+   "status": "ok",
+   "url": "https://gctf.or.kr/web/board/1/postList"
+  },
+  {
+   "board": "art",
+   "detail": "robots.txt가 수집을 막음: https://www.dangjinart.kr:444",
+   "id": "org-dangjinart",
+   "kind": "org",
+   "links": 0,
+   "name": "당진문화재단",
+   "new": 0,
+   "status": "robots",
+   "url": "https://www.dangjinart.kr:444"
+  },
+  {
+   "board": "art",
+   "id": "org-dgdgcf",
+   "kind": "org",
+   "links": 14,
+   "name": "대구동구문화재단",
+   "new": 0,
+   "status": "ok",
+   "url": "https://www.dgdgcf.or.kr/front/board/list.php?code=notice"
+  },
+  {
+   "board": "art",
+   "id": "org-seochocf",
+   "kind": "org",
+   "links": 13,
+   "name": "서초문화재단",
+   "new": 0,
+   "status": "ok",
+   "url": "https://www.seochocf.or.kr/site/main/archive/post/category/아카데미-공지사항?id=notice"
+  },
+  {
+   "board": "art",
+   "detail": "HTTPSConnectionPool(host='www.songpafac.or.kr', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed:",
+   "id": "org-songpafac",
+   "kind": "org",
+   "links": 0,
+   "name": "송파문화재단",
+   "new": 0,
+   "status": "error",
+   "url": "https://www.songpafac.or.kr"
+  },
+  {
+   "board": "art",
+   "detail": "robots.txt가 수집을 막음: https://yfac.kr/main/main.do",
+   "id": "org-yfac",
+   "kind": "org",
+   "links": 0,
+   "name": "양천문화재단",
+   "new": 0,
+   "status": "robots",
+   "url": "https://yfac.kr/main/main.do"
+  },
+  {
+   "board": "art",
+   "detail": "HTTPSConnectionPool(host='www.ydct.org', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable",
+   "id": "org-ydct",
+   "kind": "org",
+   "links": 0,
+   "name": "영덕문화관광재단",
+   "new": 0,
+   "status": "error",
+   "url": "https://www.ydct.org"
+  },
+  {
+   "board": "art",
+   "detail": "robots.txt가 수집을 막음: https://www.ucf.or.kr:478",
+   "id": "org-ucf",
+   "kind": "org",
+   "links": 0,
+   "name": "울주문화재단",
+   "new": 0,
+   "status": "robots",
+   "url": "https://www.ucf.or.kr:478"
+  },
+  {
+   "board": "art",
+   "detail": "홈페이지에서 공지·공모 게시판을 찾지 못함. orgs.yaml에 board_url을 적어주세요",
+   "id": "org-jnfac",
+   "kind": "org",
+   "links": 0,
+   "name": "중랑문화재단",
+   "new": 0,
+   "status": "empty",
+   "url": "https://www.jnfac.or.kr"
+  },
+  {
+   "board": "art",
+   "detail": "robots.txt가 수집을 막음: https://www.hbcf.or.kr/front",
+   "id": "org-hbcf",
+   "kind": "org",
+   "links": 0,
+   "name": "행복북구문화재단",
+   "new": 0,
+   "status": "robots",
+   "url": "https://www.hbcf.or.kr/front"
+  },
+  {
+   "board": "art",
+   "id": "org-gcart",
    "kind": "org",
    "links": 15,
-   "name": "고성문화재단",
-   "new": 5,
+   "name": "과천문화재단",
+   "new": 0,
    "status": "ok",
-   "url": "https://goseongcf.or.kr/notify"
+   "url": "https://www.gcart.or.kr/kr/commu/noticeList.do"
   },
   {
    "board": "art",
-   "detail": "홈페이지에서 공지·공모 게시판을 찾지 못함. orgs.yaml에 board_url을 적어주세요",
-   "id": "org-gcfac",
+   "id": "org-damyangcf",
    "kind": "org",
-   "links": 0,
-   "name": "금천문화재단",
+   "links": 48,
+   "name": "담양군문화재단",
    "new": 0,
-   "status": "empty",
-   "url": "https://gcfac.or.kr/mpage"
+   "status": "ok",
+   "url": "https://www.damyangcf.or.kr/user/board/lists/board_cd/4010"
   },
   {
    "board": "art",
-   "detail": "홈페이지에서 공지·공모 게시판을 찾지 못함. orgs.yaml에 board_url을 적어주세요",
-   "id": "org-snart",
+   "detail": "HTTPSConnectionPool(host='www.mycf.or.kr', port=443): Max retries exceeded with url: /main (Caused by SSLError(SSLError(1, '[SSL: DH_KEY_TOO_SMALL] dh key too small (_ssl.c:1010)')))",
+   "id": "org-mycf",
    "kind": "org",
    "links": 0,
-   "name": "성남문화재단",
-   "new": 0,
-   "status": "empty",
-   "url": "https://www.snart.or.kr"
-  },
-  {
-   "board": "art",
-   "detail": "robots.txt가 수집을 막음: https://tyhansancf.or.kr",
-   "id": "org-tyhansancf",
-   "kind": "org",
-   "links": 0,
-   "name": "통영문화재단",
-   "new": 0,
-   "status": "robots",
-   "url": "https://tyhansancf.or.kr"
-  },
-  {
-   "board": "art",
-   "detail": "HTTP 404: https://gucf.or.kr",
-   "id": "org-gucf",
-   "kind": "org",
-   "links": 0,
-   "name": "구미문화재단",
+   "name": "밀양문화관광재단",
    "new": 0,
    "status": "error",
-   "url": "https://gucf.or.kr"
+   "url": "https://www.mycf.or.kr/main"
   },
   {
    "board": "art",
-   "detail": "robots.txt가 수집을 막음: https://kofice.or.kr/www/bbs/list.do?mnucd=169&scBbsMngSn=7",
-   "id": "org-kofice",
+   "id": "org-ansanart",
    "kind": "org",
-   "links": 46,
-   "name": "한국국제문화교류진흥원",
-   "new": 5,
-   "status": "robots",
-   "url": "https://kofice.or.kr"
-  },
-  {
-   "board": "art",
-   "id": "org-uwcf",
-   "kind": "org",
-   "links": 21,
-   "name": "고래문화재단",
-   "new": 5,
+   "links": 115,
+   "name": "안산문화재단",
+   "new": 0,
    "status": "ok",
-   "url": "https://www.uwcf.or.kr/menu_05/01.jsp"
+   "url": "https://www.ansanart.com/lay2/bbs/S1T366C369/A/58/list.do"
   },
   {
    "board": "art",
-   "id": "org-nsart",
+   "id": "org-gfac",
    "kind": "org",
-   "links": 19,
-   "name": "광주시문화재단",
-   "new": 5,
+   "links": 4,
+   "name": "관악문화재단",
+   "new": 0,
    "status": "ok",
-   "url": "https://www.nsart.or.kr/board/notice.do"
+   "url": "https://gfac.or.kr/site/main/archive/post/category/재단소식"
   },
   {
    "board": "art",
-   "id": "org-naruart",
-   "kind": "org",
-   "links": 15,
-   "name": "광진문화재단",
-   "new": 5,
-   "status": "ok",
-   "url": "https://www.naruart.or.kr/community/notice_list.php"
-  },
-  {
-   "board": "art",
-   "detail": "HTTPSConnectionPool(host='www.sbculture.or.kr', port=443): Max retries exceeded with url: /culture/main/main.do (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.sbculture.or.kr', port=443) at",
-   "id": "org-sbculture",
+   "detail": "HTTPSConnectionPool(host='hub.cfac.or.kr', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self",
+   "id": "org-hub-cfac",
    "kind": "org",
    "links": 0,
-   "name": "성북문화재단",
+   "name": "천안문화재단",
    "new": 0,
    "status": "error",
-   "url": "https://www.sbculture.or.kr/culture/main/main.do"
-  },
-  {
-   "board": "art",
-   "detail": "robots.txt가 수집을 막음: https://www.geojeart.or.kr/index.asp",
-   "id": "org-geojeart",
-   "kind": "org",
-   "links": 0,
-   "name": "거제시문화예술재단",
-   "new": 0,
-   "status": "robots",
-   "url": "https://www.geojeart.or.kr/index.asp"
-  },
-  {
-   "board": "art",
-   "id": "org-njcf",
-   "kind": "org",
-   "links": 22,
-   "name": "나주문화재단",
-   "new": 15,
-   "status": "ok",
-   "url": "https://www.njcf.or.kr/www/community/notice"
-  },
-  {
-   "board": "art",
-   "id": "org-yjcf",
-   "kind": "org",
-   "links": 76,
-   "name": "여주세종문화관광재단",
-   "new": 5,
-   "status": "ok",
-   "url": "http://www.yjcf.or.kr/brd/board/200/L/menu/341"
+   "url": "https://hub.cfac.or.kr"
   },
   {
    "board": "art",
    "detail": "홈페이지에서 공지·공모 게시판을 찾지 못함. orgs.yaml에 board_url을 적어주세요",
-   "id": "org-stcf",
+   "id": "org-gongjucf",
    "kind": "org",
    "links": 0,
-   "name": "삼척관광문화재단",
+   "name": "공주문화관광재단",
    "new": 0,
    "status": "empty",
-   "url": "https://www.stcf.or.kr"
+   "url": "https://www.gongjucf.or.kr"
+  },
+  {
+   "board": "art",
+   "id": "org-ywcf",
+   "kind": "org",
+   "links": 40,
+   "name": "영월문화관광재단",
+   "new": 0,
+   "status": "ok",
+   "url": "https://www.ywcf.or.kr/contest"
+  },
+  {
+   "board": "art",
+   "detail": "홈페이지에서 공지·공모 게시판을 찾지 못함. orgs.yaml에 board_url을 적어주세요",
+   "id": "org-yctf",
+   "kind": "org",
+   "links": 0,
+   "name": "영주문화관광재단",
+   "new": 0,
+   "status": "empty",
+   "url": "https://www.yctf.or.kr"
+  },
+  {
+   "board": "art",
+   "id": "org-ypcf",
+   "kind": "org",
+   "links": 162,
+   "name": "양평문화재단",
+   "new": 0,
+   "status": "ok",
+   "url": "https://www.ypcf.or.kr/support"
+  },
+  {
+   "board": "art",
+   "detail": "HTTPSConnectionPool(host='seosancf.or.kr', port=443): Max retries exceeded with url: / (Caused by NewConnectionError(\"HTTPSConnection(host='seosancf.or.kr', port=443): Failed to establish a new connec",
+   "id": "org-seosancf",
+   "kind": "org",
+   "links": 0,
+   "name": "서산문화재단",
+   "new": 0,
+   "status": "error",
+   "url": "https://seosancf.or.kr"
   },
   {
    "board": "art",
    "detail": "목록에서 게시글 링크를 찾지 못함. 자바스크립트로 그리는 페이지이거나 link_regex 확인 필요",
-   "id": "org-gsctf",
+   "id": "org-pcfac",
    "kind": "org",
    "links": 0,
-   "name": "경산문화관광재단",
+   "name": "포천문화관광재단",
    "new": 0,
    "status": "empty",
-   "url": "https://gsctf.or.kr/user/notice/announcement"
+   "url": "https://www.pcfac.or.kr/sub07/sub04.php"
   },
   {
    "board": "art",
-   "detail": "HTTPSConnectionPool(host='www.chilgokctf.or.kr', port=443): Max retries exceeded with url: /ctf/main.do (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate ve",
-   "id": "org-chilgokctf",
+   "id": "org-kotpa",
+   "kind": "org",
+   "links": 112,
+   "name": "전통공연예술진흥재단",
+   "new": 0,
+   "status": "ok",
+   "url": "https://www.kotpa.org/ucms/bbs/B0000021/list.do?menuNo=300008"
+  },
+  {
+   "board": "art",
+   "id": "org-hongju",
+   "kind": "org",
+   "links": 17,
+   "name": "홍주문화관광재단",
+   "new": 0,
+   "status": "ok",
+   "url": "https://hongju.or.kr/home/board/brdList.do?menu_cd=000030"
+  },
+  {
+   "board": "art",
+   "detail": "HTTP 403: https://jjct.or.kr",
+   "id": "org-jjct",
    "kind": "org",
    "links": 0,
-   "name": "칠곡문화관광재단",
+   "name": "진주문화관광재단",
    "new": 0,
    "status": "error",
-   "url": "https://www.chilgokctf.or.kr/ctf/main.do"
+   "url": "https://jjct.or.kr"
   },
   {
    "board": "art",
-   "id": "org-namhaetour",
+   "id": "org-guroartsvalley",
    "kind": "org",
-   "links": 50,
-   "name": "남해군관광문화재단",
-   "new": 14,
-   "status": "ok",
-   "url": "https://www.namhaetour.org/01254/01255.web"
-  },
-  {
-   "board": "art",
-   "id": "org-bpcf",
-   "kind": "org",
-   "links": 102,
-   "name": "인천시부평구문화재단",
-   "new": 5,
-   "status": "ok",
-   "url": "https://www.bpcf.or.kr/bpcf/bbs/BMSR00001/list.do?menuNo=200059"
-  },
-  {
-   "board": "art",
-   "detail": "robots.txt가 수집을 막음: https://www.acc.go.kr",
-   "id": "org-acc",
-   "kind": "org",
-   "links": 0,
-   "name": "국립아시아문화전당",
+   "links": 42,
+   "name": "구로문화재단",
    "new": 0,
-   "status": "robots",
-   "url": "https://www.acc.go.kr"
+   "status": "ok",
+   "url": "https://www.guroartsvalley.or.kr/user/board/mn011801.do"
   },
   {
    "board": "art",
    "detail": "홈페이지에서 공지·공모 게시판을 찾지 못함. orgs.yaml에 board_url을 적어주세요",
-   "id": "org-mmca",
+   "id": "org-dgfca",
    "kind": "org",
    "links": 0,
-   "name": "국립현대미술관",
+   "name": "대구문화예술진흥원",
    "new": 0,
    "status": "empty",
-   "url": "https://www.mmca.go.kr"
+   "url": "https://dgfca.or.kr/main"
+  },
+  {
+   "board": "art",
+   "detail": "HTTP 404: https://www.bsjincf.or.kr/main.php",
+   "id": "org-bsjincf",
+   "kind": "org",
+   "links": 0,
+   "name": "부산진문화재단",
+   "new": 0,
+   "status": "error",
+   "url": "https://www.bsjincf.or.kr/main.php"
+  },
+  {
+   "board": "art",
+   "detail": "HTTPSConnectionPool(host='gunwi3964.org', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unabl",
+   "id": "org-gunwi3964",
+   "kind": "org",
+   "links": 0,
+   "name": "군위문화관광재단",
+   "new": 0,
+   "status": "error",
+   "url": "https://gunwi3964.org"
   },
   {
    "board": "art",
@@ -530,7 +719,7 @@
   },
   {
    "board": "art",
-   "detail": "HTTPSConnectionPool(host='www.injeart.or.kr', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.injeart.or.kr', port=443) at 0x7424e036ce90>, 'Conne",
+   "detail": "HTTPSConnectionPool(host='www.injeart.or.kr', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.injeart.or.kr', port=443) at 0x76e6f91106e0>, 'Conne",
    "id": "org-injeart",
    "kind": "org",
    "links": 0,
@@ -541,7 +730,7 @@
   },
   {
    "board": "art",
-   "detail": "HTTPSConnectionPool(host='www.artgy.or.kr', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.artgy.or.kr', port=443) at 0x7424e03f2210>, 'Connectio",
+   "detail": "HTTPSConnectionPool(host='www.artgy.or.kr', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.artgy.or.kr', port=443) at 0x76e6f9a14ef0>, 'Connectio",
    "id": "org-artgy",
    "kind": "org",
    "links": 0,
@@ -692,7 +881,7 @@
    "board": "art",
    "id": "org-cfsc",
    "kind": "org",
-   "links": 119,
+   "links": 115,
    "name": "순천문화재단",
    "new": 0,
    "status": "ok",
@@ -700,7 +889,7 @@
   },
   {
    "board": "art",
-   "detail": "HTTPSConnectionPool(host='www.gcaf.or.kr', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.gcaf.or.kr', port=443) at 0x7424e0b35fd0>, 'Connection ",
+   "detail": "HTTPSConnectionPool(host='www.gcaf.or.kr', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.gcaf.or.kr', port=443) at 0x76e6f95cd4c0>, 'Connection ",
    "id": "org-gcaf",
    "kind": "org",
    "links": 0,
@@ -726,7 +915,7 @@
    "kind": "org",
    "links": 23,
    "name": "강릉문화재단",
-   "new": 0,
+   "new": 1,
    "status": "ok",
    "url": "https://www.gncaf.or.kr/ko/support/gongmo/supportinfo"
   },
@@ -806,7 +995,7 @@
   },
   {
    "board": "art",
-   "detail": "HTTPSConnectionPool(host='www.jjcf.or.kr', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.jjcf.or.kr', port=443) at 0x7424e03ad010>, 'Connection ",
+   "detail": "HTTPSConnectionPool(host='www.jjcf.or.kr', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.jjcf.or.kr', port=443) at 0x76e6f8d51880>, 'Connection ",
    "id": "org-jjcf",
    "kind": "org",
    "links": 0,
@@ -1012,7 +1201,7 @@
   },
   {
    "board": "art",
-   "detail": "HTTPSConnectionPool(host='www.jncf.or.kr', port=443): Max retries exceeded with url: /jact/index.do (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.jncf.or.kr', port=443) at 0x7424dff26ae0>,",
+   "detail": "HTTPSConnectionPool(host='www.jncf.or.kr', port=443): Max retries exceeded with url: /jact/index.do (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.jncf.or.kr', port=443) at 0x76e6f9ac5d30>,",
    "id": "org-jncf",
    "kind": "org",
    "links": 0,
@@ -1067,7 +1256,7 @@
    "board": "art",
    "id": "org-ydpcf",
    "kind": "org",
-   "links": 43,
+   "links": 42,
    "name": "영등포문화재단",
    "new": 0,
    "status": "ok",
@@ -1085,7 +1274,7 @@
   },
   {
    "board": "art",
-   "detail": "HTTPSConnectionPool(host='www.ictf.or.kr', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.ictf.or.kr', port=443) at 0x7424dfef4f50>, 'Connection ",
+   "detail": "HTTPSConnectionPool(host='www.ictf.or.kr', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.ictf.or.kr', port=443) at 0x76e6f87f1490>, 'Connection ",
    "id": "org-ictf",
    "kind": "org",
    "links": 0,
@@ -1096,410 +1285,245 @@
   },
   {
    "board": "art",
-   "detail": "시간 부족으로 오늘은 건너뜀",
-   "id": "org-pccf",
+   "detail": "HTTPSConnectionPool(host='www.namdongcf.or.kr', port=443): Max retries exceeded with url: /user/index.php (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.namdongcf.or.kr', port=443) at 0x76e",
+   "id": "org-namdongcf",
    "kind": "org",
    "links": 0,
-   "name": "평택시문화재단",
+   "name": "남동문화재단",
    "new": 0,
-   "status": "skipped",
-   "url": "https://www.pccf.or.kr"
+   "status": "error",
+   "url": "https://www.namdongcf.or.kr/user/index.php"
   },
   {
    "board": "art",
    "detail": "시간 부족으로 오늘은 건너뜀",
-   "id": "org-gjcf",
+   "id": "org-guriart",
    "kind": "org",
    "links": 0,
-   "name": "광주문화재단",
+   "name": "구리문화재단",
    "new": 0,
    "status": "skipped",
-   "url": "https://www.gjcf.or.kr"
+   "url": "https://www.guriart.or.kr"
   },
   {
    "board": "art",
    "detail": "시간 부족으로 오늘은 건너뜀",
-   "id": "org-gwcf",
+   "id": "org-goseongcf",
    "kind": "org",
    "links": 0,
-   "name": "강원문화재단",
+   "name": "고성문화재단",
    "new": 0,
    "status": "skipped",
-   "url": "https://gwcf.or.kr/ko"
+   "url": "https://goseongcf.or.kr"
   },
   {
    "board": "art",
    "detail": "시간 부족으로 오늘은 건너뜀",
-   "id": "org-jfac",
+   "id": "org-gcfac",
    "kind": "org",
    "links": 0,
-   "name": "제주문화예술재단",
+   "name": "금천문화재단",
    "new": 0,
    "status": "skipped",
-   "url": "https://www.jfac.kr"
+   "url": "https://gcfac.or.kr/mpage"
   },
   {
    "board": "art",
    "detail": "시간 부족으로 오늘은 건너뜀",
-   "id": "org-ifac",
+   "id": "org-snart",
    "kind": "org",
    "links": 0,
-   "name": "인천문화재단",
+   "name": "성남문화재단",
    "new": 0,
    "status": "skipped",
-   "url": "https://www.ifac.or.kr"
+   "url": "https://www.snart.or.kr"
   },
   {
    "board": "art",
    "detail": "시간 부족으로 오늘은 건너뜀",
-   "id": "org-hcf",
+   "id": "org-tyhansancf",
    "kind": "org",
    "links": 0,
-   "name": "화성시문화재단",
+   "name": "통영문화재단",
    "new": 0,
    "status": "skipped",
-   "url": "https://www.hcf.or.kr"
+   "url": "https://tyhansancf.or.kr"
   },
   {
    "board": "art",
    "detail": "시간 부족으로 오늘은 건너뜀",
-   "id": "org-sscf",
+   "id": "org-gucf",
    "kind": "org",
    "links": 0,
-   "name": "수성문화재단",
+   "name": "구미문화재단",
    "new": 0,
    "status": "skipped",
-   "url": "https://www.sscf.or.kr"
+   "url": "https://gucf.or.kr"
   },
   {
    "board": "art",
    "detail": "시간 부족으로 오늘은 건너뜀",
-   "id": "org-sccf",
+   "id": "org-kofice",
    "kind": "org",
    "links": 0,
-   "name": "사천문화재단",
+   "name": "한국국제문화교류진흥원",
    "new": 0,
    "status": "skipped",
-   "url": "https://www.sccf.or.kr"
+   "url": "https://kofice.or.kr"
   },
   {
    "board": "art",
    "detail": "시간 부족으로 오늘은 건너뜀",
-   "id": "org-gctf",
+   "id": "org-uwcf",
    "kind": "org",
    "links": 0,
-   "name": "고창문화관광재단",
+   "name": "고래문화재단",
    "new": 0,
    "status": "skipped",
-   "url": "https://gctf.or.kr"
+   "url": "https://www.uwcf.or.kr/index_main.jsp"
   },
   {
    "board": "art",
    "detail": "시간 부족으로 오늘은 건너뜀",
-   "id": "org-dangjinart",
+   "id": "org-nsart",
    "kind": "org",
    "links": 0,
-   "name": "당진문화재단",
+   "name": "광주시문화재단",
    "new": 0,
    "status": "skipped",
-   "url": "https://www.dangjinart.kr:444"
+   "url": "https://www.nsart.or.kr/index.do"
   },
   {
    "board": "art",
    "detail": "시간 부족으로 오늘은 건너뜀",
-   "id": "org-dgdgcf",
+   "id": "org-naruart",
    "kind": "org",
    "links": 0,
-   "name": "대구동구문화재단",
+   "name": "광진문화재단",
    "new": 0,
    "status": "skipped",
-   "url": "https://www.dgdgcf.or.kr"
+   "url": "https://www.naruart.or.kr/index.php"
   },
   {
    "board": "art",
    "detail": "시간 부족으로 오늘은 건너뜀",
-   "id": "org-seochocf",
+   "id": "org-sbculture",
    "kind": "org",
    "links": 0,
-   "name": "서초문화재단",
+   "name": "성북문화재단",
    "new": 0,
    "status": "skipped",
-   "url": "https://www.seochocf.or.kr/site/main/home"
+   "url": "https://www.sbculture.or.kr/culture/main/main.do"
   },
   {
    "board": "art",
    "detail": "시간 부족으로 오늘은 건너뜀",
-   "id": "org-songpafac",
+   "id": "org-geojeart",
    "kind": "org",
    "links": 0,
-   "name": "송파문화재단",
+   "name": "거제시문화예술재단",
    "new": 0,
    "status": "skipped",
-   "url": "https://www.songpafac.or.kr"
+   "url": "https://www.geojeart.or.kr/index.asp"
   },
   {
    "board": "art",
    "detail": "시간 부족으로 오늘은 건너뜀",
-   "id": "org-yfac",
+   "id": "org-njcf",
    "kind": "org",
    "links": 0,
-   "name": "양천문화재단",
+   "name": "나주문화재단",
    "new": 0,
    "status": "skipped",
-   "url": "https://yfac.kr/main/main.do"
+   "url": "https://www.njcf.or.kr"
   },
   {
    "board": "art",
    "detail": "시간 부족으로 오늘은 건너뜀",
-   "id": "org-ydct",
+   "id": "org-yjcf",
    "kind": "org",
    "links": 0,
-   "name": "영덕문화관광재단",
+   "name": "여주세종문화관광재단",
    "new": 0,
    "status": "skipped",
-   "url": "https://www.ydct.org"
+   "url": "https://www.yjcf.or.kr"
   },
   {
    "board": "art",
    "detail": "시간 부족으로 오늘은 건너뜀",
-   "id": "org-ucf",
+   "id": "org-stcf",
    "kind": "org",
    "links": 0,
-   "name": "울주문화재단",
+   "name": "삼척관광문화재단",
    "new": 0,
    "status": "skipped",
-   "url": "https://www.ucf.or.kr:478"
+   "url": "https://www.stcf.or.kr"
   },
   {
    "board": "art",
    "detail": "시간 부족으로 오늘은 건너뜀",
-   "id": "org-jnfac",
+   "id": "org-gsctf",
    "kind": "org",
    "links": 0,
-   "name": "중랑문화재단",
+   "name": "경산문화관광재단",
    "new": 0,
    "status": "skipped",
-   "url": "https://www.jnfac.or.kr"
+   "url": "https://gsctf.or.kr"
   },
   {
    "board": "art",
    "detail": "시간 부족으로 오늘은 건너뜀",
-   "id": "org-hbcf",
+   "id": "org-chilgokctf",
    "kind": "org",
    "links": 0,
-   "name": "행복북구문화재단",
+   "name": "칠곡문화관광재단",
    "new": 0,
    "status": "skipped",
-   "url": "https://www.hbcf.or.kr/front"
+   "url": "https://www.chilgokctf.or.kr/ctf/main.do"
   },
   {
    "board": "art",
    "detail": "시간 부족으로 오늘은 건너뜀",
-   "id": "org-gcart",
+   "id": "org-namhaetour",
    "kind": "org",
    "links": 0,
-   "name": "과천문화재단",
+   "name": "남해군관광문화재단",
    "new": 0,
    "status": "skipped",
-   "url": "https://www.gcart.or.kr"
+   "url": "https://www.namhaetour.org/main.web"
   },
   {
    "board": "art",
    "detail": "시간 부족으로 오늘은 건너뜀",
-   "id": "org-damyangcf",
+   "id": "org-bpcf",
    "kind": "org",
    "links": 0,
-   "name": "담양군문화재단",
+   "name": "인천시부평구문화재단",
    "new": 0,
    "status": "skipped",
-   "url": "https://www.damyangcf.or.kr"
+   "url": "https://www.bpcf.or.kr/bpcf/main/main.do"
   },
   {
    "board": "art",
    "detail": "시간 부족으로 오늘은 건너뜀",
-   "id": "org-mycf",
+   "id": "org-acc",
    "kind": "org",
    "links": 0,
-   "name": "밀양문화관광재단",
+   "name": "국립아시아문화전당",
    "new": 0,
    "status": "skipped",
-   "url": "https://www.mycf.or.kr/main"
+   "url": "https://www.acc.go.kr"
   },
   {
    "board": "art",
    "detail": "시간 부족으로 오늘은 건너뜀",
-   "id": "org-ansanart",
+   "id": "org-mmca",
    "kind": "org",
    "links": 0,
-   "name": "안산문화재단",
+   "name": "국립현대미술관",
    "new": 0,
    "status": "skipped",
-   "url": "https://www.ansanart.com"
-  },
-  {
-   "board": "art",
-   "detail": "시간 부족으로 오늘은 건너뜀",
-   "id": "org-gfac",
-   "kind": "org",
-   "links": 0,
-   "name": "관악문화재단",
-   "new": 0,
-   "status": "skipped",
-   "url": "https://www.gfac.or.kr"
-  },
-  {
-   "board": "art",
-   "detail": "시간 부족으로 오늘은 건너뜀",
-   "id": "org-hub-cfac",
-   "kind": "org",
-   "links": 0,
-   "name": "천안문화재단",
-   "new": 0,
-   "status": "skipped",
-   "url": "https://hub.cfac.or.kr"
-  },
-  {
-   "board": "art",
-   "detail": "시간 부족으로 오늘은 건너뜀",
-   "id": "org-gongjucf",
-   "kind": "org",
-   "links": 0,
-   "name": "공주문화관광재단",
-   "new": 0,
-   "status": "skipped",
-   "url": "https://www.gongjucf.or.kr"
-  },
-  {
-   "board": "art",
-   "detail": "시간 부족으로 오늘은 건너뜀",
-   "id": "org-ywcf",
-   "kind": "org",
-   "links": 0,
-   "name": "영월문화관광재단",
-   "new": 0,
-   "status": "skipped",
-   "url": "https://www.ywcf.or.kr"
-  },
-  {
-   "board": "art",
-   "detail": "시간 부족으로 오늘은 건너뜀",
-   "id": "org-yctf",
-   "kind": "org",
-   "links": 0,
-   "name": "영주문화관광재단",
-   "new": 0,
-   "status": "skipped",
-   "url": "https://www.yctf.or.kr"
-  },
-  {
-   "board": "art",
-   "detail": "시간 부족으로 오늘은 건너뜀",
-   "id": "org-ypcf",
-   "kind": "org",
-   "links": 0,
-   "name": "양평문화재단",
-   "new": 0,
-   "status": "skipped",
-   "url": "https://www.ypcf.or.kr"
-  },
-  {
-   "board": "art",
-   "detail": "시간 부족으로 오늘은 건너뜀",
-   "id": "org-seosancf",
-   "kind": "org",
-   "links": 0,
-   "name": "서산문화재단",
-   "new": 0,
-   "status": "skipped",
-   "url": "https://seosancf.or.kr"
-  },
-  {
-   "board": "art",
-   "detail": "시간 부족으로 오늘은 건너뜀",
-   "id": "org-pcfac",
-   "kind": "org",
-   "links": 0,
-   "name": "포천문화관광재단",
-   "new": 0,
-   "status": "skipped",
-   "url": "https://www.pcfac.or.kr"
-  },
-  {
-   "board": "art",
-   "detail": "시간 부족으로 오늘은 건너뜀",
-   "id": "org-kotpa",
-   "kind": "org",
-   "links": 0,
-   "name": "전통공연예술진흥재단",
-   "new": 0,
-   "status": "skipped",
-   "url": "https://www.kotpa.org/ucms/main/indexmain.do"
-  },
-  {
-   "board": "art",
-   "detail": "시간 부족으로 오늘은 건너뜀",
-   "id": "org-hongju",
-   "kind": "org",
-   "links": 0,
-   "name": "홍주문화관광재단",
-   "new": 0,
-   "status": "skipped",
-   "url": "https://hongju.or.kr"
-  },
-  {
-   "board": "art",
-   "detail": "시간 부족으로 오늘은 건너뜀",
-   "id": "org-jjct",
-   "kind": "org",
-   "links": 0,
-   "name": "진주문화관광재단",
-   "new": 0,
-   "status": "skipped",
-   "url": "https://jjct.or.kr"
-  },
-  {
-   "board": "art",
-   "detail": "시간 부족으로 오늘은 건너뜀",
-   "id": "org-guroartsvalley",
-   "kind": "org",
-   "links": 0,
-   "name": "구로문화재단",
-   "new": 0,
-   "status": "skipped",
-   "url": "https://www.guroartsvalley.or.kr/user/home.do"
-  },
-  {
-   "board": "art",
-   "detail": "시간 부족으로 오늘은 건너뜀",
-   "id": "org-dgfca",
-   "kind": "org",
-   "links": 0,
-   "name": "대구문화예술진흥원",
-   "new": 0,
-   "status": "skipped",
-   "url": "https://dgfca.or.kr/main"
-  },
-  {
-   "board": "art",
-   "detail": "시간 부족으로 오늘은 건너뜀",
-   "id": "org-bsjincf",
-   "kind": "org",
-   "links": 0,
-   "name": "부산진문화재단",
-   "new": 0,
-   "status": "skipped",
-   "url": "https://www.bsjincf.or.kr/main.php"
-  },
-  {
-   "board": "art",
-   "detail": "시간 부족으로 오늘은 건너뜀",
-   "id": "org-gunwi3964",
-   "kind": "org",
-   "links": 0,
-   "name": "군위문화관광재단",
-   "new": 0,
-   "status": "skipped",
-   "url": "https://gunwi3964.org"
+   "url": "https://www.mmca.go.kr"
   }
  ]
 }
