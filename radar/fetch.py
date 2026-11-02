@@ -158,3 +158,49 @@ def robots_allows(rules: list[tuple[str, str]], path: str) -> bool:
             if n > best_len or (n == best_len and kind == "allow"):
                 best_len, allowed = n, kind == "allow"
     return allowed
+
+
+class Renderer:
+    """Opens a page in a real (headless) browser, for boards whose list is drawn by JavaScript.
+    Started only when first needed; silently unavailable if Playwright is not installed."""
+
+    def __init__(self, fetcher: Fetcher):
+        self.fetcher = fetcher
+        self._pw = self._browser = None
+        self.broken = False
+        self.used = 0
+
+    def get(self, url: str, wait_ms: int = 2500) -> Page | None:
+        if self.broken or self.used >= 40:  # keep runs short
+            return None
+        if not self.fetcher._allowed(url):
+            raise RobotsBlocked(f"robots.txt가 수집을 막음: {url}")
+        try:
+            if self._browser is None:
+                from playwright.sync_api import sync_playwright
+                self._pw = sync_playwright().start()
+                self._browser = self._pw.chromium.launch()
+            self.fetcher._wait(urlsplit(url).netloc)
+            page = self._browser.new_page(user_agent=BROWSER_UA, locale="ko-KR")
+            try:
+                page.goto(url, wait_until="domcontentloaded", timeout=30000)
+                page.wait_for_timeout(wait_ms)
+                html, final = page.content(), page.url
+            finally:
+                page.close()
+            self.used += 1
+            return Page(final, html, "text/html", html.encode())
+        except RobotsBlocked:
+            raise
+        except Exception:
+            self.broken = self._browser is None  # cannot start at all → stop trying
+            return None
+
+    def close(self):
+        try:
+            if self._browser:
+                self._browser.close()
+            if self._pw:
+                self._pw.stop()
+        except Exception:
+            pass

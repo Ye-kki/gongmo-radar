@@ -280,3 +280,16 @@ def test_api_source(monkeypatch):
         def get(self, url, robots=True):
             raise RuntimeError("HTTP 500: " + url)
     assert "SECRET" not in fetch_api(Bad(), src)[1]
+
+
+def test_score_board_and_candidates():
+    import re as _re
+    from radar.collect import board_candidates, score_board
+    home = ('<a href="/site/board/index.php?table_nm=tbl_notice">알림공간</a>'
+            '<a href="javascript:void(0)" onclick="goPage(\'/sub.php?code=33\')">지원사업공고</a><a href="/x">채용공고</a>')
+    assert [u for u, _ in board_candidates(home, "https://www.ex.or.kr/")] == [
+        "https://www.ex.or.kr/sub.php?code=33", "https://www.ex.or.kr/site/board/index.php?table_nm=tbl_notice"]
+    board = "".join(f'<a href="?table_nm=tbl_notice&fn=view&no=2026{i:05d}">2026 공모 안내 제목 {i}</a>' for i in range(6))
+    board += '<a href="/sub.php?code=114">인권경영 추진방향 안내</a>'
+    n, rx = score_board(board, "https://www.ex.or.kr/site/board/index.php?table_nm=tbl_notice")
+    assert n == 6 and _re.search(rx, "https://www.ex.or.kr/site/board/index.php?table_nm=tbl_notice&fn=view&no=202600001")

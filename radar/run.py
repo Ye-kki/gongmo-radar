@@ -15,17 +15,19 @@ Usage:
 from __future__ import annotations
 
 import argparse
+import re
 import sys
 import time
 from datetime import date, datetime, timedelta, timezone
 from pathlib import Path
+from urllib.parse import urljoin
 
 import yaml
 
 from .apisrc import fetch_api
-from .collect import extract_links, find_boards, keyword_match
+from .collect import board_candidates, extract_links, keyword_match, score_board
 from .detail import read_post
-from .fetch import Fetcher, FetchError, RobotsBlocked
+from .fetch import Fetcher, FetchError, Renderer, RobotsBlocked
 from .prefilter import date_fingerprint, looks_like_call
 from .store import Store, normalize_url
 from .validate import clean
@@ -51,6 +53,7 @@ def main(argv=None, ai_factory=None, fetcher=None, data_dir=None):
     ap.add_argument("--max-fetch", type=int, default=500, help="하루에 열어볼 최대 게시글 수")
     ap.add_argument("--budget-min", type=float, default=45, help="이 시간(분)이 지나면 멈추고 저장")
     ap.add_argument("--no-recheck", action="store_true")
+    ap.add_argument("--no-render", action="store_true", help="never open pages in a headless browser")
     args = ap.parse_args(argv)
 
     started = time.monotonic()
@@ -59,7 +62,9 @@ def main(argv=None, ai_factory=None, fetcher=None, data_dir=None):
     today = now.date()
     sources_cfg, profile, disc = load("sources.yaml"), load("profile.yaml"), load("discovery.yaml")
     store = Store(Path(data_dir) if data_dir else ROOT / "data")
+    real_fetcher = fetcher is None
     fetcher = fetcher or Fetcher()
+    RENDER.r = Renderer(fetcher) if real_fetcher and not args.no_render else None
     health = {"runAt": now.strftime("%Y-%m-%d %H:%M"), "sources": [], "discovery": [], "counts": {}}
     counts = {"candidates": 0, "fetched": 0, "filtered": 0, "sent": 0, "same": 0, "new": 0, "updated": 0,
               "skipped": 0, "read_failed": 0, "over_limit": 0, "baseline": 0, "rechecked": 0, "changed": 0}
@@ -112,13 +117,15 @@ def main(argv=None, ai_factory=None, fetcher=None, data_dir=None):
              "board": "art", "kind": "org"}
         store.sources_state.setdefault(org["id"], {})["scanned"] = today.isoformat()
         try:
-            boards = [org["board_url"]] if org.get("board_url") else _org_boards(org, fetcher, store, today)
+            boards = [{"url": org["board_url"], "link_regex": org.get("link_regex")}] if org.get("board_url") \
+                else _org_boards(org, fetcher, store, today)
             if not boards:
                 h["status"], h["detail"] = "empty", "홈페이지에서 공지·공모 게시판을 찾지 못함. orgs.yaml에 board_url을 적어주세요"
             for b in boards:
-                _scan_board(src, b, fetcher, store, sources_cfg, candidates, counts, h, today)
+                bsrc = {**src, "link_regex": b["link_regex"]} if b.get("link_regex") else src
+                _scan_board(bsrc, b["url"], fetcher, store, sources_cfg, candidates, counts, h, today)
             if boards:
-                h["url"] = boards[0]
+                h["url"] = boards[0]["url"]
         except RobotsBlocked as e:
             h["status"], h["detail"] = "robots", str(e)
         except FetchError as e:
@@ -252,14 +259,28 @@ def main(argv=None, ai_factory=None, fetcher=None, data_dir=None):
     health["counts"] = counts
     health["ai"] = ai.usage.as_dict()
     health["ai"]["mode"] = getattr(ai, "mode", "api")
+    if RENDER.r:
+        health["rendered_pages"] = RENDER.r.used
+        RENDER.r.close()
     store.save(now.strftime("%Y-%m-%d %H:%M"), health)
     print(f"done: {counts} ai={health['ai']}", file=sys.stderr)
     return 0
 
 
 def _scan_board(src, url, fetcher, store, sources_cfg, candidates, counts, h, today):
-    page = fetcher.get(url)
+    st = store.sources_state.setdefault(src["id"], {})
+    page = None
+    if st.get("render") and RENDER.r:
+        page = RENDER.r.get(url)
+    if page is None:
+        page = fetcher.get(url)
     links = extract_links(page.text, page.url, src)
+    if not links and not st.get("render") and RENDER.r:  # list may be drawn by JavaScript: try a real browser once
+        rp = RENDER.r.get(url)
+        if rp is not None:
+            rlinks = extract_links(rp.text, rp.url, src)
+            if rlinks:
+                page, links, st["render"] = rp, rlinks, True
     h["links"] += len(links)
     if links:
         h.setdefault("sample", []).extend(f"{l['title'][:40]} | {l['url']}" for l in links[:4])  # for fixing link rules
@@ -306,14 +327,49 @@ def _scan_board(src, url, fetcher, store, sources_cfg, candidates, counts, h, to
 
 
 def _org_boards(org, fetcher, store, today):
+    """Board pages of an institution as [{"url", "link_regex"}]. Found in code, cached for 14 days."""
     st = store.sources_state.setdefault(org["id"], {})
     checked = st.get("boards_checked")
-    if st.get("boards") and checked and (today - date.fromisoformat(checked)).days < 14:
-        return st["boards"]
-    page = fetcher.get(org["home"])
-    boards = find_boards(page.text, page.url)
+    boards = [b if isinstance(b, dict) else {"url": b} for b in (st.get("boards") or [])]
+    fresh = checked and (today - date.fromisoformat(checked)).days < 14
+    if boards and fresh and all(b.get("link_regex") for b in boards):
+        return boards
+    if _org_boards.left <= 0:  # spread first-time discovery over several days
+        return [b for b in boards if b.get("link_regex")]
+    _org_boards.left -= 1
+    home = fetcher.get(org["home"])
+    if not board_candidates(home.text, home.url) and RENDER.r:  # menu drawn by JavaScript
+        home = RENDER.r.get(org["home"]) or home
+    home_links = {urljoin(home.url, (a or "")) for a in re.findall(r'href="([^"#]+)"', home.text)}
+    scored, seen_urls = [], set()
+    queue = board_candidates(home.text, home.url)
+    budget = 7
+    while queue and budget > 0:
+        url, name = queue.pop(0)
+        if url in seen_urls:
+            continue
+        seen_urls.add(url)
+        budget -= 1
+        try:
+            page = fetcher.get(url)
+        except (FetchError, RobotsBlocked):
+            continue
+        n, rx = score_board(page.text, page.url, home_links)
+        if n >= 4:
+            scored.append((n, {"url": page.url, "link_regex": rx, "name": name}))
+        elif budget > 2:  # a category page such as "알림마당": look one level down
+            queue.extend(c for c in board_candidates(page.text, page.url) if c[0] not in seen_urls)
+    scored.sort(key=lambda x: -x[0])
+    boards = [b for _, b in scored[:2]]
     st["boards"], st["boards_checked"] = boards, today.isoformat()
     return boards
+
+
+_org_boards.left = 30
+
+
+class RENDER:  # the shared headless browser for this run (None in tests)
+    r = None
 
 
 def _load_orgs(data_dir):

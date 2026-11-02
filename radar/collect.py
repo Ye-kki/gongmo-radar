@@ -2,7 +2,7 @@
 from __future__ import annotations
 
 import re
-from urllib.parse import urljoin, urlsplit
+from urllib.parse import parse_qsl, urljoin, urlsplit
 
 from bs4 import BeautifulSoup
 
@@ -73,31 +73,86 @@ def keyword_match(title: str, keywords: list[str]) -> bool:
     return any(k.lower() in t for k in keywords)
 
 
-BOARD_NAME_RX = re.compile(r"^\s*(공모\s*소식|지원\s*사업\s*공모|입주\s*작가\s*공모|공지\s*사항|공지|사업\s*공모|공모\s*사업|공모\s*안내|공모|모집\s*공고|공고|새\s*소식|알림\s*마당|재단\s*소식|"
-                           r"지원\s*사업|공모\s*/\s*모집|모집|공고\s*/\s*공모)\s*$")
-BOARD_RANK = ["공모소식", "지원사업공모", "사업공모", "입주작가공모", "공모사업", "공모안내", "공모", "모집공고", "지원사업", "공고", "공지사항", "공지", "알림마당", "새소식", "재단소식", "모집"]
+BOARD_WORD_RX = re.compile(r"(공지|공모|모집|공고|새\s*소식|알림|지원\s*사업|재단\s*소식|입주\s*작가)")
+BOARD_SKIP_RX = re.compile(r"(결과|채용|입찰|계약|FAQ|자주|정보\s*공개|감사|민원|칭찬|고객|규정|경영|인권|윤리|청렴|보도|언론|뉴스레터|갤러리|사진|영상|자료실)")
+BOARD_RANK = ["공모소식", "지원사업공모", "사업공모", "지원사업공고", "입주작가공모", "공모사업", "공모안내", "공모", "모집공고",
+              "공모·모집", "공모/모집", "지원사업", "공고", "일반공고", "공지사항", "공지", "알림마당", "알림", "새소식", "재단소식", "모집"]
+SCRIPT_URL_RX = re.compile(r"""['"]((?:https?://|/)[^'"\s]+|[\w./-]+\.(?:do|php|jsp|asp|aspx|html?)(?:\?[^'"\s]*)?)['"]""")
 
 
-def find_boards(html: str, base_url: str, limit: int = 2) -> list[str]:
-    """Find notice / open-call board pages linked from an institution's homepage."""
+def _script_url(a) -> str:
+    """URL from href, or from onclick / javascript: href like goPage('/notice/list.do')."""
+    href = (a.get("href") or "").strip()
+    if href and not href.startswith("#") and not href.lower().startswith("javascript"):
+        return href
+    m = SCRIPT_URL_RX.search((a.get("onclick") or "") + " " + href)
+    return m.group(1) if m else ""
+
+
+def board_candidates(html: str, base_url: str, limit: int = 6) -> list[tuple[str, str]]:
+    """Links on an institution page that look like notice / open-call board menus, best first."""
     soup = BeautifulSoup(html, "lxml")
     base_site = _site(urlsplit(base_url).netloc)
-    found: dict[str, int] = {}
+    found: dict[str, tuple[int, str]] = {}
     for a in soup.find_all("a"):
         name = re.sub(r"\s+", " ", a.get_text(" ", strip=True))
-        if not BOARD_NAME_RX.match(name):
+        if not name or len(name) > 16 or not BOARD_WORD_RX.search(name) or BOARD_SKIP_RX.search(name):
             continue
-        href = (a.get("href") or "").strip()
-        m = re.search(r"""(?:goPage\w*|location\.href\s*=|window\.open)\s*\(?\s*['"]([^'"]+)['"]""",
-                      (a.get("onclick") or "") + " " + href)
-        if m:
-            href = m.group(1)  # menus that navigate by script, e.g. onclick="goPage('/notice/list.do')"
-        if not href or href.startswith(("#", "mailto:")) or href.lower().startswith("javascript"):
+        href = _script_url(a)
+        if not href or href.startswith("mailto:"):
             continue
-        url = urljoin(base_url, href)
+        url = urljoin(base_url, href).split("#")[0]
         if not url.startswith("http") or _site(urlsplit(url).netloc) != base_site or FILE_EXT.search(url):
             continue
         key = re.sub(r"\s+", "", name)
-        rank = BOARD_RANK.index(key) if key in BOARD_RANK else len(BOARD_RANK)
-        found[url] = min(rank, found.get(url, 99))
-    return [u for u, _ in sorted(found.items(), key=lambda x: x[1])][:limit]
+        rank = BOARD_RANK.index(key) if key in BOARD_RANK else len(BOARD_RANK) + (0 if "공모" in key else 5)
+        if url not in found or rank < found[url][0]:
+            found[url] = (rank, name)
+    return [(u, n) for u, (r, n) in sorted(found.items(), key=lambda x: x[1][0])][:limit]
+
+
+def find_boards(html: str, base_url: str, limit: int = 2) -> list[str]:
+    """Back-compat: board menu URLs only (no scoring)."""
+    return [u for u, _ in board_candidates(html, base_url)][:limit]
+
+
+ID_PARAM_RX = re.compile(r"^(idx|seq|no|id|num|nttid|nttsn|wr_id|uid|bbsidx|bidx|bbidx|board_?no|article_?no|post_?no|"
+                         r"brd_?idx|bno|b_?idx|list_?no|data_?id|pk|contentid|key)$", re.I)
+
+
+def _signature(url: str):
+    """Shape of a post URL: path with numbers wildcarded + the id parameter name."""
+    p = urlsplit(url)
+    path = re.sub(r"\d{2,}", "#", p.path)
+    params = [k for k, _ in parse_qsl(p.query, keep_blank_values=True)]
+    idp = next((k for k in params if ID_PARAM_RX.match(k)), None)
+    if not idp and not re.search(r"/\d{3,}(/|$)", p.path):
+        return None
+    return (p.netloc, path, idp)
+
+
+def score_board(html: str, url: str, exclude: set[str] = frozenset()) -> tuple[int, str]:
+    """How many post-like links this page has, and a link_regex matching them."""
+    soup = BeautifulSoup(html, "lxml")
+    base_site = _site(urlsplit(url).netloc)
+    groups: dict[tuple, set] = {}
+    for a in soup.find_all("a"):
+        title = _clean(a.get_text(" ", strip=True))
+        if len(title) < 8 or len(title) > 200:
+            continue
+        href = _script_url(a)
+        if not href:
+            continue
+        u = urljoin(url, href).split("#")[0]
+        if not u.startswith("http") or _site(urlsplit(u).netloc) != base_site or u in exclude or FILE_EXT.search(u):
+            continue
+        sig = _signature(u)
+        if sig:
+            groups.setdefault(sig, set()).add(u)
+    if not groups:
+        return 0, ""
+    sig, urls = max(groups.items(), key=lambda kv: len(kv[1]))
+    _, path, idp = sig
+    rx = re.escape(path).replace("\\#", "#").replace("#", r"\d+")
+    rx = rx + (r"\?(?:.*&)?" + re.escape(idp) + r"=\w+" if idp else "")
+    return len(urls), rx

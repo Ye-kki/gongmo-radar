@@ -25,7 +25,8 @@ concurrency:
 
 jobs:
   collect:
-    runs-on: ubuntu-latest
+    # 한국 서버(자체 실행기)를 등록하면 저장소 변수 RUNNER=self-hosted 로 바꿔 그쪽에서 수집합니다.
+    runs-on: ${{ (github.event_name != 'push' && vars.RUNNER) || 'ubuntu-latest' }}
     timeout-minutes: 55
     steps:
       - uses: actions/checkout@v4
@@ -40,6 +41,10 @@ jobs:
           cache: pip
 
       - run: pip install -r requirements.txt
+
+      - name: Headless browser (for boards drawn by JavaScript)
+        if: github.event_name != 'push'
+        run: python -m playwright install --with-deps chromium
 
       - name: Offline tests
         run: python -m pytest -q
