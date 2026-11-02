@@ -189,14 +189,25 @@ img{max-width:100%}
       <button class="btn" id="next" aria-label="다음 달">›</button>
       <button class="btn" id="thismonth">이번 달</button>
       <button class="btn" id="ics">휴대폰 달력에 넣기(.ics)</button>
-      <button class="btn" id="syncbtn">다른 기기와 맞추기</button>
+      <button class="btn" id="syncbtn">자동 동기화·달력 구독</button>
       <div class="legend"><span><i style="background:var(--accent-soft)"></i>준비 기간</span><span><i style="background:var(--hot)"></i>마감</span><span><i style="background:var(--ok-soft)"></i>결과 발표</span></div>
     </div>
     <div class="syncbox" id="syncbox" hidden>
-      <b>다른 기기와 맞추기</b>
-      <span>아래 링크를 휴대폰(또는 다른 컴퓨터)에서 열면, 이 기기의 관심·패스·지원 표시가 그대로 옮겨집니다. 양쪽에서 바꾼 게 있으면 더 최근 것이 남습니다. 카카오톡 나에게 보내기로 보내면 편합니다.</span>
-      <input id="synclink" readonly aria-label="동기화 링크">
-      <div class="row"><button class="btn primary" id="synccopy">링크 복사</button><button class="btn" id="syncshare">공유하기</button></div>
+      <b>자동 동기화 · 휴대폰 달력 구독</b>
+      <div id="sync-off">
+        <span>컴퓨터와 휴대폰의 관심·지원 표시가 자동으로 맞춰지고, 지원한 공고가 구글/삼성 캘린더에 자동으로 들어갑니다. 기기마다 처음 한 번만 연결하면 됩니다.</span>
+        <ol style="margin:6px 0 6px 18px;padding:0">
+          <li><a href="https://github.com/settings/tokens/new?scopes=gist&amp;description=gongmo-radar-sync" target="_blank" rel="noopener">여기</a>를 눌러 GitHub에서 <b>Generate token</b>을 누르고 나온 키를 복사합니다. (Expiration은 No expiration 권장. 처음 한 번 만들면 다른 기기에도 같은 키를 쓰면 됩니다.)</li>
+          <li>아래 칸에 붙여 넣고 <b>연결</b>을 누릅니다. 키는 이 브라우저에만 저장되고 GitHub 말고는 어디에도 보내지 않습니다.</li>
+        </ol>
+        <input id="synctoken" type="password" autocomplete="off" placeholder="ghp_로 시작하는 키" aria-label="GitHub 동기화 키">
+        <div class="row"><button class="btn primary" id="syncconnect">연결</button></div>
+      </div>
+      <div id="sync-on" hidden>
+        <span id="syncstatus">연결됨</span>
+        <span><b>휴대폰 달력 구독</b>: 아래 버튼을 한 번 누르면 구글 캘린더에 ‘공모 레이더’ 달력이 추가됩니다. 삼성 캘린더에 구글 계정이 연결돼 있으면 거기에도 보입니다(삼성 캘린더 → 설정 → 캘린더 관리에서 ‘공모 레이더’ 켜기). 지원하기를 누르면 자동으로 반영되며, 구글이 몇 시간 간격으로 새로고침합니다.</span>
+        <div class="row"><a class="btn primary" id="gcalsub" target="_blank" rel="noopener">구글 캘린더에 구독 추가</a><button class="btn" id="copyfeed">달력 주소 복사</button><button class="btn" id="syncnow">지금 맞추기</button><button class="btn" id="syncoff">이 기기 연결 해제</button></div>
+      </div>
     </div>
     <div class="gridwrap"><div class="grid" id="grid"></div></div>
     <div class="agenda" id="agenda"></div>
@@ -231,7 +242,7 @@ const isNew=c=>c.foundAt&&daysLeft(c.foundAt)>=-3;
 const safeUrl=u=>/^https?:\/\//i.test(u||"")?u:"#";
 
 function loadMarks(){try{S.marks=JSON.parse(localStorage.getItem(KEY)||"{}")||{}}catch(e){S.marks={}}}
-function saveMarks(){try{localStorage.setItem(KEY,JSON.stringify(S.marks))}catch(e){
+function saveMarks(sync=true){if(sync&&typeof schedulePush==="function")schedulePush();try{localStorage.setItem(KEY,JSON.stringify(S.marks))}catch(e){
   $("dbnote").textContent="이 브라우저에서는 선택 내용을 저장할 수 없습니다(사생활 보호 모드 등). 새로고침하면 사라집니다.";$("dbnote").hidden=false}}
 function setMark(id,data){S.marks[id]={...(data||{}),updatedAt:new Date().toISOString()};saveMarks();render()}  // empty mark = removed (kept so removals sync too)
 
@@ -367,7 +378,7 @@ function gcalUrl(c,p){const st=p>0?addDays(c.deadline,-p):c.deadline;
   return "https://calendar.google.com/calendar/render?"+q}
 function icsText(){const L=["BEGIN:VCALENDAR","VERSION:2.0","PRODID:-//yekki//gongmo-radar//KO","CALSCALE:GREGORIAN","X-WR-CALNAME:공모 레이더"];
   const icsEsc=t=>String(t||"").replace(/[\\,;]/g,m=>"\\"+m).replace(/\n/g,"\\n");
-  const stamp=new Date().toISOString().replace(/[-:]/g,"").slice(0,15)+"Z";
+  const stamp="20260101T000000Z";  // fixed so the file only changes when the events change
   const ev=(uid,d1,d2,title,desc,alarm)=>{L.push("BEGIN:VEVENT","UID:"+uid+"@gongmo-radar","DTSTAMP:"+stamp,"DTSTART;VALUE=DATE:"+ymd(d1),"DTEND;VALUE=DATE:"+ymd(d2),
     "SUMMARY:"+icsEsc(title),"DESCRIPTION:"+icsEsc(desc));if(alarm)L.push("BEGIN:VALARM","ACTION:DISPLAY","DESCRIPTION:"+icsEsc(title),"TRIGGER:-PT15H","END:VALARM");L.push("END:VEVENT")};
   S.calls.filter(c=>STATES[mark(c.id).state]&&c.deadline).forEach(c=>{const p=mark(c.id).prepDays??14,st=p>0?addDays(c.deadline,-p):c.deadline,info=(c.org||"")+"\n"+c.url;
@@ -378,16 +389,44 @@ function icsText(){const L=["BEGIN:VCALENDAR","VERSION:2.0","PRODID:-//yekki//go
 $("ics").onclick=()=>{if(!S.calls.some(c=>STATES[mark(c.id).state]&&c.deadline)){alertNote("달력에 넣은 공고가 없습니다. 목록에서 ‘지원하기’를 먼저 눌러 주세요.");return}
   const a=document.createElement("a");a.href=URL.createObjectURL(new Blob([icsText()],{type:"text/calendar"}));a.download="gongmo-radar.ics";document.body.appendChild(a);a.click();a.remove()};
 function alertNote(t){$("dbnote").textContent=t;$("dbnote").hidden=false;setTimeout(()=>$("dbnote").hidden=true,6000)}
-const b64e=s=>btoa(unescape(encodeURIComponent(s))).replace(/\+/g,"-").replace(/\//g,"_").replace(/=+$/,"");
-const b64d=s=>decodeURIComponent(escape(atob(s.replace(/-/g,"+").replace(/_/g,"/"))));
-$("syncbtn").onclick=()=>{const box=$("syncbox");box.hidden=!box.hidden;if(box.hidden)return;
-  $("synclink").value=location.origin+location.pathname+"#sync="+b64e(JSON.stringify(S.marks))};
-$("synccopy").onclick=async()=>{try{await navigator.clipboard.writeText($("synclink").value);$("synccopy").textContent="복사됨"}catch(e){$("synclink").select()}};
-$("syncshare").onclick=()=>{if(navigator.share)navigator.share({title:"공모 레이더 동기화",url:$("synclink").value}).catch(()=>{});else $("synccopy").click()};
-function importSync(){const m=location.hash.match(/^#sync=([\w-]+)/);if(!m)return;
-  try{const inc=JSON.parse(b64d(m[1]));let n=0;
-    for(const [id,v] of Object.entries(inc||{})){const cur=S.marks[id];if(!cur||String(v.updatedAt||"")>String(cur.updatedAt||"")){S.marks[id]=v;n++}}
-    saveMarks();alertNote("다른 기기의 표시 "+n+"건을 가져왔습니다.")}catch(e){alertNote("동기화 링크를 읽지 못했습니다. 링크 전체를 복사했는지 확인해 주세요.")}
+const TOKEN_KEY="gongmo-radar-gh-token",GIST_KEY="gongmo-radar-gist",GIST_DESC="gongmo-radar sync (자동 생성)";
+const SY={token:null,gist:null,owner:null,timer:null,busy:false};
+try{SY.token=localStorage.getItem(TOKEN_KEY);const g=JSON.parse(localStorage.getItem(GIST_KEY)||"null");if(g){SY.gist=g.id;SY.owner=g.owner}}catch(e){}
+async function gh(path,opt={}){const r=await fetch("https://api.github.com"+path,{...opt,headers:{"Authorization":"Bearer "+SY.token,"Accept":"application/vnd.github+json",...(opt.body?{"Content-Type":"application/json"}:{})}});
+  if(r.status===401)throw new Error("키가 맞지 않거나 만료되었습니다");if(!r.ok)throw new Error("GitHub 응답 "+r.status);return r.json()}
+const feedUrl=()=>SY.owner&&SY.gist?`https://gist.githubusercontent.com/${SY.owner}/${SY.gist}/raw/gongmo-radar.ics`:"";
+function syncUI(){const on=!!(SY.token&&SY.gist);$("sync-off").hidden=on;$("sync-on").hidden=!on;
+  if(on){$("gcalsub").href="https://calendar.google.com/calendar/render?cid="+encodeURIComponent(feedUrl().replace(/^https:/,"webcal:"))}
+  $("syncbtn").textContent=on?"동기화 켜짐 ✓":"자동 동기화·달력 구독"}
+function mergeIn(inc){let n=0;for(const [id,v] of Object.entries(inc||{})){const cur=S.marks[id];if(!cur||String(v.updatedAt||"")>String(cur.updatedAt||"")){S.marks[id]=v;n++}}return n}
+async function pull(){if(!SY.token||!SY.gist||SY.busy)return;SY.busy=true;
+  try{const g=await gh("/gists/"+SY.gist);const f=g.files&&g.files["marks.json"];let inc={};
+    if(f){const txt=f.truncated?await (await fetch(f.raw_url)).text():f.content;inc=JSON.parse(txt||"{}")}
+    const n=mergeIn(inc);saveMarks(false);render();
+    const icsNow=g.files&&g.files["gongmo-radar.ics"]&&g.files["gongmo-radar.ics"].content;
+    const needPush=S.calls.length>0&&(icsNow!==icsText()||Object.entries(S.marks).some(([id,v])=>!inc[id]||String(v.updatedAt||"")>String(inc[id].updatedAt||"")));
+    $("syncstatus").textContent="연결됨 · 마지막 동기화 "+new Date().toLocaleTimeString("ko-KR",{hour:"2-digit",minute:"2-digit"})+(n?` · ${n}건 받아옴`:"");
+    SY.busy=false;if(needPush)await push()}catch(e){SY.busy=false;$("syncstatus").textContent="동기화 실패: "+e.message}}
+async function push(){if(!SY.token||!SY.gist)return;if(!S.calls.length){schedulePush();return}
+  try{await gh("/gists/"+SY.gist,{method:"PATCH",body:JSON.stringify({files:{"marks.json":{content:JSON.stringify(S.marks)},"gongmo-radar.ics":{content:icsText()}}})});
+    $("syncstatus").textContent="연결됨 · 저장됨 "+new Date().toLocaleTimeString("ko-KR",{hour:"2-digit",minute:"2-digit"})}catch(e){$("syncstatus").textContent="저장 실패: "+e.message}}
+function schedulePush(){if(!SY.token||!SY.gist)return;clearTimeout(SY.timer);SY.timer=setTimeout(push,1500)}
+$("syncbtn").onclick=()=>{$("syncbox").hidden=!$("syncbox").hidden;syncUI()};
+$("syncconnect").onclick=async()=>{const t=$("synctoken").value.trim();if(!t){$("synctoken").focus();return}
+  SY.token=t;$("syncconnect").disabled=true;$("syncconnect").textContent="연결 중…";
+  try{const me=await gh("/user");SY.owner=me.login;
+    const list=await gh("/gists?per_page=100");let g=list.find(x=>x.description===GIST_DESC);
+    if(!g)g=await gh("/gists",{method:"POST",body:JSON.stringify({description:GIST_DESC,public:false,files:{"marks.json":{content:JSON.stringify(S.marks)},"gongmo-radar.ics":{content:icsText()}}})});
+    SY.gist=g.id;try{localStorage.setItem(TOKEN_KEY,t);localStorage.setItem(GIST_KEY,JSON.stringify({id:g.id,owner:SY.owner}))}catch(e){}
+    $("synctoken").value="";syncUI();await pull();await push();alertNote("동기화가 켜졌습니다. 다른 기기에서도 같은 키로 한 번만 연결하세요.")}
+  catch(e){SY.token=null;alertNote("연결하지 못했습니다: "+e.message+". 키를 만들 때 gist 항목이 체크돼 있는지 확인해 주세요.")}
+  $("syncconnect").disabled=false;$("syncconnect").textContent="연결"};
+$("syncnow").onclick=()=>pull();
+$("copyfeed").onclick=async()=>{try{await navigator.clipboard.writeText(feedUrl());$("copyfeed").textContent="복사됨"}catch(e){prompt("달력 주소",feedUrl())}};
+$("syncoff").onclick=()=>{try{localStorage.removeItem(TOKEN_KEY);localStorage.removeItem(GIST_KEY)}catch(e){}SY.token=SY.gist=SY.owner=null;syncUI()};
+document.addEventListener("visibilitychange",()=>{if(document.visibilityState==="visible")pull()});
+function importSync(){const m=location.hash.match(/^#sync=([\w-]+)/);if(!m)return;  // old links still work
+  try{const inc=JSON.parse(decodeURIComponent(escape(atob(m[1].replace(/-/g,"+").replace(/_/g,"/")))));const n=mergeIn(inc);saveMarks();alertNote("다른 기기의 표시 "+n+"건을 가져왔습니다.")}catch(e){}
   history.replaceState(null,"",location.pathname)}
 
 function renderHealth(){const h=S.health,el=$("healthbody");if(!h){el.textContent="아직 수집 기록이 없습니다.";return}
@@ -401,12 +440,12 @@ function renderHealth(){const h=S.health,el=$("healthbody");if(!h){el.textConten
     ${(h.discovery||[]).map(d=>`<tr><td>웹 검색 · ${esc(d.id)}</td><td class="okc">정상</td><td>${d.found}</td><td>${d.new}</td><td></td></tr>`).join("")}
     </tbody></table></div>${(h.read_errors||[]).length?`<p>열지 못한 글: ${h.read_errors.map(esc).join("<br>")}</p>`:""}`}
 
-loadMarks();importSync();render();
+loadMarks();importSync();render();syncUI();
 Promise.all([fetch("data/calls.json",{cache:"no-store"}).then(r=>r.ok?r.json():null).catch(()=>null),
   fetch("data/health.json",{cache:"no-store"}).then(r=>r.ok?r.json():null).catch(()=>null)]).then(([calls,health])=>{
   if(calls){S.calls=calls.calls||[];S.meta=calls.updatedAt||null}
   else{$("dbnote").textContent="공고 데이터를 불러오지 못했습니다. 첫 자동 수집이 끝나면 표시됩니다.";$("dbnote").hidden=false}
-  S.health=health;renderHealth();render()});
+  S.health=health;renderHealth();render();pull()});
 try{const t=localStorage.getItem("gongmo-radar-tab");if(t==="life"||t==="cal")tab(t)}catch(e){}
 </script>
 </body>
