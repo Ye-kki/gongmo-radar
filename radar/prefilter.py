@@ -22,7 +22,10 @@ NOT_CALL_TITLE_RX = re.compile(
     r"대관\s*(안내|신청|공고)|정기대관)")
 
 
-def looks_like_call(title: str, body: str) -> tuple[bool, str]:
+LIFE_TITLE_RX = re.compile(r"(모집|신청|지원|입주자|공급|청약|접수|수당|바우처|대출|월세|전세|임대)")
+
+
+def looks_like_call(title: str, body: str, board: str = "art") -> tuple[bool, str]:
     """True if the post is worth sending to Claude. Second value is the reason when skipped."""
     t = title or ""
     if NOT_CALL_TITLE_RX.search(t):
@@ -32,6 +35,8 @@ def looks_like_call(title: str, body: str) -> tuple[bool, str]:
         return True, ""
     if re.search(r"(공모|모집|지원\s*사업|레지던시|입주|open call|competition|award)", t, re.I):
         return True, ""  # title clearly says it, body may be in an image or attachment
+    if board == "life" and LIFE_TITLE_RX.search(t):
+        return True, ""  # housing / youth notices often put everything in an attached file
     return False, "본문에 신청·접수 관련 내용 없음"
 
 

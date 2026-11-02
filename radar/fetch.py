@@ -65,8 +65,9 @@ class Fetcher:
                 time.sleep(self.delay - gap)
         self._last[host] = time.monotonic()
 
-    def get(self, url: str, max_bytes: int = 8_000_000) -> Page:
-        if not self._allowed(url):
+    def get(self, url: str, max_bytes: int = 8_000_000, robots: bool = True) -> Page:
+        # robots=False only for official open APIs used with an issued key
+        if robots and not self._allowed(url):
             raise RobotsBlocked(f"robots.txt가 수집을 막음: {url}")
         host = urlsplit(url).netloc
         err: Exception | None = None

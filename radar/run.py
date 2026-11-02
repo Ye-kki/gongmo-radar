@@ -22,6 +22,7 @@ from pathlib import Path
 
 import yaml
 
+from .apisrc import fetch_api
 from .collect import extract_links, find_boards, keyword_match
 from .detail import read_post
 from .fetch import Fetcher, FetchError, RobotsBlocked
@@ -71,7 +72,22 @@ def main(argv=None, ai_factory=None, fetcher=None, data_dir=None):
         h = {"id": src["id"], "name": src["name"], "url": src["url"], "status": "ok", "links": 0, "new": 0,
              "board": src.get("board", "art")}
         try:
-            _scan_board(src, src["url"], fetcher, store, sources_cfg, candidates, counts, h, today)
+            if src.get("api"):
+                items, problem = fetch_api(fetcher, src)
+                h["links"] = len(items)
+                if problem:
+                    h["status"], h["detail"] = ("skipped" if "키 필요" in problem else "error"), problem
+                for it in items:
+                    if src.get("filter") and not keyword_match(it["title"] + " " + it["pasted_text"][:400],
+                                                               src.get("title_keywords") or sources_cfg["title_keywords"]):
+                        continue
+                    if store.is_seen(it["url"]) or any(c["url"] == it["url"] for c in candidates):
+                        continue
+                    h["new"] += 1
+                    candidates.append({**it, "source_id": src["id"], "source_name": src["name"], "cats": src.get("cats", []),
+                                       "region": src.get("region", "전국"), "board": src.get("board", "art")})
+            else:
+                _scan_board(src, src["url"], fetcher, store, sources_cfg, candidates, counts, h, today)
         except RobotsBlocked as e:
             h["status"], h["detail"] = "robots", str(e)
         except FetchError as e:
@@ -153,6 +169,11 @@ def main(argv=None, ai_factory=None, fetcher=None, data_dir=None):
         if len(queue) >= args.max_new or counts["fetched"] >= args.max_fetch or over_time():
             counts["over_limit"] += 1
             continue
+        if c.get("api_only"):
+            queue_post = {"url": c["url"], "text": c["pasted_text"], "attachments": [], "attachment_text": ""}
+            c["fp"] = date_fingerprint(c["pasted_text"])
+            queue.append((queue_post, c))
+            continue
         try:
             post = read_post(fetcher, c["url"])
             counts["fetched"] += 1
@@ -174,7 +195,7 @@ def main(argv=None, ai_factory=None, fetcher=None, data_dir=None):
             store.mark_seen(c["url"], "skipped", "본문이 비어 있음", today.isoformat())
             continue
         if c["source_id"] not in ("manual",) and not c["source_id"].startswith("search:"):
-            ok, why = looks_like_call(c.get("title", ""), full)
+            ok, why = looks_like_call(c.get("title", ""), full, c.get("board", "art"))
             if not ok:
                 counts["filtered"] += 1
                 store.mark_seen(c["url"], "filtered", why, today.isoformat())
@@ -240,6 +261,22 @@ def _scan_board(src, url, fetcher, store, sources_cfg, candidates, counts, h, to
     page = fetcher.get(url)
     links = extract_links(page.text, page.url, src)
     h["links"] += len(links)
+    if links:
+        h.setdefault("sample", []).extend(f"{l['title'][:40]} | {l['url']}" for l in links[:4])  # for fixing link rules
+    else:  # show what the page does have, to write a link_regex / onclick rule
+        loose = extract_links(page.text, page.url, {k: v for k, v in src.items() if k not in ("link_regex", "post_like", "onclick")})
+        h.setdefault("sample", []).extend(f"{l['title'][:40]} | {l['url']}" for l in loose[:8])
+        import re as _re
+        oc = sorted({m.group(0)[:80] for m in _re.finditer(r"onclick=\"[^\"]{5,80}", page.text)})[:5]
+        h["sample"].extend("onclick: " + o for o in oc)
+    reset = src.get("reread_since")
+    if reset and store.sources_state.get(src["id"], {}).get("reread") != reset:
+        # one-time: forget posts this source dropped before (baseline / filtered), so they are judged again
+        for ln in links:
+            st = store.seen.get(normalize_url(ln["url"]))
+            if st and st.get("status") in ("baseline", "filtered"):
+                store.seen.pop(normalize_url(ln["url"]), None)
+        store.sources_state.setdefault(src["id"], {})["reread"] = reset
     if not links and h["status"] == "ok":
         h["status"] = "empty"
         h["detail"] = "목록에서 게시글 링크를 찾지 못함. 자바스크립트로 그리는 페이지이거나 link_regex 확인 필요"

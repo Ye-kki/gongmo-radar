@@ -247,3 +247,36 @@ def test_find_boards_and_post_like():
              '<a href="/notice/5821">입주작가 정기공모 안내</a>')
     links = extract_links(board, "https://www.ex.or.kr/board/list", {"post_like": True})
     assert [l["url"] for l in links] == ["https://www.ex.or.kr/board/view?idx=1234", "https://www.ex.or.kr/notice/5821"]
+
+
+def test_life_prefilter_title():
+    from radar.prefilter import looks_like_call
+    assert looks_like_call("2026년 청년 월세 지원 2차 신청 안내", "", "life")[0]
+    assert not looks_like_call("2026년 청년 월세 지원 2차 신청 안내 결과 발표", "", "life")[0]
+
+
+def test_api_source(monkeypatch):
+    import json as _j
+    from radar.apisrc import fetch_api
+
+    class P:
+        def __init__(self, t): self.text = t
+
+    class F:
+        def get(self, url, robots=True):
+            assert "SECRET" in url and robots is False
+            return P(_j.dumps({"result": {"youthPolicyList": [
+                {"plcyNo": "20250101", "plcyNm": "청년 월세 지원", "aplyYmd": "20261101 ~ 20261130", "aplyUrlAddr": ""},
+                {"plcyNm": "", "plcyNo": "x"}]}}))
+    src = {"api": {"env": "TEST_KEY", "url": "https://x/api?k={key}", "title": ["plcyNm"], "link": ["aplyUrlAddr"],
+                   "link_template": "https://y/{plcyNo}", "link_fields": ["plcyNo"]}}
+    assert fetch_api(F(), src)[1].startswith("API 키 필요")
+    monkeypatch.setenv("TEST_KEY", "SECRET")
+    items, problem = fetch_api(F(), src)
+    assert problem == "" and len(items) == 1
+    assert items[0]["url"] == "https://y/20250101" and "신청 기간: 20261101 ~ 20261130" in items[0]["pasted_text"]
+
+    class Bad:
+        def get(self, url, robots=True):
+            raise RuntimeError("HTTP 500: " + url)
+    assert "SECRET" not in fetch_api(Bad(), src)[1]

@@ -26,3 +26,9 @@ queries:
   - id: overseas
     cats: [overseas]
     ask: international furniture, lighting, object and product design competitions, awards and emerging-designer exhibition open calls currently accepting entries
+  - id: overseas-residency
+    cats: [residency, overseas]
+    ask: international artist and designer residencies (craft, furniture, design, visual art) with open calls currently accepting applications, especially ones open to Korean or Asian applicants and offering stipend or travel support
+  - id: overseas-art
+    cats: [overseas, art]
+    ask: international open calls currently accepting entries for exhibitions, craft/design prizes and object/furniture/lighting showcases (e.g. Milan Design Week satellite, Dutch Design Week, London Craft Week) open to international applicants

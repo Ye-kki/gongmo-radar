@@ -149,6 +149,22 @@ sources:
     region: 서울
     filter: false
 
+  - id: aac-open-calls
+    name: Alliance of Artists Communities 오픈콜 (해외 레지던시)
+    url: https://artistcommunities.org/directory/open-calls
+    link_regex: '/directory/open-calls/[a-z0-9-]+$'
+    cats: [residency, overseas]
+    region: 해외
+    filter: false
+
+  - id: kocca-notice
+    name: 한국콘텐츠진흥원 사업공고
+    url: https://www.kocca.kr/kocca/pims/list.do?menuNo=204104
+    cats: [startup, art]
+    region: 전국
+    filter: true
+    post_like: true
+
   - id: kcdf-notice
     name: 공예디자인문화진흥원 사업공모
     url: https://www.kcdf.or.kr/brd/board/337/L/menu/284
@@ -169,13 +185,20 @@ sources:
       template: "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn={id}"
 
   - id: bizinfo
-    name: 기업마당 지원사업
-    enabled: false   # 목록이 자바스크립트로 그려져 링크를 못 찾음. K-Startup으로 대체
+    name: 기업마당 정부 지원사업 (API)
+    # 키 신청: 기업마당 → 정책정보 개방(API) → 활용신청. 받은 키를 GitHub secret BIZINFO_API_KEY 로 등록
     url: https://www.bizinfo.go.kr/web/lay1/bbs/S1T122C128/AS/74/list.do
+    api:
+      env: BIZINFO_API_KEY
+      url: "https://www.bizinfo.go.kr/uss/rss/bizinfoApi.do?crtfcKey={key}&dataType=json&searchCnt=200"
+      title: [pblancNm, title]
+      link: [pblancUrl, link]
+      link_prefix: "https://www.bizinfo.go.kr"
     cats: [startup]
     region: 전국
     filter: true
-    link_regex: 'view\.do\?pblancId='
+    title_keywords: [디자인, 공예, 문화, 콘텐츠, 예술, 관광, 기념품, 굿즈, 캐릭터, 창업, 소상공인, 1인, 청년, 제조, 시제품,
+                     3D, 메이커, 수출, 해외, 전시, 박람회, 판로, 브랜드, 크라우드]
 
   - id: sba-notice
     name: 서울경제진흥원 사업공고
@@ -223,22 +246,40 @@ sources:
   - id: life-seoul-youth
     name: 서울 청년몽땅정보통 지원정보
     url: https://youth.seoul.go.kr/infoData/sprtInfo/list.do
+    link_regex: 'sprtInfo/view\.do'
     board: life
     cats: [youth]
     region: 서울
-    filter: true
-    post_like: true
-    title_keywords: [청년, 모집, 신청, 지원, 월세, 전세, 주거, 수당, 공고]
+    filter: false
+    first_take: 20
+    reread_since: 2026-11-02
 
   - id: life-sh
     name: SH 서울주택도시공사 공고
     url: https://www.i-sh.co.kr/main/lay2/program/S1T294C297/www/brd/m_247/list.do
+    link_regex: 'brd/m_247/view\.do'
     board: life
     cats: [housing]
     region: 서울
-    filter: true
-    post_like: true
-    title_keywords: [청년, 임대, 행복주택, 매입, 전세, 모집, 입주자, 신혼]
+    filter: false
+    first_take: 20
+    reread_since: 2026-11-02
+
+  - id: life-youthcenter
+    name: 온통청년 청년정책 (API)
+    # 키 신청: 온통청년(youthcenter.go.kr) → 오픈API → 인증키 신청. 받은 키를 GitHub secret YOUTHCENTER_API_KEY 로 등록
+    url: https://www.youthcenter.go.kr
+    api:
+      env: YOUTHCENTER_API_KEY
+      url: "https://www.youthcenter.go.kr/go/ythip/getPlcy?apiKeyNm={key}&pageNum=1&pageSize=100&rtnType=json"
+      title: [plcyNm, polyBizSjnm]
+      link: [aplyUrlAddr, refUrlAddr1, refUrlAddr2]
+      link_template: "https://www.youthcenter.go.kr/youthPolicy/ythPlcyTotalSearch/ythPlcyDetail/{plcyNo}"
+      link_fields: [plcyNo]
+    board: life
+    cats: [youth]
+    region: 전국
+    filter: false
 
   - id: life-myhome
     name: 마이홈 공공주택 모집공고

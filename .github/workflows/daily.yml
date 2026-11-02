@@ -50,6 +50,8 @@ jobs:
           CLAUDE_CODE_OAUTH_TOKEN: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           RADAR_LIFE_PROFILE: ${{ secrets.RADAR_LIFE_PROFILE }}
+          BIZINFO_API_KEY: ${{ secrets.BIZINFO_API_KEY }}
+          YOUTHCENTER_API_KEY: ${{ secrets.YOUTHCENTER_API_KEY }}
           RUN_ARGS: ${{ github.event.inputs.args }}
         run: |
           if [ -n "$ANTHROPIC_API_KEY" ]; then
