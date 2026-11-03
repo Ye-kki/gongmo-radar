@@ -120,6 +120,42 @@
    "url": "https://www.ydpcf.or.kr/postview.do?bid=1&pid=2850"
   },
   {
+   "ageLimit": null,
+   "announceDate": null,
+   "board": "art",
+   "cats": [
+    "startup"
+   ],
+   "checkReasons": [],
+   "confidence": "high",
+   "deadline": "2026-10-27",
+   "deadlineNote": "오후 3시 마감. 현재 기준 이미 마감, 2027.1.1~2027.12.31 입주 기간",
+   "eligibility": "공고일 기준 관광 관련 사업을 운영하는 창업 7년 이내 법인·개인사업자 (신산업 창업 분야는 10년 이내), 중복입주 및 제재 대상 제외",
+   "fit": [
+    "pixel"
+   ],
+   "foundAt": "2026-11-03",
+   "fp": "17be2f1a8ca430af",
+   "id": "ac86267785fc",
+   "individualOk": true,
+   "needsCheck": false,
+   "org": "한국관광공사",
+   "region": "서울",
+   "relevance": 2,
+   "sources": [
+    "투어라즈 공고·공모"
+   ],
+   "startDate": "2026-10-07",
+   "summary": "관광 관련 창업기업을 위한 서울 관광기업지원센터의 2027년도 입주 공간을 모집하며, 입주 기업에게 원스톱 상담과 멘토링 등을 제공한다.",
+   "support": [
+    "space",
+    "rent"
+   ],
+   "supportAmount": "전용면적 임차료, 공용면적 임차료 및 관리비 정부 지원 (금액은 공고문 참조)",
+   "title": "2027년도 관광기업지원센터(서울) 신규 입주기업 모집",
+   "url": "https://touraz.kr/announcementList/pssrpView?pssrpSeqEnc=TfFoMso9qjSpHJr1ImLdeg==&curPage=1"
+  },
+  {
    "ageLimit": "만 19세 이상 ~ 39세 이하 (공고일 기준)",
    "announceDate": "2026-11-06",
    "board": "art",
@@ -441,6 +477,42 @@
   },
   {
    "ageLimit": null,
+   "announceDate": null,
+   "board": "art",
+   "cats": [
+    "residency",
+    "overseas"
+   ],
+   "checkReasons": [
+    "시작일이 마감일보다 늦음"
+   ],
+   "confidence": "high",
+   "deadline": "2026-11-03",
+   "deadlineNote": "본문에는 롤링 심사(수시 접수)라고도 적혀 있음. 게시된 마감일 기준",
+   "eligibility": "모든 분야의 예술가·실무자 누구나 지원 가능 (전 세계 거주자, 경력 무관)",
+   "fit": [
+    "yekki"
+   ],
+   "foundAt": "2026-11-03",
+   "fp": "9afcdeee640cd69e",
+   "id": "b510ae4d9d03",
+   "individualOk": true,
+   "needsCheck": true,
+   "org": "CASA NA ILHA",
+   "region": "해외",
+   "relevance": 2,
+   "sources": [
+    "Alliance of Artists Communities 오픈콜 (해외 레지던시)"
+   ],
+   "startDate": "2027-08-17",
+   "summary": "브라질 아마존 우림에서 2주간 진행되는 다분야 예술가 레지던시 참가자를 모집한다. 참가비가 있으며 지원금은 없다.",
+   "support": [],
+   "supportAmount": null,
+   "title": "AMAZON FOREST - AUGUST 2027",
+   "url": "https://artistcommunities.org/directory/open-calls/amazon-forest-august-2027"
+  },
+  {
+   "ageLimit": null,
    "announceDate": "2026-11-06",
    "board": "art",
    "cats": [
@@ -483,6 +555,116 @@
   },
   {
    "ageLimit": null,
+   "announceDate": null,
+   "board": "art",
+   "cats": [
+    "residency",
+    "overseas"
+   ],
+   "checkReasons": [],
+   "confidence": "high",
+   "deadline": "2026-11-04",
+   "deadlineNote": "신청비 없음. 본문상 세션 기간은 2027년 2~3월로 적혀 있으나 정확한 시작일은 없음",
+   "eligibility": "모든 분야 예술가 누구나 지원 가능 (전 세계 거주, 경력 무관). 개인 또는 팀 신청 가능. 영어·스페인어·포르투갈어로 신청",
+   "fit": [
+    "yekki"
+   ],
+   "foundAt": "2026-11-03",
+   "fp": "45b838358cde45a7",
+   "id": "1d94e254e5f2",
+   "individualOk": true,
+   "needsCheck": false,
+   "org": "CASA NA ILHA",
+   "region": "해외",
+   "relevance": 2,
+   "sources": [
+    "Alliance of Artists Communities 오픈콜 (해외 레지던시)"
+   ],
+   "startDate": null,
+   "summary": "브라질 일랴벨라섬의 공유 스튜디오에서 2~4주간 작업하는 레지던시 참가자를 모집한다. 신청비는 없으나 2주 기준 1,950~2,495 USD 레지던스 비용을 내야 하며 지원금은 없다.",
+   "support": [
+    "space"
+   ],
+   "supportAmount": null,
+   "title": "ILHABELA ISLAND, BRAZIL - FEBRUARY/MARCH 2027 SESSIONS",
+   "url": "https://artistcommunities.org/directory/open-calls/ilhabela-island-brazil-februarymarch-2027-sessions"
+  },
+  {
+   "ageLimit": null,
+   "announceDate": null,
+   "board": "art",
+   "cats": [
+    "residency",
+    "overseas"
+   ],
+   "checkReasons": [],
+   "confidence": "high",
+   "deadline": "2026-11-04",
+   "deadlineNote": null,
+   "eligibility": "모든 경력 단계, 전 세계 작가 대상, 개인 또는 팀 지원 가능, 지원서는 이메일(info@casanailha.org)로 요청",
+   "fit": [
+    "yekki"
+   ],
+   "foundAt": "2026-11-03",
+   "fp": "45b838358cde45a7",
+   "id": "3e0983ec1f86",
+   "individualOk": true,
+   "needsCheck": false,
+   "org": "CASA NA ILHA",
+   "region": "해외",
+   "relevance": 2,
+   "sources": [
+    "Alliance of Artists Communities 오픈콜 (해외 레지던시)"
+   ],
+   "startDate": null,
+   "summary": "브라질 일하벨라 섬의 생태 공간에서 2~4주간 머무르며 작업하는 다분야 레지던시로, 시각예술 분야도 지원 대상에 포함된다.",
+   "support": [
+    "space"
+   ],
+   "supportAmount": "레지던시 비용 2주 2,495 USD (숙식 포함, 지원금 없음)",
+   "title": "ILHABELA ISLAND, BRAZIL - JUNE/JULY 2027 SESSIONS",
+   "url": "https://artistcommunities.org/directory/open-calls/ilhabela-island-brazil-junejuly-2027-sessions"
+  },
+  {
+   "ageLimit": null,
+   "announceDate": null,
+   "board": "art",
+   "cats": [
+    "residency",
+    "art",
+    "overseas"
+   ],
+   "checkReasons": [],
+   "confidence": "high",
+   "deadline": "2026-11-04",
+   "deadlineNote": "2027년 4월 및 10월 세션 대상",
+   "eligibility": "모든 경력 단계, 전 세계 작가 대상, 개인 신청 (CV, 작가 노트, 프로젝트 설명, 추천서 1부, 작업 샘플 필요)",
+   "fit": [
+    "yekki"
+   ],
+   "foundAt": "2026-11-03",
+   "fp": "45b838358cde45a7",
+   "id": "68783a0417a5",
+   "individualOk": true,
+   "needsCheck": false,
+   "org": "Trillium Arts",
+   "region": "해외",
+   "relevance": 2,
+   "sources": [
+    "Alliance of Artists Communities 오픈콜 (해외 레지던시)"
+   ],
+   "startDate": null,
+   "summary": "블루리지 산맥의 외딴 공간에서 7~10일간 혼자 작업하는 개인 작가 레지던시로, 시각예술과 사진 분야에 적합한 시설을 갖췄다.",
+   "support": [
+    "space",
+    "cash"
+   ],
+   "supportAmount": "체재비 700 USD 지원, 참가비 없음",
+   "title": "Trillium Arts: 2027 Individual Artists Residencies",
+   "url": "https://artistcommunities.org/directory/open-calls/trillium-arts-2027-individual-artists-residencies"
+  },
+  {
+   "ageLimit": null,
    "cats": [
     "art"
    ],
@@ -509,6 +691,82 @@
    ],
    "title": "2027년 문예진흥기금 정기공모 (시각예술 분야 포함)",
    "url": "https://www.fnnews.com/news/202610081013073925"
+  },
+  {
+   "ageLimit": "도착 시 만 21세 초과",
+   "announceDate": null,
+   "board": "art",
+   "cats": [
+    "residency",
+    "art",
+    "overseas"
+   ],
+   "checkReasons": [],
+   "confidence": "high",
+   "deadline": "2026-11-05",
+   "deadlineNote": null,
+   "eligibility": "만 21세 초과, 모든 경력 단계, 개인 또는 팀 신청 가능 (이메일로 지원서 제출, 포트폴리오 또는 이미지 5~8점 필요), 참가비·재료비·식비는 본인 부담",
+   "fit": [
+    "yekki"
+   ],
+   "foundAt": "2026-11-03",
+   "fp": "97b4223829b522c3",
+   "id": "7f3868adaa26",
+   "individualOk": true,
+   "needsCheck": false,
+   "org": "Aviário Studio",
+   "region": "해외",
+   "relevance": 2,
+   "sources": [
+    "Alliance of Artists Communities 오픈콜 (해외 레지던시)"
+   ],
+   "startDate": null,
+   "summary": "동판화(인taglio) 기법에 특화된 판화 공방 레지던시로, 프레스·노광기 등 장비를 사용해 새 작업을 만들거나 실험할 수 있다.",
+   "support": [
+    "space"
+   ],
+   "supportAmount": "참가비 2주 600€ ~ 6주 1,800€, 지원금 없음",
+   "title": "Aviário Studio Intaglio Printmaking Residency 2026",
+   "url": "https://artistcommunities.org/directory/open-calls/aviario-studio-intaglio-printmaking-residency-2026"
+  },
+  {
+   "ageLimit": null,
+   "announceDate": null,
+   "board": "art",
+   "cats": [
+    "residency",
+    "art",
+    "overseas"
+   ],
+   "checkReasons": [
+    "시작일이 마감일보다 늦음"
+   ],
+   "confidence": "medium",
+   "deadline": "2026-11-05",
+   "deadlineNote": "롤링 심사 방식, 2027년 4월 15일~5월 6일 세션, 정원 10명, 합격 통보 7일 이내",
+   "eligibility": "모든 분야 창작자(시각예술가, 사진가, 큐레이터 등 포함), 개인 또는 팀 신청 가능, 신청서는 이메일로 요청",
+   "fit": [
+    "yekki"
+   ],
+   "foundAt": "2026-11-03",
+   "fp": "97b4223829b522c3",
+   "id": "06233a1d20bc",
+   "individualOk": true,
+   "needsCheck": true,
+   "org": "CASA NA ILHA",
+   "region": "해외",
+   "relevance": 2,
+   "sources": [
+    "Alliance of Artists Communities 오픈콜 (해외 레지던시)"
+   ],
+   "startDate": "2027-04-15",
+   "summary": "아르헨티나 바릴로체의 호수변에서 3주간 머무르는 다분야 레지던시로, 시각예술가와 사진가 등 다양한 분야의 창작자를 받는다.",
+   "support": [
+    "space"
+   ],
+   "supportAmount": "참가비 3주 2,495 USD (지원금 없음, 50% 선입금 필요)",
+   "title": "PATAGONIA ARGENTINA 2027",
+   "url": "https://artistcommunities.org/directory/open-calls/patagonia-argentina-2027"
   },
   {
    "ageLimit": null,
@@ -545,6 +803,80 @@
    "supportAmount": null,
    "title": "2026 London Design Awards Season 2",
    "url": "https://www.designboom.com/competition/2026-london-design-awards-season-2/"
+  },
+  {
+   "ageLimit": null,
+   "announceDate": "2026-12-04",
+   "board": "art",
+   "cats": [
+    "design",
+    "goods"
+   ],
+   "checkReasons": [],
+   "confidence": "high",
+   "deadline": "2026-11-06",
+   "deadlineNote": "24시 도착분까지, 이메일(sbueh314@korea.kr) 접수",
+   "eligibility": "대한민국 국민 누구나, 개인 또는 팀(3인 이하), 1인(팀) 1작품",
+   "fit": [
+    "pixel"
+   ],
+   "foundAt": "2026-11-03",
+   "fp": "414952d97ab89027",
+   "id": "b5df05bb8609",
+   "individualOk": true,
+   "needsCheck": false,
+   "org": "부산광역시 동구청",
+   "region": "전국",
+   "relevance": 3,
+   "sources": [
+    "콘테스트코리아 미술·디자인"
+   ],
+   "startDate": "2026-10-26",
+   "summary": "초량천과 산복도로 일대를 누비는 고양이 캐릭터의 디자인, 이름, 스토리를 공모한다. 결과물은 안내문, 굿즈, 관광 마케팅에 활용될 예정이다.",
+   "support": [
+    "prize"
+   ],
+   "supportAmount": "총 500만원 (최우수상 300만원 1작품, 우수상 100만원 2작품)",
+   "title": "「초량천~산복도로」 스토리텔링 공모전",
+   "url": "https://www.contestkorea.com/sub/view.php?int_gbn=1&Txt_bcode=030110001&str_no=202610220014"
+  },
+  {
+   "ageLimit": null,
+   "announceDate": null,
+   "board": "art",
+   "cats": [
+    "residency",
+    "design",
+    "overseas"
+   ],
+   "checkReasons": [],
+   "confidence": "high",
+   "deadline": "2026-11-07",
+   "deadlineNote": "잔여 자리 모집, 신청은 이메일 제출",
+   "eligibility": "모든 경력 단계, 전 세계 작가 대상, 개인 또는 팀 신청 가능 (이메일로 이력서, 동기서, 프로젝트 설명, 희망 일정 제출)",
+   "fit": [
+    "pixel",
+    "yekki"
+   ],
+   "foundAt": "2026-11-03",
+   "fp": "4432d00991de274d",
+   "id": "ad43a3adef5d",
+   "individualOk": true,
+   "needsCheck": false,
+   "org": "Buinho",
+   "region": "해외",
+   "relevance": 3,
+   "sources": [
+    "Alliance of Artists Communities 오픈콜 (해외 레지던시)"
+   ],
+   "startDate": null,
+   "summary": "포르투갈 알렌테주의 팹랩 연계 레지던시로, 3D 프린팅·레이저 커팅·CNC·목공 장비를 갖춰 제품 디자인과 디지털 제작 작업을 하기에 적합하다.",
+   "support": [
+    "space"
+   ],
+   "supportAmount": "참가비 월 900€~1,200€, 체재비 지원 없음",
+   "title": "AiR 2026 in Portugal - last vacancies",
+   "url": "https://artistcommunities.org/directory/open-calls/air-2026-portugal-last-vacancies"
   },
   {
    "ageLimit": "만 19세 이상 만 39세 이하",
@@ -593,35 +925,72 @@
    "announceDate": null,
    "board": "art",
    "cats": [
-    "goods"
+    "residency",
+    "overseas"
+   ],
+   "checkReasons": [],
+   "confidence": "medium",
+   "deadline": "2026-11-09",
+   "deadlineNote": "본문 Additional Eligibility에는 'November 9th, 2027 at 11:59pm'로도 적혀 있어 연도 확인이 필요함. 우선심사 마감은 November 2nd, 2027로 표기됨",
+   "eligibility": "전 세계 거주 작가, 전 분야(시각예술 포함), 경력 무관, 개별 신청. 대형 기계 목공·금속, 엔카우스틱, 유리 작업은 배치 불가",
+   "fit": [
+    "yekki"
+   ],
+   "foundAt": "2026-11-03",
+   "fp": "590019ecbfed5b01",
+   "id": "f5e4be04385b",
+   "individualOk": true,
+   "needsCheck": false,
+   "org": "Woodstock Byrdcliffe Guild (Alliance of Artists Communities 게재)",
+   "region": "해외",
+   "relevance": 2,
+   "sources": [
+    "Alliance of Artists Communities 오픈콜 (해외 레지던시)"
+   ],
+   "startDate": null,
+   "summary": "캐츠킬 산자락의 역사적 작가 코티지에서 3~5개월간 머무르며 작업하는 여름 레지던시. 참가비는 있는 유료 프로그램이며 코티지별 금액이 다르다(소형 약 4,500달러).",
+   "support": [
+    "space"
+   ],
+   "supportAmount": null,
+   "title": "Summer 2027 Byrdcliffe Historic Cottage Residency",
+   "url": "https://artistcommunities.org/directory/open-calls/summer-2027-byrdcliffe-historic-cottage-residency"
+  },
+  {
+   "ageLimit": null,
+   "announceDate": null,
+   "board": "art",
+   "cats": [
+    "goods",
+    "design"
    ],
    "checkReasons": [],
    "confidence": "medium",
    "deadline": "2026-11-10",
-   "deadlineNote": "본문은 23:59, 게시판 헤더 종료는 18:00으로 표기가 다름. 본문 기준으로 기록",
+   "deadlineNote": "공모 일정은 23:59, 상단 행사기간 종료는 18:00으로 표기되어 시각이 서로 다르다. 이메일 제출 기준.",
    "eligibility": null,
    "fit": [
     "pixel"
    ],
    "foundAt": "2026-10-30",
-   "fp": "4c833a85c2df6892",
+   "fp": "cc76fd5dc910cce9",
    "id": "dddd121ab3dd",
    "individualOk": null,
    "needsCheck": false,
-   "org": "한국인터넷진흥원(KISA)",
+   "org": "한국인터넷진흥원",
    "region": "전국",
    "relevance": 2,
    "sources": [
     "아트앤컬처 공모란"
    ],
    "startDate": "2026-10-28",
-   "summary": "기관 캐릭터 공모 부문에 참여해 캐릭터를 제안하는 공모다. 슬로건과 국민참여예산 아이디어 부문도 함께 있으나, 슬로건은 제외 대상이고 제출 형식은 A4 2페이지 내외의 국민제안서다.",
+   "summary": "기관 슬로건, 기관 캐릭터, 국민참여예산 아이디어 세 부문을 공모한다. 캐릭터 부문은 캐릭터 상품화 쪽과 맞닿아 있고, 슬로건 부문은 관심 밖이다.",
    "support": [
     "prize"
    ],
-   "supportAmount": "기관 캐릭터 공모 최우수 30만 원 등",
+   "supportAmount": "기관 캐릭터 최우수 30만 원 등",
    "title": "[한국인터넷진흥원] 슬로건·캐릭터·사업 아이디어 공모",
-   "updatedAt": "2026-11-01",
+   "updatedAt": "2026-11-03",
    "url": "https://www.art-culture.co.kr/magazine_contest/2222"
   },
   {
@@ -770,6 +1139,43 @@
   },
   {
    "ageLimit": null,
+   "announceDate": null,
+   "board": "art",
+   "cats": [
+    "startup",
+    "housing"
+   ],
+   "checkReasons": [],
+   "confidence": "high",
+   "deadline": "2026-11-13",
+   "deadlineNote": "18시 마감. 이메일 접수",
+   "eligibility": "기술집약형 업종의 예비창업자(3개월 내 창업 가능자) 또는 업력 7년 이내 기업. 주사업장을 입주 후 옮길 수 있어야 함. 기업부설연구소 입주도 가능",
+   "fit": [
+    "pixel"
+   ],
+   "foundAt": "2026-11-03",
+   "fp": "bedd32e51c45da49",
+   "id": "50733cbe8fcf",
+   "individualOk": true,
+   "needsCheck": false,
+   "org": "국립공주대학교 산학협력단 창업보육센터",
+   "region": "충남",
+   "relevance": 2,
+   "sources": [
+    "K-Startup 사업공고"
+   ],
+   "startDate": "2026-11-02",
+   "summary": "공주캠퍼스 산학연구관의 창업보육 공간을 최대 5년간 임대하고, 시제품 제작·디자인 개발·마케팅 등 사업화 지원을 받을 수 있는 입주기업을 모집한다.",
+   "support": [
+    "space",
+    "service"
+   ],
+   "supportAmount": "입주관리비 4,500원/㎡부터 연차별 차등 (국유재산사용료·공과금 별도)",
+   "title": "2026년 5차 국립공주대학교 창업보육센터 입주기업 모집 연장공고",
+   "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179691"
+  },
+  {
+   "ageLimit": null,
    "cats": [
     "residency",
     "local"
@@ -797,6 +1203,39 @@
    ],
    "title": "2027 영천예술창작스튜디오 제19기 입주작가 모집",
    "url": "https://www.straightnews.co.kr/news/articleView.html?idxno=313714"
+  },
+  {
+   "ageLimit": null,
+   "announceDate": null,
+   "board": "art",
+   "cats": [
+    "art"
+   ],
+   "checkReasons": [],
+   "confidence": "medium",
+   "deadline": "2026-11-15",
+   "deadlineNote": "행사기간 종료 18:00 표기. 별도 접수 마감 항목 없음",
+   "eligibility": null,
+   "fit": [
+    "yekki"
+   ],
+   "foundAt": "2026-11-03",
+   "fp": "6368f579d51c5b35",
+   "id": "c4f9013eabb8",
+   "individualOk": null,
+   "needsCheck": false,
+   "org": "미기재 (아트앤컬처 게재)",
+   "region": "전국",
+   "relevance": 3,
+   "sources": [
+    "아트앤컬처 공모란"
+   ],
+   "startDate": "2026-10-20",
+   "summary": "차세대 작가를 발굴하는 미술 분야 공모전이다. 본문이 비어 있어 세부 자격과 지원 내용은 관련 링크에서 확인해야 한다.",
+   "support": [],
+   "supportAmount": null,
+   "title": "2027년 차세대 작가 공모전",
+   "url": "https://www.art-culture.co.kr/magazine_contest/2225"
   },
   {
    "ageLimit": null,
@@ -848,13 +1287,13 @@
    "checkReasons": [],
    "confidence": "high",
    "deadline": "2026-11-19",
-   "deadlineNote": "마감 16:00 (게시판 헤더 종료는 18:00으로 표기)",
-   "eligibility": "만 19~39세 청년(예비)예술인, 주민등록상 충남 거주 또는 충남 소재 대학 재학 예비예술인, 도내에서 해당 분야 창작활동 중인 자",
+   "deadlineNote": "본문 접수 마감은 16:00, 목록 종료 표기는 18:00으로 서로 다름. 접수는 재단 홈페이지에서 함",
+   "eligibility": "만 19~39세 청년(예비)예술인 중 충남 주민등록자 또는 충남 소재 대학 재학생이고, 도내에서 모집분야 예술 창작활동을 하는 자",
    "fit": [
     "yekki"
    ],
    "foundAt": "2026-10-30",
-   "fp": "51516647f1ab5132",
+   "fp": "7766e816831eaad9",
    "id": "0f6fafddad65",
    "individualOk": true,
    "needsCheck": false,
@@ -865,14 +1304,14 @@
     "아트앤컬처 공모란"
    ],
    "startDate": "2026-11-02",
-   "summary": "충남에서 활동하는 청년 예술인을 대상으로 시각·공연·문학예술 분야 작품을 공모해 성장후원금을 지원하는 사업이다. 지역 거주 요건이 있어 지역 조건 충족 여부를 확인해야 한다.",
+   "summary": "충남의 청년 예술인을 대상으로 시각·공연·문학예술 분야 작가를 뽑아 청년예술 성장후원금을 지급하는 공모다. 시각예술 부문은 YEKKI의 작업 분야와 맞지만, 충남 거주 또는 재학 조건을 충족해야 한다.",
    "support": [
     "prize",
     "fund"
    ],
-   "supportAmount": "청년예술 성장후원금 100만원 시상금",
+   "supportAmount": "청년예술 성장후원금 100만원 (시상금 지급)",
    "title": "2026 충남 문화CF 스타상 (청년예술부문) 공모",
-   "updatedAt": "2026-11-01",
+   "updatedAt": "2026-11-03",
    "url": "https://www.art-culture.co.kr/magazine_contest/2213"
   },
   {
@@ -1129,6 +1568,39 @@
   {
    "ageLimit": null,
    "announceDate": null,
+   "board": "art",
+   "cats": [
+    "art"
+   ],
+   "checkReasons": [],
+   "confidence": "medium",
+   "deadline": "2026-11-22",
+   "deadlineNote": "행사기간 종료 18:00 표기. 별도 접수 마감 항목 없음",
+   "eligibility": null,
+   "fit": [
+    "yekki"
+   ],
+   "foundAt": "2026-11-03",
+   "fp": "0fe2c2988a41a95c",
+   "id": "07ec0f13061c",
+   "individualOk": null,
+   "needsCheck": false,
+   "org": "아트센터예술의시간",
+   "region": "전국",
+   "relevance": 3,
+   "sources": [
+    "아트앤컬처 공모란"
+   ],
+   "startDate": "2026-10-21",
+   "summary": "아트센터예술의시간이 2027년 작가를 공개 모집하는 미술 분야 공모다. 본문이 비어 있어 자격과 지원 내용은 관련 링크에서 확인해야 한다.",
+   "support": [],
+   "supportAmount": null,
+   "title": "아트센터예술의시간 「아티스트 프롤로그 2027 작가 공모」",
+   "url": "https://www.art-culture.co.kr/magazine_contest/2224"
+  },
+  {
+   "ageLimit": null,
+   "announceDate": null,
    "cats": [
     "art"
    ],
@@ -1165,6 +1637,42 @@
    "announceDate": null,
    "board": "art",
    "cats": [
+    "startup"
+   ],
+   "checkReasons": [],
+   "confidence": "high",
+   "deadline": "2026-11-22",
+   "deadlineNote": "23시 59분 마감. 이메일 접수(sjm@hufs.ac.kr)",
+   "eligibility": "예비창업자 또는 창업 3년 미만 일반기업. 서류·발표심사 후 입주 승인",
+   "fit": [
+    "pixel"
+   ],
+   "foundAt": "2026-11-03",
+   "fp": "16ac8300400a03ea",
+   "id": "922fddbcce85",
+   "individualOk": true,
+   "needsCheck": false,
+   "org": "한국외국어대학교연구산학협력단",
+   "region": "경기",
+   "relevance": 2,
+   "sources": [
+    "K-Startup 사업공고"
+   ],
+   "startDate": "2026-11-03",
+   "summary": "경기도 용인 한국외대 글로벌캠퍼스 창업보육센터의 15평 보육실 1곳에 최대 7년 입주할 수 있는 모집. 식당, 주차, 사업활동 지원금 등이 함께 제공된다. 입주비용과 지원금 금액은 공고문 확인이 필요하다.",
+   "support": [
+    "space",
+    "cash"
+   ],
+   "supportAmount": null,
+   "title": "한국외국어대학교 창업보육센터 입주기업 모집",
+   "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179709"
+  },
+  {
+   "ageLimit": null,
+   "announceDate": null,
+   "board": "art",
+   "cats": [
     "design",
     "art",
     "overseas"
@@ -1172,13 +1680,13 @@
    "checkReasons": [],
    "confidence": "high",
    "deadline": "2026-11-24",
-   "deadlineNote": "게시판 헤더 종료는 18:00으로 표기",
+   "deadlineNote": "목록 종료 시각 18:00 표기. 본문에는 시각이 없음",
    "eligibility": "전 세계 디자이너, 아티스트, 일러스트레이터 및 콘텐츠 크리에이터",
    "fit": [
     "yekki"
    ],
    "foundAt": "2026-10-30",
-   "fp": "34dc7335e1a649cc",
+   "fp": "9531562e0d0f3c5e",
    "id": "c604cdda1acd",
    "individualOk": true,
    "needsCheck": false,
@@ -1189,13 +1697,13 @@
     "아트앤컬처 공모란"
    ],
    "startDate": "2026-10-29",
-   "summary": "전 세계 디자이너와 아티스트를 대상으로 디자인 국제전 작품을 공모하는 사업이다. 3D 프로토타입과 제품 디자인도 대상에 포함되지만 사진, 애니메이션, 웹 디자인 등 폭넓은 장르를 다룬다.",
+   "summary": "사진, 디지털 아트, 일러스트, 애니메이션, 제품·3D 프로토타입 등 다양한 형식의 디자인 작품을 모아 여는 국제 전시 공모다. 제품 디자인 작품을 해외 전시에 출품할 수 있다는 점에서 YEKKI에게 맞는다.",
    "support": [
     "exhibit"
    ],
    "supportAmount": null,
    "title": "CICA 미술관 디자인 국제전 “Designer Now 2027” 공모",
-   "updatedAt": "2026-11-01",
+   "updatedAt": "2026-11-03",
    "url": "https://www.art-culture.co.kr/magazine_contest/2217"
   },
   {
@@ -1415,6 +1923,45 @@
    "supportAmount": "총 440만원 (대상 200만원, 최우수상 100만원, 우수상 50만원, 장려상 20만원), 상품권 지급",
    "title": "서울미래인재재단 대표 캐릭터 공모전 서울의 미래, 새로운 얼굴",
    "url": "https://www.contestkorea.com/sub/view.php?int_gbn=1&Txt_bcode=030610001&str_no=202610280025"
+  },
+  {
+   "ageLimit": null,
+   "announceDate": "2027-01-27",
+   "board": "art",
+   "cats": [
+    "design",
+    "overseas"
+   ],
+   "checkReasons": [
+    "마감일 원문 대조 실패"
+   ],
+   "confidence": "high",
+   "deadline": "2026-12-02",
+   "deadlineNote": "표준 접수 마감 KST 24시. 이후 Late 접수는 2026-12-30 24시(KST)까지이며 참가비가 오름",
+   "eligibility": "전 세계 누구나 참가 가능, 팀 최대 5인. 개인 참가는 Professional 요금, 학생은 졸업 후 1년까지 Student 요금 적용",
+   "fit": [
+    "yekki"
+   ],
+   "foundAt": "2026-11-03",
+   "fp": "4fee2ccf30bdb5be",
+   "id": "be9f3f7a7f1c",
+   "individualOk": true,
+   "needsCheck": true,
+   "org": "Asia Design Prize (designboom 게재)",
+   "region": "해외",
+   "relevance": 3,
+   "sources": [
+    "designboom competitions"
+   ],
+   "startDate": "2026-10-31",
+   "summary": "아시아 디자인의 가치를 주제로 산업, 공간·건축, 커뮤니케이션 세 부문의 출품작을 온라인으로 심사해 파이널리스트와 수상작을 발표하고 온라인 전시와 서울 시상식을 연다.",
+   "support": [
+    "prize",
+    "exhibit"
+   ],
+   "supportAmount": null,
+   "title": "Asia Design Prize 2027",
+   "url": "https://www.designboom.com/competition/asia-design-prize-2027/"
   },
   {
    "ageLimit": null,
@@ -1856,6 +2403,45 @@
    "announceDate": null,
    "board": "art",
    "cats": [
+    "startup",
+    "local"
+   ],
+   "checkReasons": [
+    "마감일 없음",
+    "AI 확신 낮음"
+   ],
+   "confidence": "low",
+   "deadline": null,
+   "deadlineNote": "원문에 접수 기간 없음. 첨부 양식만 나열됨",
+   "eligibility": null,
+   "fit": [
+    "pixel"
+   ],
+   "foundAt": "2026-11-03",
+   "fp": "",
+   "id": "130a844186ce",
+   "individualOk": null,
+   "needsCheck": true,
+   "org": "원문 미기재 (아트누리에 게시)",
+   "region": "충북",
+   "relevance": 2,
+   "sources": [
+    "아트누리 (전국 문화재단 지원사업 모음)"
+   ],
+   "startDate": null,
+   "summary": "청주 문화첨단산업단지에 입주할 기업을 신규 모집하고 기간 연장 신청도 받는 공고다. 본문에는 입주 조건과 기간이 없고 신청서·심사 배점표·입주공간 도면 첨부만 있다.",
+   "support": [
+    "space"
+   ],
+   "supportAmount": null,
+   "title": "2026 제5차 청주도시첨단문화산업단지 입주기업 모집 공고(신규 및 기간연장)",
+   "url": "https://artnuri.or.kr/crawler/info/view.do?key=2301170002&docid=S65944&source=%EC%B2%AD%EC%A3%BC%EC%8B%9C%EB%AC%B8%ED%99%94%EC%82%B0%EC%97%85%EC%A7%84%ED%9D%A5%EC%9E%AC%EB%8B%A8&seNo=001"
+  },
+  {
+   "ageLimit": null,
+   "announceDate": null,
+   "board": "art",
+   "cats": [
     "design",
     "startup"
    ],
@@ -2263,5 +2849,5 @@
    "url": "https://www.damyangcf.or.kr/user/sub207040"
   }
  ],
- "updatedAt": "2026-11-02 10:04"
+ "updatedAt": "2026-11-03 20:08"
 }

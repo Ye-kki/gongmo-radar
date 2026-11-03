@@ -1,89 +1,54 @@
 {
  "ai": {
   "calls": 11,
-  "cli_cost_usd": 0.2777,
+  "cli_cost_usd": 0.064,
   "errors": [],
-  "est_cost_usd": 0.0441,
-  "input_tokens": 215446,
+  "est_cost_usd": 0.0589,
+  "input_tokens": 207553,
   "mode": "subscription",
-  "output_tokens": 45173,
+  "output_tokens": 76279,
   "searches": 0
  },
  "counts": {
-  "baseline": 0,
-  "candidates": 48,
-  "changed": 0,
-  "fetched": 30,
-  "filtered": 1,
-  "new": 2,
+  "baseline": 101,
+  "candidates": 87,
+  "changed": 3,
+  "changed_applied": 3,
+  "fetched": 81,
+  "filtered": 14,
+  "new": 16,
   "over_limit": 0,
-  "read_failed": 21,
-  "rechecked": 20,
+  "read_failed": 14,
+  "rechecked": 22,
   "same": 0,
-  "sent": 26,
-  "skipped": 24,
-  "updated": 0
+  "sent": 62,
+  "skipped": 43,
+  "updated": 3
  },
- "discovery": [
-  {
-   "found": 0,
-   "id": "goods-kr",
-   "new": 0
-  },
-  {
-   "found": 0,
-   "id": "art-kr",
-   "new": 0
-  },
-  {
-   "found": 1,
-   "id": "design-kr",
-   "new": 1
-  },
-  {
-   "found": 0,
-   "id": "residency",
-   "new": 0
-  },
-  {
-   "found": 1,
-   "id": "startup-kr",
-   "new": 1
-  },
-  {
-   "found": 0,
-   "id": "overseas",
-   "new": 0
-  }
- ],
+ "discovery": [],
  "read_errors": [
   "K-Startup 사업공고: https://www.k-startup.go.kr/magicsso/requestAuthEx.jsp?RelayState=https://www.bizinfo.go.k → HTTP 404: https://www.k-startup.go.kr/magicsso/requestAuthEx.jsp?RelayState=https://www.bizinfo.go.kr/magicsso/requestCo",
   "K-Startup 사업공고: https://www.k-startup.go.kr/magicsso/requestAuthEx.jsp?RelayState=https://sso.sbiz.or.kr/m → HTTP 404: https://www.k-startup.go.kr/magicsso/requestAuthEx.jsp?RelayState=https://sso.sbiz.or.kr/magicsso/requestConne",
   "K-Startup 사업공고: https://www.k-startup.go.kr/magicsso/requestAuthEx.jsp?RelayState=https://www.smtech.go.kr → HTTP 404: https://www.k-startup.go.kr/magicsso/requestAuthEx.jsp?RelayState=https://www.smtech.go.kr/front/magicsso/requ",
   "K-Startup 사업공고: https://www.k-startup.go.kr/magicsso/requestAuthEx.jsp?RelayState=https://www.smes.go.kr/s → HTTP 404: https://www.k-startup.go.kr/magicsso/requestAuthEx.jsp?RelayState=https://www.smes.go.kr/sanhakin/magicsso/req",
   "K-Startup 사업공고: https://www.k-startup.go.kr/magicsso/requestAuthEx.jsp?RelayState=https://www.kosmes.or.kr → HTTP 404: https://www.k-startup.go.kr/magicsso/requestAuthEx.jsp?RelayState=https://www.kosmes.or.kr/magicsso/requestCon",
-  "K-Startup 사업공고: https://www.k-startup.go.kr/magicsso/requestAuthEx.jsp?RelayState=https://www.smes.go.kr/b → HTTP 404: https://www.k-startup.go.kr/magicsso/requestAuthEx.jsp?RelayState=https://www.smes.go.kr/binet/magicsso/reques",
-  "강남문화재단: https://www.gangnam.go.kr/file/1/get/31af8c16-af17-42cb-bacb-3d1c1073626e/download.do → robots.txt가 수집을 막음: https://www.gangnam.go.kr/file/1/get/31af8c16-af17-42cb-bacb-3d1c1073626e/download.do",
-  "강남문화재단: https://www.gangnam.go.kr/file/2/get/31af8c16-af17-42cb-bacb-3d1c1073626e/download.do → robots.txt가 수집을 막음: https://www.gangnam.go.kr/file/2/get/31af8c16-af17-42cb-bacb-3d1c1073626e/download.do",
-  "강남문화재단: https://www.gangnam.go.kr/file/3/get/31af8c16-af17-42cb-bacb-3d1c1073626e/download.do → robots.txt가 수집을 막음: https://www.gangnam.go.kr/file/3/get/31af8c16-af17-42cb-bacb-3d1c1073626e/download.do",
-  "강남문화재단: https://www.gangnam.go.kr/file/4/get/31af8c16-af17-42cb-bacb-3d1c1073626e/download.do → robots.txt가 수집을 막음: https://www.gangnam.go.kr/file/4/get/31af8c16-af17-42cb-bacb-3d1c1073626e/download.do",
-  "강남문화재단: https://www.gangnam.go.kr/file/5/get/31af8c16-af17-42cb-bacb-3d1c1073626e/download.do → robots.txt가 수집을 막음: https://www.gangnam.go.kr/file/5/get/31af8c16-af17-42cb-bacb-3d1c1073626e/download.do",
-  "강남문화재단: https://www.gangnam.go.kr/file/6/get/31af8c16-af17-42cb-bacb-3d1c1073626e/download.do → robots.txt가 수집을 막음: https://www.gangnam.go.kr/file/6/get/31af8c16-af17-42cb-bacb-3d1c1073626e/download.do",
-  "강남문화재단: https://www.gangnam.go.kr/file/1/get/3f58fb12-0375-4a8f-9177-094e0fb1c0e5/download.do → robots.txt가 수집을 막음: https://www.gangnam.go.kr/file/1/get/3f58fb12-0375-4a8f-9177-094e0fb1c0e5/download.do",
-  "강남문화재단: https://www.gangnam.go.kr/file/1/get/acfdcbfa-b154-4040-abb9-f948eb3aaf70/download.do → robots.txt가 수집을 막음: https://www.gangnam.go.kr/file/1/get/acfdcbfa-b154-4040-abb9-f948eb3aaf70/download.do",
-  "강남문화재단: https://www.gangnam.go.kr/file/2/get/acfdcbfa-b154-4040-abb9-f948eb3aaf70/download.do → robots.txt가 수집을 막음: https://www.gangnam.go.kr/file/2/get/acfdcbfa-b154-4040-abb9-f948eb3aaf70/download.do",
-  "강남문화재단: https://www.gangnam.go.kr/file/1/get/0518db8e-5a8c-4d3e-bcdd-ebcaf4580a48/download.do → robots.txt가 수집을 막음: https://www.gangnam.go.kr/file/1/get/0518db8e-5a8c-4d3e-bcdd-ebcaf4580a48/download.do",
-  "강남문화재단: https://www.gangnam.go.kr/file/2/get/0518db8e-5a8c-4d3e-bcdd-ebcaf4580a48/download.do → robots.txt가 수집을 막음: https://www.gangnam.go.kr/file/2/get/0518db8e-5a8c-4d3e-bcdd-ebcaf4580a48/download.do",
-  "웹 검색: https://www.theteams.kr/activities/page/337599/lc → HTTP 403: https://www.theteams.kr/activities/page/337599/lc"
+  "K-Startup 사업공고: https://www.k-startup.go.kr/magicsso/requestAuthEx.jsp?RelayState=https://www.smes.go.kr/b → HTTP 404: https://www.k-startup.go.kr/magicsso/requestAuthEx.jsp?RelayState=https://www.smes.go.kr/binet/magicsso/reques"
  ],
- "runAt": "2026-11-02 10:04",
+ "rendered_pages": 7,
+ "runAt": "2026-11-03 20:08",
  "sources": [
   {
    "board": "art",
    "id": "contestkorea-design",
-   "links": 52,
+   "links": 53,
    "name": "콘테스트코리아 미술·디자인",
-   "new": 5,
+   "new": 16,
+   "sample": [
+    "[수상자 발표] 2026 고성 해양심층수 브랜드 AI 영상 공모전 | https://contestkorea.com/sub/view.php?int_gbn=1&Txt_bcode=031210001&str_no=202607200008",
+    "미술•디자인•웹툰 제1회 중앙일보 어린이 미술대회 | https://www.contestkorea.com/sub/view.php?int_gbn=1&Txt_bcode=030610001&str_no=202610010030",
+    "미술•디자인•웹툰 유랑 사회적협동조합 로고 디자인 공모전 | https://www.contestkorea.com/sub/view.php?int_gbn=1&Txt_bcode=030610001&str_no=202610310003",
+    "미술•디자인•웹툰 강남구중독관리통합지원센터 캐릭터 공모전 | https://www.contestkorea.com/sub/view.php?int_gbn=1&Txt_bcode=030610001&str_no=202610300023"
+   ],
    "status": "ok",
    "url": "https://www.contestkorea.com/sub/list.php?int_gbn=1&Txt_bcode=030610001"
   },
@@ -92,7 +57,13 @@
    "id": "wevity-design",
    "links": 15,
    "name": "위비티 디자인·캐릭터",
-   "new": 1,
+   "new": 0,
+   "sample": [
+    "SPECIAL 제14회 한옥디자인 국제 공모전 디자인/캐릭터/웹툰, 건축 | https://www.wevity.com/?c=find&s=1&gub=1&cidx=19&gbn=view&gp=1&ix=109966",
+    "2026 미미홈 꾸미기 콘테스트 (미미홈꾸) | https://www.wevity.com/?c=find&s=1&gub=1&cidx=19&gbn=view&gp=1&ix=112034",
+    "제9회 만화일러스트 공모전 | https://www.wevity.com/?c=find&s=1&gub=1&cidx=19&gbn=view&gp=1&ix=112016",
+    "2026 부산 지역어 알리기 한 장 만화 공모전 | https://www.wevity.com/?c=find&s=1&gub=1&cidx=19&gbn=view&gp=1&ix=111983"
+   ],
    "status": "ok",
    "url": "https://www.wevity.com/?c=find&s=1&gub=1&cidx=19"
   },
@@ -101,7 +72,13 @@
    "id": "wevity-art",
    "links": 15,
    "name": "위비티 예체능·미술",
-   "new": 1,
+   "new": 0,
+   "sample": [
+    "SPECIAL 선샤인 TIME TRAVEL 숏폼 영상 공모전 기획/아이디 | https://www.wevity.com/?c=find&s=1&gub=1&cidx=20&gbn=view&gp=1&ix=111750",
+    "SPECIAL 건강보험심사평가원 광고 온에어 기념 이벤트 광고/마케팅,  | https://www.wevity.com/?c=find&s=1&gub=1&cidx=20&gbn=view&gp=1&ix=112063",
+    "SPECIAL [제3회] 매경 AI 광고 공모전 대한민국 AI 광고대상  | https://www.wevity.com/?c=find&s=1&gub=1&cidx=20&gbn=view&gp=1&ix=112073",
+    "SPECIAL 2026 DATA·AI 분석 경진대회 웹/모바일/IT, 과 | https://www.wevity.com/?c=find&s=1&gub=1&cidx=20&gbn=view&gp=1&ix=110023"
+   ],
    "status": "ok",
    "url": "https://www.wevity.com/?c=find&s=1&gub=1&cidx=20"
   },
@@ -111,6 +88,12 @@
    "links": 100,
    "name": "아트앤컬처 공모란",
    "new": 3,
+   "sample": [
+    "강남구중독관리통합지원센터 캐릭터 공모전 | https://www.art-culture.co.kr/magazine_contest/2226",
+    "2027년 차세대 작가 공모전 | https://www.art-culture.co.kr/magazine_contest/2225",
+    "아트센터예술의시간 「아티스트 프롤로그 2027 작가 공모」 | https://www.art-culture.co.kr/magazine_contest/2224",
+    "귀 쫑긋! '우리' 활용 공모전 | https://www.art-culture.co.kr/magazine_contest/2223"
+   ],
    "status": "ok",
    "url": "https://www.art-culture.co.kr/magazine_contest"
   },
@@ -120,6 +103,12 @@
    "links": 32,
    "name": "아키비스트 레지던시",
    "new": 1,
+   "sample": [
+    "ARCHIVIST | https://archivist.kr",
+    "infoF 공지 | https://archivist.kr/?d=ntc",
+    "infoF 홍보 | https://archivist.kr/svc",
+    "flareL 전시 | https://archivist.kr/?d=exi"
+   ],
    "status": "ok",
    "url": "https://archivist.kr/?d=biz&f=Residency&l=dbs"
   },
@@ -129,15 +118,27 @@
    "links": 33,
    "name": "아키비스트 공모",
    "new": 0,
+   "sample": [
+    "ARCHIVIST | https://archivist.kr",
+    "infoF 공지 | https://archivist.kr/?d=ntc",
+    "infoF 홍보 | https://archivist.kr/svc",
+    "flareL 전시 | https://archivist.kr/?d=exi"
+   ],
    "status": "ok",
    "url": "https://archivist.kr/?d=biz&f=Contest&l=dbs"
   },
   {
    "board": "art",
    "id": "artnuri",
-   "links": 22,
+   "links": 21,
    "name": "아트누리 (전국 문화재단 지원사업 모음)",
-   "new": 1,
+   "new": 8,
+   "sample": [
+    "아트누리 로고 | https://artnuri.or.kr/",
+    "한국지역 문화지원협의회 | https://artnuri.or.kr/content.do?key=2409100004",
+    "정보제공기관 | https://artnuri.or.kr/crawler/list.do?key=2409100005",
+    "지원사업 찾기 | https://artnuri.or.kr/crawler/info/search.do?key=2301170002"
+   ],
    "status": "ok",
    "url": "https://artnuri.or.kr/crawler/info/search.do?key=2301170002&sc_isDo=I&sc_isDo=T&recordCountPerPage=50&pageIndex=1"
   },
@@ -146,7 +147,13 @@
    "id": "arko-notice",
    "links": 9,
    "name": "한국문화예술위원회 공지",
-   "new": 0,
+   "new": 1,
+   "sample": [
+    "2026년 대한민국 예술과 기업 동반성장 대상 적격성 심사 결과발표 20 | https://www.arko.or.kr/board/view/4013?bid=463&page=&cid=1811354",
+    "[해외레지던시참가지원] 2027년 오스트리아 댄스웹(danceWEB) 레 | https://artnuri.or.kr/crawler/info/view.do?key=2301170002&encData=sUiBAI0l4sHqoD%2B2npmyDxKypodMmnHu2n3XD1oG4XgPBZm1EJpnMlsBwvsh76BM",
+    "[해외레지던시참가지원] 2027년 오스트리아 임펄스탄츠 아틀라스 레지던시 | https://artnuri.or.kr/crawler/info/view.do?key=2301170002&encData=sUiBAI0l4sHqoD%2B2npmyDxfggl%2BQfK4LboAEnelw3QsPBZm1EJpnMlsBwvsh76BM",
+    "2027년 문학상주작가 지원사업 공모 작가가 도서관·문학관·서점에 상주하 | https://artnuri.or.kr/crawler/info/view.do?key=2301170002&encData=sUiBAI0l4sHqoD%2B2npmyDyhT8R%2FrREV1FR1b%2FnOuXSUPBZm1EJpnMlsBwvsh76BM"
+   ],
    "status": "ok",
    "url": "https://www.arko.or.kr/board/list/4013?bid=463"
   },
@@ -166,6 +173,12 @@
    "links": 69,
    "name": "문화체육관광부 문화예술 지원사업",
    "new": 0,
+   "sample": [
+    "English (영어) | https://www.mcst.go.kr/english/index.jsp",
+    "中文 (중국어) | https://www.mcst.go.kr/chinese/index.jsp",
+    "日本語 (일본어) | https://www.mcst.go.kr/japanese/index.jsp",
+    "문화체육관광부 | https://www.mcst.go.kr/site/main.jsp"
+   ],
    "status": "ok",
    "url": "https://www.mcst.go.kr/site/s_culture/cultureSp/cultureSpList.jsp"
   },
@@ -174,7 +187,13 @@
    "id": "kidp-notice",
    "links": 10,
    "name": "한국디자인진흥원 공지",
-   "new": 0,
+   "new": 2,
+   "sample": [
+    "[참가자 모집] 산업안전디자인 국회 세미나 참가 신청하기 | https://kidp.or.kr/?menuno=1202&bbsno=19311&siteno=16&act=view&ztag=rO0ABXQAMzxjYWxsIHR5cGU9ImJvYXJkIiBubz0iNjIyIiBza2luPSJraWRwX2JicyI%2BPC9jYWxsPg%3D%3D",
+    "한국디자인진흥원, 2026 ISC 혁신성과 경진대회‘대상’수상 | https://kidp.or.kr/?menuno=1202&bbsno=19310&siteno=16&act=view&ztag=rO0ABXQAMzxjYWxsIHR5cGU9ImJvYXJkIiBubz0iNjIyIiBza2luPSJraWRwX2JicyI%2BPC9jYWxsPg%3D%3D",
+    "한국디자인진흥원, 성남시 공공기관 협의체와 ESG 환경 실천 | https://kidp.or.kr/?menuno=1202&bbsno=19309&siteno=16&act=view&ztag=rO0ABXQAMzxjYWxsIHR5cGU9ImJvYXJkIiBubz0iNjIyIiBza2luPSJraWRwX2JicyI%2BPC9jYWxsPg%3D%3D",
+    "2026년도 국가인적자원개발컨소시엄 교육과정의 실무 활용도 및 효과성 파 | https://kidp.or.kr/?menuno=1202&bbsno=19308&siteno=16&act=view&ztag=rO0ABXQAMzxjYWxsIHR5cGU9ImJvYXJkIiBubz0iNjIyIiBza2luPSJraWRwX2JicyI%2BPC9jYWxsPg%3D%3D"
+   ],
    "status": "ok",
    "url": "https://kidp.or.kr/?menuno=1202"
   },
@@ -184,8 +203,39 @@
    "links": 12,
    "name": "서울문화재단 지원사업 (SCAS)",
    "new": 0,
+   "sample": [
+    "공연장상주단체지원(공연단체) 대상 공연장 진행중 ~2026.11.17 지 | https://www.scas.kr/biz/detail/510?page=1",
+    "<제5회 서울예술상> 스팍 포커스상 후보작 공모 대상 예술인 또는 예술단 | https://www.scas.kr/biz/detail/498?page=1",
+    "2027년 서울연극창작센터 연극인오피스 입주 정기공모 대상 2027년도  | https://www.scas.kr/biz/detail/518?page=1",
+    "예술창작지원-A트랙 대상 예술가 또는 예술단체 마감 지원금 ,시각 ,연극 | https://www.scas.kr/biz/detail/495?page=1"
+   ],
    "status": "ok",
    "url": "https://www.scas.kr/biz/list"
+  },
+  {
+   "board": "art",
+   "id": "aac-open-calls",
+   "links": 109,
+   "name": "Alliance of Artists Communities 오픈콜 (해외 레지던시)",
+   "new": 12,
+   "sample": [
+    "Leading with Purpose | https://artistcommunities.org/directory/open-calls/leading-purpose",
+    "AMAZON FOREST - AUGUST 2027 | https://artistcommunities.org/directory/open-calls/amazon-forest-august-2027",
+    "ILHABELA ISLAND, BRAZIL - FEBRUARY/MARCH | https://artistcommunities.org/directory/open-calls/ilhabela-island-brazil-februarymarch-2027-sessions",
+    "Summer Opera 2027 | https://artistcommunities.org/directory/open-calls/summer-opera-2027"
+   ],
+   "status": "ok",
+   "url": "https://artistcommunities.org/directory/open-calls"
+  },
+  {
+   "board": "art",
+   "detail": "robots.txt가 수집을 막음: https://www.kocca.kr/kocca/pims/list.do?menuNo=204104",
+   "id": "kocca-notice",
+   "links": 0,
+   "name": "한국콘텐츠진흥원 사업공고",
+   "new": 0,
+   "status": "robots",
+   "url": "https://www.kocca.kr/kocca/pims/list.do?menuNo=204104"
   },
   {
    "board": "art",
@@ -193,17 +243,39 @@
    "links": 10,
    "name": "공예디자인문화진흥원 사업공모",
    "new": 0,
+   "sample": [
+    "2027 KCDF 공예·디자인 공모전시 모집 공고 | https://www.kcdf.or.kr/brd/board/337/L/menu/284?brdType=R&thisPage=1&bbIdx=9218&brdCodeValue=",
+    "[AI 오프라인 실습 교육] 2026 공예 온라인 유통 및 AI활용 역량 | https://www.kcdf.or.kr/brd/board/337/L/menu/284?brdType=R&thisPage=1&bbIdx=9213&brdCodeValue=",
+    "2026 한복마름방 한복 소재의 문양 특강(일일특강) 수강생 모집 공고 | https://www.kcdf.or.kr/brd/board/337/L/menu/284?brdType=R&thisPage=1&bbIdx=9178&brdCodeValue=",
+    "2026년 한복마름방 <4차 분기 교육 수강생 모집> 공고 | https://www.kcdf.or.kr/brd/board/337/L/menu/284?brdType=R&thisPage=1&bbIdx=9168&brdCodeValue="
+   ],
    "status": "ok",
    "url": "https://www.kcdf.or.kr/brd/board/337/L/menu/284"
   },
   {
    "board": "art",
    "id": "kstartup-ongoing",
-   "links": 57,
+   "links": 55,
    "name": "K-Startup 사업공고",
-   "new": 8,
+   "new": 16,
+   "sample": [
+    "사업신청관리 | https://www.k-startup.go.kr/passni/kstartup/tokenInfoRelay.jsp?flag=biz",
+    "자주하는 질문 | https://www.k-startup.go.kr/web/contents/webFAQ.do",
+    "통합회원 로그인 | https://www.k-startup.go.kr/imsso/login.do?anyidLginUseYn=N&snsLoginYn=N&returnUrl=",
+    "KSTARTUP | https://www.k-startup.go.kr/web/main/index.do"
+   ],
    "status": "ok",
    "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do"
+  },
+  {
+   "board": "art",
+   "detail": "API 키 필요: GitHub secret BIZINFO_API_KEY",
+   "id": "bizinfo",
+   "links": 0,
+   "name": "기업마당 정부 지원사업 (API)",
+   "new": 0,
+   "status": "skipped",
+   "url": "https://www.bizinfo.go.kr/web/lay1/bbs/S1T122C128/AS/74/list.do"
   },
   {
    "board": "art",
@@ -211,6 +283,12 @@
    "links": 62,
    "name": "서울경제진흥원 사업공고",
    "new": 0,
+   "sample": [
+    "아이디 찾기 | https://www.sba.seoul.kr/Pages/MemberManagement/FindID.aspx",
+    "신청현황조회 | https://www.sba.seoul.kr/Pages/MyPage/ApplyStatus.aspx",
+    "비밀번호 찾기 | https://www.sba.seoul.kr/Pages/MemberManagement/FindPW.aspx",
+    "사전예약조회 | https://www.sba.seoul.kr/Pages/MyPage/Prebooking.aspx"
+   ],
    "status": "ok",
    "url": "https://www.sba.seoul.kr/Pages/ContentsMenu/Company_Support.aspx?C=6FA70790-6677-EC11-80E8-9418827691E2"
   },
@@ -226,12 +304,17 @@
   },
   {
    "board": "art",
-   "detail": "목록에서 게시글 링크를 찾지 못함. 자바스크립트로 그리는 페이지이거나 link_regex 확인 필요",
    "id": "gdfac-notice",
-   "links": 0,
+   "links": 10,
    "name": "강동문화재단 공지",
-   "new": 0,
-   "status": "empty",
+   "new": 3,
+   "sample": [
+    "클래식 토크 콘서트 <두 남자 이야기> 프로그램북 | https://www.gdfac.or.kr/community/ko/notice/102400?q=null",
+    "[연합뉴스] 강동문화재단, '지방공공기관 발전' 행안부장관 표창(2026 | https://www.gdfac.or.kr/community/ko/notice/102395?q=null",
+    "[아트센터 소식] 목요예술무대Ⅳ <우리동네 명작극장> 상영작 변경 안내 | https://www.gdfac.or.kr/community/ko/notice/102354?q=null",
+    "강동아트센터 개관 15주년 기념 이벤트 운영 안내 | https://www.gdfac.or.kr/community/ko/notice/102231?q=null"
+   ],
+   "status": "ok",
    "url": "https://www.gdfac.or.kr/community/ko/notice"
   },
   {
@@ -240,438 +323,374 @@
    "links": 65,
    "name": "투어라즈 공고·공모",
    "new": 10,
+   "sample": [
+    "투어라즈 소개 | https://touraz.kr/aboutTouraz",
+    "홍보·마케팅 | https://touraz.kr/publicRelationsSupport",
+    "인바운드 마케팅 | https://touraz.kr/overseasMarketing",
+    "관광지 정보 등록 | https://touraz.kr/editTats"
+   ],
    "status": "ok",
    "url": "https://touraz.kr/announcementList/pssrpList"
   },
   {
    "board": "art",
    "id": "designboom-competitions",
-   "links": 16,
+   "links": 17,
    "name": "designboom competitions",
-   "new": 0,
+   "new": 1,
+   "sample": [
+    "Asia Design Prize 2027 | https://www.designboom.com/competition/asia-design-prize-2027/",
+    "2027 NYX Design Awards | https://www.designboom.com/competition/2027-nyx-design-awards/",
+    "Architectural competition for the design | https://www.designboom.com/competition/architectural-competition-for-the-design-and-supervision-of-the-construction-of-the-project-limassol-arts-centre/",
+    "Compasso d’Oro International Design Awar | https://www.designboom.com/competition/compasso-doro-international-design-award-2027/"
+   ],
    "status": "ok",
    "url": "https://www.designboom.com/competitions/design/"
   },
   {
    "board": "life",
+   "detail": "목록에서 게시글 링크를 찾지 못함. 자바스크립트로 그리는 페이지이거나 link_regex 확인 필요",
    "id": "life-seoul-youth",
-   "links": 97,
+   "links": 0,
    "name": "서울 청년몽땅정보통 지원정보",
    "new": 0,
-   "status": "ok",
+   "sample": [
+    "메인으로 이동 | https://youth.seoul.go.kr/mainA.do",
+    "로그인 해주세요 | https://youth.seoul.go.kr/userSeoulLogin.do",
+    "서울 영테크 홈페이지 | https://youth.seoul.go.kr/youthConts.do?key=2310100072&sc_pbancSeCd=102&sc_bbsStngSn=2310160002&sc_bbsCtgrySn=0&sc_qnaCtgryCd=001&sc_faqCtgryCd=015",
+    "서울청년정책네트워크 홈페이지 | https://youth.seoul.go.kr/network/index.do",
+    "서울청년센터 홈페이지 | https://youth.seoul.go.kr/orang/index.do",
+    "서울청년센터 상담 홈페이지 | https://youth.seoul.go.kr/crm/front/index.do",
+    "서울시 정책 | https://youth.seoul.go.kr/infoData/plcyInfo/list.do?key=2309150002",
+    "중앙정부/타지역 정책 | https://youth.seoul.go.kr/infoData/youthPlcyInfo/list.do?key=2309160001",
+    "onclick: onclick=\"fn_egov_link_page(1);",
+    "onclick: onclick=\"fn_egov_link_page(1); return false;",
+    "onclick: onclick=\"fn_egov_link_page(1, '', '');",
+    "onclick: onclick=\"fn_egov_link_page(1, 'sc_ctgry', 'PDS_01_YC');",
+    "onclick: onclick=\"fn_egov_link_page(1, 'sc_ctgry', 'PDS_02_YC');"
+   ],
+   "status": "empty",
    "url": "https://youth.seoul.go.kr/infoData/sprtInfo/list.do"
   },
   {
    "board": "life",
+   "detail": "목록에서 게시글 링크를 찾지 못함. 자바스크립트로 그리는 페이지이거나 link_regex 확인 필요",
    "id": "life-sh",
-   "links": 192,
+   "links": 0,
    "name": "SH 서울주택도시공사 공고",
    "new": 0,
-   "status": "ok",
+   "sample": [
+    "sh서울주택도시개발공사 | https://www.i-sh.co.kr/main/index.do",
+    "토지임대부 분양주택 개요 | https://www.i-sh.co.kr/main/lay2/S1T5832C5893/contents.do",
+    "토지임대부 분양주택 뉴스 | https://www.i-sh.co.kr/main/lay2/program/S1T5832C5833/www/m_2395/intro/vid/landLease_list.do",
+    "임대주택사업 | https://www.i-sh.co.kr/main/lay2/S1T219C230/sublink.do",
+    "임대주택 공급 | https://www.i-sh.co.kr/main/lay2/S1T230C231/contents.do",
+    "임대주택 관리현황 | https://www.i-sh.co.kr/main/lay2/S1T230C310/sublink.do",
+    "주거안심종합센터 안내 | https://www.i-sh.co.kr/main/lay2/S1T230C312/contents.do",
+    "우리 아파트 찾기 | https://www.i-sh.co.kr/main/lay2/program/S1T305C311/www/m_491/hmng/viewRentalHouseBlockInfoList.do",
+    "onclick: onclick=\"appendSearch();",
+    "onclick: onclick=\"blogShare();",
+    "onclick: onclick=\"facebookShare();",
+    "onclick: onclick=\"favoritesShare();",
+    "onclick: onclick=\"getPaging(1,null);return false"
+   ],
+   "status": "empty",
    "url": "https://www.i-sh.co.kr/main/lay2/program/S1T294C297/www/brd/m_247/list.do"
   },
   {
    "board": "life",
-   "detail": "HTTPSConnectionPool(host='www.myhome.go.kr', port=443): Max retries exceeded with url: /hws/portal/sch/selectRsdtRcritNtcView.do (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.myhome.go.kr'",
-   "id": "life-myhome",
+   "detail": "API 키 필요: GitHub secret YOUTHCENTER_API_KEY",
+   "id": "life-youthcenter",
    "links": 0,
+   "name": "온통청년 청년정책 (API)",
+   "new": 0,
+   "status": "skipped",
+   "url": "https://www.youthcenter.go.kr"
+  },
+  {
+   "board": "life",
+   "id": "life-myhome",
+   "links": 1,
    "name": "마이홈 공공주택 모집공고",
    "new": 0,
-   "status": "error",
+   "sample": [
+    "이주지원119센터(LH) | https://www.myhome.go.kr/hws/portal/cont/selectMigrantSupCenter119View.do"
+   ],
+   "status": "ok",
    "url": "https://www.myhome.go.kr/hws/portal/sch/selectRsdtRcritNtcView.do"
   },
   {
    "board": "art",
    "detail": "홈페이지에서 공지·공모 게시판을 찾지 못함. orgs.yaml에 board_url을 적어주세요",
-   "id": "org-pccf",
+   "id": "org-guriart",
    "kind": "org",
    "links": 0,
-   "name": "평택시문화재단",
+   "name": "구리문화재단",
    "new": 0,
    "status": "empty",
-   "url": "https://www.pccf.or.kr"
+   "url": "https://www.guriart.or.kr"
   },
   {
    "board": "art",
-   "detail": "HTTPSConnectionPool(host='www.gjcf.or.kr', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unab",
-   "id": "org-gjcf",
-   "kind": "org",
-   "links": 0,
-   "name": "광주문화재단",
-   "new": 0,
-   "status": "error",
-   "url": "https://www.gjcf.or.kr"
-  },
-  {
-   "board": "art",
-   "id": "org-gwcf",
-   "kind": "org",
-   "links": 20,
-   "name": "강원문화재단",
-   "new": 0,
-   "status": "ok",
-   "url": "https://gwcf.or.kr/ko/foundation-news/notice.html?no=0"
-  },
-  {
-   "board": "art",
-   "detail": "홈페이지에서 공지·공모 게시판을 찾지 못함. orgs.yaml에 board_url을 적어주세요",
-   "id": "org-jfac",
-   "kind": "org",
-   "links": 0,
-   "name": "제주문화예술재단",
-   "new": 0,
-   "status": "empty",
-   "url": "https://www.jfac.kr"
-  },
-  {
-   "board": "art",
-   "detail": "홈페이지에서 공지·공모 게시판을 찾지 못함. orgs.yaml에 board_url을 적어주세요",
-   "id": "org-ifac",
-   "kind": "org",
-   "links": 0,
-   "name": "인천문화재단",
-   "new": 0,
-   "status": "empty",
-   "url": "https://www.ifac.or.kr"
-  },
-  {
-   "board": "art",
-   "id": "org-hcf",
-   "kind": "org",
-   "links": 172,
-   "name": "화성시문화재단",
-   "new": 4,
-   "status": "ok",
-   "url": "https://www.hcf.or.kr/hcf/61?chathead=%ED%99%94%EC%84%B1%EC%8B%9C%EB%AC%B8%ED%99%94%EC%9E%AC%EB%8B%A8"
-  },
-  {
-   "board": "art",
-   "detail": "홈페이지에서 공지·공모 게시판을 찾지 못함. orgs.yaml에 board_url을 적어주세요",
-   "id": "org-sscf",
-   "kind": "org",
-   "links": 0,
-   "name": "수성문화재단",
-   "new": 0,
-   "status": "empty",
-   "url": "https://www.sscf.or.kr"
-  },
-  {
-   "board": "art",
-   "detail": "홈페이지에서 공지·공모 게시판을 찾지 못함. orgs.yaml에 board_url을 적어주세요",
-   "id": "org-sccf",
-   "kind": "org",
-   "links": 0,
-   "name": "사천문화재단",
-   "new": 0,
-   "status": "empty",
-   "url": "https://www.sccf.or.kr"
-  },
-  {
-   "board": "art",
-   "id": "org-gctf",
-   "kind": "org",
-   "links": 26,
-   "name": "고창문화관광재단",
-   "new": 0,
-   "status": "ok",
-   "url": "https://gctf.or.kr/web/board/1/postList"
-  },
-  {
-   "board": "art",
-   "detail": "robots.txt가 수집을 막음: https://www.dangjinart.kr:444",
-   "id": "org-dangjinart",
-   "kind": "org",
-   "links": 0,
-   "name": "당진문화재단",
-   "new": 0,
-   "status": "robots",
-   "url": "https://www.dangjinart.kr:444"
-  },
-  {
-   "board": "art",
-   "id": "org-dgdgcf",
-   "kind": "org",
-   "links": 14,
-   "name": "대구동구문화재단",
-   "new": 0,
-   "status": "ok",
-   "url": "https://www.dgdgcf.or.kr/front/board/list.php?code=notice"
-  },
-  {
-   "board": "art",
-   "id": "org-seochocf",
-   "kind": "org",
-   "links": 13,
-   "name": "서초문화재단",
-   "new": 0,
-   "status": "ok",
-   "url": "https://www.seochocf.or.kr/site/main/archive/post/category/아카데미-공지사항?id=notice"
-  },
-  {
-   "board": "art",
-   "detail": "HTTPSConnectionPool(host='www.songpafac.or.kr', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed:",
-   "id": "org-songpafac",
-   "kind": "org",
-   "links": 0,
-   "name": "송파문화재단",
-   "new": 0,
-   "status": "error",
-   "url": "https://www.songpafac.or.kr"
-  },
-  {
-   "board": "art",
-   "detail": "robots.txt가 수집을 막음: https://yfac.kr/main/main.do",
-   "id": "org-yfac",
-   "kind": "org",
-   "links": 0,
-   "name": "양천문화재단",
-   "new": 0,
-   "status": "robots",
-   "url": "https://yfac.kr/main/main.do"
-  },
-  {
-   "board": "art",
-   "detail": "HTTPSConnectionPool(host='www.ydct.org', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable",
-   "id": "org-ydct",
-   "kind": "org",
-   "links": 0,
-   "name": "영덕문화관광재단",
-   "new": 0,
-   "status": "error",
-   "url": "https://www.ydct.org"
-  },
-  {
-   "board": "art",
-   "detail": "robots.txt가 수집을 막음: https://www.ucf.or.kr:478",
-   "id": "org-ucf",
-   "kind": "org",
-   "links": 0,
-   "name": "울주문화재단",
-   "new": 0,
-   "status": "robots",
-   "url": "https://www.ucf.or.kr:478"
-  },
-  {
-   "board": "art",
-   "detail": "홈페이지에서 공지·공모 게시판을 찾지 못함. orgs.yaml에 board_url을 적어주세요",
-   "id": "org-jnfac",
-   "kind": "org",
-   "links": 0,
-   "name": "중랑문화재단",
-   "new": 0,
-   "status": "empty",
-   "url": "https://www.jnfac.or.kr"
-  },
-  {
-   "board": "art",
-   "detail": "robots.txt가 수집을 막음: https://www.hbcf.or.kr/front",
-   "id": "org-hbcf",
-   "kind": "org",
-   "links": 0,
-   "name": "행복북구문화재단",
-   "new": 0,
-   "status": "robots",
-   "url": "https://www.hbcf.or.kr/front"
-  },
-  {
-   "board": "art",
-   "id": "org-gcart",
+   "id": "org-goseongcf",
    "kind": "org",
    "links": 15,
-   "name": "과천문화재단",
+   "name": "고성문화재단",
    "new": 0,
+   "sample": [
+    "2026년 '달홀영화관' 기획전(5월 무료영화 상영) 행사 안내 H 인기 | https://goseongcf.or.kr/notify/1014",
+    "[달홀영화관 11월 기획프로그램] '영화와 함께하는 빛나는 자개공예' 참 | https://goseongcf.or.kr/notify/1013",
+    "[홍보협조] 예술창작소 이룸학교 '뚝딱뚝딱 우드공방' 참여자 모집 H 인 | https://goseongcf.or.kr/notify/1011",
+    "2026 놀이기반 문화예술교육 프로그램 <더 놀다가> 봉수대 표류기 참여 | https://goseongcf.or.kr/notify/1009"
+   ],
    "status": "ok",
-   "url": "https://www.gcart.or.kr/kr/commu/noticeList.do"
-  },
-  {
-   "board": "art",
-   "id": "org-damyangcf",
-   "kind": "org",
-   "links": 48,
-   "name": "담양군문화재단",
-   "new": 0,
-   "status": "ok",
-   "url": "https://www.damyangcf.or.kr/user/board/lists/board_cd/4010"
-  },
-  {
-   "board": "art",
-   "detail": "HTTPSConnectionPool(host='www.mycf.or.kr', port=443): Max retries exceeded with url: /main (Caused by SSLError(SSLError(1, '[SSL: DH_KEY_TOO_SMALL] dh key too small (_ssl.c:1010)')))",
-   "id": "org-mycf",
-   "kind": "org",
-   "links": 0,
-   "name": "밀양문화관광재단",
-   "new": 0,
-   "status": "error",
-   "url": "https://www.mycf.or.kr/main"
-  },
-  {
-   "board": "art",
-   "id": "org-ansanart",
-   "kind": "org",
-   "links": 115,
-   "name": "안산문화재단",
-   "new": 0,
-   "status": "ok",
-   "url": "https://www.ansanart.com/lay2/bbs/S1T366C369/A/58/list.do"
-  },
-  {
-   "board": "art",
-   "id": "org-gfac",
-   "kind": "org",
-   "links": 4,
-   "name": "관악문화재단",
-   "new": 0,
-   "status": "ok",
-   "url": "https://gfac.or.kr/site/main/archive/post/category/재단소식"
-  },
-  {
-   "board": "art",
-   "detail": "HTTPSConnectionPool(host='hub.cfac.or.kr', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self",
-   "id": "org-hub-cfac",
-   "kind": "org",
-   "links": 0,
-   "name": "천안문화재단",
-   "new": 0,
-   "status": "error",
-   "url": "https://hub.cfac.or.kr"
+   "url": "https://goseongcf.or.kr/notify"
   },
   {
    "board": "art",
    "detail": "홈페이지에서 공지·공모 게시판을 찾지 못함. orgs.yaml에 board_url을 적어주세요",
-   "id": "org-gongjucf",
+   "id": "org-gcfac",
    "kind": "org",
    "links": 0,
-   "name": "공주문화관광재단",
+   "name": "금천문화재단",
    "new": 0,
    "status": "empty",
-   "url": "https://www.gongjucf.or.kr"
-  },
-  {
-   "board": "art",
-   "id": "org-ywcf",
-   "kind": "org",
-   "links": 40,
-   "name": "영월문화관광재단",
-   "new": 0,
-   "status": "ok",
-   "url": "https://www.ywcf.or.kr/contest"
+   "url": "https://gcfac.or.kr/mpage"
   },
   {
    "board": "art",
    "detail": "홈페이지에서 공지·공모 게시판을 찾지 못함. orgs.yaml에 board_url을 적어주세요",
-   "id": "org-yctf",
+   "id": "org-snart",
    "kind": "org",
    "links": 0,
-   "name": "영주문화관광재단",
+   "name": "성남문화재단",
    "new": 0,
    "status": "empty",
-   "url": "https://www.yctf.or.kr"
+   "url": "https://www.snart.or.kr"
   },
   {
    "board": "art",
-   "id": "org-ypcf",
+   "detail": "robots.txt가 수집을 막음: https://tyhansancf.or.kr",
+   "id": "org-tyhansancf",
    "kind": "org",
-   "links": 162,
-   "name": "양평문화재단",
+   "links": 0,
+   "name": "통영문화재단",
    "new": 0,
+   "status": "robots",
+   "url": "https://tyhansancf.or.kr"
+  },
+  {
+   "board": "art",
+   "id": "org-gucf",
+   "kind": "org",
+   "links": 18,
+   "name": "구미문화재단",
+   "new": 2,
+   "sample": [
+    "구미문화재단 홈페이지 게시판(문화소식, 시민소식) 이용 방법 안내 | https://gucf.or.kr/Notice?menuId=MENU_0000000028&mode=detl&nttId=NTT_0000000801&page=1&searchTxt=&searchDiv=",
+    "구미 문화예술 아카이브 예술인/단체 정보 등록 안내 | https://gucf.or.kr/Notice?menuId=MENU_0000000028&mode=detl&nttId=NTT_0000001053&page=1&searchTxt=&searchDiv=",
+    "[구미생활문화센터] 2026 구미라면축제 교통 통제 안내 | https://gucf.or.kr/Notice?menuId=MENU_0000000028&mode=detl&nttId=NTT_0000003271&page=1&searchTxt=&searchDiv=",
+    "구미생활문화센터 시민인식조사(설문) 참여 안내 | https://gucf.or.kr/Notice?menuId=MENU_0000000028&mode=detl&nttId=NTT_0000003268&page=1&searchTxt=&searchDiv=",
+    "구미문화재단 홈페이지 게시판(문화소식, 시민소식) 이용 방법 안내 | https://gucf.or.kr/Notice?menuId=MENU_0000000028&mode=detl&nttId=NTT_0000000801&page=1&searchTxt=&searchDiv=",
+    "구미 문화예술 아카이브 예술인/단체 정보 등록 안내 | https://gucf.or.kr/Notice?menuId=MENU_0000000028&mode=detl&nttId=NTT_0000001053&page=1&searchTxt=&searchDiv=",
+    "[구미생활문화센터] 2026 구미라면축제 교통 통제 안내 | https://gucf.or.kr/Notice?menuId=MENU_0000000028&mode=detl&nttId=NTT_0000003271&page=1&searchTxt=&searchDiv=",
+    "구미생활문화센터 시민인식조사(설문) 참여 안내 | https://gucf.or.kr/Notice?menuId=MENU_0000000028&mode=detl&nttId=NTT_0000003268&page=1&searchTxt=&searchDiv="
+   ],
    "status": "ok",
-   "url": "https://www.ypcf.or.kr/support"
+   "url": "https://gucf.or.kr/Notice?menuId=MENU_0000000028"
   },
   {
    "board": "art",
-   "detail": "HTTPSConnectionPool(host='seosancf.or.kr', port=443): Max retries exceeded with url: / (Caused by NewConnectionError(\"HTTPSConnection(host='seosancf.or.kr', port=443): Failed to establish a new connec",
-   "id": "org-seosancf",
+   "detail": "홈페이지에서 공지·공모 게시판을 찾지 못함. orgs.yaml에 board_url을 적어주세요",
+   "id": "org-kofice",
    "kind": "org",
    "links": 0,
-   "name": "서산문화재단",
-   "new": 0,
-   "status": "error",
-   "url": "https://seosancf.or.kr"
-  },
-  {
-   "board": "art",
-   "detail": "목록에서 게시글 링크를 찾지 못함. 자바스크립트로 그리는 페이지이거나 link_regex 확인 필요",
-   "id": "org-pcfac",
-   "kind": "org",
-   "links": 0,
-   "name": "포천문화관광재단",
+   "name": "한국국제문화교류진흥원",
    "new": 0,
    "status": "empty",
-   "url": "https://www.pcfac.or.kr/sub07/sub04.php"
+   "url": "https://kofice.or.kr"
   },
   {
    "board": "art",
-   "id": "org-kotpa",
+   "detail": "홈페이지에서 공지·공모 게시판을 찾지 못함. orgs.yaml에 board_url을 적어주세요",
+   "id": "org-uwcf",
    "kind": "org",
-   "links": 112,
-   "name": "전통공연예술진흥재단",
+   "links": 0,
+   "name": "고래문화재단",
    "new": 0,
-   "status": "ok",
-   "url": "https://www.kotpa.org/ucms/bbs/B0000021/list.do?menuNo=300008"
+   "status": "empty",
+   "url": "https://www.uwcf.or.kr/index_main.jsp"
   },
   {
    "board": "art",
-   "id": "org-hongju",
+   "detail": "홈페이지에서 공지·공모 게시판을 찾지 못함. orgs.yaml에 board_url을 적어주세요",
+   "id": "org-nsart",
+   "kind": "org",
+   "links": 0,
+   "name": "광주시문화재단",
+   "new": 0,
+   "status": "empty",
+   "url": "https://www.nsart.or.kr/index.do"
+  },
+  {
+   "board": "art",
+   "id": "org-naruart",
+   "kind": "org",
+   "links": 15,
+   "name": "광진문화재단",
+   "new": 0,
+   "sample": [
+    "2026 하반기 광진구립청소년합창단 신규단원 모집 공고 | https://www.naruart.or.kr/community/notice_view.php?idx=13255&page=1",
+    "2027년 상반기 나루아트센터⦁광진어린이공연장 정기대관 공고 | https://www.naruart.or.kr/community/notice_view.php?idx=13239&page=1",
+    "[안내](재)광진문화재단 (광진구) 거주지 인증 방법 | https://www.naruart.or.kr/community/notice_view.php?idx=13216&page=1",
+    "2026년 하반기 광진생활문화센터 대관안내 | https://www.naruart.or.kr/community/notice_view.php?idx=13140&page=1"
+   ],
+   "status": "ok",
+   "url": "https://www.naruart.or.kr/community/notice_list.php"
+  },
+  {
+   "board": "art",
+   "detail": "홈페이지에서 공지·공모 게시판을 찾지 못함. orgs.yaml에 board_url을 적어주세요",
+   "id": "org-sbculture",
+   "kind": "org",
+   "links": 0,
+   "name": "성북문화재단",
+   "new": 0,
+   "status": "empty",
+   "url": "https://www.sbculture.or.kr/culture/main/main.do"
+  },
+  {
+   "board": "art",
+   "detail": "robots.txt가 수집을 막음: https://www.geojeart.or.kr/index.asp",
+   "id": "org-geojeart",
+   "kind": "org",
+   "links": 0,
+   "name": "거제시문화예술재단",
+   "new": 0,
+   "status": "robots",
+   "url": "https://www.geojeart.or.kr/index.asp"
+  },
+  {
+   "board": "art",
+   "id": "org-njcf",
+   "kind": "org",
+   "links": 30,
+   "name": "나주문화재단",
+   "new": 0,
+   "sample": [
+    "2026 행복전남 문화지소 <로컬크리에이터 거버넌스> 참여신청 .. | https://www.njcf.or.kr/www/community/notices?idx=870&mode=view",
+    "소규모 특화 축제 전라유람」 나주목사 행렬 운영 용역 제안서 평.. | https://www.njcf.or.kr/www/community/notices?idx=785&mode=view",
+    "「2026 대한민국 예술과 기업 동반성장 대상 지원사업」 참여 .. | https://www.njcf.or.kr/www/community/notices?idx=684&mode=view",
+    "「소규모 특화 축제 전라유람」 <나주목사 행렬> 행사 운영 용역.. | https://www.njcf.or.kr/www/community/notices?idx=674&mode=view",
+    "2026 행복전남 문화지소 <로컬크리에이터 거버넌스> 참여신청 .. | https://www.njcf.or.kr/www/community/notices?idx=870&mode=view",
+    "소규모 특화 축제 전라유람」 나주목사 행렬 운영 용역 제안서 평.. | https://www.njcf.or.kr/www/community/notices?idx=785&mode=view",
+    "「2026 대한민국 예술과 기업 동반성장 대상 지원사업」 참여 .. | https://www.njcf.or.kr/www/community/notices?idx=684&mode=view",
+    "「소규모 특화 축제 전라유람」 <나주목사 행렬> 행사 운영 용역.. | https://www.njcf.or.kr/www/community/notices?idx=674&mode=view"
+   ],
+   "status": "ok",
+   "url": "https://www.njcf.or.kr/www/community"
+  },
+  {
+   "board": "art",
+   "id": "org-yjcf",
    "kind": "org",
    "links": 17,
-   "name": "홍주문화관광재단",
+   "name": "여주세종문화관광재단",
    "new": 0,
+   "sample": [
+    "2026년 지역문화예술 홍보 버스킹 공연자 모집공고 | https://www.yjcf.or.kr/brd/board/200/L/menu/341?brdType=R&thisPage=1&bbIdx=2567&searchField=&searchText=",
+    "[아트뮤지엄 려] 2027년 전시 공모 선정 공고 | https://www.yjcf.or.kr/brd/board/200/L/menu/341?brdType=R&thisPage=1&bbIdx=2564&searchField=&searchText=",
+    "여주관광순환버스 로컬파트너(제휴처) 상시 모집 공고 | https://www.yjcf.or.kr/brd/board/200/L/menu/341?brdType=R&thisPage=1&bbIdx=2523&searchField=&searchText=",
+    "여주관광순환버스 임시정류장(파크골프장) 운영 안내 | https://www.yjcf.or.kr/brd/board/200/L/menu/341?brdType=R&thisPage=1&bbIdx=2502&searchField=&searchText="
+   ],
    "status": "ok",
-   "url": "https://hongju.or.kr/home/board/brdList.do?menu_cd=000030"
+   "url": "https://www.yjcf.or.kr/brd/board/200/L/menu/341"
   },
   {
    "board": "art",
-   "detail": "HTTP 403: https://jjct.or.kr",
-   "id": "org-jjct",
+   "id": "org-stcf",
    "kind": "org",
-   "links": 0,
-   "name": "진주문화관광재단",
-   "new": 0,
-   "status": "error",
-   "url": "https://jjct.or.kr"
-  },
-  {
-   "board": "art",
-   "id": "org-guroartsvalley",
-   "kind": "org",
-   "links": 42,
-   "name": "구로문화재단",
-   "new": 0,
+   "links": 14,
+   "name": "삼척관광문화재단",
+   "new": 6,
+   "sample": [
+    "본선진출작 선정 결과 공고.png(1.8 MB) | https://www.stcf.or.kr/board/download.do?idx=987&fnum=1&gcode=1001&fsiz=",
+    "제3회 삼척 해(海)랑영화제 단편영화 출품 공모전 본선진출작 선정 결과  | https://www.stcf.or.kr/board/download.do?idx=987&fnum=2&gcode=1001&fsiz=",
+    "제3회 삼척 해(海)랑영화제 단편영화 출품 공모전 본선진출작 선정 결과  | https://www.stcf.or.kr/board/download.do?idx=987&fnum=3&gcode=1001&fsiz=",
+    "제3회 삼척 해(海)랑영화제 단편영화 출품 공모전 본선진출작 선정 결과  | https://www.stcf.or.kr/board/download.do?idx=987&fnum=4&gcode=1001&fsiz=",
+    "[공지] 2026 너와포차거리 참여부스 배치도 및 부스별 메뉴 안내 안녕 | https://www.stcf.or.kr/01298/01315.web?gcode=1001&idx=1099&amode=view&",
+    "[공지] 「2026 너와포차거리」 먹거리(음식)부스 참가자 추가 선정결과 | https://www.stcf.or.kr/01298/01315.web?gcode=1001&idx=1080&amode=view&",
+    "[공지] 「2026 너와포차거리」 먹거리(음식)부스 참가자 선정 결과 공 | https://www.stcf.or.kr/01298/01315.web?gcode=1001&idx=1065&amode=view&",
+    "[공지] 「2026 너와포차거리」 공식 포스터 공개!! 「2026 너와포 | https://www.stcf.or.kr/01298/01315.web?gcode=1001&idx=1061&amode=view&"
+   ],
    "status": "ok",
-   "url": "https://www.guroartsvalley.or.kr/user/board/mn011801.do"
+   "url": "https://www.stcf.or.kr/01298/01315.web?gcode=1001&idx=987&amode=view&"
   },
   {
    "board": "art",
    "detail": "홈페이지에서 공지·공모 게시판을 찾지 못함. orgs.yaml에 board_url을 적어주세요",
-   "id": "org-dgfca",
+   "id": "org-gsctf",
    "kind": "org",
    "links": 0,
-   "name": "대구문화예술진흥원",
+   "name": "경산문화관광재단",
    "new": 0,
    "status": "empty",
-   "url": "https://dgfca.or.kr/main"
+   "url": "https://gsctf.or.kr"
   },
   {
    "board": "art",
-   "detail": "HTTP 404: https://www.bsjincf.or.kr/main.php",
-   "id": "org-bsjincf",
+   "detail": "HTTPSConnectionPool(host='www.chilgokctf.or.kr', port=443): Max retries exceeded with url: /ctf/main.do (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate ve",
+   "id": "org-chilgokctf",
    "kind": "org",
    "links": 0,
-   "name": "부산진문화재단",
+   "name": "칠곡문화관광재단",
    "new": 0,
    "status": "error",
-   "url": "https://www.bsjincf.or.kr/main.php"
+   "url": "https://www.chilgokctf.or.kr/ctf/main.do"
   },
   {
    "board": "art",
-   "detail": "HTTPSConnectionPool(host='gunwi3964.org', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unabl",
-   "id": "org-gunwi3964",
+   "detail": "홈페이지에서 공지·공모 게시판을 찾지 못함. orgs.yaml에 board_url을 적어주세요",
+   "id": "org-namhaetour",
    "kind": "org",
    "links": 0,
-   "name": "군위문화관광재단",
+   "name": "남해군관광문화재단",
    "new": 0,
-   "status": "error",
-   "url": "https://gunwi3964.org"
+   "status": "empty",
+   "url": "https://www.namhaetour.org/main.web"
+  },
+  {
+   "board": "art",
+   "detail": "홈페이지에서 공지·공모 게시판을 찾지 못함. orgs.yaml에 board_url을 적어주세요",
+   "id": "org-bpcf",
+   "kind": "org",
+   "links": 0,
+   "name": "인천시부평구문화재단",
+   "new": 0,
+   "status": "empty",
+   "url": "https://www.bpcf.or.kr/bpcf/main/main.do"
+  },
+  {
+   "board": "art",
+   "detail": "robots.txt가 수집을 막음: https://www.acc.go.kr",
+   "id": "org-acc",
+   "kind": "org",
+   "links": 0,
+   "name": "국립아시아문화전당",
+   "new": 0,
+   "status": "robots",
+   "url": "https://www.acc.go.kr"
+  },
+  {
+   "board": "art",
+   "detail": "홈페이지에서 공지·공모 게시판을 찾지 못함. orgs.yaml에 board_url을 적어주세요",
+   "id": "org-mmca",
+   "kind": "org",
+   "links": 0,
+   "name": "국립현대미술관",
+   "new": 0,
+   "status": "empty",
+   "url": "https://www.mmca.go.kr"
   },
   {
    "board": "art",
@@ -697,14 +716,19 @@
   },
   {
    "board": "art",
-   "detail": "홈페이지에서 공지·공모 게시판을 찾지 못함. orgs.yaml에 board_url을 적어주세요",
    "id": "org-rcda",
    "kind": "org",
-   "links": 0,
+   "links": 28,
    "name": "지역문화진흥원",
-   "new": 0,
-   "status": "empty",
-   "url": "https://www.rcda.or.kr"
+   "new": 5,
+   "sample": [
+    "2026년도 문화체육관광부 주관 기타공공기관 및 단체 고객만족도 조사 관 | https://www.rcs.or.kr/home/kor/board.do?menuCode=2&act=detail&idx=23167",
+    "2026 전국문화도시 박람회 안내 | https://www.rcs.or.kr/home/kor/board.do?menuCode=2&act=detail&idx=23103",
+    "<청춘마이크 시너지> 권역별 심사 및 발대식 일정 | https://www.rcs.or.kr/home/kor/board.do?menuCode=2&act=detail&idx=22975",
+    "[공고] 2026 여가친화인증 기업·기관 공모 | https://www.rcs.or.kr/home/kor/board.do?menuCode=2&act=detail&idx=22889"
+   ],
+   "status": "ok",
+   "url": "https://www.rcs.or.kr/home/kor/notice.do?menuCode=1"
   },
   {
    "board": "art",
@@ -719,55 +743,63 @@
   },
   {
    "board": "art",
-   "detail": "HTTPSConnectionPool(host='www.injeart.or.kr', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.injeart.or.kr', port=443) at 0x76e6f91106e0>, 'Conne",
+   "detail": "홈페이지에서 공지·공모 게시판을 찾지 못함. orgs.yaml에 board_url을 적어주세요",
    "id": "org-injeart",
    "kind": "org",
    "links": 0,
    "name": "인제군문화재단",
    "new": 0,
-   "status": "error",
+   "status": "empty",
    "url": "https://www.injeart.or.kr"
   },
   {
    "board": "art",
-   "detail": "HTTPSConnectionPool(host='www.artgy.or.kr', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.artgy.or.kr', port=443) at 0x76e6f9a14ef0>, 'Connectio",
+   "detail": "홈페이지에서 공지·공모 게시판을 찾지 못함. orgs.yaml에 board_url을 적어주세요",
    "id": "org-artgy",
    "kind": "org",
    "links": 0,
    "name": "고양문화재단",
    "new": 0,
-   "status": "error",
+   "status": "empty",
    "url": "https://www.artgy.or.kr"
   },
   {
    "board": "art",
    "id": "org-gbcf",
    "kind": "org",
-   "links": 21,
+   "links": 10,
    "name": "강북문화재단",
-   "new": 0,
+   "new": 1,
+   "sample": [
+    "[참여희망업체 견적서 제출] 강북문화재단 자전거주차장 소공연장 자산(무전 | https://www.gbcf.or.kr/load.asp?subPage=510.view&cate=&idx=1953&searchValue=&searchType=&page=1",
+    "강북문화대학 신규강사 모집 취소 안내 | https://www.gbcf.or.kr/load.asp?subPage=510.view&cate=&idx=1950&searchValue=&searchType=&page=1",
+    "[참여희망업체 견적서 제출] 강북문화재단 강북소나무홀 조명 Follow  | https://www.gbcf.or.kr/load.asp?subPage=510.view&cate=&idx=1927&searchValue=&searchType=&page=1",
+    "예술교육 특강 [강북 예술캠퍼스] 참여자 모집 | https://www.gbcf.or.kr/load.asp?subPage=510.view&cate=&idx=1926&searchValue=&searchType=&page=1"
+   ],
    "status": "ok",
    "url": "https://www.gbcf.or.kr/load.asp?subPage=510"
   },
   {
    "board": "art",
+   "detail": "홈페이지에서 공지·공모 게시판을 찾지 못함. orgs.yaml에 board_url을 적어주세요",
    "id": "org-bscf",
    "kind": "org",
-   "links": 37,
+   "links": 0,
    "name": "부산문화재단",
    "new": 0,
-   "status": "ok",
-   "url": "https://www.bscf.or.kr/view.do?no=1024"
+   "status": "empty",
+   "url": "https://www.bscf.or.kr"
   },
   {
    "board": "art",
+   "detail": "홈페이지에서 공지·공모 게시판을 찾지 못함. orgs.yaml에 board_url을 적어주세요",
    "id": "org-garts",
    "kind": "org",
-   "links": 132,
+   "links": 0,
    "name": "경주문화재단",
    "new": 0,
-   "status": "ok",
-   "url": "https://www.garts.kr/index.do?menuId=00000171"
+   "status": "empty",
+   "url": "https://www.garts.kr"
   },
   {
    "board": "art",
@@ -793,13 +825,13 @@
   },
   {
    "board": "art",
-   "detail": "HTTPSConnectionPool(host='www.uacf.or.kr', port=443): Max retries exceeded with url: /main.mo (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify faile",
+   "detail": "홈페이지에서 공지·공모 게시판을 찾지 못함. orgs.yaml에 board_url을 적어주세요",
    "id": "org-uacf",
    "kind": "org",
    "links": 0,
    "name": "울산문화관광재단",
    "new": 0,
-   "status": "error",
+   "status": "empty",
    "url": "https://www.uacf.or.kr/main.mo"
   },
   {
@@ -826,14 +858,14 @@
   },
   {
    "board": "art",
-   "detail": "목록에서 게시글 링크를 찾지 못함. 자바스크립트로 그리는 페이지이거나 link_regex 확인 필요",
+   "detail": "홈페이지에서 공지·공모 게시판을 찾지 못함. orgs.yaml에 board_url을 적어주세요",
    "id": "org-ddmac",
    "kind": "org",
    "links": 0,
    "name": "동대문문화재단",
    "new": 0,
    "status": "empty",
-   "url": "https://www.ddmac.or.kr/sub04/sub01.php"
+   "url": "https://www.ddmac.or.kr"
   },
   {
    "board": "art",
@@ -848,54 +880,57 @@
   },
   {
    "board": "art",
-   "detail": "robots.txt가 수집을 막음: https://www.dsart.or.kr",
+   "detail": "홈페이지에서 공지·공모 게시판을 찾지 못함. orgs.yaml에 board_url을 적어주세요",
    "id": "org-dsart",
    "kind": "org",
    "links": 0,
    "name": "달성문화재단",
    "new": 0,
-   "status": "robots",
+   "status": "empty",
    "url": "https://www.dsart.or.kr"
   },
   {
    "board": "art",
+   "detail": "홈페이지에서 공지·공모 게시판을 찾지 못함. orgs.yaml에 board_url을 적어주세요",
    "id": "org-jccf",
    "kind": "org",
-   "links": 48,
+   "links": 0,
    "name": "제천문화재단",
    "new": 0,
-   "status": "ok",
-   "url": "https://www.jccf.or.kr/bbs/board.php?bo_table=w6_6"
+   "status": "empty",
+   "url": "https://www.jccf.or.kr"
   },
   {
    "board": "art",
+   "detail": "홈페이지에서 공지·공모 게시판을 찾지 못함. orgs.yaml에 board_url을 적어주세요",
    "id": "org-gjfac",
    "kind": "org",
-   "links": 91,
+   "links": 0,
    "name": "금정문화재단",
    "new": 0,
-   "status": "ok",
-   "url": "https://www.gjfac.org/gjfac/template.php?midx=347"
+   "status": "empty",
+   "url": "https://www.gjfac.org"
   },
   {
    "board": "art",
+   "detail": "홈페이지에서 공지·공모 게시판을 찾지 못함. orgs.yaml에 board_url을 적어주세요",
    "id": "org-cfsc",
    "kind": "org",
-   "links": 115,
+   "links": 0,
    "name": "순천문화재단",
    "new": 0,
-   "status": "ok",
-   "url": "https://www.cfsc.or.kr/contents/open/open0102.asp?cat=39"
+   "status": "empty",
+   "url": "https://www.cfsc.or.kr"
   },
   {
    "board": "art",
-   "detail": "HTTPSConnectionPool(host='www.gcaf.or.kr', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.gcaf.or.kr', port=443) at 0x76e6f95cd4c0>, 'Connection ",
+   "detail": "홈페이지에서 공지·공모 게시판을 찾지 못함. orgs.yaml에 board_url을 적어주세요",
    "id": "org-gcaf",
    "kind": "org",
    "links": 0,
    "name": "경남문화예술진흥원",
    "new": 0,
-   "status": "error",
+   "status": "empty",
    "url": "https://www.gcaf.or.kr"
   },
   {
@@ -911,44 +946,47 @@
   },
   {
    "board": "art",
+   "detail": "홈페이지에서 공지·공모 게시판을 찾지 못함. orgs.yaml에 board_url을 적어주세요",
    "id": "org-gncaf",
    "kind": "org",
-   "links": 23,
+   "links": 0,
    "name": "강릉문화재단",
-   "new": 1,
-   "status": "ok",
-   "url": "https://www.gncaf.or.kr/ko/support/gongmo/supportinfo"
+   "new": 0,
+   "status": "empty",
+   "url": "https://www.gncaf.or.kr"
   },
   {
    "board": "art",
-   "detail": "robots.txt가 수집을 막음: https://www.cccf.or.kr",
+   "detail": "홈페이지에서 공지·공모 게시판을 찾지 못함. orgs.yaml에 board_url을 적어주세요",
    "id": "org-cccf",
    "kind": "org",
    "links": 0,
    "name": "춘천문화재단",
    "new": 0,
-   "status": "robots",
+   "status": "empty",
    "url": "https://www.cccf.or.kr"
   },
   {
    "board": "art",
+   "detail": "홈페이지에서 공지·공모 게시판을 찾지 못함. orgs.yaml에 board_url을 적어주세요",
    "id": "org-nowonarts",
    "kind": "org",
-   "links": 18,
+   "links": 0,
    "name": "노원문화재단",
    "new": 0,
-   "status": "ok",
-   "url": "https://www.nowonarts.kr/support-programs"
+   "status": "empty",
+   "url": "https://www.nowonarts.kr"
   },
   {
    "board": "art",
+   "detail": "홈페이지에서 공지·공모 게시판을 찾지 못함. orgs.yaml에 board_url을 적어주세요",
    "id": "org-mfac",
    "kind": "org",
-   "links": 56,
+   "links": 0,
    "name": "마포문화재단",
    "new": 0,
-   "status": "ok",
-   "url": "https://www.mfac.or.kr/academy/notice_list.jsp"
+   "status": "empty",
+   "url": "https://www.mfac.or.kr"
   },
   {
    "board": "art",
@@ -963,88 +1001,90 @@
   },
   {
    "board": "art",
-   "detail": "목록에서 게시글 링크를 찾지 못함. 자바스크립트로 그리는 페이지이거나 link_regex 확인 필요",
+   "detail": "홈페이지에서 공지·공모 게시판을 찾지 못함. orgs.yaml에 board_url을 적어주세요",
    "id": "org-dbfac",
    "kind": "org",
    "links": 0,
    "name": "도봉문화재단",
    "new": 0,
    "status": "empty",
-   "url": "https://www.dbfac.or.kr/front/board/boardContentsListPage.do?board_id=1"
+   "url": "https://www.dbfac.or.kr"
   },
   {
    "board": "art",
-   "detail": "HTTPSConnectionPool(host='www.idfac.or.kr', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLError(1, '[SSL: DH_KEY_TOO_SMALL] dh key too small (_ssl.c:1010)')))",
+   "detail": "홈페이지에서 공지·공모 게시판을 찾지 못함. orgs.yaml에 board_url을 적어주세요",
    "id": "org-idfac",
    "kind": "org",
    "links": 0,
    "name": "동작문화재단",
    "new": 0,
-   "status": "error",
+   "status": "empty",
    "url": "https://www.idfac.or.kr"
   },
   {
    "board": "art",
+   "detail": "홈페이지에서 공지·공모 게시판을 찾지 못함. orgs.yaml에 board_url을 적어주세요",
    "id": "org-swcf",
    "kind": "org",
-   "links": 148,
+   "links": 0,
    "name": "수원문화재단",
    "new": 0,
-   "status": "ok",
-   "url": "https://www.swcf.or.kr/?p=42"
+   "status": "empty",
+   "url": "https://www.swcf.or.kr"
   },
   {
    "board": "art",
-   "detail": "HTTPSConnectionPool(host='www.jjcf.or.kr', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.jjcf.or.kr', port=443) at 0x76e6f8d51880>, 'Connection ",
+   "detail": "홈페이지에서 공지·공모 게시판을 찾지 못함. orgs.yaml에 board_url을 적어주세요",
    "id": "org-jjcf",
    "kind": "org",
    "links": 0,
    "name": "전주문화재단",
    "new": 0,
-   "status": "error",
+   "status": "empty",
    "url": "https://www.jjcf.or.kr"
   },
   {
    "board": "art",
+   "detail": "홈페이지에서 공지·공모 게시판을 찾지 못함. orgs.yaml에 board_url을 적어주세요",
    "id": "org-gcf",
    "kind": "org",
-   "links": 20,
+   "links": 0,
    "name": "김포문화재단",
    "new": 0,
-   "status": "ok",
-   "url": "https://www.gcf.or.kr/main/pst/list.do?pst_id=notice"
+   "status": "empty",
+   "url": "https://www.gcf.or.kr"
   },
   {
    "board": "art",
-   "detail": "HTTP 403: https://www.ggcf.kr/boards/donateNotice",
+   "detail": "홈페이지에서 공지·공모 게시판을 찾지 못함. orgs.yaml에 board_url을 적어주세요",
    "id": "org-ggcf",
    "kind": "org",
    "links": 0,
    "name": "경기문화재단",
    "new": 0,
-   "status": "error",
+   "status": "empty",
    "url": "https://www.ggcf.kr"
   },
   {
    "board": "art",
-   "detail": "HTTPSConnectionPool(host='www.ydft.kr', port=443): Max retries exceeded with url: / (Caused by NewConnectionError(\"HTTPSConnection(host='www.ydft.kr', port=443): Failed to establish a new connection: ",
+   "detail": "홈페이지에서 공지·공모 게시판을 찾지 못함. orgs.yaml에 board_url을 적어주세요",
    "id": "org-ydft",
    "kind": "org",
    "links": 0,
    "name": "영동축제관광재단",
    "new": 0,
-   "status": "error",
+   "status": "empty",
    "url": "https://www.ydft.kr"
   },
   {
    "board": "art",
-   "detail": "robots.txt가 수집을 막음: https://www.ysfac.or.kr/user/board/list.php?board_code=announcement&cat=4&srchValue=",
+   "detail": "홈페이지에서 공지·공모 게시판을 찾지 못함. orgs.yaml에 board_url을 적어주세요",
    "id": "org-ysfac",
    "kind": "org",
    "links": 0,
    "name": "연수문화재단",
    "new": 0,
-   "status": "robots",
+   "status": "empty",
    "url": "https://www.ysfac.or.kr"
   },
   {
@@ -1060,13 +1100,13 @@
   },
   {
    "board": "art",
-   "detail": "HTTPSConnectionPool(host='www.ayac.or.kr', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unab",
+   "detail": "홈페이지에서 공지·공모 게시판을 찾지 못함. orgs.yaml에 board_url을 적어주세요",
    "id": "org-ayac",
    "kind": "org",
    "links": 0,
    "name": "안양문화예술재단",
    "new": 0,
-   "status": "error",
+   "status": "empty",
    "url": "https://www.ayac.or.kr"
   },
   {
@@ -1082,34 +1122,35 @@
   },
   {
    "board": "art",
-   "detail": "robots.txt가 수집을 막음: https://www.osan.go.kr/arts/main.do",
+   "detail": "홈페이지에서 공지·공모 게시판을 찾지 못함. orgs.yaml에 board_url을 적어주세요",
    "id": "org-osan",
    "kind": "org",
    "links": 0,
    "name": "오산문화재단",
    "new": 0,
-   "status": "robots",
+   "status": "empty",
    "url": "https://www.osan.go.kr/arts/main.do"
   },
   {
    "board": "art",
+   "detail": "홈페이지에서 공지·공모 게시판을 찾지 못함. orgs.yaml에 board_url을 적어주세요",
    "id": "org-cwcf",
    "kind": "org",
-   "links": 65,
+   "links": 0,
    "name": "창원문화재단",
    "new": 0,
-   "status": "ok",
-   "url": "https://www.cwcf.or.kr/academy/academy_notice_list.asp"
+   "status": "empty",
+   "url": "https://www.cwcf.or.kr"
   },
   {
    "board": "art",
-   "detail": "robots.txt가 수집을 막음: https://www.cbfc.or.kr",
+   "detail": "홈페이지에서 공지·공모 게시판을 찾지 못함. orgs.yaml에 board_url을 적어주세요",
    "id": "org-cbfc",
    "kind": "org",
    "links": 0,
    "name": "충북문화재단",
    "new": 0,
-   "status": "robots",
+   "status": "empty",
    "url": "https://www.cbfc.or.kr"
   },
   {
@@ -1136,13 +1177,14 @@
   },
   {
    "board": "art",
+   "detail": "홈페이지에서 공지·공모 게시판을 찾지 못함. orgs.yaml에 board_url을 적어주세요",
    "id": "org-efac",
    "kind": "org",
-   "links": 29,
+   "links": 0,
    "name": "은평문화재단",
    "new": 0,
-   "status": "ok",
-   "url": "https://www.efac.or.kr/page08/sub01.php"
+   "status": "empty",
+   "url": "https://www.efac.or.kr"
   },
   {
    "board": "art",
@@ -1157,25 +1199,25 @@
   },
   {
    "board": "art",
-   "detail": "HTTPSConnectionPool(host='www.dcaf.or.kr', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unab",
+   "detail": "홈페이지에서 공지·공모 게시판을 찾지 못함. orgs.yaml에 board_url을 적어주세요",
    "id": "org-dcaf",
    "kind": "org",
    "links": 0,
    "name": "대전문화재단",
    "new": 0,
-   "status": "error",
+   "status": "empty",
    "url": "https://www.dcaf.or.kr"
   },
   {
    "board": "art",
-   "detail": "목록에서 게시글 링크를 찾지 못함. 자바스크립트로 그리는 페이지이거나 link_regex 확인 필요",
+   "detail": "홈페이지에서 공지·공모 게시판을 찾지 못함. orgs.yaml에 board_url을 적어주세요",
    "id": "org-jacf",
    "kind": "org",
    "links": 0,
    "name": "정선아리랑문화재단",
    "new": 0,
    "status": "empty",
-   "url": "https://www.jacf.or.kr/jacf/bbsNew_list.php?code=sub05a&keyvalue=sub05"
+   "url": "https://www.jacf.or.kr"
   },
   {
    "board": "art",
@@ -1201,329 +1243,509 @@
   },
   {
    "board": "art",
-   "detail": "HTTPSConnectionPool(host='www.jncf.or.kr', port=443): Max retries exceeded with url: /jact/index.do (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.jncf.or.kr', port=443) at 0x76e6f9ac5d30>,",
+   "detail": "홈페이지에서 공지·공모 게시판을 찾지 못함. orgs.yaml에 board_url을 적어주세요",
    "id": "org-jncf",
    "kind": "org",
    "links": 0,
    "name": "전라남도문화재단",
    "new": 0,
-   "status": "error",
+   "status": "empty",
    "url": "https://www.jncf.or.kr/jact/index.do"
   },
   {
    "board": "art",
+   "detail": "홈페이지에서 공지·공모 게시판을 찾지 못함. orgs.yaml에 board_url을 적어주세요",
    "id": "org-gangnam",
    "kind": "org",
-   "links": 83,
+   "links": 0,
    "name": "강남문화재단",
-   "new": 11,
-   "status": "ok",
-   "url": "https://www.gangnam.go.kr/office/gfac/contents/gfac_sup_project01/1/view.do?mid=gfac_sup_project01"
+   "new": 0,
+   "status": "empty",
+   "url": "https://www.gangnam.go.kr/office/gfac/main.do"
   },
   {
    "board": "art",
-   "detail": "HTTPSConnectionPool(host='www.gmcf.or.kr', port=443): Max retries exceeded with url: /Main/Index (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify fa",
+   "detail": "홈페이지에서 공지·공모 게시판을 찾지 못함. orgs.yaml에 board_url을 적어주세요",
    "id": "org-gmcf",
    "kind": "org",
    "links": 0,
    "name": "광명문화재단",
    "new": 0,
-   "status": "error",
+   "status": "empty",
    "url": "https://www.gmcf.or.kr/Main/Index"
   },
   {
    "board": "art",
+   "detail": "홈페이지에서 공지·공모 게시판을 찾지 못함. orgs.yaml에 board_url을 적어주세요",
    "id": "org-gunpocf",
    "kind": "org",
-   "links": 28,
+   "links": 0,
    "name": "군포문화재단",
    "new": 0,
-   "status": "ok",
-   "url": "https://www.gunpocf.or.kr/cf/ntt/nttList/BBS001"
+   "status": "empty",
+   "url": "https://www.gunpocf.or.kr"
   },
   {
    "board": "art",
-   "detail": "HTTPSConnectionPool(host='www.sokchocf.or.kr', port=443): Max retries exceeded with url: /sokchocf (Caused by NewConnectionError(\"HTTPSConnection(host='www.sokchocf.or.kr', port=443): Failed to establ",
+   "detail": "홈페이지에서 공지·공모 게시판을 찾지 못함. orgs.yaml에 board_url을 적어주세요",
    "id": "org-sokchocf",
    "kind": "org",
    "links": 0,
    "name": "속초문화관광재단",
    "new": 0,
-   "status": "error",
+   "status": "empty",
    "url": "https://www.sokchocf.or.kr/sokchocf"
   },
   {
    "board": "art",
+   "detail": "홈페이지에서 공지·공모 게시판을 찾지 못함. orgs.yaml에 board_url을 적어주세요",
    "id": "org-ydpcf",
    "kind": "org",
-   "links": 42,
+   "links": 0,
    "name": "영등포문화재단",
    "new": 0,
-   "status": "ok",
-   "url": "https://www.ydpcf.or.kr/board.do?bid=3&category=17"
+   "status": "empty",
+   "url": "https://www.ydpcf.or.kr"
   },
   {
    "board": "art",
+   "detail": "홈페이지에서 공지·공모 게시판을 찾지 못함. orgs.yaml에 board_url을 적어주세요",
    "id": "org-wcf",
    "kind": "org",
-   "links": 61,
+   "links": 0,
    "name": "원주문화재단",
    "new": 0,
-   "status": "ok",
-   "url": "https://www.wcf.or.kr/community/notice.php?tsort=4&msort=23&ssort="
+   "status": "empty",
+   "url": "https://www.wcf.or.kr"
   },
   {
    "board": "art",
-   "detail": "HTTPSConnectionPool(host='www.ictf.or.kr', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.ictf.or.kr', port=443) at 0x76e6f87f1490>, 'Connection ",
+   "detail": "홈페이지에서 공지·공모 게시판을 찾지 못함. orgs.yaml에 board_url을 적어주세요",
    "id": "org-ictf",
    "kind": "org",
    "links": 0,
    "name": "익산문화관광재단",
    "new": 0,
-   "status": "error",
+   "status": "empty",
    "url": "https://www.ictf.or.kr"
   },
   {
    "board": "art",
-   "detail": "HTTPSConnectionPool(host='www.namdongcf.or.kr', port=443): Max retries exceeded with url: /user/index.php (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.namdongcf.or.kr', port=443) at 0x76e",
+   "detail": "홈페이지에서 공지·공모 게시판을 찾지 못함. orgs.yaml에 board_url을 적어주세요",
+   "id": "org-pccf",
+   "kind": "org",
+   "links": 0,
+   "name": "평택시문화재단",
+   "new": 0,
+   "status": "empty",
+   "url": "https://www.pccf.or.kr"
+  },
+  {
+   "board": "art",
+   "detail": "홈페이지에서 공지·공모 게시판을 찾지 못함. orgs.yaml에 board_url을 적어주세요",
+   "id": "org-gjcf",
+   "kind": "org",
+   "links": 0,
+   "name": "광주문화재단",
+   "new": 0,
+   "status": "empty",
+   "url": "https://www.gjcf.or.kr"
+  },
+  {
+   "board": "art",
+   "detail": "홈페이지에서 공지·공모 게시판을 찾지 못함. orgs.yaml에 board_url을 적어주세요",
+   "id": "org-gwcf",
+   "kind": "org",
+   "links": 0,
+   "name": "강원문화재단",
+   "new": 0,
+   "status": "empty",
+   "url": "https://gwcf.or.kr/ko"
+  },
+  {
+   "board": "art",
+   "detail": "홈페이지에서 공지·공모 게시판을 찾지 못함. orgs.yaml에 board_url을 적어주세요",
+   "id": "org-jfac",
+   "kind": "org",
+   "links": 0,
+   "name": "제주문화예술재단",
+   "new": 0,
+   "status": "empty",
+   "url": "https://www.jfac.kr"
+  },
+  {
+   "board": "art",
+   "detail": "홈페이지에서 공지·공모 게시판을 찾지 못함. orgs.yaml에 board_url을 적어주세요",
+   "id": "org-ifac",
+   "kind": "org",
+   "links": 0,
+   "name": "인천문화재단",
+   "new": 0,
+   "status": "empty",
+   "url": "https://www.ifac.or.kr"
+  },
+  {
+   "board": "art",
+   "detail": "홈페이지에서 공지·공모 게시판을 찾지 못함. orgs.yaml에 board_url을 적어주세요",
+   "id": "org-hcf",
+   "kind": "org",
+   "links": 0,
+   "name": "화성시문화재단",
+   "new": 0,
+   "status": "empty",
+   "url": "https://www.hcf.or.kr"
+  },
+  {
+   "board": "art",
+   "detail": "홈페이지에서 공지·공모 게시판을 찾지 못함. orgs.yaml에 board_url을 적어주세요",
+   "id": "org-sscf",
+   "kind": "org",
+   "links": 0,
+   "name": "수성문화재단",
+   "new": 0,
+   "status": "empty",
+   "url": "https://www.sscf.or.kr"
+  },
+  {
+   "board": "art",
+   "detail": "홈페이지에서 공지·공모 게시판을 찾지 못함. orgs.yaml에 board_url을 적어주세요",
+   "id": "org-sccf",
+   "kind": "org",
+   "links": 0,
+   "name": "사천문화재단",
+   "new": 0,
+   "status": "empty",
+   "url": "https://www.sccf.or.kr"
+  },
+  {
+   "board": "art",
+   "detail": "홈페이지에서 공지·공모 게시판을 찾지 못함. orgs.yaml에 board_url을 적어주세요",
+   "id": "org-gctf",
+   "kind": "org",
+   "links": 0,
+   "name": "고창문화관광재단",
+   "new": 0,
+   "status": "empty",
+   "url": "https://gctf.or.kr"
+  },
+  {
+   "board": "art",
+   "detail": "홈페이지에서 공지·공모 게시판을 찾지 못함. orgs.yaml에 board_url을 적어주세요",
+   "id": "org-dangjinart",
+   "kind": "org",
+   "links": 0,
+   "name": "당진문화재단",
+   "new": 0,
+   "status": "empty",
+   "url": "https://www.dangjinart.kr:444"
+  },
+  {
+   "board": "art",
+   "detail": "홈페이지에서 공지·공모 게시판을 찾지 못함. orgs.yaml에 board_url을 적어주세요",
+   "id": "org-dgdgcf",
+   "kind": "org",
+   "links": 0,
+   "name": "대구동구문화재단",
+   "new": 0,
+   "status": "empty",
+   "url": "https://www.dgdgcf.or.kr"
+  },
+  {
+   "board": "art",
+   "detail": "홈페이지에서 공지·공모 게시판을 찾지 못함. orgs.yaml에 board_url을 적어주세요",
+   "id": "org-seochocf",
+   "kind": "org",
+   "links": 0,
+   "name": "서초문화재단",
+   "new": 0,
+   "status": "empty",
+   "url": "https://www.seochocf.or.kr/site/main/home"
+  },
+  {
+   "board": "art",
+   "detail": "홈페이지에서 공지·공모 게시판을 찾지 못함. orgs.yaml에 board_url을 적어주세요",
+   "id": "org-songpafac",
+   "kind": "org",
+   "links": 0,
+   "name": "송파문화재단",
+   "new": 0,
+   "status": "empty",
+   "url": "https://www.songpafac.or.kr"
+  },
+  {
+   "board": "art",
+   "detail": "홈페이지에서 공지·공모 게시판을 찾지 못함. orgs.yaml에 board_url을 적어주세요",
+   "id": "org-yfac",
+   "kind": "org",
+   "links": 0,
+   "name": "양천문화재단",
+   "new": 0,
+   "status": "empty",
+   "url": "https://yfac.kr/main/main.do"
+  },
+  {
+   "board": "art",
+   "detail": "홈페이지에서 공지·공모 게시판을 찾지 못함. orgs.yaml에 board_url을 적어주세요",
+   "id": "org-ydct",
+   "kind": "org",
+   "links": 0,
+   "name": "영덕문화관광재단",
+   "new": 0,
+   "status": "empty",
+   "url": "https://www.ydct.org"
+  },
+  {
+   "board": "art",
+   "detail": "홈페이지에서 공지·공모 게시판을 찾지 못함. orgs.yaml에 board_url을 적어주세요",
+   "id": "org-ucf",
+   "kind": "org",
+   "links": 0,
+   "name": "울주문화재단",
+   "new": 0,
+   "status": "empty",
+   "url": "https://www.ucf.or.kr:478"
+  },
+  {
+   "board": "art",
+   "detail": "홈페이지에서 공지·공모 게시판을 찾지 못함. orgs.yaml에 board_url을 적어주세요",
+   "id": "org-jnfac",
+   "kind": "org",
+   "links": 0,
+   "name": "중랑문화재단",
+   "new": 0,
+   "status": "empty",
+   "url": "https://www.jnfac.or.kr"
+  },
+  {
+   "board": "art",
+   "detail": "홈페이지에서 공지·공모 게시판을 찾지 못함. orgs.yaml에 board_url을 적어주세요",
+   "id": "org-hbcf",
+   "kind": "org",
+   "links": 0,
+   "name": "행복북구문화재단",
+   "new": 0,
+   "status": "empty",
+   "url": "https://www.hbcf.or.kr/front"
+  },
+  {
+   "board": "art",
+   "detail": "홈페이지에서 공지·공모 게시판을 찾지 못함. orgs.yaml에 board_url을 적어주세요",
+   "id": "org-gcart",
+   "kind": "org",
+   "links": 0,
+   "name": "과천문화재단",
+   "new": 0,
+   "status": "empty",
+   "url": "https://www.gcart.or.kr"
+  },
+  {
+   "board": "art",
+   "detail": "홈페이지에서 공지·공모 게시판을 찾지 못함. orgs.yaml에 board_url을 적어주세요",
+   "id": "org-damyangcf",
+   "kind": "org",
+   "links": 0,
+   "name": "담양군문화재단",
+   "new": 0,
+   "status": "empty",
+   "url": "https://www.damyangcf.or.kr"
+  },
+  {
+   "board": "art",
+   "detail": "홈페이지에서 공지·공모 게시판을 찾지 못함. orgs.yaml에 board_url을 적어주세요",
+   "id": "org-mycf",
+   "kind": "org",
+   "links": 0,
+   "name": "밀양문화관광재단",
+   "new": 0,
+   "status": "empty",
+   "url": "https://www.mycf.or.kr/main"
+  },
+  {
+   "board": "art",
+   "detail": "홈페이지에서 공지·공모 게시판을 찾지 못함. orgs.yaml에 board_url을 적어주세요",
+   "id": "org-ansanart",
+   "kind": "org",
+   "links": 0,
+   "name": "안산문화재단",
+   "new": 0,
+   "status": "empty",
+   "url": "https://www.ansanart.com"
+  },
+  {
+   "board": "art",
+   "detail": "홈페이지에서 공지·공모 게시판을 찾지 못함. orgs.yaml에 board_url을 적어주세요",
+   "id": "org-gfac",
+   "kind": "org",
+   "links": 0,
+   "name": "관악문화재단",
+   "new": 0,
+   "status": "empty",
+   "url": "https://www.gfac.or.kr"
+  },
+  {
+   "board": "art",
+   "detail": "홈페이지에서 공지·공모 게시판을 찾지 못함. orgs.yaml에 board_url을 적어주세요",
+   "id": "org-hub-cfac",
+   "kind": "org",
+   "links": 0,
+   "name": "천안문화재단",
+   "new": 0,
+   "status": "empty",
+   "url": "https://hub.cfac.or.kr"
+  },
+  {
+   "board": "art",
+   "detail": "홈페이지에서 공지·공모 게시판을 찾지 못함. orgs.yaml에 board_url을 적어주세요",
+   "id": "org-gongjucf",
+   "kind": "org",
+   "links": 0,
+   "name": "공주문화관광재단",
+   "new": 0,
+   "status": "empty",
+   "url": "https://www.gongjucf.or.kr"
+  },
+  {
+   "board": "art",
+   "detail": "홈페이지에서 공지·공모 게시판을 찾지 못함. orgs.yaml에 board_url을 적어주세요",
+   "id": "org-ywcf",
+   "kind": "org",
+   "links": 0,
+   "name": "영월문화관광재단",
+   "new": 0,
+   "status": "empty",
+   "url": "https://www.ywcf.or.kr"
+  },
+  {
+   "board": "art",
+   "detail": "홈페이지에서 공지·공모 게시판을 찾지 못함. orgs.yaml에 board_url을 적어주세요",
+   "id": "org-yctf",
+   "kind": "org",
+   "links": 0,
+   "name": "영주문화관광재단",
+   "new": 0,
+   "status": "empty",
+   "url": "https://www.yctf.or.kr"
+  },
+  {
+   "board": "art",
+   "detail": "홈페이지에서 공지·공모 게시판을 찾지 못함. orgs.yaml에 board_url을 적어주세요",
+   "id": "org-ypcf",
+   "kind": "org",
+   "links": 0,
+   "name": "양평문화재단",
+   "new": 0,
+   "status": "empty",
+   "url": "https://www.ypcf.or.kr"
+  },
+  {
+   "board": "art",
+   "detail": "홈페이지에서 공지·공모 게시판을 찾지 못함. orgs.yaml에 board_url을 적어주세요",
+   "id": "org-seosancf",
+   "kind": "org",
+   "links": 0,
+   "name": "서산문화재단",
+   "new": 0,
+   "status": "empty",
+   "url": "https://seosancf.or.kr"
+  },
+  {
+   "board": "art",
+   "detail": "홈페이지에서 공지·공모 게시판을 찾지 못함. orgs.yaml에 board_url을 적어주세요",
+   "id": "org-pcfac",
+   "kind": "org",
+   "links": 0,
+   "name": "포천문화관광재단",
+   "new": 0,
+   "status": "empty",
+   "url": "https://www.pcfac.or.kr"
+  },
+  {
+   "board": "art",
+   "detail": "홈페이지에서 공지·공모 게시판을 찾지 못함. orgs.yaml에 board_url을 적어주세요",
+   "id": "org-kotpa",
+   "kind": "org",
+   "links": 0,
+   "name": "전통공연예술진흥재단",
+   "new": 0,
+   "status": "empty",
+   "url": "https://www.kotpa.org/ucms/main/indexmain.do"
+  },
+  {
+   "board": "art",
+   "detail": "홈페이지에서 공지·공모 게시판을 찾지 못함. orgs.yaml에 board_url을 적어주세요",
+   "id": "org-hongju",
+   "kind": "org",
+   "links": 0,
+   "name": "홍주문화관광재단",
+   "new": 0,
+   "status": "empty",
+   "url": "https://hongju.or.kr"
+  },
+  {
+   "board": "art",
+   "detail": "홈페이지에서 공지·공모 게시판을 찾지 못함. orgs.yaml에 board_url을 적어주세요",
+   "id": "org-jjct",
+   "kind": "org",
+   "links": 0,
+   "name": "진주문화관광재단",
+   "new": 0,
+   "status": "empty",
+   "url": "https://jjct.or.kr"
+  },
+  {
+   "board": "art",
+   "detail": "홈페이지에서 공지·공모 게시판을 찾지 못함. orgs.yaml에 board_url을 적어주세요",
+   "id": "org-guroartsvalley",
+   "kind": "org",
+   "links": 0,
+   "name": "구로문화재단",
+   "new": 0,
+   "status": "empty",
+   "url": "https://www.guroartsvalley.or.kr/user/home.do"
+  },
+  {
+   "board": "art",
+   "detail": "홈페이지에서 공지·공모 게시판을 찾지 못함. orgs.yaml에 board_url을 적어주세요",
+   "id": "org-dgfca",
+   "kind": "org",
+   "links": 0,
+   "name": "대구문화예술진흥원",
+   "new": 0,
+   "status": "empty",
+   "url": "https://dgfca.or.kr/main"
+  },
+  {
+   "board": "art",
+   "detail": "홈페이지에서 공지·공모 게시판을 찾지 못함. orgs.yaml에 board_url을 적어주세요",
+   "id": "org-bsjincf",
+   "kind": "org",
+   "links": 0,
+   "name": "부산진문화재단",
+   "new": 0,
+   "status": "empty",
+   "url": "https://www.bsjincf.or.kr/main.php"
+  },
+  {
+   "board": "art",
+   "detail": "홈페이지에서 공지·공모 게시판을 찾지 못함. orgs.yaml에 board_url을 적어주세요",
+   "id": "org-gunwi3964",
+   "kind": "org",
+   "links": 0,
+   "name": "군위문화관광재단",
+   "new": 0,
+   "status": "empty",
+   "url": "https://gunwi3964.org"
+  },
+  {
+   "board": "art",
+   "detail": "홈페이지에서 공지·공모 게시판을 찾지 못함. orgs.yaml에 board_url을 적어주세요",
    "id": "org-namdongcf",
    "kind": "org",
    "links": 0,
    "name": "남동문화재단",
    "new": 0,
-   "status": "error",
+   "status": "empty",
    "url": "https://www.namdongcf.or.kr/user/index.php"
-  },
-  {
-   "board": "art",
-   "detail": "시간 부족으로 오늘은 건너뜀",
-   "id": "org-guriart",
-   "kind": "org",
-   "links": 0,
-   "name": "구리문화재단",
-   "new": 0,
-   "status": "skipped",
-   "url": "https://www.guriart.or.kr"
-  },
-  {
-   "board": "art",
-   "detail": "시간 부족으로 오늘은 건너뜀",
-   "id": "org-goseongcf",
-   "kind": "org",
-   "links": 0,
-   "name": "고성문화재단",
-   "new": 0,
-   "status": "skipped",
-   "url": "https://goseongcf.or.kr"
-  },
-  {
-   "board": "art",
-   "detail": "시간 부족으로 오늘은 건너뜀",
-   "id": "org-gcfac",
-   "kind": "org",
-   "links": 0,
-   "name": "금천문화재단",
-   "new": 0,
-   "status": "skipped",
-   "url": "https://gcfac.or.kr/mpage"
-  },
-  {
-   "board": "art",
-   "detail": "시간 부족으로 오늘은 건너뜀",
-   "id": "org-snart",
-   "kind": "org",
-   "links": 0,
-   "name": "성남문화재단",
-   "new": 0,
-   "status": "skipped",
-   "url": "https://www.snart.or.kr"
-  },
-  {
-   "board": "art",
-   "detail": "시간 부족으로 오늘은 건너뜀",
-   "id": "org-tyhansancf",
-   "kind": "org",
-   "links": 0,
-   "name": "통영문화재단",
-   "new": 0,
-   "status": "skipped",
-   "url": "https://tyhansancf.or.kr"
-  },
-  {
-   "board": "art",
-   "detail": "시간 부족으로 오늘은 건너뜀",
-   "id": "org-gucf",
-   "kind": "org",
-   "links": 0,
-   "name": "구미문화재단",
-   "new": 0,
-   "status": "skipped",
-   "url": "https://gucf.or.kr"
-  },
-  {
-   "board": "art",
-   "detail": "시간 부족으로 오늘은 건너뜀",
-   "id": "org-kofice",
-   "kind": "org",
-   "links": 0,
-   "name": "한국국제문화교류진흥원",
-   "new": 0,
-   "status": "skipped",
-   "url": "https://kofice.or.kr"
-  },
-  {
-   "board": "art",
-   "detail": "시간 부족으로 오늘은 건너뜀",
-   "id": "org-uwcf",
-   "kind": "org",
-   "links": 0,
-   "name": "고래문화재단",
-   "new": 0,
-   "status": "skipped",
-   "url": "https://www.uwcf.or.kr/index_main.jsp"
-  },
-  {
-   "board": "art",
-   "detail": "시간 부족으로 오늘은 건너뜀",
-   "id": "org-nsart",
-   "kind": "org",
-   "links": 0,
-   "name": "광주시문화재단",
-   "new": 0,
-   "status": "skipped",
-   "url": "https://www.nsart.or.kr/index.do"
-  },
-  {
-   "board": "art",
-   "detail": "시간 부족으로 오늘은 건너뜀",
-   "id": "org-naruart",
-   "kind": "org",
-   "links": 0,
-   "name": "광진문화재단",
-   "new": 0,
-   "status": "skipped",
-   "url": "https://www.naruart.or.kr/index.php"
-  },
-  {
-   "board": "art",
-   "detail": "시간 부족으로 오늘은 건너뜀",
-   "id": "org-sbculture",
-   "kind": "org",
-   "links": 0,
-   "name": "성북문화재단",
-   "new": 0,
-   "status": "skipped",
-   "url": "https://www.sbculture.or.kr/culture/main/main.do"
-  },
-  {
-   "board": "art",
-   "detail": "시간 부족으로 오늘은 건너뜀",
-   "id": "org-geojeart",
-   "kind": "org",
-   "links": 0,
-   "name": "거제시문화예술재단",
-   "new": 0,
-   "status": "skipped",
-   "url": "https://www.geojeart.or.kr/index.asp"
-  },
-  {
-   "board": "art",
-   "detail": "시간 부족으로 오늘은 건너뜀",
-   "id": "org-njcf",
-   "kind": "org",
-   "links": 0,
-   "name": "나주문화재단",
-   "new": 0,
-   "status": "skipped",
-   "url": "https://www.njcf.or.kr"
-  },
-  {
-   "board": "art",
-   "detail": "시간 부족으로 오늘은 건너뜀",
-   "id": "org-yjcf",
-   "kind": "org",
-   "links": 0,
-   "name": "여주세종문화관광재단",
-   "new": 0,
-   "status": "skipped",
-   "url": "https://www.yjcf.or.kr"
-  },
-  {
-   "board": "art",
-   "detail": "시간 부족으로 오늘은 건너뜀",
-   "id": "org-stcf",
-   "kind": "org",
-   "links": 0,
-   "name": "삼척관광문화재단",
-   "new": 0,
-   "status": "skipped",
-   "url": "https://www.stcf.or.kr"
-  },
-  {
-   "board": "art",
-   "detail": "시간 부족으로 오늘은 건너뜀",
-   "id": "org-gsctf",
-   "kind": "org",
-   "links": 0,
-   "name": "경산문화관광재단",
-   "new": 0,
-   "status": "skipped",
-   "url": "https://gsctf.or.kr"
-  },
-  {
-   "board": "art",
-   "detail": "시간 부족으로 오늘은 건너뜀",
-   "id": "org-chilgokctf",
-   "kind": "org",
-   "links": 0,
-   "name": "칠곡문화관광재단",
-   "new": 0,
-   "status": "skipped",
-   "url": "https://www.chilgokctf.or.kr/ctf/main.do"
-  },
-  {
-   "board": "art",
-   "detail": "시간 부족으로 오늘은 건너뜀",
-   "id": "org-namhaetour",
-   "kind": "org",
-   "links": 0,
-   "name": "남해군관광문화재단",
-   "new": 0,
-   "status": "skipped",
-   "url": "https://www.namhaetour.org/main.web"
-  },
-  {
-   "board": "art",
-   "detail": "시간 부족으로 오늘은 건너뜀",
-   "id": "org-bpcf",
-   "kind": "org",
-   "links": 0,
-   "name": "인천시부평구문화재단",
-   "new": 0,
-   "status": "skipped",
-   "url": "https://www.bpcf.or.kr/bpcf/main/main.do"
-  },
-  {
-   "board": "art",
-   "detail": "시간 부족으로 오늘은 건너뜀",
-   "id": "org-acc",
-   "kind": "org",
-   "links": 0,
-   "name": "국립아시아문화전당",
-   "new": 0,
-   "status": "skipped",
-   "url": "https://www.acc.go.kr"
-  },
-  {
-   "board": "art",
-   "detail": "시간 부족으로 오늘은 건너뜀",
-   "id": "org-mmca",
-   "kind": "org",
-   "links": 0,
-   "name": "국립현대미술관",
-   "new": 0,
-   "status": "skipped",
-   "url": "https://www.mmca.go.kr"
   }
  ]
 }
