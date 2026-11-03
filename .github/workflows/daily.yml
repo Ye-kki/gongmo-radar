@@ -74,7 +74,11 @@ jobs:
             echo "::error::CLAUDE_CODE_OAUTH_TOKEN 또는 ANTHROPIC_API_KEY secret이 필요합니다. README의 설정 방법을 보세요."
             exit 1
           fi
-          python -m radar.run $RUN_ARGS
+          # 실행 기록을 실행기 작업 폴더에도 남깁니다 (Mac이면 ~/actions-runner/_work/gongmo-radar/radar-logs, 최근 14개)
+          LOGDIR="$GITHUB_WORKSPACE/../radar-logs"; mkdir -p "$LOGDIR"
+          ls -t "$LOGDIR"/*.log 2>/dev/null | tail -n +14 | xargs rm -f 2>/dev/null || true
+          set -o pipefail
+          python -m radar.run $RUN_ARGS 2>&1 | tee "$LOGDIR/run-$(TZ=Asia/Seoul date '+%Y%m%d-%H%M').log"
 
       - name: Save data
         if: github.event_name != 'push'

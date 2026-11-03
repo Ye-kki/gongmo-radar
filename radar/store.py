@@ -5,6 +5,7 @@ import difflib
 import hashlib
 import json
 import re
+import sys
 from datetime import date, timedelta
 from pathlib import Path
 from urllib.parse import parse_qsl, urlencode, urlsplit, urlunsplit
@@ -46,7 +47,12 @@ class Store:
         return default
 
     def _save(self, name, obj):
-        (self.root / name).write_text(json.dumps(obj, ensure_ascii=False, indent=1, sort_keys=True) + "\n", "utf-8")
+        try:
+            text = json.dumps(obj, ensure_ascii=False, indent=1, sort_keys=True, default=str)
+        except TypeError:  # keys of mixed types cannot be sorted
+            text = json.dumps(obj, ensure_ascii=False, indent=1, default=str)
+        # a stray half character (surrogate) from a broken page must not stop the save
+        (self.root / name).write_bytes((text + "\n").encode("utf-8", "replace"))
 
     def is_seen(self, url: str) -> bool:
         return normalize_url(url) in self.seen
@@ -111,7 +117,15 @@ class Store:
 
     def save(self, updated_at: str, health: dict):
         calls = sorted(self.calls.values(), key=lambda c: (c.get("deadline") or "9999", c["title"]))
-        self._save("calls.json", {"updatedAt": updated_at, "calls": calls})
-        self._save("seen.json", self.seen)
-        self._save("sources.json", self.sources_state)
+        errors = []
+        for name, obj in (("calls.json", {"updatedAt": updated_at, "calls": calls}),
+                          ("seen.json", self.seen),
+                          ("sources.json", self.sources_state)):
+            try:
+                self._save(name, obj)
+            except Exception as e:  # keep going: one bad file must not lose the whole run
+                errors.append(f"{name}: {type(e).__name__}: {e}"[:300])
+                print(f"!! {name} 저장 실패: {e!r}", file=sys.stderr, flush=True)
+        if errors:
+            health["save_errors"] = errors
         self._save("health.json", health)
