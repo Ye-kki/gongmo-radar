@@ -103,6 +103,7 @@ def main(argv=None, ai_factory=None, fetcher=None, data_dir=None):
         print(f"[{h['status']:>6}] {src['id']}: links={h['links']} new={h['new']}", file=sys.stderr)
 
     # 1a) institution homepages: find their notice boards automatically
+    _org_boards.left = ORG_FINDS_PER_RUN
     orgs = sorted(_load_orgs(data_dir), key=lambda o: store.sources_state.get(o["id"], {}).get("scanned", ""))
     for org in orgs:  # least recently scanned first, so institutions skipped for time go first next day
         if org.get("enabled") is False or (args.only and args.only not in (org["id"], "orgs")):
@@ -119,7 +120,10 @@ def main(argv=None, ai_factory=None, fetcher=None, data_dir=None):
         try:
             boards = [{"url": org["board_url"], "link_regex": org.get("link_regex")}] if org.get("board_url") \
                 else _org_boards(org, fetcher, store, today)
-            if not boards:
+            if boards is None:
+                h["status"], h["detail"] = "skipped", "게시판 찾기 순서 대기 중 (하루 60곳씩)"
+                boards = []
+            elif not boards:
                 h["status"], h["detail"] = "empty", "홈페이지에서 공지·공모 게시판을 찾지 못함. orgs.yaml에 board_url을 적어주세요"
             for b in boards:
                 bsrc = {**src, "link_regex": b["link_regex"]} if b.get("link_regex") else src
@@ -331,11 +335,13 @@ def _org_boards(org, fetcher, store, today):
     st = store.sources_state.setdefault(org["id"], {})
     checked = st.get("boards_checked")
     boards = [b if isinstance(b, dict) else {"url": b} for b in (st.get("boards") or [])]
-    fresh = checked and (today - date.fromisoformat(checked)).days < 14
-    if boards and fresh and all(b.get("link_regex") for b in boards):
-        return boards
-    if _org_boards.left <= 0:  # spread first-time discovery over several days
-        return [b for b in boards if b.get("link_regex")]
+    # results found with an older finder (or from abroad, where many sites refuse) are checked again once
+    fresh = checked and st.get("boards_v") == BOARD_FINDER_V and (today - date.fromisoformat(checked)).days < 14
+    if fresh and all(b.get("link_regex") for b in boards):
+        return boards  # may be [] = looked recently and found nothing
+    if _org_boards.left <= 0:  # spread discovery over several days
+        known = [b for b in boards if b.get("link_regex")]
+        return known or None  # None = not looked at yet today
     _org_boards.left -= 1
     home = fetcher.get(org["home"])
     if not board_candidates(home.text, home.url) and RENDER.r:  # menu drawn by JavaScript
@@ -361,11 +367,13 @@ def _org_boards(org, fetcher, store, today):
             queue.extend(c for c in board_candidates(page.text, page.url) if c[0] not in seen_urls)
     scored.sort(key=lambda x: -x[0])
     boards = [b for _, b in scored[:2]]
-    st["boards"], st["boards_checked"] = boards, today.isoformat()
+    st["boards"], st["boards_checked"], st["boards_v"] = boards, today.isoformat(), BOARD_FINDER_V
     return boards
 
 
-_org_boards.left = 30
+BOARD_FINDER_V = 2  # bump to make every institution's boards be looked up again
+ORG_FINDS_PER_RUN = 60
+_org_boards.left = ORG_FINDS_PER_RUN
 
 
 class RENDER:  # the shared headless browser for this run (None in tests)
