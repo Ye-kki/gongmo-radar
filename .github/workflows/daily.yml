@@ -25,8 +25,9 @@ concurrency:
 
 jobs:
   collect:
-    # 한국 서버(자체 실행기)를 등록하면 저장소 변수 RUNNER=self-hosted 로 바꿔 그쪽에서 수집합니다.
-    runs-on: ${{ (github.event_name != 'push' && vars.RUNNER) || 'ubuntu-latest' }}
+    # 수집만 합니다 (예약·수동 실행). 저장소 변수 RUNNER=self-hosted 면 등록된 한국 실행기(Mac)에서 돕니다.
+    if: github.event_name != 'push'
+    runs-on: ${{ vars.RUNNER || 'ubuntu-latest' }}
     timeout-minutes: 55
     steps:
       - uses: actions/checkout@v4
@@ -89,6 +90,26 @@ jobs:
           git diff --cached --quiet || git commit -m "data: $(TZ=Asia/Seoul date '+%Y-%m-%d %H:%M')"
           git push
 
+  # 사이트 만들기·배포는 항상 GitHub 서버(리눅스)에서 합니다. Pages 업로드 도구가 Mac에는 없는 gtar를 쓰기 때문입니다.
+  build:
+    needs: collect
+    if: ${{ !cancelled() && (needs.collect.result == 'success' || needs.collect.result == 'skipped') }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main   # 방금 수집기가 올린 데이터까지 포함한 최신 상태
+
+      - uses: astral-sh/setup-uv@v6
+        if: github.event_name == 'push'
+        with:
+          python-version: "3.12"
+          activate-environment: true
+
+      - name: Offline tests (page-only updates)
+        if: github.event_name == 'push'
+        run: uv pip install -r requirements.txt && python -m pytest -q
+
       - name: Build site
         run: |
           mkdir -p _site
@@ -102,7 +123,7 @@ jobs:
           path: _site
 
   deploy:
-    needs: collect
+    needs: build
     runs-on: ubuntu-latest
     environment:
       name: github-pages
