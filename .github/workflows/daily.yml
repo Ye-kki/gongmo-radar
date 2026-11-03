@@ -124,6 +124,8 @@ jobs:
 
   deploy:
     needs: build
+    # 명시하지 않으면 수집 단계가 건너뛰어졌을 때(페이지만 수정) 배포도 함께 건너뜁니다.
+    if: ${{ !cancelled() && needs.build.result == 'success' }}
     runs-on: ubuntu-latest
     environment:
       name: github-pages
