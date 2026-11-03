@@ -35,16 +35,18 @@ jobs:
         with:
           node-version: "22"
 
-      - uses: actions/setup-python@v5
+      # setup-python은 Mac에서 관리자 비밀번호(sudo)가 필요해 무인 실행이 멈춥니다.
+      # uv는 비밀번호 없이 파이썬을 받아 가상환경을 만들고 PATH에 올려 줍니다 (Linux·Mac 공통).
+      - uses: astral-sh/setup-uv@v6
         with:
           python-version: "3.12"
-          cache: pip
+          activate-environment: true
 
-      - run: pip install -r requirements.txt
+      - run: uv pip install -r requirements.txt
 
       - name: Headless browser (for boards drawn by JavaScript)
         if: github.event_name != 'push'
-        run: python -m playwright install --with-deps chromium
+        run: python -m playwright install ${{ runner.os == 'Linux' && '--with-deps' || '' }} chromium
 
       - name: Offline tests
         run: python -m pytest -q
