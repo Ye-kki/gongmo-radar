@@ -26,7 +26,11 @@ concurrency:
 jobs:
   collect:
     # 수집만 합니다 (예약·수동 실행). 저장소 변수 RUNNER=self-hosted 면 등록된 한국 실행기(Mac)에서 돕니다.
-    if: github.event_name != 'push'
+    # 보안: 예약·수동 실행만, 원본 저장소에서만 수집합니다. 나중에 pull_request 같은 트리거가 추가돼도
+    # 외부인의 코드가 비밀키(AI 토큰)나 내 Mac 실행기에 닿지 않도록 허용 목록으로 막아 둡니다.
+    if: >-
+      github.repository == 'Ye-kki/gongmo-radar' &&
+      (github.event_name == 'schedule' || github.event_name == 'workflow_dispatch')
     runs-on: ${{ vars.RUNNER || 'ubuntu-latest' }}
     timeout-minutes: 55
     steps:
