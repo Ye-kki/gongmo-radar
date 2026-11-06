@@ -195,6 +195,7 @@ img{max-width:100%}
     <div class="syncbox" id="syncbox" hidden>
       <b>자동 동기화 · 휴대폰 달력 구독</b>
       <div id="sync-off">
+        <span id="syncoffmsg" hidden style="color:var(--hot)"><b>키가 만료되어 동기화가 멈췄습니다.</b> 아래 1~2번으로 새 키를 만들어 연결하세요. 구글 캘린더 구독은 그대로 두면 됩니다(주소가 바뀌지 않습니다). 다른 기기도 같은 새 키로 다시 연결해야 합니다.</span>
         <span>컴퓨터와 휴대폰의 관심·지원 표시가 자동으로 맞춰지고, 지원한 공고가 구글/삼성 캘린더에 자동으로 들어갑니다. 기기마다 처음 한 번만 연결하면 됩니다.</span>
         <ol style="margin:6px 0 6px 18px;padding:0">
           <li><a href="https://github.com/settings/tokens/new?scopes=gist&amp;description=gongmo-radar-sync" target="_blank" rel="noopener">여기</a>를 눌러 GitHub에서 <b>Generate token</b>을 누르고 나온 키를 복사합니다. (Expiration은 No expiration 권장. 처음 한 번 만들면 다른 기기에도 같은 키를 쓰면 됩니다.)</li>
@@ -431,7 +432,12 @@ async function pull(){if(!SY.token||!SY.gist||SY.busy)return;SY.busy=true;
     const needPush=S.calls.length>0&&(icsNow!==icsText()||Object.entries(S.marks).some(([id,v])=>!inc[id]||String(v.updatedAt||"")>String(inc[id].updatedAt||"")));
     $("syncstatus").textContent="연결됨 · 마지막 동기화 "+new Date().toLocaleTimeString("ko-KR",{hour:"2-digit",minute:"2-digit"})+(n?` · ${n}건 받아옴`:"");
     SY.busy=false;$("syncbtn").textContent="동기화 켜짐 ✓";if(needPush)await push()}catch(e){SY.busy=false;syncFail("동기화 실패: "+e.message)}}
-function syncFail(t){$("syncstatus").textContent=t;$("syncbtn").textContent="⚠ 동기화 안 됨";alertNote(t+" — ‘⚠ 동기화 안 됨’을 눌러 키를 다시 연결해 주세요.")}
+function syncFail(t){$("syncstatus").textContent=t;
+  if(/만료/.test(t)){  // dead key: drop it but keep the gist id, so reconnecting reuses the same calendar address
+    try{localStorage.removeItem(TOKEN_KEY)}catch(e){}SY.token=null;syncUI();
+    $("syncbtn").textContent="⚠ 동기화 안 됨";$("syncbox").hidden=false;
+    $("syncoffmsg").hidden=false;alertNote("동기화 키가 만료되었습니다. 새 키를 만들어 붙여 넣으면 같은 달력 주소로 다시 이어집니다.");return}
+  $("syncbtn").textContent="⚠ 동기화 안 됨";alertNote(t+" — ‘⚠ 동기화 안 됨’을 눌러 확인해 주세요.")}
 async function push(){if(!SY.token||!SY.gist)return;if(!S.calls.length){schedulePush();return}
   try{await gh("/gists/"+SY.gist,{method:"PATCH",body:JSON.stringify({files:{"marks.json":{content:JSON.stringify(S.marks)},"gongmo-radar.ics":{content:icsText()}}})});
     $("syncstatus").textContent="연결됨 · 저장됨 "+new Date().toLocaleTimeString("ko-KR",{hour:"2-digit",minute:"2-digit"});$("syncbtn").textContent="동기화 켜짐 ✓"}catch(e){syncFail("저장 실패: "+e.message)}}
