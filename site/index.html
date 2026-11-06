@@ -430,10 +430,11 @@ async function pull(){if(!SY.token||!SY.gist||SY.busy)return;SY.busy=true;
     const icsNow=g.files&&g.files["gongmo-radar.ics"]&&g.files["gongmo-radar.ics"].content;
     const needPush=S.calls.length>0&&(icsNow!==icsText()||Object.entries(S.marks).some(([id,v])=>!inc[id]||String(v.updatedAt||"")>String(inc[id].updatedAt||"")));
     $("syncstatus").textContent="연결됨 · 마지막 동기화 "+new Date().toLocaleTimeString("ko-KR",{hour:"2-digit",minute:"2-digit"})+(n?` · ${n}건 받아옴`:"");
-    SY.busy=false;if(needPush)await push()}catch(e){SY.busy=false;$("syncstatus").textContent="동기화 실패: "+e.message}}
+    SY.busy=false;$("syncbtn").textContent="동기화 켜짐 ✓";if(needPush)await push()}catch(e){SY.busy=false;syncFail("동기화 실패: "+e.message)}}
+function syncFail(t){$("syncstatus").textContent=t;$("syncbtn").textContent="⚠ 동기화 안 됨";alertNote(t+" — ‘⚠ 동기화 안 됨’을 눌러 키를 다시 연결해 주세요.")}
 async function push(){if(!SY.token||!SY.gist)return;if(!S.calls.length){schedulePush();return}
   try{await gh("/gists/"+SY.gist,{method:"PATCH",body:JSON.stringify({files:{"marks.json":{content:JSON.stringify(S.marks)},"gongmo-radar.ics":{content:icsText()}}})});
-    $("syncstatus").textContent="연결됨 · 저장됨 "+new Date().toLocaleTimeString("ko-KR",{hour:"2-digit",minute:"2-digit"})}catch(e){$("syncstatus").textContent="저장 실패: "+e.message}}
+    $("syncstatus").textContent="연결됨 · 저장됨 "+new Date().toLocaleTimeString("ko-KR",{hour:"2-digit",minute:"2-digit"});$("syncbtn").textContent="동기화 켜짐 ✓"}catch(e){syncFail("저장 실패: "+e.message)}}
 function schedulePush(){if(!SY.token||!SY.gist)return;clearTimeout(SY.timer);SY.timer=setTimeout(push,1500)}
 $("syncbtn").onclick=()=>{$("syncbox").hidden=!$("syncbox").hidden;syncUI()};
 $("syncconnect").onclick=async()=>{const t=$("synctoken").value.trim();if(!t){$("synctoken").focus();return}
