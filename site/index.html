@@ -413,12 +413,13 @@ async function gh(path,opt={}){const r=await fetch("https://api.github.com"+path
 const feedUrl=()=>SY.owner&&SY.gist?`https://gist.githubusercontent.com/${SY.owner}/${SY.gist}/raw/gongmo-radar.ics`:"";
 function syncUI(){const on=!!(SY.token&&SY.gist);$("sync-off").hidden=on;$("sync-on").hidden=!on;
   if(on){const webcal=feedUrl().replace(/^https:/,"webcal:");
-    $("gcalsub").href="https://calendar.google.com/calendar/render?cid="+encodeURIComponent(webcal);
+    $("gcalsub").href=ANDROID?"https://calendar.google.com/calendar/r/settings/addbyurl":"https://calendar.google.com/calendar/render?cid="+encodeURIComponent(feedUrl());
+    $("gcalsub").textContent=ANDROID?"주소 복사하고 구글 캘린더 열기":"구글 캘린더에 구독 추가";
     $("iossub").href=webcal;$("iossub").hidden=!IOS;$("gcalsub").classList.toggle("primary",!IOS);
     $("subhelp").innerHTML=IOS
       ?"<b>휴대폰 달력 구독</b>: ‘아이폰 캘린더에 구독’을 누르고 ‘구독’을 누르면 기본 캘린더 앱에 ‘공모 레이더’가 생깁니다. 지원하기를 누르면 자동으로 반영됩니다(아이폰이 몇 시간마다 새로고침)."
       :ANDROID
-      ?"<b>휴대폰 달력 구독</b>: 구글은 휴대폰에서 구독 달력 추가를 막아 두었습니다. <b>컴퓨터</b>에서 이 페이지를 열고 ‘구글 캘린더에 구독 추가’를 한 번 누르세요(같은 구글 계정). 그다음 휴대폰 구글 캘린더 앱 → 메뉴 → 설정 → ‘공모 레이더’ → <b>동기화</b>를 켜면 보입니다. 삼성 캘린더는 설정 → 캘린더 관리에서 ‘공모 레이더’를 켜세요. 컴퓨터가 없으면 Chrome 메뉴에서 ‘데스크톱 사이트’를 켜고 버튼을 누르세요. 구글은 반영까지 반나절쯤 걸릴 수 있습니다."
+      ?"<b>휴대폰 달력 구독 (처음 한 번)</b><ol style='margin:4px 0 4px 18px;padding:0'><li>아래 ‘주소 복사하고 구글 캘린더 열기’를 누릅니다. 구글 캘린더 앱으로 넘어가면 뒤로 와서 Chrome에서 열어 주세요.</li><li>Chrome 오른쪽 위 ⋮ → <b>데스크톱 사이트</b>를 체크합니다(구글이 휴대폰 화면에서는 이 기능을 숨겨 둡니다).</li><li>‘URL로 추가’ 칸을 길게 눌러 붙여넣고 <b>캘린더 추가</b>를 누릅니다.</li><li>구글 캘린더 앱 → ☰ → 설정 → ‘공모 레이더’ → <b>동기화</b> 켜기. 삼성 캘린더는 설정 → 캘린더 관리에서 ‘공모 레이더’ 켜기.</li></ol>추가한 뒤에는 지원하기만 누르면 자동으로 들어갑니다. 구글이 가져가기까지 몇 분에서 반나절쯤 걸립니다."
       :"<b>휴대폰 달력 구독</b>: 아래 버튼을 한 번 누르면 구글 캘린더에 ‘공모 레이더’ 달력이 추가되고, 같은 구글 계정의 휴대폰에도 보입니다(안드로이드는 구글 캘린더 앱 → 설정 → ‘공모 레이더’ → 동기화 켜기, 삼성 캘린더는 설정 → 캘린더 관리에서 켜기). 아이폰은 휴대폰에서 이 페이지를 열어 ‘아이폰 캘린더에 구독’을 누르면 됩니다. 구글은 반영까지 반나절쯤 걸릴 수 있습니다."}
   $("syncbtn").textContent=on?"동기화 켜짐 ✓":"자동 동기화·달력 구독"}
 function mergeIn(inc){let n=0;for(const [id,v] of Object.entries(inc||{})){const cur=S.marks[id];if(!cur||String(v.updatedAt||"")>String(cur.updatedAt||"")){S.marks[id]=v;n++}}return n}
@@ -445,6 +446,8 @@ $("syncconnect").onclick=async()=>{const t=$("synctoken").value.trim();if(!t){$(
   catch(e){SY.token=null;alertNote("연결하지 못했습니다: "+e.message+". 키를 만들 때 gist 항목이 체크돼 있는지 확인해 주세요.")}
   $("syncconnect").disabled=false;$("syncconnect").textContent="연결"};
 $("syncnow").onclick=()=>pull();
+$("gcalsub").addEventListener("click",()=>{if(!ANDROID)return;try{navigator.clipboard.writeText(feedUrl())}catch(e){}
+  alertNote("달력 주소를 복사했습니다. 구글 캘린더 ‘URL로 추가’ 칸에 붙여넣으세요.")});
 $("copyfeed").onclick=async()=>{try{await navigator.clipboard.writeText(feedUrl());$("copyfeed").textContent="복사됨"}catch(e){prompt("달력 주소",feedUrl())}};
 $("syncoff").onclick=()=>{try{localStorage.removeItem(TOKEN_KEY);localStorage.removeItem(GIST_KEY)}catch(e){}SY.token=SY.gist=SY.owner=null;syncUI()};
 document.addEventListener("visibilitychange",()=>{if(document.visibilityState==="visible")pull()});
