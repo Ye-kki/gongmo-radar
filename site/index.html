@@ -205,8 +205,8 @@ img{max-width:100%}
       </div>
       <div id="sync-on" hidden>
         <span id="syncstatus">연결됨</span>
-        <span><b>휴대폰 달력 구독</b>: 아래 버튼을 한 번 누르면 구글 캘린더에 ‘공모 레이더’ 달력이 추가됩니다. 삼성 캘린더에 구글 계정이 연결돼 있으면 거기에도 보입니다(삼성 캘린더 → 설정 → 캘린더 관리에서 ‘공모 레이더’ 켜기). 지원하기를 누르면 자동으로 반영되며, 구글이 몇 시간 간격으로 새로고침합니다.</span>
-        <div class="row"><a class="btn primary" id="gcalsub" target="_blank" rel="noopener">구글 캘린더에 구독 추가</a><button class="btn" id="copyfeed">달력 주소 복사</button><button class="btn" id="syncnow">지금 맞추기</button><button class="btn" id="syncoff">이 기기 연결 해제</button></div>
+        <span id="subhelp"></span>
+        <div class="row"><a class="btn primary" id="iossub" hidden>아이폰 캘린더에 구독</a><a class="btn primary" id="gcalsub" target="_blank" rel="noopener">구글 캘린더에 구독 추가</a><button class="btn" id="copyfeed">달력 주소 복사</button><button class="btn" id="syncnow">지금 맞추기</button><button class="btn" id="syncoff">이 기기 연결 해제</button></div>
       </div>
     </div>
     <div class="gridwrap"><div class="grid" id="grid"></div></div>
@@ -376,7 +376,17 @@ function gcalUrl(c,p){const st=p>0?addDays(c.deadline,-p):c.deadline;
   const q=new URLSearchParams({action:"TEMPLATE",text:"[공모] "+c.title+" (마감 "+short(c.deadline)+")",dates:ymd(st)+"/"+ymd(addDays(c.deadline,1)),
     details:(c.org||"")+"\n준비 시작 "+st+" · 마감 "+c.deadline+(c.deadlineNote?" "+c.deadlineNote:"")+"\n"+c.url});
   return "https://calendar.google.com/calendar/render?"+q}
-function icsText(){const L=["BEGIN:VCALENDAR","VERSION:2.0","PRODID:-//yekki//gongmo-radar//KO","CALSCALE:GREGORIAN","X-WR-CALNAME:공모 레이더"];
+const UA=navigator.userAgent,IOS=/iPhone|iPad|iPod/.test(UA)||(navigator.platform==="MacIntel"&&navigator.maxTouchPoints>1),
+  ANDROID=/Android/i.test(UA),KAKAO=/KAKAOTALK/i.test(UA),INAPP=KAKAO||/Instagram|FBAN|FBAV|NAVER\(inapp|DaumApps|Line\/|everytimeApp|Threads/i.test(UA);
+// open this page in the phone's real browser (in-app browsers can't hand calendar files to the calendar app)
+function openExternal(){const here=location.href.split("#")[0];
+  if(KAKAO){location.href="kakaotalk://web/openExternal?url="+encodeURIComponent(here);return true}
+  if(ANDROID){location.href="intent://"+here.replace(/^https?:\/\//,"")+"#Intent;scheme=https;package=com.android.chrome;end";return true}
+  alertNote("이 앱 안에서는 달력에 넣을 수 없습니다. 오른쪽 위(또는 아래) 메뉴에서 ‘Safari로 열기’를 누른 뒤 다시 해 주세요.");return false}
+// RFC 5545: lines over 75 bytes must be folded (Korean titles easily pass it; Samsung/Apple calendars can choke otherwise)
+const icsFold=l=>{const en=new TextEncoder();if(en.encode(l).length<=75)return l;let out="",cur="",n=0,lim=75;
+  for(const ch of l){const b=en.encode(ch).length;if(n+b>lim){out+=cur+"\r\n ";cur="";n=0;lim=74}cur+=ch;n+=b}return out+cur};
+function icsText(){const L=["BEGIN:VCALENDAR","VERSION:2.0","PRODID:-//yekki//gongmo-radar//KO","CALSCALE:GREGORIAN","METHOD:PUBLISH","X-WR-CALNAME:공모 레이더","X-WR-TIMEZONE:Asia/Seoul","REFRESH-INTERVAL;VALUE=DURATION:PT6H","X-PUBLISHED-TTL:PT6H"];
   const icsEsc=t=>String(t||"").replace(/[\\,;]/g,m=>"\\"+m).replace(/\n/g,"\\n");
   const stamp="20260101T000000Z";  // fixed so the file only changes when the events change
   const ev=(uid,d1,d2,title,desc,alarm)=>{L.push("BEGIN:VEVENT","UID:"+uid+"@gongmo-radar","DTSTAMP:"+stamp,"DTSTART;VALUE=DATE:"+ymd(d1),"DTEND;VALUE=DATE:"+ymd(d2),
@@ -385,9 +395,15 @@ function icsText(){const L=["BEGIN:VCALENDAR","VERSION:2.0","PRODID:-//yekki//go
     if(p>0)ev(c.id+"-prep",st,c.deadline,"준비 · "+c.title,info,false);
     ev(c.id+"-dl",c.deadline,addDays(c.deadline,1),"마감 · "+c.title,info,true);
     if(c.announceDate)ev(c.id+"-ann",c.announceDate,addDays(c.announceDate,1),"발표 · "+c.title,info,false)});
-  L.push("END:VCALENDAR");return L.join("\r\n")}
-$("ics").onclick=()=>{if(!S.calls.some(c=>STATES[mark(c.id).state]&&c.deadline)){alertNote("달력에 넣은 공고가 없습니다. 목록에서 ‘지원하기’를 먼저 눌러 주세요.");return}
-  const a=document.createElement("a");a.href=URL.createObjectURL(new Blob([icsText()],{type:"text/calendar"}));a.download="gongmo-radar.ics";document.body.appendChild(a);a.click();a.remove()};
+  L.push("END:VCALENDAR");return L.map(icsFold).join("\r\n")+"\r\n"}
+$("ics").onclick=()=>{if(!S.calls.some(c=>STATES[mark(c.id).state]&&c.deadline)){
+    alertNote(SY.token?"달력에 넣은 공고가 없습니다. 목록에서 ‘지원하기’를 먼저 눌러 주세요."
+      :"이 기기에는 ‘지원하기’ 표시가 없습니다. 컴퓨터에서 표시했다면 ‘자동 동기화·달력 구독’을 이 휴대폰에서도 연결해 주세요.");return}
+  if(INAPP){openExternal();return}
+  const txt=icsText();
+  if(IOS){location.href="data:text/calendar;charset=utf-8,"+encodeURIComponent(txt);return}  // Safari shows "모두 추가" sheet
+  const a=document.createElement("a");a.href=URL.createObjectURL(new Blob([txt],{type:"text/calendar;charset=utf-8"}));a.download="gongmo-radar.ics";document.body.appendChild(a);a.click();a.remove();
+  if(ANDROID)alertNote("내려받은 gongmo-radar.ics를 알림창이나 ‘내 파일 → 다운로드’에서 누르고 삼성 캘린더(또는 구글 캘린더)로 여세요.")};
 function alertNote(t){$("dbnote").textContent=t;$("dbnote").hidden=false;setTimeout(()=>$("dbnote").hidden=true,6000)}
 const TOKEN_KEY="gongmo-radar-gh-token",GIST_KEY="gongmo-radar-gist",GIST_DESC="gongmo-radar sync (자동 생성)";
 const SY={token:null,gist:null,owner:null,timer:null,busy:false};
@@ -396,7 +412,14 @@ async function gh(path,opt={}){const r=await fetch("https://api.github.com"+path
   if(r.status===401)throw new Error("키가 맞지 않거나 만료되었습니다");if(!r.ok)throw new Error("GitHub 응답 "+r.status);return r.json()}
 const feedUrl=()=>SY.owner&&SY.gist?`https://gist.githubusercontent.com/${SY.owner}/${SY.gist}/raw/gongmo-radar.ics`:"";
 function syncUI(){const on=!!(SY.token&&SY.gist);$("sync-off").hidden=on;$("sync-on").hidden=!on;
-  if(on){$("gcalsub").href="https://calendar.google.com/calendar/render?cid="+encodeURIComponent(feedUrl().replace(/^https:/,"webcal:"))}
+  if(on){const webcal=feedUrl().replace(/^https:/,"webcal:");
+    $("gcalsub").href="https://calendar.google.com/calendar/render?cid="+encodeURIComponent(webcal);
+    $("iossub").href=webcal;$("iossub").hidden=!IOS;$("gcalsub").classList.toggle("primary",!IOS);
+    $("subhelp").innerHTML=IOS
+      ?"<b>휴대폰 달력 구독</b>: ‘아이폰 캘린더에 구독’을 누르고 ‘구독’을 누르면 기본 캘린더 앱에 ‘공모 레이더’가 생깁니다. 지원하기를 누르면 자동으로 반영됩니다(아이폰이 몇 시간마다 새로고침)."
+      :ANDROID
+      ?"<b>휴대폰 달력 구독</b>: 구글은 휴대폰에서 구독 달력 추가를 막아 두었습니다. <b>컴퓨터</b>에서 이 페이지를 열고 ‘구글 캘린더에 구독 추가’를 한 번 누르세요(같은 구글 계정). 그다음 휴대폰 구글 캘린더 앱 → 메뉴 → 설정 → ‘공모 레이더’ → <b>동기화</b>를 켜면 보입니다. 삼성 캘린더는 설정 → 캘린더 관리에서 ‘공모 레이더’를 켜세요. 컴퓨터가 없으면 Chrome 메뉴에서 ‘데스크톱 사이트’를 켜고 버튼을 누르세요. 구글은 반영까지 반나절쯤 걸릴 수 있습니다."
+      :"<b>휴대폰 달력 구독</b>: 아래 버튼을 한 번 누르면 구글 캘린더에 ‘공모 레이더’ 달력이 추가되고, 같은 구글 계정의 휴대폰에도 보입니다(안드로이드는 구글 캘린더 앱 → 설정 → ‘공모 레이더’ → 동기화 켜기, 삼성 캘린더는 설정 → 캘린더 관리에서 켜기). 아이폰은 휴대폰에서 이 페이지를 열어 ‘아이폰 캘린더에 구독’을 누르면 됩니다. 구글은 반영까지 반나절쯤 걸릴 수 있습니다."}
   $("syncbtn").textContent=on?"동기화 켜짐 ✓":"자동 동기화·달력 구독"}
 function mergeIn(inc){let n=0;for(const [id,v] of Object.entries(inc||{})){const cur=S.marks[id];if(!cur||String(v.updatedAt||"")>String(cur.updatedAt||"")){S.marks[id]=v;n++}}return n}
 async function pull(){if(!SY.token||!SY.gist||SY.busy)return;SY.busy=true;
