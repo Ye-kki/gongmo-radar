@@ -83,7 +83,9 @@ jobs:
           LOGDIR="$GITHUB_WORKSPACE/../radar-logs"; mkdir -p "$LOGDIR"
           ls -t "$LOGDIR"/*.log 2>/dev/null | tail -n +14 | xargs rm -f 2>/dev/null || true
           set -o pipefail
-          python -m radar.run $RUN_ARGS 2>&1 | tee "$LOGDIR/run-$(TZ=Asia/Seoul date '+%Y%m%d-%H%M').log"
+          # Mac이면 수집하는 동안 잠자기 막기 (잠들면 GitHub와 연결이 끊겨 실패함). 충전기에 꽂혀 있을 때 확실히 동작합니다.
+          KEEPAWAKE=""; [ "$RUNNER_OS" = "macOS" ] && KEEPAWAKE="caffeinate -ims"
+          $KEEPAWAKE python -m radar.run $RUN_ARGS 2>&1 | tee "$LOGDIR/run-$(TZ=Asia/Seoul date '+%Y%m%d-%H%M').log"
 
       - name: Save data
         if: github.event_name != 'push'
