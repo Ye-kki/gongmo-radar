@@ -58,7 +58,13 @@ if [ -f ./.runner ]; then ./svc.sh stop >/dev/null 2>&1 || true; ./svc.sh uninst
 ./config.sh --unattended --replace --url "$REPO_URL" --token "$TOKEN" \
   --name "korea-mac" --labels "self-hosted,korea,macos" --work _work
 
-echo "== 4/4 자동 실행 설정 (로그인하면 자동 시작)"
+echo "== 4/4 자동 실행 설정 (로그인하면 자동 시작, 꺼지면 1분 뒤 다시 켜짐)"
+# 인터넷이 오래 끊기면 실행기가 스스로 꺼지는 일이 있어서 KeepAlive로 다시 켜지게 합니다.
+T=./bin/actions.runner.plist.template
+if ! grep -q KeepAlive "$T"; then
+  perl -0pi -e 's#(<key>RunAtLoad</key>\s*<true/>)#$1\n    <key>KeepAlive</key>\n    <true/>\n    <key>ThrottleInterval</key>\n    <integer>60</integer>#' "$T"
+fi
+rm -f ~/Library/LaunchAgents/actions.runner.*gongmo-radar*.plist
 ./svc.sh install
 ./svc.sh start
 
