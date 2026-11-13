@@ -93,8 +93,14 @@ jobs:
           git config user.name "gongmo-radar-bot"
           git config user.email "actions@users.noreply.github.com"
           git add data
-          git diff --cached --quiet || git commit -m "data: $(TZ=Asia/Seoul date '+%Y-%m-%d %H:%M')"
-          git push
+          git diff --cached --quiet && exit 0
+          git commit -m "data: $(TZ=Asia/Seoul date '+%Y-%m-%d %H:%M')"
+          # 수집하는 동안 다른 수정이 먼저 올라왔으면 그 위에 얹어서 올립니다 (안 그러면 push가 거절돼 수집분이 사라짐)
+          for i in 1 2 3; do
+            git pull --rebase origin main && git push && exit 0
+            sleep 5
+          done
+          exit 1
 
   # 사이트 만들기·배포는 항상 GitHub 서버(리눅스)에서 합니다. Pages 업로드 도구가 Mac에는 없는 gtar를 쓰기 때문입니다.
   build:
