@@ -54,64 +54,65 @@
   "since": "2026-10-30"
  },
  "org-acc": {
-  "scanned": "2026-11-06"
+  "scanned": "2026-11-13"
  },
  "org-ansanart": {
   "boards": [],
   "boards_checked": "2026-11-06",
   "boards_v": 2,
-  "scanned": "2026-11-06",
+  "scanned": "2026-11-13",
   "since": "2026-10-30"
  },
  "org-arte": {
-  "scanned": "2026-11-06"
+  "scanned": "2026-11-13"
  },
  "org-artgy": {
   "boards": [],
   "boards_checked": "2026-11-05",
   "boards_v": 2,
-  "scanned": "2026-11-06"
+  "scanned": "2026-11-13"
  },
  "org-ayac": {
-  "scanned": "2026-11-06"
+  "scanned": "2026-11-13"
  },
  "org-bpcf": {
   "boards": [],
-  "boards_checked": "2026-11-03",
-  "scanned": "2026-11-06",
+  "boards_checked": "2026-11-13",
+  "boards_v": 2,
+  "scanned": "2026-11-13",
   "since": "2026-11-01"
  },
  "org-bscf": {
   "boards": [],
   "boards_checked": "2026-11-05",
   "boards_v": 2,
-  "scanned": "2026-11-06",
+  "scanned": "2026-11-13",
   "since": "2026-10-30"
  },
  "org-bsjincf": {
-  "scanned": "2026-11-06"
+  "scanned": "2026-11-13"
  },
  "org-cacf": {
   "boards": [],
   "boards_checked": "2026-11-05",
   "boards_v": 2,
-  "scanned": "2026-11-06"
+  "scanned": "2026-11-13"
  },
  "org-cbfc": {
-  "scanned": "2026-11-06"
+  "scanned": "2026-11-13"
  },
  "org-cccf": {
-  "scanned": "2026-11-06"
+  "scanned": "2026-11-13"
  },
  "org-cfsc": {
   "boards": [],
   "boards_checked": "2026-11-05",
   "boards_v": 2,
-  "scanned": "2026-11-06",
+  "scanned": "2026-11-13",
   "since": "2026-10-30"
  },
  "org-chilgokctf": {
-  "scanned": "2026-11-06"
+  "scanned": "2026-11-13"
  },
  "org-cjcf": {
   "boards": [
@@ -123,7 +124,7 @@
   ],
   "boards_checked": "2026-11-05",
   "boards_v": 2,
-  "scanned": "2026-11-06",
+  "scanned": "2026-11-13",
   "since": "2026-11-05"
  },
  "org-cjculture": {
@@ -141,7 +142,7 @@
   ],
   "boards_checked": "2026-11-05",
   "boards_v": 2,
-  "scanned": "2026-11-06",
+  "scanned": "2026-11-13",
   "since": "2026-11-05"
  },
  "org-cwcf": {
@@ -159,7 +160,7 @@
   ],
   "boards_checked": "2026-11-05",
   "boards_v": 2,
-  "scanned": "2026-11-06",
+  "scanned": "2026-11-13",
   "since": "2026-10-30"
  },
  "org-damyangcf": {
@@ -177,26 +178,26 @@
   ],
   "boards_checked": "2026-11-06",
   "boards_v": 2,
-  "scanned": "2026-11-06",
+  "scanned": "2026-11-13",
   "since": "2026-10-30"
  },
  "org-dangjinart": {
-  "scanned": "2026-11-06"
+  "scanned": "2026-11-13"
  },
  "org-dbfac": {
   "boards": [],
   "boards_checked": "2026-11-05",
   "boards_v": 2,
-  "scanned": "2026-11-06"
+  "scanned": "2026-11-13"
  },
  "org-dcaf": {
-  "scanned": "2026-11-06"
+  "scanned": "2026-11-13"
  },
  "org-ddmac": {
   "boards": [],
   "boards_checked": "2026-11-05",
   "boards_v": 2,
-  "scanned": "2026-11-06"
+  "scanned": "2026-11-13"
  },
  "org-dgdgcf": {
   "boards": [
@@ -208,29 +209,29 @@
   ],
   "boards_checked": "2026-11-06",
   "boards_v": 2,
-  "scanned": "2026-11-06",
+  "scanned": "2026-11-13",
   "since": "2026-10-30"
  },
  "org-dgfca": {
   "boards": [],
   "boards_checked": "2026-11-06",
   "boards_v": 2,
-  "scanned": "2026-11-06"
+  "scanned": "2026-11-13"
  },
  "org-dsart": {
-  "scanned": "2026-11-06"
+  "scanned": "2026-11-13"
  },
  "org-dscf": {
   "boards": [],
   "boards_checked": "2026-11-05",
   "boards_v": 2,
-  "scanned": "2026-11-06"
+  "scanned": "2026-11-13"
  },
  "org-efac": {
   "boards": [],
   "boards_checked": "2026-11-05",
   "boards_v": 2,
-  "scanned": "2026-11-06",
+  "scanned": "2026-11-13",
   "since": "2026-10-30"
  },
  "org-gacf": {
@@ -243,7 +244,7 @@
   ],
   "boards_checked": "2026-11-05",
   "boards_v": 2,
-  "scanned": "2026-11-06",
+  "scanned": "2026-11-13",
   "since": "2026-11-05"
  },
  "org-gangnam": {
@@ -261,14 +262,14 @@
   ],
   "boards_checked": "2026-11-05",
   "boards_v": 2,
-  "scanned": "2026-11-06",
+  "scanned": "2026-11-13",
   "since": "2026-10-30"
  },
  "org-garts": {
   "boards": [],
   "boards_checked": "2026-11-05",
   "boards_v": 2,
-  "scanned": "2026-11-06",
+  "scanned": "2026-11-13",
   "since": "2026-10-31"
  },
  "org-gbcf": {
@@ -281,7 +282,7 @@
   ],
   "boards_checked": "2026-11-05",
   "boards_v": 2,
-  "scanned": "2026-11-06",
+  "scanned": "2026-11-13",
   "since": "2026-10-30"
  },
  "org-gcaf": {
@@ -299,7 +300,7 @@
   ],
   "boards_checked": "2026-11-05",
   "boards_v": 2,
-  "scanned": "2026-11-06",
+  "scanned": "2026-11-13",
   "since": "2026-11-05"
  },
  "org-gcart": {
@@ -312,27 +313,27 @@
   ],
   "boards_checked": "2026-11-06",
   "boards_v": 2,
-  "scanned": "2026-11-06",
+  "scanned": "2026-11-13",
   "since": "2026-10-30"
  },
  "org-gccf": {
   "boards": [],
   "boards_checked": "2026-11-05",
   "boards_v": 2,
-  "scanned": "2026-11-06"
+  "scanned": "2026-11-13"
  },
  "org-gcf": {
   "boards": [],
   "boards_checked": "2026-11-05",
   "boards_v": 2,
-  "scanned": "2026-11-06",
+  "scanned": "2026-11-13",
   "since": "2026-10-30"
  },
  "org-gcfac": {
   "boards": [],
   "boards_checked": "2026-11-06",
   "boards_v": 2,
-  "scanned": "2026-11-06"
+  "scanned": "2026-11-13"
  },
  "org-gctf": {
   "boards": [
@@ -344,17 +345,17 @@
   ],
   "boards_checked": "2026-11-06",
   "boards_v": 2,
-  "scanned": "2026-11-06",
+  "scanned": "2026-11-13",
   "since": "2026-10-30"
  },
  "org-geojeart": {
-  "scanned": "2026-11-06"
+  "scanned": "2026-11-13"
  },
  "org-gfac": {
   "boards": [],
   "boards_checked": "2026-11-06",
   "boards_v": 2,
-  "scanned": "2026-11-06",
+  "scanned": "2026-11-13",
   "since": "2026-10-30"
  },
  "org-ggcf": {
@@ -372,21 +373,21 @@
   ],
   "boards_checked": "2026-11-05",
   "boards_v": 2,
-  "scanned": "2026-11-06",
+  "scanned": "2026-11-13",
   "since": "2026-10-31"
  },
  "org-gjcf": {
-  "scanned": "2026-11-06"
+  "scanned": "2026-11-13"
  },
  "org-gjfac": {
   "boards": [],
   "boards_checked": "2026-11-05",
   "boards_v": 2,
-  "scanned": "2026-11-06",
+  "scanned": "2026-11-13",
   "since": "2026-10-30"
  },
  "org-gmcf": {
-  "scanned": "2026-11-06"
+  "scanned": "2026-11-13"
  },
  "org-gncaf": {
   "boards": [
@@ -398,14 +399,14 @@
   ],
   "boards_checked": "2026-11-05",
   "boards_v": 2,
-  "scanned": "2026-11-06",
+  "scanned": "2026-11-13",
   "since": "2026-10-30"
  },
  "org-gongjucf": {
   "boards": [],
   "boards_checked": "2026-11-06",
   "boards_v": 2,
-  "scanned": "2026-11-06"
+  "scanned": "2026-11-13"
  },
  "org-goseongcf": {
   "boards": [
@@ -417,13 +418,14 @@
   ],
   "boards_checked": "2026-11-06",
   "boards_v": 2,
-  "scanned": "2026-11-06",
+  "scanned": "2026-11-13",
   "since": "2026-11-01"
  },
  "org-gsctf": {
   "boards": [],
-  "boards_checked": "2026-11-03",
-  "scanned": "2026-11-06"
+  "boards_checked": "2026-11-13",
+  "boards_v": 2,
+  "scanned": "2026-11-13"
  },
  "org-gucf": {
   "boards": [
@@ -440,41 +442,41 @@
   ],
   "boards_checked": "2026-11-06",
   "boards_v": 2,
-  "scanned": "2026-11-06",
+  "scanned": "2026-11-13",
   "since": "2026-11-03"
  },
  "org-gunpocf": {
   "boards": [],
   "boards_checked": "2026-11-05",
   "boards_v": 2,
-  "scanned": "2026-11-06",
+  "scanned": "2026-11-13",
   "since": "2026-10-30"
  },
  "org-gunwi3964": {
-  "scanned": "2026-11-06"
+  "scanned": "2026-11-13"
  },
  "org-guriart": {
   "boards": [],
   "boards_checked": "2026-11-06",
   "boards_v": 2,
-  "scanned": "2026-11-06"
+  "scanned": "2026-11-13"
  },
  "org-guroartsvalley": {
   "boards": [],
   "boards_checked": "2026-11-06",
   "boards_v": 2,
-  "scanned": "2026-11-06",
+  "scanned": "2026-11-13",
   "since": "2026-10-31"
  },
  "org-gwcf": {
   "boards": [],
   "boards_checked": "2026-11-05",
   "boards_v": 2,
-  "scanned": "2026-11-06",
+  "scanned": "2026-11-13",
   "since": "2026-10-30"
  },
  "org-hbcf": {
-  "scanned": "2026-11-06"
+  "scanned": "2026-11-13"
  },
  "org-hcf": {
   "boards": [
@@ -486,57 +488,72 @@
   ],
   "boards_checked": "2026-11-06",
   "boards_v": 2,
-  "scanned": "2026-11-06",
+  "scanned": "2026-11-13",
   "since": "2026-10-30"
  },
  "org-hongju": {
   "boards": [],
   "boards_checked": "2026-11-06",
   "boards_v": 2,
-  "scanned": "2026-11-06",
+  "scanned": "2026-11-13",
   "since": "2026-10-31"
  },
  "org-hub-cfac": {
-  "scanned": "2026-11-06"
+  "scanned": "2026-11-13"
  },
  "org-i-eum": {
-  "scanned": "2026-11-06"
+  "scanned": "2026-11-13"
  },
  "org-ictf": {
-  "scanned": "2026-11-06"
+  "boards": [
+   {
+    "link_regex": "/\\d+/inner\\.php\\?(?:.*&)?no=\\w+",
+    "name": "공지사항",
+    "url": "https://www.ictf.or.kr/2022/inner.php?sMenu=G2000"
+   },
+   {
+    "link_regex": "/\\d+/inner\\.php\\?(?:.*&)?no=\\w+",
+    "name": "기부금품모집 및 사용내역",
+    "url": "https://www.ictf.or.kr/2022/inner.php?sMenu=L3000"
+   }
+  ],
+  "boards_checked": "2026-11-13",
+  "boards_v": 2,
+  "scanned": "2026-11-13",
+  "since": "2026-11-13"
  },
  "org-idfac": {
-  "scanned": "2026-11-06"
+  "scanned": "2026-11-13"
  },
  "org-ifac": {
   "boards": [],
   "boards_checked": "2026-11-06",
   "boards_v": 2,
-  "scanned": "2026-11-06"
+  "scanned": "2026-11-13"
  },
  "org-injeart": {
   "boards": [],
   "boards_checked": "2026-11-05",
   "boards_v": 2,
-  "scanned": "2026-11-06"
+  "scanned": "2026-11-13"
  },
  "org-iscf": {
   "boards": [],
   "boards_checked": "2026-11-05",
   "boards_v": 2,
-  "scanned": "2026-11-06"
+  "scanned": "2026-11-13"
  },
  "org-jacf": {
   "boards": [],
   "boards_checked": "2026-11-05",
   "boards_v": 2,
-  "scanned": "2026-11-06"
+  "scanned": "2026-11-13"
  },
  "org-jbct": {
   "boards": [],
   "boards_checked": "2026-11-05",
   "boards_v": 2,
-  "scanned": "2026-11-06"
+  "scanned": "2026-11-13"
  },
  "org-jccf": {
   "boards": [
@@ -553,17 +570,17 @@
   ],
   "boards_checked": "2026-11-05",
   "boards_v": 2,
-  "scanned": "2026-11-06",
+  "scanned": "2026-11-13",
   "since": "2026-10-30"
  },
  "org-jfac": {
   "boards": [],
   "boards_checked": "2026-11-06",
   "boards_v": 2,
-  "scanned": "2026-11-06"
+  "scanned": "2026-11-13"
  },
  "org-jjcf": {
-  "scanned": "2026-11-06"
+  "scanned": "2026-11-13"
  },
  "org-jjct": {
   "boards": [
@@ -580,35 +597,35 @@
   ],
   "boards_checked": "2026-11-06",
   "boards_v": 2,
-  "scanned": "2026-11-06",
+  "scanned": "2026-11-13",
   "since": "2026-11-06"
  },
  "org-jncf": {
-  "scanned": "2026-11-06"
+  "scanned": "2026-11-13"
  },
  "org-jnfac": {
   "boards": [],
   "boards_checked": "2026-11-06",
   "boards_v": 2,
-  "scanned": "2026-11-06"
+  "scanned": "2026-11-13"
  },
  "org-kawf": {
   "boards": [],
   "boards_checked": "2026-11-05",
   "boards_v": 2,
-  "scanned": "2026-11-06"
+  "scanned": "2026-11-13"
  },
  "org-kocaca": {
   "boards": [],
   "boards_checked": "2026-11-05",
   "boards_v": 2,
-  "scanned": "2026-11-06"
+  "scanned": "2026-11-13"
  },
  "org-kofice": {
   "boards": [],
   "boards_checked": "2026-11-06",
   "boards_v": 2,
-  "scanned": "2026-11-06",
+  "scanned": "2026-11-13",
   "since": "2026-11-01"
  },
  "org-kotpa": {
@@ -626,34 +643,36 @@
   ],
   "boards_checked": "2026-11-06",
   "boards_v": 2,
-  "scanned": "2026-11-06",
+  "scanned": "2026-11-13",
   "since": "2026-10-31"
  },
  "org-mfac": {
   "boards": [],
   "boards_checked": "2026-11-05",
   "boards_v": 2,
-  "scanned": "2026-11-06",
+  "scanned": "2026-11-13",
   "since": "2026-10-30"
  },
  "org-mmca": {
   "boards": [],
-  "boards_checked": "2026-11-03",
-  "scanned": "2026-11-06"
+  "boards_checked": "2026-11-13",
+  "boards_v": 2,
+  "scanned": "2026-11-13"
  },
  "org-mycf": {
-  "scanned": "2026-11-06"
+  "scanned": "2026-11-13"
  },
  "org-namdongcf": {
   "boards": [],
   "boards_checked": "2026-11-06",
   "boards_v": 2,
-  "scanned": "2026-11-06"
+  "scanned": "2026-11-13"
  },
  "org-namhaetour": {
   "boards": [],
-  "boards_checked": "2026-11-03",
-  "scanned": "2026-11-06",
+  "boards_checked": "2026-11-13",
+  "boards_v": 2,
+  "scanned": "2026-11-13",
   "since": "2026-11-01"
  },
  "org-naruart": {
@@ -664,8 +683,9 @@
     "url": "https://www.naruart.or.kr/community/notice_list.php"
    }
   ],
-  "boards_checked": "2026-11-03",
-  "scanned": "2026-11-06",
+  "boards_checked": "2026-11-13",
+  "boards_v": 2,
+  "scanned": "2026-11-13",
   "since": "2026-11-01"
  },
  "org-njcf": {
@@ -681,8 +701,9 @@
     "url": "https://www.njcf.or.kr/www/community/notices"
    }
   ],
-  "boards_checked": "2026-11-03",
-  "scanned": "2026-11-06",
+  "boards_checked": "2026-11-13",
+  "boards_v": 2,
+  "scanned": "2026-11-13",
   "since": "2026-11-01"
  },
  "org-nowonarts": {
@@ -700,35 +721,36 @@
   ],
   "boards_checked": "2026-11-05",
   "boards_v": 2,
-  "scanned": "2026-11-06",
+  "scanned": "2026-11-13",
   "since": "2026-10-30"
  },
  "org-nsart": {
   "boards": [],
-  "boards_checked": "2026-11-03",
-  "scanned": "2026-11-06",
+  "boards_checked": "2026-11-13",
+  "boards_v": 2,
+  "scanned": "2026-11-13",
   "since": "2026-11-01"
  },
  "org-osan": {
-  "scanned": "2026-11-06"
+  "scanned": "2026-11-13"
  },
  "org-pccf": {
   "boards": [],
   "boards_checked": "2026-11-05",
   "boards_v": 2,
-  "scanned": "2026-11-06"
+  "scanned": "2026-11-13"
  },
  "org-pcfac": {
   "boards": [],
   "boards_checked": "2026-11-06",
   "boards_v": 2,
-  "scanned": "2026-11-06"
+  "scanned": "2026-11-13"
  },
  "org-phcf": {
   "boards": [],
   "boards_checked": "2026-11-05",
   "boards_v": 2,
-  "scanned": "2026-11-06"
+  "scanned": "2026-11-13"
  },
  "org-rcda": {
   "boards": [
@@ -740,13 +762,14 @@
   ],
   "boards_checked": "2026-11-05",
   "boards_v": 2,
-  "scanned": "2026-11-06",
+  "scanned": "2026-11-13",
   "since": "2026-11-03"
  },
  "org-sbculture": {
   "boards": [],
-  "boards_checked": "2026-11-03",
-  "scanned": "2026-11-06"
+  "boards_checked": "2026-11-13",
+  "boards_v": 2,
+  "scanned": "2026-11-13"
  },
  "org-sccf": {
   "boards": [
@@ -763,24 +786,24 @@
   ],
   "boards_checked": "2026-11-06",
   "boards_v": 2,
-  "scanned": "2026-11-06",
+  "scanned": "2026-11-13",
   "since": "2026-11-06"
  },
  "org-sdfac": {
   "boards": [],
   "boards_checked": "2026-11-05",
   "boards_v": 2,
-  "scanned": "2026-11-06"
+  "scanned": "2026-11-13"
  },
  "org-seochocf": {
   "boards": [],
   "boards_checked": "2026-11-06",
   "boards_v": 2,
-  "scanned": "2026-11-06",
+  "scanned": "2026-11-13",
   "since": "2026-10-30"
  },
  "org-seosancf": {
-  "scanned": "2026-11-06"
+  "scanned": "2026-11-13"
  },
  "org-sfac": {
   "boards": [],
@@ -790,19 +813,19 @@
   "boards": [],
   "boards_checked": "2026-11-05",
   "boards_v": 2,
-  "scanned": "2026-11-06"
+  "scanned": "2026-11-13"
  },
  "org-snart": {
   "boards": [],
   "boards_checked": "2026-11-06",
   "boards_v": 2,
-  "scanned": "2026-11-06"
+  "scanned": "2026-11-13"
  },
  "org-sokchocf": {
-  "scanned": "2026-11-06"
+  "scanned": "2026-11-13"
  },
  "org-songpafac": {
-  "scanned": "2026-11-06"
+  "scanned": "2026-11-13"
  },
  "org-sscf": {
   "boards": [
@@ -819,7 +842,7 @@
   ],
   "boards_checked": "2026-11-06",
   "boards_v": 2,
-  "scanned": "2026-11-06",
+  "scanned": "2026-11-13",
   "since": "2026-11-06"
  },
  "org-stcf": {
@@ -828,15 +851,11 @@
     "link_regex": "/board/download\\.do\\?(?:.*&)?idx=\\w+",
     "name": "단편영화 공모전",
     "url": "https://www.stcf.or.kr/01298/01315.web?gcode=1001&idx=987&amode=view&"
-   },
-   {
-    "link_regex": "/\\d+/\\d+\\.web\\?(?:.*&)?idx=\\w+",
-    "name": "공지사항",
-    "url": "https://www.stcf.or.kr/01298/01315.web"
    }
   ],
-  "boards_checked": "2026-11-03",
-  "scanned": "2026-11-06",
+  "boards_checked": "2026-11-13",
+  "boards_v": 2,
+  "scanned": "2026-11-13",
   "since": "2026-11-03"
  },
  "org-swcf": {
@@ -854,29 +873,29 @@
   ],
   "boards_checked": "2026-11-05",
   "boards_v": 2,
-  "scanned": "2026-11-06",
+  "scanned": "2026-11-13",
   "since": "2026-10-30"
  },
  "org-tyhansancf": {
-  "scanned": "2026-11-06"
+  "scanned": "2026-11-13"
  },
  "org-uac": {
   "boards": [],
   "boards_checked": "2026-11-05",
   "boards_v": 2,
-  "scanned": "2026-11-06"
+  "scanned": "2026-11-13"
  },
  "org-uacf": {
-  "scanned": "2026-11-06"
+  "scanned": "2026-11-13"
  },
  "org-ucf": {
-  "scanned": "2026-11-06"
+  "scanned": "2026-11-13"
  },
  "org-uwcf": {
   "boards": [],
   "boards_checked": "2026-11-06",
   "boards_v": 2,
-  "scanned": "2026-11-06",
+  "scanned": "2026-11-13",
   "since": "2026-11-01"
  },
  "org-wcf": {
@@ -889,36 +908,36 @@
   ],
   "boards_checked": "2026-11-05",
   "boards_v": 2,
-  "scanned": "2026-11-06",
+  "scanned": "2026-11-13",
   "since": "2026-10-30"
  },
  "org-yctf": {
   "boards": [],
   "boards_checked": "2026-11-06",
   "boards_v": 2,
-  "scanned": "2026-11-06"
+  "scanned": "2026-11-13"
  },
  "org-ydct": {
-  "scanned": "2026-11-06"
+  "scanned": "2026-11-13"
  },
  "org-ydft": {
-  "scanned": "2026-11-06"
+  "scanned": "2026-11-13"
  },
  "org-ydpcf": {
   "boards": [],
   "boards_checked": "2026-11-05",
   "boards_v": 2,
-  "scanned": "2026-11-06",
+  "scanned": "2026-11-13",
   "since": "2026-10-30"
  },
  "org-yfac": {
-  "scanned": "2026-11-06"
+  "scanned": "2026-11-13"
  },
  "org-yicf": {
   "boards": [],
   "boards_checked": "2026-11-05",
   "boards_v": 2,
-  "scanned": "2026-11-06"
+  "scanned": "2026-11-13"
  },
  "org-yjcf": {
   "boards": [
@@ -928,8 +947,9 @@
     "url": "https://www.yjcf.or.kr/brd/board/200/L/menu/341"
    }
   ],
-  "boards_checked": "2026-11-03",
-  "scanned": "2026-11-06",
+  "boards_checked": "2026-11-13",
+  "boards_v": 2,
+  "scanned": "2026-11-13",
   "since": "2026-11-01"
  },
  "org-ypcf": {
@@ -947,14 +967,14 @@
   ],
   "boards_checked": "2026-11-06",
   "boards_v": 2,
-  "scanned": "2026-11-06",
+  "scanned": "2026-11-13",
   "since": "2026-10-31"
  },
  "org-ysfac": {
   "boards": [],
   "boards_checked": "2026-11-05",
   "boards_v": 2,
-  "scanned": "2026-11-06"
+  "scanned": "2026-11-13"
  },
  "org-ywcf": {
   "boards": [
@@ -971,7 +991,7 @@
   ],
   "boards_checked": "2026-11-06",
   "boards_v": 2,
-  "scanned": "2026-11-06",
+  "scanned": "2026-11-13",
   "since": "2026-10-30"
  },
  "sba-notice": {

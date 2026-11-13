@@ -1,29 +1,29 @@
 {
  "ai": {
-  "calls": 19,
-  "cli_cost_usd": 0.1293,
+  "calls": 21,
+  "cli_cost_usd": 0.1597,
   "errors": [],
-  "est_cost_usd": 0.109,
-  "input_tokens": 371086,
+  "est_cost_usd": 0.1226,
+  "input_tokens": 525486,
   "mode": "subscription",
-  "output_tokens": 143824,
+  "output_tokens": 140176,
   "searches": 0
  },
  "counts": {
-  "baseline": 14,
-  "candidates": 137,
-  "changed": 5,
-  "changed_applied": 5,
-  "fetched": 131,
-  "filtered": 21,
-  "new": 13,
+  "baseline": 4,
+  "candidates": 150,
+  "changed": 12,
+  "changed_applied": 12,
+  "fetched": 144,
+  "filtered": 29,
+  "new": 14,
   "over_limit": 0,
-  "read_failed": 12,
-  "rechecked": 41,
-  "same": 3,
-  "sent": 109,
-  "skipped": 86,
-  "updated": 7
+  "read_failed": 8,
+  "rechecked": 47,
+  "same": 2,
+  "sent": 125,
+  "skipped": 94,
+  "updated": 15
  },
  "discovery": [],
  "read_errors": [
@@ -34,20 +34,20 @@
   "K-Startup 사업공고: https://www.k-startup.go.kr/magicsso/requestAuthEx.jsp?RelayState=https://www.kosmes.or.kr → HTTP 404: https://www.k-startup.go.kr/magicsso/requestAuthEx.jsp?RelayState=https://www.kosmes.or.kr/magicsso/requestCon",
   "K-Startup 사업공고: https://www.k-startup.go.kr/magicsso/requestAuthEx.jsp?RelayState=https://www.smes.go.kr/b → HTTP 404: https://www.k-startup.go.kr/magicsso/requestAuthEx.jsp?RelayState=https://www.smes.go.kr/binet/magicsso/reques"
  ],
- "rendered_pages": 10,
- "runAt": "2026-11-06 18:24",
+ "rendered_pages": 3,
+ "runAt": "2026-11-13 19:52",
  "sources": [
   {
    "board": "art",
    "id": "contestkorea-design",
-   "links": 53,
+   "links": 52,
    "name": "콘테스트코리아 미술·디자인",
-   "new": 16,
+   "new": 39,
    "sample": [
+    "[발표 11/27일로 연기] 문화·관광·콘텐츠 분야 대국민... | https://contestkorea.com/sub/view.php?int_gbn=1&Txt_bcode=031410001&str_no=202607090072",
     "[수상자 발표] 2026 고성 해양심층수 브랜드 AI 영상 공모전 | https://contestkorea.com/sub/view.php?int_gbn=1&Txt_bcode=031210001&str_no=202607200008",
     "미술•디자인•웹툰 제1회 중앙일보 어린이 미술대회 | https://www.contestkorea.com/sub/view.php?int_gbn=1&Txt_bcode=030610001&str_no=202610010030",
-    "미술•디자인•웹툰 (재)양산문화재단 CI 재공모 | https://www.contestkorea.com/sub/view.php?int_gbn=1&Txt_bcode=030610001&str_no=202611050026",
-    "미술•디자인•웹툰 Tree Eco 파충류 캐릭터 디자인 공모전 | https://www.contestkorea.com/sub/view.php?int_gbn=1&Txt_bcode=030610001&str_no=202611050005"
+    "미술•디자인•웹툰 쉽고 바른 정보통신기술(ICT) 공공언어 웹툰 공모전 | https://www.contestkorea.com/sub/view.php?int_gbn=1&Txt_bcode=030610001&str_no=202611130010"
    ],
    "status": "ok",
    "url": "https://www.contestkorea.com/sub/list.php?int_gbn=1&Txt_bcode=030610001"
@@ -57,12 +57,12 @@
    "id": "wevity-design",
    "links": 15,
    "name": "위비티 디자인·캐릭터",
-   "new": 3,
+   "new": 12,
    "sample": [
     "SPECIAL 제14회 한옥디자인 국제 공모전 디자인/캐릭터/웹툰, 건축 | https://www.wevity.com/?c=find&s=1&gub=1&cidx=19&gbn=view&gp=1&ix=109966",
-    "생성형 AI를 활용한 평택시청소년재단 캐릭터(마스코트) 공모전 신규 | https://www.wevity.com/?c=find&s=1&gub=1&cidx=19&gbn=view&gp=1&ix=112204",
-    "Tree Eco 파충류 캐릭터 디자인 공모전 | https://www.wevity.com/?c=find&s=1&gub=1&cidx=19&gbn=view&gp=1&ix=112177",
-    "2026 순천 IP 창·제작 지원사업 참여 기업 모집 공고 | https://www.wevity.com/?c=find&s=1&gub=1&cidx=19&gbn=view&gp=1&ix=112168"
+    "SPECIAL 제1회 중앙일보 어린이 미술대회 디자인/캐릭터/웹툰, 예체 | https://www.wevity.com/?c=find&s=1&gub=1&cidx=19&gbn=view&gp=1&ix=111838",
+    "SPECIAL 제5회 한국여성작가 회화공모전 & K-WOMEN IN PA | https://www.wevity.com/?c=find&s=1&gub=1&cidx=19&gbn=view&gp=1&ix=111880",
+    "2027 영암 왕인문화축제 홍보물 디자인 공모전 신규 | https://www.wevity.com/?c=find&s=1&gub=1&cidx=19&gbn=view&gp=1&ix=112350"
    ],
    "status": "ok",
    "url": "https://www.wevity.com/?c=find&s=1&gub=1&cidx=19"
@@ -72,12 +72,12 @@
    "id": "wevity-art",
    "links": 15,
    "name": "위비티 예체능·미술",
-   "new": 0,
+   "new": 2,
    "sample": [
-    "SPECIAL 2026 대경권 캠퍼스 IR 챔피언십 (창업 공모전) 기획 | https://www.wevity.com/?c=find&s=1&gub=1&cidx=20&gbn=view&gp=1&ix=111768",
-    "SPECIAL 2026 DATA·AI 분석 경진대회 웹/모바일/IT, 과 | https://www.wevity.com/?c=find&s=1&gub=1&cidx=20&gbn=view&gp=1&ix=110023",
-    "SPECIAL 선샤인 TIME TRAVEL 숏폼 영상 공모전 기획/아이디 | https://www.wevity.com/?c=find&s=1&gub=1&cidx=20&gbn=view&gp=1&ix=111750",
-    "SPECIAL 7th Da-Ho Award Asian Internatio | https://www.wevity.com/?c=find&s=1&gub=1&cidx=20&gbn=view&gp=1&ix=110179"
+    "SPECIAL [제3회] 매경 AI 광고 공모전 대한민국 AI 광고대상  | https://www.wevity.com/?c=find&s=1&gub=1&cidx=20&gbn=view&gp=1&ix=112073",
+    "SPECIAL 건강보험심사평가원 광고 온에어 기념 이벤트 광고/마케팅,  | https://www.wevity.com/?c=find&s=1&gub=1&cidx=20&gbn=view&gp=1&ix=112063",
+    "SPECIAL 7th Da-Ho Award Asian Internatio | https://www.wevity.com/?c=find&s=1&gub=1&cidx=20&gbn=view&gp=1&ix=110179",
+    "SPECIAL VIVID RE:PLAY 6개 IP로 만드는 AI영상 공모 | https://www.wevity.com/?c=find&s=1&gub=1&cidx=20&gbn=view&gp=1&ix=112343"
    ],
    "status": "ok",
    "url": "https://www.wevity.com/?c=find&s=1&gub=1&cidx=20"
@@ -87,12 +87,12 @@
    "id": "artculture-contest",
    "links": 100,
    "name": "아트앤컬처 공모란",
-   "new": 6,
+   "new": 15,
    "sample": [
-    "2026 에이셀 전국 청소년 미술 공모전 | https://www.art-culture.co.kr/magazine_contest/2232",
-    "제9회 만화일러스트 공모전 | https://www.art-culture.co.kr/magazine_contest/2231",
-    "제1회 Cliip Ai 웹툰 영상화 공모전 | https://www.art-culture.co.kr/magazine_contest/2230",
-    "산돌구름 레터링 공모전 「내가 좋아하는 한 글 3」 | https://www.art-culture.co.kr/magazine_contest/2229"
+    "건학 50주년 기념 동명대학교 캐릭터 공모전 | https://www.art-culture.co.kr/magazine_contest/2246",
+    "신진 작가 지원 전시 2027 아티스타트 작가모집 | https://www.art-culture.co.kr/magazine_contest/2245",
+    "귀뚜라미 숏폼 챌린지 | https://www.art-culture.co.kr/magazine_contest/2244",
+    "한국연구재단 창립 50주년 기념 엠블럼 디자인 공모전 | https://www.art-culture.co.kr/magazine_contest/2243"
    ],
    "status": "ok",
    "url": "https://www.art-culture.co.kr/magazine_contest"
@@ -132,7 +132,7 @@
    "id": "artnuri",
    "links": 21,
    "name": "아트누리 (전국 문화재단 지원사업 모음)",
-   "new": 2,
+   "new": 9,
    "sample": [
     "아트누리 로고 | https://artnuri.or.kr/",
     "한국지역 문화지원협의회 | https://artnuri.or.kr/content.do?key=2409100004",
@@ -145,14 +145,14 @@
   {
    "board": "art",
    "id": "arko-notice",
-   "links": 9,
+   "links": 10,
    "name": "한국문화예술위원회 공지",
-   "new": 0,
+   "new": 2,
    "sample": [
+    "2027년 국제협업지원 및 인바운드레지던시지원 2차 심의 일정 사전 안내 | https://www.arko.or.kr/board/view/4013?bid=463&page=&cid=1811385",
+    "2027년 문예진흥기금 지원사업 공모 접수 결과 및 향후 일정 안내 01 | https://www.arko.or.kr/board/view/4013?bid=463&page=&cid=1811377",
     "2026년 대한민국 예술과 기업 동반성장 대상 적격성 심사 결과발표 20 | https://www.arko.or.kr/board/view/4013?bid=463&page=&cid=1811354",
-    "2027년 지역 대표예술단체 지원사업 지역의 우수한 예술단체와 공공 공연 | https://artnuri.or.kr/crawler/info/view.do?key=2301170002&encData=sUiBAI0l4sHqoD%2B2npmyDyvPI6tP3p%2FaL9YbfRJz7w0PBZm1EJpnMlsBwvsh76BM",
-    "[해외레지던시참가지원] 2027년 오스트리아 댄스웹(danceWEB) 레 | https://artnuri.or.kr/crawler/info/view.do?key=2301170002&encData=sUiBAI0l4sHqoD%2B2npmyDxKypodMmnHu2n3XD1oG4XgPBZm1EJpnMlsBwvsh76BM",
-    "[해외레지던시참가지원] 2027년 오스트리아 임펄스탄츠 아틀라스 레지던시 | https://artnuri.or.kr/crawler/info/view.do?key=2301170002&encData=sUiBAI0l4sHqoD%2B2npmyDxfggl%2BQfK4LboAEnelw3QsPBZm1EJpnMlsBwvsh76BM"
+    "2027년 지역 대표예술단체 지원사업 지역의 우수한 예술단체와 공공 공연 | https://artnuri.or.kr/crawler/info/view.do?key=2301170002&encData=sUiBAI0l4sHqoD%2B2npmyDyvPI6tP3p%2FaL9YbfRJz7w0PBZm1EJpnMlsBwvsh76BM"
    ],
    "status": "ok",
    "url": "https://www.arko.or.kr/board/list/4013?bid=463"
@@ -169,12 +169,17 @@
   },
   {
    "board": "art",
-   "detail": "HTTPSConnectionPool(host='www.mcst.go.kr', port=443): Max retries exceeded with url: /site/s_culture/cultureSp/cultureSpList.jsp (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.mcst.go.kr', ",
    "id": "mcst-culture-support",
-   "links": 0,
+   "links": 69,
    "name": "문화체육관광부 문화예술 지원사업",
    "new": 0,
-   "status": "error",
+   "sample": [
+    "English (영어) | https://www.mcst.go.kr/english/index.jsp",
+    "中文 (중국어) | https://www.mcst.go.kr/chinese/index.jsp",
+    "日本語 (일본어) | https://www.mcst.go.kr/japanese/index.jsp",
+    "문화체육관광부 | https://www.mcst.go.kr/site/main.jsp"
+   ],
+   "status": "ok",
    "url": "https://www.mcst.go.kr/site/s_culture/cultureSp/cultureSpList.jsp"
   },
   {
@@ -182,12 +187,12 @@
    "id": "kidp-notice",
    "links": 10,
    "name": "한국디자인진흥원 공지",
-   "new": 2,
+   "new": 9,
    "sample": [
-    "한국디자인진흥원·한국산업단지공단, '2025 안전서비스디자인 사례집' 발 | https://kidp.or.kr/?menuno=1202&bbsno=19317&siteno=16&act=view&ztag=rO0ABXQAMzxjYWxsIHR5cGU9ImJvYXJkIiBubz0iNjIyIiBza2luPSJraWRwX2JicyI%2BPC9jYWxsPg%3D%3D",
-    "2025 안전서비스디자인 사례집 - 한국디자인진흥원, 한국산업단지공단,  | https://kidp.or.kr/?menuno=1202&bbsno=19316&siteno=16&act=view&ztag=rO0ABXQAMzxjYWxsIHR5cGU9ImJvYXJkIiBubz0iNjIyIiBza2luPSJraWRwX2JicyI%2BPC9jYWxsPg%3D%3D",
-    "(공문, 포스터) 산업안전디자인 국회 세미나 - 11.20. 국회의원회관 | https://kidp.or.kr/?menuno=1202&bbsno=19314&siteno=16&act=view&ztag=rO0ABXQAMzxjYWxsIHR5cGU9ImJvYXJkIiBubz0iNjIyIiBza2luPSJraWRwX2JicyI%2BPC9jYWxsPg%3D%3D",
-    "기관장 업무추진비 현황 (2026.10) | https://kidp.or.kr/?menuno=1202&bbsno=19313&siteno=16&act=view&ztag=rO0ABXQAMzxjYWxsIHR5cGU9ImJvYXJkIiBubz0iNjIyIiBza2luPSJraWRwX2JicyI%2BPC9jYWxsPg%3D%3D"
+    "[중국센터] 중국 디자인&산업 시장 리포트(China Design Ins | https://kidp.or.kr/?menuno=1202&bbsno=19332&siteno=16&act=view&ztag=rO0ABXQAMzxjYWxsIHR5cGU9ImJvYXJkIiBubz0iNjIyIiBza2luPSJraWRwX2JicyI%2BPC9jYWxsPg%3D%3D",
+    "산업안전디자인 국회세미나 ⑤ : 산업안전디자인 로드맵 연구 - 이현성 교 | https://kidp.or.kr/?menuno=1202&bbsno=19331&siteno=16&act=view&ztag=rO0ABXQAMzxjYWxsIHR5cGU9ImJvYXJkIiBubz0iNjIyIiBza2luPSJraWRwX2JicyI%2BPC9jYWxsPg%3D%3D",
+    "산업안전디자인 국회세미나 ④ : 제조기업 안전디자인 적용 성과 후기 -  | https://kidp.or.kr/?menuno=1202&bbsno=19330&siteno=16&act=view&ztag=rO0ABXQAMzxjYWxsIHR5cGU9ImJvYXJkIiBubz0iNjIyIiBza2luPSJraWRwX2JicyI%2BPC9jYWxsPg%3D%3D",
+    "산업안전디자인 국회세미나 ③ : 센서 기반 충돌사고 예방 안전디자인 -  | https://kidp.or.kr/?menuno=1202&bbsno=19329&siteno=16&act=view&ztag=rO0ABXQAMzxjYWxsIHR5cGU9ImJvYXJkIiBubz0iNjIyIiBza2luPSJraWRwX2JicyI%2BPC9jYWxsPg%3D%3D"
    ],
    "status": "ok",
    "url": "https://kidp.or.kr/?menuno=1202"
@@ -197,11 +202,11 @@
    "id": "scas",
    "links": 12,
    "name": "서울문화재단 지원사업 (SCAS)",
-   "new": 2,
+   "new": 1,
    "sample": [
     "공연장상주단체지원(공연단체) 대상 공연장 진행중 ~2026.11.17 지 | https://www.scas.kr/biz/detail/510?page=1",
     "<제5회 서울예술상> 스팍 포커스상 후보작 공모 대상 예술인 또는 예술단 | https://www.scas.kr/biz/detail/498?page=1",
-    "2027 신당창작아케이드 18기 입주작가 정기공모(신규) 대상 공예 디자 | https://www.scas.kr/biz/detail/522?page=1",
+    "2027년 서울장애예술창작센터 17기 입주작가 정기공모 대상 시각예술 분 | https://www.scas.kr/biz/detail/528?page=1",
     "2027 신당창작아케이드 18기 입주작가 정기공모(연장) 대상 공예 디자 | https://www.scas.kr/biz/detail/521?page=1"
    ],
    "status": "ok",
@@ -210,14 +215,14 @@
   {
    "board": "art",
    "id": "aac-open-calls",
-   "links": 112,
+   "links": 114,
    "name": "Alliance of Artists Communities 오픈콜 (해외 레지던시)",
-   "new": 2,
+   "new": 5,
    "sample": [
-    "AiR 2026 in Portugal - last vacancies | https://artistcommunities.org/directory/open-calls/air-2026-portugal-last-vacancies",
-    "Summer 2027 Byrdcliffe Historic Cottage  | https://artistcommunities.org/directory/open-calls/summer-2027-byrdcliffe-historic-cottage-residency",
-    "Moonlighter Film Camp - Post Production | https://artistcommunities.org/directory/open-calls/moonlighter-film-camp-post-production",
-    "Fuse: Music Residency 2027 | https://artistcommunities.org/directory/open-calls/fuse-music-residency-2027"
+    "Fuse: Music Residency 2027 | https://artistcommunities.org/directory/open-calls/fuse-music-residency-2027",
+    "Sea and Urbanism - Kavala Greece - Open  | https://artistcommunities.org/directory/open-calls/sea-and-urbanism-kavala-greece-open-call-2027",
+    "La Porte Peinte: Open Call for June 2027 | https://artistcommunities.org/directory/open-calls/la-porte-peinte-open-call-june-2027",
+    "Women's Studio Workshop: Artist's Book R | https://artistcommunities.org/directory/open-calls/womens-studio-workshop-artists-book-residency-grant"
    ],
    "status": "ok",
    "url": "https://artistcommunities.org/directory/open-calls"
@@ -237,12 +242,12 @@
    "id": "kcdf-notice",
    "links": 10,
    "name": "공예디자인문화진흥원 사업공모",
-   "new": 0,
+   "new": 1,
    "sample": [
+    "2027년 KCDF갤러리 정기대관 모집안내 | https://www.kcdf.or.kr/brd/board/337/L/menu/284?brdType=R&thisPage=1&bbIdx=9252&brdCodeValue=",
     "2027 KCDF 공예·디자인 공모전시 모집 공고 | https://www.kcdf.or.kr/brd/board/337/L/menu/284?brdType=R&thisPage=1&bbIdx=9218&brdCodeValue=",
     "[AI 오프라인 실습 교육] 2026 공예 온라인 유통 및 AI활용 역량 | https://www.kcdf.or.kr/brd/board/337/L/menu/284?brdType=R&thisPage=1&bbIdx=9213&brdCodeValue=",
-    "2026 한복마름방 한복 소재의 문양 특강(일일특강) 수강생 모집 공고 | https://www.kcdf.or.kr/brd/board/337/L/menu/284?brdType=R&thisPage=1&bbIdx=9178&brdCodeValue=",
-    "2026년 한복마름방 <4차 분기 교육 수강생 모집> 공고 | https://www.kcdf.or.kr/brd/board/337/L/menu/284?brdType=R&thisPage=1&bbIdx=9168&brdCodeValue="
+    "2026 한복마름방 한복 소재의 문양 특강(일일특강) 수강생 모집 공고 | https://www.kcdf.or.kr/brd/board/337/L/menu/284?brdType=R&thisPage=1&bbIdx=9178&brdCodeValue="
    ],
    "status": "ok",
    "url": "https://www.kcdf.or.kr/brd/board/337/L/menu/284"
@@ -252,7 +257,7 @@
    "id": "kstartup-ongoing",
    "links": 58,
    "name": "K-Startup 사업공고",
-   "new": 18,
+   "new": 19,
    "sample": [
     "사업신청관리 | https://www.k-startup.go.kr/passni/kstartup/tokenInfoRelay.jsp?flag=biz",
     "자주하는 질문 | https://www.k-startup.go.kr/web/contents/webFAQ.do",
@@ -304,10 +309,10 @@
    "name": "강동문화재단 공지",
    "new": 1,
    "sample": [
+    "[아트센터 소식] <최태지의 발레 오픈 리허설 Ⅱ - 프레임을 벗어난 춤 | https://www.gdfac.or.kr/community/ko/notice/102637?q=null",
+    "[서울신문] 뭍의 고요함을 춤으로… 백조로 잇는 무용 여정 (2026.1 | https://www.gdfac.or.kr/community/ko/notice/102636?q=null",
     "2026 강동문화재단 GAC Creative Bridge 「아트 굿즈 창 | https://www.gdfac.or.kr/community/ko/notice/102619?q=null",
-    "클래식 토크 콘서트 <두 남자 이야기> 프로그램북 | https://www.gdfac.or.kr/community/ko/notice/102400?q=null",
-    "[연합뉴스] 강동문화재단, '지방공공기관 발전' 행안부장관 표창(2026 | https://www.gdfac.or.kr/community/ko/notice/102395?q=null",
-    "[아트센터 소식] 목요예술무대Ⅳ <우리동네 명작극장> 상영작 변경 안내 | https://www.gdfac.or.kr/community/ko/notice/102354?q=null"
+    "클래식 토크 콘서트 <두 남자 이야기> 프로그램북 | https://www.gdfac.or.kr/community/ko/notice/102400?q=null"
    ],
    "status": "ok",
    "url": "https://www.gdfac.or.kr/community/ko/notice"
@@ -332,7 +337,7 @@
    "id": "designboom-competitions",
    "links": 15,
    "name": "designboom competitions",
-   "new": 1,
+   "new": 0,
    "sample": [
     "Asia Design Prize 2027 | https://www.designboom.com/competition/asia-design-prize-2027/",
     "2027 NYX Design Awards | https://www.designboom.com/competition/2027-nyx-design-awards/",
@@ -491,12 +496,12 @@
    "kind": "org",
    "links": 10,
    "name": "강북문화재단",
-   "new": 1,
+   "new": 4,
    "sample": [
-    "[참여희망업체 견적서 제출] 강북문화재단 무대조명 유지보수 및 시스템 개 | https://www.gbcf.or.kr/load.asp?subPage=510.view&cate=&idx=1956&searchValue=&searchType=&page=1",
-    "(재)강북문화재단 2026년 제4차 정규직 및 기간제근로자 공개채용 서류 | https://www.gbcf.or.kr/load.asp?subPage=510.view&cate=&idx=1954&searchValue=&searchType=&page=1",
-    "[참여희망업체 견적서 제출] 강북문화재단 자전거주차장 소공연장 자산(무전 | https://www.gbcf.or.kr/load.asp?subPage=510.view&cate=&idx=1953&searchValue=&searchType=&page=1",
-    "강북문화대학 신규강사 모집 취소 안내 | https://www.gbcf.or.kr/load.asp?subPage=510.view&cate=&idx=1950&searchValue=&searchType=&page=1"
+    "[공지사항] [참여희망업체 견적서 제출] 강북문화재단 공연장 무대 소모품 | https://www.gbcf.or.kr/load.asp?subPage=510.view&cate=&idx=1963&searchValue=&searchType=&page=1",
+    "(재)강북문화재단 2026년 제4차 정규직 및 기간제근로자 공개채용 면접 | https://www.gbcf.or.kr/load.asp?subPage=510.view&cate=&idx=1962&searchValue=&searchType=&page=1",
+    "[재공지][참여희망업체 견적서 제출] 강북문화재단 자전거주차장 소공연장  | https://www.gbcf.or.kr/load.asp?subPage=510.view&cate=&idx=1961&searchValue=&searchType=&page=1",
+    "2027년 강북문화예술회관 상반기 정기대관 공고(~11/16 18:00까 | https://www.gbcf.or.kr/load.asp?subPage=510.view&cate=&idx=1957&searchValue=&searchType=&page=1"
    ],
    "status": "ok",
    "url": "https://www.gbcf.or.kr/load.asp?subPage=510"
@@ -622,7 +627,7 @@
    "kind": "org",
    "links": 48,
    "name": "제천문화재단",
-   "new": 1,
+   "new": 3,
    "sample": [
     "조직 및 업무 안내 | https://www.jccf.or.kr/bbs/board.php?bo_table=w1_c&wr_id=4",
     "문화예술진흥사업 | https://www.jccf.or.kr/bbs/board.php?bo_table=w2_c&wr_id=1",
@@ -664,12 +669,12 @@
    "kind": "org",
    "links": 25,
    "name": "경남문화예술진흥원",
-   "new": 0,
+   "new": 1,
    "sample": [
     "경남문화예술진흥원 후원 명칭사용 신청안내 | https://www.gcaf.or.kr/bbs/board.php?bo_table=sub3_1&wr_id=1771",
     "◆행사안내·수강생모집·심사참관 공지를 위한 게시판입니다◆ | https://www.gcaf.or.kr/bbs/board.php?bo_table=sub3_1&wr_id=1322",
     "◆지원사업과 관련된 공모, 결과, 변경 등은 '사업공고·입찰' 게시판을  | https://www.gcaf.or.kr/bbs/board.php?bo_table=sub3_1&wr_id=1321",
-    "2026 문화누리카드 10월 이벤트 결과 공고 | https://www.gcaf.or.kr/bbs/board.php?bo_table=sub3_1&wr_id=1876",
+    "2026 경남콘텐츠코리아랩 콘텐츠 창작스쿨 프로그램 별별창작소 – 생성형 | https://www.gcaf.or.kr/bbs/board.php?bo_table=sub3_1&wr_id=1878",
     "경남 문화예술교육사, 전국 공모 전 휩쓸었다… 대상 포함 4명 수상 | https://www.gcaf.or.kr/bbs/board.php?bo_table=sub3_2&wr_id=1232",
     "경남 게임기업, 국내 대표 인디게임 공모 전 2년연속 수상 | https://www.gcaf.or.kr/bbs/board.php?bo_table=sub3_2&wr_id=1222",
     "경남의 명소가 웹툰의 무대로! ‘경남 3D 웹툰배경 활용 단편웹툰 공모  | https://www.gcaf.or.kr/bbs/board.php?bo_table=sub3_2&wr_id=1213",
@@ -690,10 +695,10 @@
     "2026 인디 플레이테스트 지원 2차 참여기업 모집 공고 | https://www.cjculture.org/sub.php?code=33&mode=view&no=466&category=&page=1&search=&keyword=",
     "2026 교육발전특구 [찾아가는 게임학교] 참여학교 모집 공고 | https://www.cjculture.org/sub.php?code=33&mode=view&no=465&category=&page=1&search=&keyword=",
     "2026 원도심 활성화 시민 공모사업 [3차] 공모 안내 | https://www.cjculture.org/sub.php?code=33&mode=view&no=464&category=&page=1&search=&keyword=",
-    "2026 김수현드라마아트홀 제 2회 <드라마 콜로키움> 개최! | https://www.cjculture.org/sub.php?code=32&mode=view&no=1923&category=&page=1&search=&keyword=",
-    "2026 청주무형유산전수교육관 [청주 무형유산 도감 \"치목일용(治木日用) | https://www.cjculture.org/sub.php?code=32&mode=view&no=1922&category=&page=1&search=&keyword=",
-    "2027년도 청주시한국공예관 공예스튜디오 입주작가 모집 공고 | https://www.cjculture.org/sub.php?code=32&mode=view&no=1921&category=&page=1&search=&keyword=",
-    "2026 제5차 청주도시첨단문화산업단지 입주기업 모집 공고(신규 및 기간 | https://www.cjculture.org/sub.php?code=32&mode=view&no=1920&category=&page=1&search=&keyword="
+    "[공고번호-2026-0782호] 2027년 아르코공연연습센터@청주 상반기 | https://www.cjculture.org/sub.php?code=32&mode=view&no=1928&category=&page=1&search=&keyword=",
+    "[청주시] 「한파 영향예보 직접 전달 서비스」 | https://www.cjculture.org/sub.php?code=32&mode=view&no=1927&category=&page=1&search=&keyword=",
+    "[모집] 2027 청주시한국공예관 상반기 대관 모집 | https://www.cjculture.org/sub.php?code=32&mode=view&no=1924&category=&page=1&search=&keyword=",
+    "2026 김수현드라마아트홀 제 2회 <드라마 콜로키움> 개최! | https://www.cjculture.org/sub.php?code=32&mode=view&no=1923&category=&page=1&search=&keyword="
    ],
    "status": "ok",
    "url": "https://www.cjculture.org/sub.php?code=33"
@@ -704,12 +709,12 @@
    "kind": "org",
    "links": 15,
    "name": "강릉문화재단",
-   "new": 3,
+   "new": 2,
    "sample": [
+    "[모집] 2026 네트워크 창의파티 「우리는 문화민회를 어떻게 만들어 갈 | https://www.gncaf.or.kr/ko/community/notice?a=view&id=492",
+    "[공고] 2026 시민자율예산제 <작당모의> 공모 선정 결과 발표 | https://www.gncaf.or.kr/ko/community/notice?a=view&id=491",
     "2026 초당 K-푸드로드 모처럼 초당 프로그램 안내 및 지역 동아리·생 | https://www.gncaf.or.kr/ko/community/notice?a=view&id=489",
-    "[공고] 2026 공예로 빛나는 일상 <도시탐사대> 참여자 모집공고 (~ | https://www.gncaf.or.kr/ko/community/notice?a=view&id=486",
-    "[공고] 2026 강릉 이주환대 프로젝트 <강릉에 스며들다 :비빌언덕 2 | https://www.gncaf.or.kr/ko/community/notice?a=view&id=485",
-    "[공고] 2026 이주환대프로젝트 <오죽하면 강릉살까> 공고 (~11/1 | https://www.gncaf.or.kr/ko/community/notice?a=view&id=484"
+    "[공고] 2026 공예로 빛나는 일상 <도시탐사대> 참여자 모집공고 (~ | https://www.gncaf.or.kr/ko/community/notice?a=view&id=486"
    ],
    "status": "ok",
    "url": "https://www.gncaf.or.kr/ko/community/notice"
@@ -797,14 +802,14 @@
    "name": "수원문화재단",
    "new": 0,
    "sample": [
+    "<정조K스테이지 - 음악회: 첫소리>... | https://www.swcf.or.kr/?p=113&page=1&viewMode=view&idx=115067",
     "네트워크 작업으로 인한 재단 누리집 서... | https://www.swcf.or.kr/?p=113&page=1&viewMode=view&idx=114006",
     "화성행궁 야간개장 특별공연 “위대한 태... | https://www.swcf.or.kr/?p=113&page=1&viewMode=view&idx=113956",
     "2026 수원화성 미디어아트 10. 4.(일) ... | https://www.swcf.or.kr/?p=113&page=1&viewMode=view&idx=113896",
-    "2026 화성행궁 야간개장 연장 운영 안내 | https://www.swcf.or.kr/?p=113&page=1&viewMode=view&idx=113895",
+    "<정조K스테이지 - 음악회: 첫소리>... | https://www.swcf.or.kr/?p=113&page=1&viewMode=view&idx=115067",
     "네트워크 작업으로 인한 재단 누리집 서... | https://www.swcf.or.kr/?p=113&page=1&viewMode=view&idx=114006",
     "화성행궁 야간개장 특별공연 “위대한 태... | https://www.swcf.or.kr/?p=113&page=1&viewMode=view&idx=113956",
-    "2026 수원화성 미디어아트 10. 4.(일) ... | https://www.swcf.or.kr/?p=113&page=1&viewMode=view&idx=113896",
-    "2026 화성행궁 야간개장 연장 운영 안내 | https://www.swcf.or.kr/?p=113&page=1&viewMode=view&idx=113895"
+    "2026 수원화성 미디어아트 10. 4.(일) ... | https://www.swcf.or.kr/?p=113&page=1&viewMode=view&idx=113896"
    ],
    "status": "ok",
    "url": "https://www.swcf.or.kr/?p=113"
@@ -843,10 +848,10 @@
     "[초청장] 2025 경기문화재단 문화이음x백남준 서거 20주기 연계 행사 | https://www.ggcf.kr/boards/donateNotice/articles/21373",
     "문화이음 2025 사회공헌활동 🌍문화로 탄소중립🌍 2026.01.20 | https://www.ggcf.kr/boards/donateNotice/articles/21372",
     "문화이음 2025 사회공헌활동 ❤️‍🩹경기북부 폭우피해지역 수해복구 활동 | https://www.ggcf.kr/boards/donateNotice/articles/21371",
+    "공지사항 진행 2026년 경기문화재단 온라인서비스 고객만족도조사 당첨자  | https://www.ggcf.kr/boards/bulletinBoards/articles/21702",
     "공지사항 진행 2027년 경기 예술인의 집 상반기 정기대관 공고 2026 | https://www.ggcf.kr/boards/bulletinBoards/articles/21699",
     "공지사항 진행 2027년 경기문화센터 상반기 정기대관 신청안내 공고 20 | https://www.ggcf.kr/boards/bulletinBoards/articles/21670",
-    "공지사항 진행 <경기도 노동권익센터 마을노무사 지원사업> 안내 2026. | https://www.ggcf.kr/boards/bulletinBoards/articles/21450",
-    "공지사항 AI로 더 안전하게, ‘경기 안심 부동산’ 10월 12일 시범운 | https://www.ggcf.kr/boards/bulletinBoards/articles/21605"
+    "공지사항 진행 <경기도 노동권익센터 마을노무사 지원사업> 안내 2026. | https://www.ggcf.kr/boards/bulletinBoards/articles/21450"
    ],
    "status": "ok",
    "url": "https://www.ggcf.kr/boards/donateNotice"
@@ -886,7 +891,7 @@
   },
   {
    "board": "art",
-   "detail": "HTTPSConnectionPool(host='www.ayac.or.kr', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.ayac.or.kr', port=443) at 0x110c3a510>, 'Connection to ",
+   "detail": "HTTPSConnectionPool(host='www.ayac.or.kr', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLError(1, '[SSL: SSLV3_ALERT_HANDSHAKE_FAILURE] ssl/tls alert handshake failure (_ssl.c:101",
    "id": "org-ayac",
    "kind": "org",
    "links": 0,
@@ -908,31 +913,31 @@
   },
   {
    "board": "art",
-   "detail": "HTTPSConnectionPool(host='www.osan.go.kr', port=443): Max retries exceeded with url: /arts/main.do (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.osan.go.kr', port=443) at 0x110a0b230>, 'Co",
+   "detail": "robots.txt가 수집을 막음: https://www.osan.go.kr/arts/main.do",
    "id": "org-osan",
    "kind": "org",
    "links": 0,
    "name": "오산문화재단",
    "new": 0,
-   "status": "error",
+   "status": "robots",
    "url": "https://www.osan.go.kr/arts/main.do"
   },
   {
    "board": "art",
    "id": "org-cwcf",
    "kind": "org",
-   "links": 48,
+   "links": 50,
    "name": "창원문화재단",
-   "new": 5,
+   "new": 1,
    "sample": [
+    "2027년 상반기 「진해아트홀 문화예술시설」정기대관 심의결과 공고 | https://www.cwcf.or.kr/commu/notice_view.asp?skey=&sword=&BCATE=BD00001&BSUBCATE=&place_idx=&page=1&idx=23984&bidx=2121",
     "「3·15아트홀 문화예술시설」 2027년 상반기 정기대관 및 2026년  | https://www.cwcf.or.kr/commu/notice_view.asp?skey=&sword=&BCATE=BD00001&BSUBCATE=&place_idx=&page=1&idx=23922&bidx=2117",
     "2026 창원문화재단 미술은행 소장작품 심사위원 모집 공고 | https://www.cwcf.or.kr/commu/notice_view.asp?skey=&sword=&BCATE=BD00001&BSUBCATE=&place_idx=&page=1&idx=23912&bidx=2115",
     "2026 창원문화재단 미술은행 소장작품 구입 공고 | https://www.cwcf.or.kr/commu/notice_view.asp?skey=&sword=&BCATE=BD00001&BSUBCATE=&place_idx=&page=1&idx=23896&bidx=2113",
-    "제10회 뮤직페스티벌창원2026 마스터클래스 모집 수정 공고 | https://www.cwcf.or.kr/commu/notice_view.asp?skey=&sword=&BCATE=BD00001&BSUBCATE=&place_idx=&page=1&idx=23729&bidx=2099",
+    "2027년 상반기 「진해아트홀 문화예술시설」정기대관 심의결과 공고 | https://www.cwcf.or.kr/commu/notice_view.asp?skey=&sword=&BCATE=BD00001&BSUBCATE=&place_idx=&page=1&idx=23984&bidx=2121",
     "「3·15아트홀 문화예술시설」 2027년 상반기 정기대관 및 2026년  | https://www.cwcf.or.kr/commu/notice_view.asp?skey=&sword=&BCATE=BD00001&BSUBCATE=&place_idx=&page=1&idx=23922&bidx=2117",
     "2026 창원문화재단 미술은행 소장작품 심사위원 모집 공고 | https://www.cwcf.or.kr/commu/notice_view.asp?skey=&sword=&BCATE=BD00001&BSUBCATE=&place_idx=&page=1&idx=23912&bidx=2115",
-    "2026 창원문화재단 미술은행 소장작품 구입 공고 | https://www.cwcf.or.kr/commu/notice_view.asp?skey=&sword=&BCATE=BD00001&BSUBCATE=&place_idx=&page=1&idx=23896&bidx=2113",
-    "제10회 뮤직페스티벌창원2026 마스터클래스 모집 수정 공고 | https://www.cwcf.or.kr/commu/notice_view.asp?skey=&sword=&BCATE=BD00001&BSUBCATE=&place_idx=&page=1&idx=23729&bidx=2099"
+    "2026 창원문화재단 미술은행 소장작품 구입 공고 | https://www.cwcf.or.kr/commu/notice_view.asp?skey=&sword=&BCATE=BD00001&BSUBCATE=&place_idx=&page=1&idx=23896&bidx=2113"
    ],
    "status": "ok",
    "url": "https://www.cwcf.or.kr/commu/notice_list.asp?BCATE=BD00001&BSUBCATE=%B0%F8%C1%F6%BB%E7%C7%D7&place_idx="
@@ -1122,26 +1127,35 @@
    "kind": "org",
    "links": 20,
    "name": "원주문화재단",
-   "new": 2,
+   "new": 1,
    "sample": [
-    "2026 원주 생활문화축제 [우리들 놀:터] 경연 참가단체 모집 공고 | https://www.wcf.or.kr/community/notice.php?tsort=4&msort=23&ssort=&no=19667&mode=detail&page=1",
+    "2027년 원주시 문화시설 정기대관 문화예술단체, 일반(시민)단체 공고 | https://www.wcf.or.kr/community/notice.php?tsort=4&msort=23&ssort=&no=19679&mode=detail&page=1",
     "[공고] 2026 치악예술관 무대디머 제안서평가 모집공고 | https://www.wcf.or.kr/community/notice.php?tsort=4&msort=23&ssort=&no=19678&mode=detail&page=1",
-    "2026 문화가 있는 산업단지 [K-매운맛 페스티벌] 무대시스템 설치 및 | https://www.wcf.or.kr/community/notice.php?tsort=4&msort=23&ssort=&no=19661&mode=detail&page=1",
-    "2026 문화가 있는 산업단지 [K-매운맛 페스티벌] 스마트헬스케어IN  | https://www.wcf.or.kr/community/notice.php?tsort=4&msort=23&ssort=&no=19660&mode=detail&page=1"
+    "2026 원주 생활문화축제 [우리들 놀:터] 경연 참가단체 모집 공고 | https://www.wcf.or.kr/community/notice.php?tsort=4&msort=23&ssort=&no=19667&mode=detail&page=1",
+    "2026 문화가 있는 산업단지 [K-매운맛 페스티벌] 무대시스템 설치 및 | https://www.wcf.or.kr/community/notice.php?tsort=4&msort=23&ssort=&no=19661&mode=detail&page=1"
    ],
    "status": "ok",
    "url": "https://www.wcf.or.kr/community/notice.php?tsort=4&msort=23&ssort="
   },
   {
    "board": "art",
-   "detail": "HTTPSConnectionPool(host='www.ictf.or.kr', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unab",
    "id": "org-ictf",
    "kind": "org",
-   "links": 0,
+   "links": 15,
    "name": "익산문화관광재단",
-   "new": 0,
-   "status": "error",
-   "url": "https://www.ictf.or.kr"
+   "new": 5,
+   "sample": [
+    "2020년 문화예술의 거리 주말포함 상시 운영을 위한 공간지원사업 공모 | https://www.ictf.or.kr/2022/inner.php?sMenu=G2000&mode=view&no=96",
+    "익산문화예술의 거리(총괄매니저, 매니저) 채용 공고 | https://www.ictf.or.kr/2022/inner.php?sMenu=G2000&mode=view&no=94",
+    "문화예술의 거리 따뜻한 한끼 프로젝트 사전 참가자 모집 | https://www.ictf.or.kr/2022/inner.php?sMenu=G2000&mode=view&no=93",
+    "제2기 꿈꾸는 예술학교 수강생 모집 안내 | https://www.ictf.or.kr/2022/inner.php?sMenu=G2000&mode=view&no=92",
+    "2017년 기부금품 모금액 및 활용실적 | https://www.ictf.or.kr/2022/inner.php?sMenu=L3000&mode=view&no=8",
+    "2016년 기부금품 모금액 및 활용실적 | https://www.ictf.or.kr/2022/inner.php?sMenu=L3000&mode=view&no=7",
+    "2015년 기부금품 모금액 및 활용실적 | https://www.ictf.or.kr/2022/inner.php?sMenu=L3000&mode=view&no=6",
+    "2014년 기부금품 모금액 및 활용실적 | https://www.ictf.or.kr/2022/inner.php?sMenu=L3000&mode=view&no=5"
+   ],
+   "status": "ok",
+   "url": "https://www.ictf.or.kr/2022/inner.php?sMenu=G2000"
   },
   {
    "board": "art",
@@ -1204,7 +1218,7 @@
    "kind": "org",
    "links": 55,
    "name": "화성시문화재단",
-   "new": 20,
+   "new": 0,
    "sample": [
     "화성 뱃놀이 축제 | https://www.hcf.or.kr/hcf/305?chathead=%5B%EC%B6%95+%EC%A0%9C%5D%ED%99%94%EC%84%B1+%EB%B1%83%EB%86%80%EC%9D%B4+%EC%B6%95%EC%A0%9C",
     "정조 효 문화제/정조대왕 능행차(화성구간) | https://www.hcf.or.kr/hcf/306?chathead=%5B%EC%B6%95+%EC%A0%9C%5D%EC%A0%95%EC%A1%B0+%ED%9A%A8+%EB%AC%B8%ED%99%94%EC%A0%9C",
@@ -1218,14 +1232,14 @@
    "board": "art",
    "id": "org-sscf",
    "kind": "org",
-   "links": 20,
+   "links": 16,
    "name": "수성문화재단",
    "new": 0,
    "sample": [
-    "DOWNLOAD | https://www.sscf.or.kr/bbs/bbs_download.php?mv_data=aWR4PTg3MDQmc3RhcnRQYWdlPTAmbGlzdE5vPTU2OCZ0YWJsZT1jc19iYnNfZGF0YSZuYXZfY29kZT1uZXcxNjI4NTk0NDIyJmNvZGU9bm90aWNlJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=||&download=h&seq=0",
-    "DOWNLOAD | https://www.sscf.or.kr/bbs/bbs_download.php?mv_data=aWR4PTg3MDQmc3RhcnRQYWdlPTAmbGlzdE5vPTU2OCZ0YWJsZT1jc19iYnNfZGF0YSZuYXZfY29kZT1uZXcxNjI4NTk0NDIyJmNvZGU9bm90aWNlJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=||&download=h&seq=1",
-    "DOWNLOAD | https://www.sscf.or.kr/bbs/bbs_download.php?mv_data=aWR4PTgwMDUmc3RhcnRQYWdlPTAmbGlzdE5vPTU2OCZ0YWJsZT1jc19iYnNfZGF0YSZuYXZfY29kZT1uZXcxNjI4NTk0NDIyJmNvZGU9bm90aWNlJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=||&download=h&seq=0",
-    "DOWNLOAD | https://www.sscf.or.kr/bbs/bbs_download.php?mv_data=aWR4PTgwMDUmc3RhcnRQYWdlPTAmbGlzdE5vPTU2OCZ0YWJsZT1jc19iYnNfZGF0YSZuYXZfY29kZT1uZXcxNjI4NTk0NDIyJmNvZGU9bm90aWNlJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=||&download=h&seq=1",
+    "DOWNLOAD | https://www.sscf.or.kr/bbs/bbs_download.php?mv_data=aWR4PTg3MDQmc3RhcnRQYWdlPTAmbGlzdE5vPTU2OSZ0YWJsZT1jc19iYnNfZGF0YSZuYXZfY29kZT1uZXcxNjI4NTk0NDIyJmNvZGU9bm90aWNlJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=||&download=h&seq=0",
+    "DOWNLOAD | https://www.sscf.or.kr/bbs/bbs_download.php?mv_data=aWR4PTg3MDQmc3RhcnRQYWdlPTAmbGlzdE5vPTU2OSZ0YWJsZT1jc19iYnNfZGF0YSZuYXZfY29kZT1uZXcxNjI4NTk0NDIyJmNvZGU9bm90aWNlJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=||&download=h&seq=1",
+    "DOWNLOAD | https://www.sscf.or.kr/bbs/bbs_download.php?mv_data=aWR4PTgwMDUmc3RhcnRQYWdlPTAmbGlzdE5vPTU2OSZ0YWJsZT1jc19iYnNfZGF0YSZuYXZfY29kZT1uZXcxNjI4NTk0NDIyJmNvZGU9bm90aWNlJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=||&download=h&seq=0",
+    "DOWNLOAD | https://www.sscf.or.kr/bbs/bbs_download.php?mv_data=aWR4PTgwMDUmc3RhcnRQYWdlPTAmbGlzdE5vPTU2OSZ0YWJsZT1jc19iYnNfZGF0YSZuYXZfY29kZT1uZXcxNjI4NTk0NDIyJmNvZGU9bm90aWNlJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=||&download=h&seq=1",
     "DOWNLOAD | https://www.sscf.or.kr/bbs/bbs_download.php?mv_data=aWR4PTg3NTImc3RhcnRQYWdlPTAmbGlzdE5vPTUxNiZ0YWJsZT1jc19iYnNfZGF0YSZuYXZfY29kZT1uZXcxNjI4NTk0NDI5JmNvZGU9YmlkJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=||&download=h&seq=0",
     "DOWNLOAD | https://www.sscf.or.kr/bbs/bbs_download.php?mv_data=aWR4PTg3NTImc3RhcnRQYWdlPTAmbGlzdE5vPTUxNiZ0YWJsZT1jc19iYnNfZGF0YSZuYXZfY29kZT1uZXcxNjI4NTk0NDI5JmNvZGU9YmlkJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=||&download=h&seq=1",
     "DOWNLOAD | https://www.sscf.or.kr/bbs/bbs_download.php?mv_data=aWR4PTg3NTImc3RhcnRQYWdlPTAmbGlzdE5vPTUxNiZ0YWJsZT1jc19iYnNfZGF0YSZuYXZfY29kZT1uZXcxNjI4NTk0NDI5JmNvZGU9YmlkJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=||&download=h&seq=2",
@@ -1240,7 +1254,7 @@
    "kind": "org",
    "links": 25,
    "name": "사천문화재단",
-   "new": 10,
+   "new": 0,
    "sample": [
     "공고 공지 2027년 사천시문화예술회관 기획공연 공모 작성자 : 사천문화 | https://www.sccf.or.kr/bbs/board.php?bo_table=notice&wr_id=972",
     "공고 공지 2027년 사천시문화예술회관 정기대관 공고 작성자 : 사천문화 | https://www.sccf.or.kr/bbs/board.php?bo_table=notice&wr_id=971",
@@ -1260,12 +1274,12 @@
    "kind": "org",
    "links": 15,
    "name": "고창문화관광재단",
-   "new": 0,
+   "new": 1,
    "sample": [
+    "599 공고 [공고 제2026-106호] 2026 원로창작이음지원사업 참 | https://gctf.or.kr/web/board/1/4576",
     "598 공고 [공고 제2026–103호] 그래서예술학교「갯벌인사이드」 참 | https://gctf.or.kr/web/board/1/4536",
     "597 공고 [공고 제2026–102호] 그래서예술학교「동림을 보는 새로 | https://gctf.or.kr/web/board/1/4534",
-    "596 안내 [안내] 고창 서해랑길 프로그램 <테마가 있는 서해랑길> 변 | https://gctf.or.kr/web/board/1/4532",
-    "595 안내 [안내] 제4회 고창치유문화축제 치유콘서트 및 특별무대 20 | https://gctf.or.kr/web/board/1/4530"
+    "596 안내 [안내] 고창 서해랑길 프로그램 <테마가 있는 서해랑길> 변 | https://gctf.or.kr/web/board/1/4532"
    ],
    "status": "ok",
    "url": "https://gctf.or.kr/web/board/1/postList"
@@ -1378,14 +1392,14 @@
    "board": "art",
    "id": "org-gcart",
    "kind": "org",
-   "links": 16,
+   "links": 14,
    "name": "과천문화재단",
-   "new": 2,
+   "new": 0,
    "sample": [
     "2027년 과천시립예술단 찾아가는 음악회 신청 공고 | https://www.gcart.or.kr/kr/commu/noticeView.do?noticeType=A&bbsIdx=1940",
-    "2026년 과천시민회관 예술강좌실·연습실 상시대관 신청 안내(11월) | https://www.gcart.or.kr/kr/commu/noticeView.do?noticeType=A&bbsIdx=1932",
-    "2026년 과천시민회관 공연장·전시실 수시대관 신청 안내(11월) | https://www.gcart.or.kr/kr/commu/noticeView.do?noticeType=A&bbsIdx=1931",
-    "2027년 과천시민회관 공연장 · 전시실 정기대관 신청 안내 | https://www.gcart.or.kr/kr/commu/noticeView.do?noticeType=A&bbsIdx=1929"
+    "2027년 과천시민회관 공연장 · 전시실 정기대관 신청 안내 | https://www.gcart.or.kr/kr/commu/noticeView.do?noticeType=A&bbsIdx=1929",
+    "[티켓 오픈 안내] 한국마사회와 함께하는 송년콘서트 'Finale' 티켓 | https://www.gcart.or.kr/kr/commu/noticeView.do?noticeType=A&bbsIdx=1924",
+    "[티켓 오픈 안내] 뮤지컬 <오지게 재밌는 가시나들> 티켓 안내 | https://www.gcart.or.kr/kr/commu/noticeView.do?noticeType=A&bbsIdx=1914"
    ],
    "status": "ok",
    "url": "https://www.gcart.or.kr/kr/commu/noticeList.do"
@@ -1396,12 +1410,12 @@
    "kind": "org",
    "links": 21,
    "name": "담양군문화재단",
-   "new": 8,
+   "new": 0,
    "sample": [
     "2026 담양대나무아지트축제 <특별한 상상, 대나무아지트> 참가가족 연락 | https://www.damyangcf.or.kr/user/board/view/board_cd/4010/wr_no/455/board_cd/4010",
     "[공지] (재)담양군문화재단 카카오톡 채널 이용 안내 | https://www.damyangcf.or.kr/user/board/view/board_cd/4010/wr_no/396/board_cd/4010",
+    "담양 AI×사람 명사 초청 특별 강연회 | https://www.damyangcf.or.kr/user/board/view/board_cd/4010/wr_no/458/board_cd/4010",
     "[안내]「2026 전남광주는 공연중」 | https://www.damyangcf.or.kr/user/board/view/board_cd/4010/wr_no/457/board_cd/4010",
-    "(재)담양군문화재단 인사규정 일부 개정 사전예고 | https://www.damyangcf.or.kr/user/board/view/board_cd/4010/wr_no/456/board_cd/4010",
     "2026 담양대나무아지트축제 <특별한 상상, 대나무아지트> 참가 가족 선 | https://www.damyangcf.or.kr/user/board/view/board_cd/4030/wr_no/206/board_cd/4030",
     "2026 담양대나무아지트축제 <특별한 상상, 대나무아지트> 참가 가족 모 | https://www.damyangcf.or.kr/user/board/view/board_cd/4030/wr_no/205/board_cd/4030",
     "2026 <담양 포-레스트 페스타> 마켓 부스 운영자 모집 공고 | https://www.damyangcf.or.kr/user/board/view/board_cd/4030/wr_no/204/board_cd/4030",
@@ -1471,7 +1485,7 @@
    "kind": "org",
    "links": 41,
    "name": "영월문화관광재단",
-   "new": 1,
+   "new": 0,
    "sample": [
     "[문화광부학교] 2026년 농한기 시민강사 프로젝트 강사 모집 공고 | https://www.ywcf.or.kr/notices/3532",
     "[2026년 제29회 김삿갓 문화제] 사생·만화그리기 대회 결과 공고 | https://www.ywcf.or.kr/notices/3520",
@@ -1502,7 +1516,7 @@
    "kind": "org",
    "links": 24,
    "name": "양평문화재단",
-   "new": 3,
+   "new": 0,
    "sample": [
     "2026년 새해 인사 | https://www.ypcf.or.kr/notice/?q=YToxOntzOjEyOiJrZXl3b3JkX3R5cGUiO3M6MzoiYWxsIjt9&bmode=view&idx=169245138&t=board",
     "[중요] 문화재단 직원 사칭 연락 주의 | https://www.ypcf.or.kr/notice/?q=YToxOntzOjEyOiJrZXl3b3JkX3R5cGUiO3M6MzoiYWxsIjt9&bmode=view&idx=167709449&t=board",
@@ -1551,9 +1565,9 @@
     "국악공연 길라잡이 육성 교육과정 참가자 모집 공고 | https://www.kotpa.org/ucms/bbs/B0000021/view.do?nttId=25324&menuNo=300008&pageIndex=1",
     "2026 청년성장동력 지원 사업 국악창업 실습 교육 참가자 모집 공고 | https://www.kotpa.org/ucms/bbs/B0000021/view.do?nttId=25312&menuNo=300008&pageIndex=1",
     "주요일정 안내 일정 바로가기 | https://www.kotpa.org/ucms/bbs/B0000001/view.do?nttId=24760&menuNo=300017&pageIndex=1",
+    "2026년 제5차 직원(정규직) 채용 서류심사 결과 | https://www.kotpa.org/ucms/bbs/B0000001/view.do?nttId=25334&menuNo=300017&pageIndex=1",
     "국악공연 길라잡이 육성 교육과정 참가자 모집 선발 결과 | https://www.kotpa.org/ucms/bbs/B0000001/view.do?nttId=25329&menuNo=300017&pageIndex=1",
-    "2026년 제5차 직원(정규직) 채용 공고 | https://www.kotpa.org/ucms/bbs/B0000001/view.do?nttId=25326&menuNo=300017&pageIndex=1",
-    "2026 전통공연예술 저변확대-국악공연 관광상품개발 출연자(도슨트) 모집 | https://www.kotpa.org/ucms/bbs/B0000001/view.do?nttId=25302&menuNo=300017&pageIndex=1"
+    "2026년 제5차 직원(정규직) 채용 공고 | https://www.kotpa.org/ucms/bbs/B0000001/view.do?nttId=25326&menuNo=300017&pageIndex=1"
    ],
    "status": "ok",
    "url": "https://www.kotpa.org/ucms/bbs/B0000021/list.do?menuNo=300008"
@@ -1575,7 +1589,7 @@
    "kind": "org",
    "links": 26,
    "name": "진주문화관광재단",
-   "new": 15,
+   "new": 0,
    "sample": [
     "2026 진주실크×숙박연계 유통 확장 프로그램 용역 제안서 평가위원 후보 | https://jjct.or.kr/board/notice/show/1937",
     "『 빛 담은 문화도시, 진주』2026 진주관광 캐릭터 상품개발 공모사업  | https://jjct.or.kr/board/notice/show/1923",
@@ -1661,12 +1675,12 @@
    "kind": "org",
    "links": 15,
    "name": "고성문화재단",
-   "new": 0,
+   "new": 2,
    "sample": [
-    "2026년 '달홀영화관' 기획전(5월 무료영화 상영) 행사 안내 H 인기 | https://goseongcf.or.kr/notify/1014",
+    "고성문화재단 5주년 기념 포럼 <마음의 비무장지대, 다시 마주하다> 운영 | https://goseongcf.or.kr/notify/1023",
+    "고성문화재단 5주년 기념 전시 <고성 끝, 경계를 넘어> 운영 H 인기글 | https://goseongcf.or.kr/notify/1022",
     "[달홀영화관 11월 기획프로그램] '영화와 함께하는 빛나는 자개공예' 참 | https://goseongcf.or.kr/notify/1013",
-    "[홍보협조] 예술창작소 이룸학교 '뚝딱뚝딱 우드공방' 참여자 모집 H 인 | https://goseongcf.or.kr/notify/1011",
-    "2026 놀이기반 문화예술교육 프로그램 <더 놀다가> 봉수대 표류기 참여 | https://goseongcf.or.kr/notify/1009"
+    "2026년 (재)고성문화재단 달홀문화센터 정기대관 결과공고 H 인기글 | https://goseongcf.or.kr/notify/947"
    ],
    "status": "ok",
    "url": "https://goseongcf.or.kr/notify"
@@ -1710,15 +1724,15 @@
    "kind": "org",
    "links": 18,
    "name": "구미문화재단",
-   "new": 0,
+   "new": 1,
    "sample": [
     "구미문화재단 홈페이지 게시판(문화소식, 시민소식) 이용 방법 안내 | https://gucf.or.kr/Notice?menuId=MENU_0000000028&mode=detl&nttId=NTT_0000000801&page=1&searchTxt=&searchDiv=",
     "구미 문화예술 아카이브 예술인/단체 정보 등록 안내 | https://gucf.or.kr/Notice?menuId=MENU_0000000028&mode=detl&nttId=NTT_0000001053&page=1&searchTxt=&searchDiv=",
-    "[구미생활문화센터] 2026 구미라면축제 교통 통제 안내 | https://gucf.or.kr/Notice?menuId=MENU_0000000028&mode=detl&nttId=NTT_0000003271&page=1&searchTxt=&searchDiv=",
+    "｢K-Food 페어링 구미 로드 '송정맛길 윈터빌리지' 행사 운영 용역｣ | https://gucf.or.kr/Notice?menuId=MENU_0000000028&mode=detl&nttId=NTT_0000003337&page=1&searchTxt=&searchDiv=",
     "구미생활문화센터 시민인식조사(설문) 참여 안내 | https://gucf.or.kr/Notice?menuId=MENU_0000000028&mode=detl&nttId=NTT_0000003268&page=1&searchTxt=&searchDiv=",
     "구미문화재단 홈페이지 게시판(문화소식, 시민소식) 이용 방법 안내 | https://gucf.or.kr/Notice?menuId=MENU_0000000028&mode=detl&nttId=NTT_0000000801&page=1&searchTxt=&searchDiv=",
     "구미 문화예술 아카이브 예술인/단체 정보 등록 안내 | https://gucf.or.kr/Notice?menuId=MENU_0000000028&mode=detl&nttId=NTT_0000001053&page=1&searchTxt=&searchDiv=",
-    "[구미생활문화센터] 2026 구미라면축제 교통 통제 안내 | https://gucf.or.kr/Notice?menuId=MENU_0000000028&mode=detl&nttId=NTT_0000003271&page=1&searchTxt=&searchDiv=",
+    "｢K-Food 페어링 구미 로드 '송정맛길 윈터빌리지' 행사 운영 용역｣ | https://gucf.or.kr/Notice?menuId=MENU_0000000028&mode=detl&nttId=NTT_0000003337&page=1&searchTxt=&searchDiv=",
     "구미생활문화센터 시민인식조사(설문) 참여 안내 | https://gucf.or.kr/Notice?menuId=MENU_0000000028&mode=detl&nttId=NTT_0000003268&page=1&searchTxt=&searchDiv="
    ],
    "status": "ok",
@@ -1748,13 +1762,13 @@
   },
   {
    "board": "art",
-   "detail": "게시판 찾기 순서 대기 중 (하루 60곳씩)",
+   "detail": "홈페이지에서 공지·공모 게시판을 찾지 못함. orgs.yaml에 board_url을 적어주세요",
    "id": "org-nsart",
    "kind": "org",
    "links": 0,
    "name": "광주시문화재단",
    "new": 0,
-   "status": "skipped",
+   "status": "empty",
    "url": "https://www.nsart.or.kr/index.do"
   },
   {
@@ -1763,7 +1777,7 @@
    "kind": "org",
    "links": 15,
    "name": "광진문화재단",
-   "new": 0,
+   "new": 1,
    "sample": [
     "2026 하반기 광진구립청소년합창단 신규단원 모집 공고 | https://www.naruart.or.kr/community/notice_view.php?idx=13255&page=1",
     "2027년 상반기 나루아트센터⦁광진어린이공연장 정기대관 공고 | https://www.naruart.or.kr/community/notice_view.php?idx=13239&page=1",
@@ -1775,24 +1789,24 @@
   },
   {
    "board": "art",
-   "detail": "게시판 찾기 순서 대기 중 (하루 60곳씩)",
+   "detail": "홈페이지에서 공지·공모 게시판을 찾지 못함. orgs.yaml에 board_url을 적어주세요",
    "id": "org-sbculture",
    "kind": "org",
    "links": 0,
    "name": "성북문화재단",
    "new": 0,
-   "status": "skipped",
+   "status": "empty",
    "url": "https://www.sbculture.or.kr/culture/main/main.do"
   },
   {
    "board": "art",
-   "detail": "게시판 찾기 순서 대기 중 (하루 60곳씩)",
+   "detail": "robots.txt가 수집을 막음: https://www.geojeart.or.kr/index.asp",
    "id": "org-geojeart",
    "kind": "org",
    "links": 0,
    "name": "거제시문화예술재단",
    "new": 0,
-   "status": "skipped",
+   "status": "robots",
    "url": "https://www.geojeart.or.kr/index.asp"
   },
   {
@@ -1821,12 +1835,12 @@
    "kind": "org",
    "links": 17,
    "name": "여주세종문화관광재단",
-   "new": 0,
+   "new": 1,
    "sample": [
+    "2026년 하반기 지역문화예술 홍보 버스킹 공연자 공개모집 선정 결과 | https://www.yjcf.or.kr/brd/board/200/L/menu/341?brdType=R&thisPage=1&bbIdx=2570&searchField=&searchText=",
     "[아트뮤지엄 려] 2027년 전시 공모 선정 공고 | https://www.yjcf.or.kr/brd/board/200/L/menu/341?brdType=R&thisPage=1&bbIdx=2564&searchField=&searchText=",
     "여주관광순환버스 로컬파트너(제휴처) 상시 모집 공고 | https://www.yjcf.or.kr/brd/board/200/L/menu/341?brdType=R&thisPage=1&bbIdx=2523&searchField=&searchText=",
-    "여주관광순환버스 임시정류장(파크골프장) 운영 안내 | https://www.yjcf.or.kr/brd/board/200/L/menu/341?brdType=R&thisPage=1&bbIdx=2502&searchField=&searchText=",
-    "[여주 반값여행] 여주관광순환버스 할인 프로모션 안내 (~26. 11.  | https://www.yjcf.or.kr/brd/board/200/L/menu/341?brdType=R&thisPage=1&bbIdx=2483&searchField=&searchText="
+    "여주관광순환버스 임시정류장(파크골프장) 운영 안내 | https://www.yjcf.or.kr/brd/board/200/L/menu/341?brdType=R&thisPage=1&bbIdx=2502&searchField=&searchText="
    ],
    "status": "ok",
    "url": "https://www.yjcf.or.kr/brd/board/200/L/menu/341"
@@ -1835,86 +1849,82 @@
    "board": "art",
    "id": "org-stcf",
    "kind": "org",
-   "links": 14,
+   "links": 5,
    "name": "삼척관광문화재단",
-   "new": 1,
+   "new": 0,
    "sample": [
     "본선진출작 선정 결과 공고.png(1.8 MB) | https://www.stcf.or.kr/board/download.do?idx=987&fnum=1&gcode=1001&fsiz=",
     "제3회 삼척 해(海)랑영화제 단편영화 출품 공모전 본선진출작 선정 결과  | https://www.stcf.or.kr/board/download.do?idx=987&fnum=2&gcode=1001&fsiz=",
     "제3회 삼척 해(海)랑영화제 단편영화 출품 공모전 본선진출작 선정 결과  | https://www.stcf.or.kr/board/download.do?idx=987&fnum=3&gcode=1001&fsiz=",
-    "제3회 삼척 해(海)랑영화제 단편영화 출품 공모전 본선진출작 선정 결과  | https://www.stcf.or.kr/board/download.do?idx=987&fnum=4&gcode=1001&fsiz=",
-    "[공지] [11월 강원ART박스 공연] <간이역칸타빌레> 공연 안내 새  | https://www.stcf.or.kr/01298/01315.web?gcode=1001&idx=1112&amode=view&",
-    "[공지] ♥11월 이사부 나이트 시네마 행사 안내♥ 새 글 11월 24일 | https://www.stcf.or.kr/01298/01315.web?gcode=1001&idx=1111&amode=view&",
-    "[공지] 매력있는 여행, 머무는 삼척 「나는 솔로캠퍼」 참여자 추가 모집 | https://www.stcf.or.kr/01298/01315.web?gcode=1001&idx=1104&amode=view&",
-    "[공지] 2026 너와포차거리 참여부스 배치도 및 부스별 메뉴 안내 안녕 | https://www.stcf.or.kr/01298/01315.web?gcode=1001&idx=1099&amode=view&"
+    "제3회 삼척 해(海)랑영화제 단편영화 출품 공모전 본선진출작 선정 결과  | https://www.stcf.or.kr/board/download.do?idx=987&fnum=4&gcode=1001&fsiz="
    ],
    "status": "ok",
    "url": "https://www.stcf.or.kr/01298/01315.web?gcode=1001&idx=987&amode=view&"
   },
   {
    "board": "art",
-   "detail": "게시판 찾기 순서 대기 중 (하루 60곳씩)",
+   "detail": "홈페이지에서 공지·공모 게시판을 찾지 못함. orgs.yaml에 board_url을 적어주세요",
    "id": "org-gsctf",
    "kind": "org",
    "links": 0,
    "name": "경산문화관광재단",
    "new": 0,
-   "status": "skipped",
+   "status": "empty",
    "url": "https://gsctf.or.kr"
   },
   {
    "board": "art",
-   "detail": "게시판 찾기 순서 대기 중 (하루 60곳씩)",
+   "detail": "HTTPSConnectionPool(host='www.chilgokctf.or.kr', port=443): Max retries exceeded with url: /ctf/main.do (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate ve",
    "id": "org-chilgokctf",
    "kind": "org",
    "links": 0,
    "name": "칠곡문화관광재단",
    "new": 0,
-   "status": "skipped",
+   "status": "error",
    "url": "https://www.chilgokctf.or.kr/ctf/main.do"
   },
   {
    "board": "art",
-   "detail": "게시판 찾기 순서 대기 중 (하루 60곳씩)",
+   "detail": "홈페이지에서 공지·공모 게시판을 찾지 못함. orgs.yaml에 board_url을 적어주세요",
    "id": "org-namhaetour",
    "kind": "org",
    "links": 0,
    "name": "남해군관광문화재단",
    "new": 0,
-   "status": "skipped",
+   "status": "empty",
    "url": "https://www.namhaetour.org/main.web"
   },
   {
    "board": "art",
-   "detail": "게시판 찾기 순서 대기 중 (하루 60곳씩)",
+   "detail": "홈페이지에서 공지·공모 게시판을 찾지 못함. orgs.yaml에 board_url을 적어주세요",
    "id": "org-bpcf",
    "kind": "org",
    "links": 0,
    "name": "인천시부평구문화재단",
    "new": 0,
-   "status": "skipped",
+   "status": "empty",
    "url": "https://www.bpcf.or.kr/bpcf/main/main.do"
   },
   {
    "board": "art",
-   "detail": "게시판 찾기 순서 대기 중 (하루 60곳씩)",
+   "detail": "robots.txt가 수집을 막음: https://www.acc.go.kr",
    "id": "org-acc",
    "kind": "org",
    "links": 0,
    "name": "국립아시아문화전당",
    "new": 0,
-   "status": "skipped",
+   "status": "robots",
    "url": "https://www.acc.go.kr"
   },
   {
    "board": "art",
-   "detail": "게시판 찾기 순서 대기 중 (하루 60곳씩)",
+   "detail": "홈페이지에서 공지·공모 게시판을 찾지 못함. orgs.yaml에 board_url을 적어주세요",
    "id": "org-mmca",
    "kind": "org",
    "links": 0,
    "name": "국립현대미술관",
    "new": 0,
-   "status": "skipped",
+   "status": "empty",
    "url": "https://www.mmca.go.kr"
   }
  ]
