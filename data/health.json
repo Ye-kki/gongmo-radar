@@ -1,72 +1,31 @@
 {
  "ai": {
-  "calls": 19,
-  "cli_cost_usd": 0.404,
+  "calls": 8,
+  "cli_cost_usd": 0.0539,
   "errors": [],
-  "est_cost_usd": 0.0884,
-  "input_tokens": 396439,
+  "est_cost_usd": 0.0418,
+  "input_tokens": 161730,
   "mode": "subscription",
-  "output_tokens": 97439,
+  "output_tokens": 51313,
   "searches": 0
  },
  "counts": {
-  "baseline": 2,
-  "candidates": 65,
+  "baseline": 0,
+  "candidates": 52,
   "changed": 9,
   "changed_applied": 9,
-  "fetched": 59,
-  "filtered": 5,
-  "new": 10,
+  "fetched": 46,
+  "filtered": 7,
+  "new": 2,
   "over_limit": 0,
-  "read_failed": 8,
+  "read_failed": 7,
   "rechecked": 60,
-  "same": 3,
-  "sent": 61,
-  "skipped": 37,
-  "updated": 11
+  "same": 0,
+  "sent": 47,
+  "skipped": 36,
+  "updated": 9
  },
- "discovery": [
-  {
-   "found": 0,
-   "id": "goods-kr",
-   "new": 0
-  },
-  {
-   "found": 0,
-   "id": "art-kr",
-   "new": 0
-  },
-  {
-   "found": 1,
-   "id": "design-kr",
-   "new": 0
-  },
-  {
-   "found": 0,
-   "id": "residency",
-   "new": 0
-  },
-  {
-   "found": 0,
-   "id": "startup-kr",
-   "new": 0
-  },
-  {
-   "found": 4,
-   "id": "overseas",
-   "new": 3
-  },
-  {
-   "found": 0,
-   "id": "overseas-residency",
-   "new": 0
-  },
-  {
-   "found": 0,
-   "id": "overseas-art",
-   "new": 0
-  }
- ],
+ "discovery": [],
  "read_errors": [
   "K-Startup 사업공고: https://www.k-startup.go.kr/magicsso/requestAuthEx.jsp?RelayState=https://www.bizinfo.go.k → HTTP 404: https://www.k-startup.go.kr/magicsso/requestAuthEx.jsp?RelayState=https://www.bizinfo.go.kr/magicsso/requestCo",
   "K-Startup 사업공고: https://www.k-startup.go.kr/magicsso/requestAuthEx.jsp?RelayState=https://sso.sbiz.or.kr/m → HTTP 404: https://www.k-startup.go.kr/magicsso/requestAuthEx.jsp?RelayState=https://sso.sbiz.or.kr/magicsso/requestConne",
@@ -75,20 +34,20 @@
   "K-Startup 사업공고: https://www.k-startup.go.kr/magicsso/requestAuthEx.jsp?RelayState=https://www.kosmes.or.kr → HTTP 404: https://www.k-startup.go.kr/magicsso/requestAuthEx.jsp?RelayState=https://www.kosmes.or.kr/magicsso/requestCon",
   "K-Startup 사업공고: https://www.k-startup.go.kr/magicsso/requestAuthEx.jsp?RelayState=https://www.smes.go.kr/b → HTTP 404: https://www.k-startup.go.kr/magicsso/requestAuthEx.jsp?RelayState=https://www.smes.go.kr/binet/magicsso/reques"
  ],
- "rendered_pages": 19,
- "runAt": "2026-11-19 11:51",
+ "rendered_pages": 10,
+ "runAt": "2026-11-20 13:31",
  "sources": [
   {
    "board": "art",
    "id": "contestkorea-design",
-   "links": 54,
+   "links": 55,
    "name": "콘테스트코리아 미술·디자인",
-   "new": 7,
+   "new": 10,
    "sample": [
     "[발표 11/27일로 연기] 문화·관광·콘텐츠 분야 대국민... | https://contestkorea.com/sub/view.php?int_gbn=1&Txt_bcode=031410001&str_no=202607090072",
     "미술•디자인•웹툰 제1회 중앙일보 어린이 미술대회 | https://www.contestkorea.com/sub/view.php?int_gbn=1&Txt_bcode=030610001&str_no=202610010030",
-    "미술•디자인•웹툰 2027 상반기 참여자 공모 - 달달 갤러리 | https://www.contestkorea.com/sub/view.php?int_gbn=1&Txt_bcode=030610001&str_no=202611120016",
-    "미술•디자인•웹툰 건학 50주년 기념 동명대학교 캐릭터 공모전 | https://www.contestkorea.com/sub/view.php?int_gbn=1&Txt_bcode=030610001&str_no=202611110009"
+    "미술•디자인•웹툰 제30회 보령머드축제 공식 포스터 디자인 공모전 | https://www.contestkorea.com/sub/view.php?int_gbn=1&Txt_bcode=030610001&str_no=202611190036",
+    "미술•디자인•웹툰 2027 상반기 참여자 공모 - 달달 갤러리 | https://www.contestkorea.com/sub/view.php?int_gbn=1&Txt_bcode=030610001&str_no=202611120016"
    ],
    "status": "ok",
    "url": "https://www.contestkorea.com/sub/list.php?int_gbn=1&Txt_bcode=030610001"
@@ -98,12 +57,12 @@
    "id": "wevity-design",
    "links": 15,
    "name": "위비티 디자인·캐릭터",
-   "new": 0,
+   "new": 2,
    "sample": [
-    "SPECIAL 제1회 중앙일보 어린이 미술대회 디자인/캐릭터/웹툰, 예체 | https://www.wevity.com/?c=find&s=1&gub=1&cidx=19&gbn=view&gp=1&ix=111838",
-    "SPECIAL 제14회 한옥디자인 국제 공모전 디자인/캐릭터/웹툰, 건축 | https://www.wevity.com/?c=find&s=1&gub=1&cidx=19&gbn=view&gp=1&ix=109966",
     "SPECIAL 제5회 한국여성작가 회화공모전 & K-WOMEN IN PA | https://www.wevity.com/?c=find&s=1&gub=1&cidx=19&gbn=view&gp=1&ix=111880",
-    "2027 영암 왕인문화축제 홍보물 디자인 공모전 | https://www.wevity.com/?c=find&s=1&gub=1&cidx=19&gbn=view&gp=1&ix=112350"
+    "SPECIAL 제14회 한옥디자인 국제 공모전 디자인/캐릭터/웹툰, 건축 | https://www.wevity.com/?c=find&s=1&gub=1&cidx=19&gbn=view&gp=1&ix=109966",
+    "SPECIAL 제1회 중앙일보 어린이 미술대회 디자인/캐릭터/웹툰, 예체 | https://www.wevity.com/?c=find&s=1&gub=1&cidx=19&gbn=view&gp=1&ix=111838",
+    "제30회 보령머드축제 공식 포스터 디자인 공모전 신규 | https://www.wevity.com/?c=find&s=1&gub=1&cidx=19&gbn=view&gp=1&ix=112467"
    ],
    "status": "ok",
    "url": "https://www.wevity.com/?c=find&s=1&gub=1&cidx=19"
@@ -113,12 +72,12 @@
    "id": "wevity-art",
    "links": 15,
    "name": "위비티 예체능·미술",
-   "new": 0,
+   "new": 1,
    "sample": [
-    "SPECIAL [제3회] 매경 AI 광고 공모전 대한민국 AI 광고대상  | https://www.wevity.com/?c=find&s=1&gub=1&cidx=20&gbn=view&gp=1&ix=112073",
-    "SPECIAL 7th Da-Ho Award Asian Internatio | https://www.wevity.com/?c=find&s=1&gub=1&cidx=20&gbn=view&gp=1&ix=110179",
     "SPECIAL VIVID RE:PLAY 6개 IP로 만드는 AI영상 공모 | https://www.wevity.com/?c=find&s=1&gub=1&cidx=20&gbn=view&gp=1&ix=112343",
-    "2026 서울관광 프롬프톤 | https://www.wevity.com/?c=find&s=1&gub=1&cidx=20&gbn=view&gp=1&ix=112294"
+    "SPECIAL 7th Da-Ho Award Asian Internatio | https://www.wevity.com/?c=find&s=1&gub=1&cidx=20&gbn=view&gp=1&ix=110179",
+    "SPECIAL [제3회] 매경 AI 광고 공모전 대한민국 AI 광고대상  | https://www.wevity.com/?c=find&s=1&gub=1&cidx=20&gbn=view&gp=1&ix=112073",
+    "2026년 서울교육 AI 활용 공모전 | https://www.wevity.com/?c=find&s=1&gub=1&cidx=20&gbn=view&gp=1&ix=112438"
    ],
    "status": "ok",
    "url": "https://www.wevity.com/?c=find&s=1&gub=1&cidx=20"
@@ -128,12 +87,12 @@
    "id": "artculture-contest",
    "links": 100,
    "name": "아트앤컬처 공모란",
-   "new": 4,
+   "new": 5,
    "sample": [
-    "종근당 깨노니 가요제 | https://www.art-culture.co.kr/magazine_contest/2267",
-    "2026 피부건설 글로벌 패키지 디자인 공모전 | https://www.art-culture.co.kr/magazine_contest/2266",
-    "2027 창작지원 전시작가 공모 | https://www.art-culture.co.kr/magazine_contest/2265",
-    "<K-arts on the GO> 2027년 제 1차 공모 | https://www.art-culture.co.kr/magazine_contest/2264"
+    "<제6회 내마음의 식스센스?! -진짜 내 마음을 찾아라> | https://www.art-culture.co.kr/magazine_contest/2272",
+    "듀라텍스 몽그리귀마개 AI 사진, 영상 공모전 | https://www.art-culture.co.kr/magazine_contest/2271",
+    "쉽고 바른 정보통신기술(ICT) 공공언어 웹툰 공모전 | https://www.art-culture.co.kr/magazine_contest/2270",
+    "한국연구재단 창립 50주년 기념 엠블럼 디자인 공모전 | https://www.art-culture.co.kr/magazine_contest/2269"
    ],
    "status": "ok",
    "url": "https://www.art-culture.co.kr/magazine_contest"
@@ -173,7 +132,7 @@
    "id": "artnuri",
    "links": 21,
    "name": "아트누리 (전국 문화재단 지원사업 모음)",
-   "new": 5,
+   "new": 9,
    "sample": [
     "아트누리 로고 | https://artnuri.or.kr/",
     "한국지역 문화지원협의회 | https://artnuri.or.kr/content.do?key=2409100004",
@@ -230,10 +189,10 @@
    "name": "한국디자인진흥원 공지",
    "new": 1,
    "sample": [
+    "조심하라는 말대신 안전한 일터를...국회 산업안전 패러다임 전환 세미나  | https://kidp.or.kr/?menuno=1202&bbsno=19341&siteno=16&act=view&ztag=rO0ABXQAMzxjYWxsIHR5cGU9ImJvYXJkIiBubz0iNjIyIiBza2luPSJraWRwX2JicyI%2BPC9jYWxsPg%3D%3D",
+    "디자인 커리어 어떻게 시작할까 국내외 현직 디자이너가 답한다 | https://kidp.or.kr/?menuno=1202&bbsno=19340&siteno=16&act=view&ztag=rO0ABXQAMzxjYWxsIHR5cGU9ImJvYXJkIiBubz0iNjIyIiBza2luPSJraWRwX2JicyI%2BPC9jYWxsPg%3D%3D",
     "2026 안전서비스디자인 사업 추진 내용 자료 - 한국디자인진흥원, 한국 | https://kidp.or.kr/?menuno=1202&bbsno=19336&siteno=16&act=view&ztag=rO0ABXQAMzxjYWxsIHR5cGU9ImJvYXJkIiBubz0iNjIyIiBza2luPSJraWRwX2JicyI%2BPC9jYWxsPg%3D%3D",
-    "한국디자인진흥원, 디자인·기술 협업 49개 컨소시엄 성과 공개 | https://kidp.or.kr/?menuno=1202&bbsno=19335&siteno=16&act=view&ztag=rO0ABXQAMzxjYWxsIHR5cGU9ImJvYXJkIiBubz0iNjIyIiBza2luPSJraWRwX2JicyI%2BPC9jYWxsPg%3D%3D",
-    "2026년 국내외 디자인 취업 세미나 개최(11.28.(토)) | https://kidp.or.kr/?menuno=1202&bbsno=19334&siteno=16&act=view&ztag=rO0ABXQAMzxjYWxsIHR5cGU9ImJvYXJkIiBubz0iNjIyIiBza2luPSJraWRwX2JicyI%2BPC9jYWxsPg%3D%3D",
-    "2026 국내외 디자인 역량강화 1:1 멘토링 개최(11.26.(목),  | https://kidp.or.kr/?menuno=1202&bbsno=19333&siteno=16&act=view&ztag=rO0ABXQAMzxjYWxsIHR5cGU9ImJvYXJkIiBubz0iNjIyIiBza2luPSJraWRwX2JicyI%2BPC9jYWxsPg%3D%3D"
+    "한국디자인진흥원, 디자인·기술 협업 49개 컨소시엄 성과 공개 | https://kidp.or.kr/?menuno=1202&bbsno=19335&siteno=16&act=view&ztag=rO0ABXQAMzxjYWxsIHR5cGU9ImJvYXJkIiBubz0iNjIyIiBza2luPSJraWRwX2JicyI%2BPC9jYWxsPg%3D%3D"
    ],
    "status": "ok",
    "url": "https://kidp.or.kr/?menuno=1202"
@@ -247,8 +206,8 @@
    "sample": [
     "<제5회 서울예술상> 스팍 포커스상 후보작 공모 대상 예술인 또는 예술단 | https://www.scas.kr/biz/detail/498?page=1",
     "2027년 서울장애예술창작센터 17기 입주작가 정기공모(수정) 대상 시각 | https://www.scas.kr/biz/detail/528?page=1",
-    "2027 신당창작아케이드 18기 입주작가 정기공모(신규) 대상 공예 디자 | https://www.scas.kr/biz/detail/522?page=1",
-    "2027 신당창작아케이드 18기 입주작가 정기공모(연장) 대상 공예 디자 | https://www.scas.kr/biz/detail/521?page=1"
+    "2027 신당창작아케이드 18기 입주작가 정기공모(연장) 대상 공예 디자 | https://www.scas.kr/biz/detail/521?page=1",
+    "2027 신당창작아케이드 18기 입주작가 정기공모(신규) 대상 공예 디자 | https://www.scas.kr/biz/detail/522?page=1"
    ],
    "status": "ok",
    "url": "https://www.scas.kr/biz/list"
@@ -256,14 +215,14 @@
   {
    "board": "art",
    "id": "aac-open-calls",
-   "links": 110,
+   "links": 104,
    "name": "Alliance of Artists Communities 오픈콜 (해외 레지던시)",
-   "new": 5,
+   "new": 0,
    "sample": [
-    "WRITING SESSION & WORKSHOP 2027 - Ilhabe | https://artistcommunities.org/directory/open-calls/writing-session-workshop-2027-ilhabela-island-brazil",
-    "WHAT WE CAN CARRY - A three week marble  | https://artistcommunities.org/directory/open-calls/what-we-can-carry-three-week-marble-carving-workshop",
-    "Dancers Intensive: Colossus with Stephan | https://artistcommunities.org/directory/open-calls/dancers-intensive-colossus-stephanie-lake-company",
-    "Visual Arts - Sounding Like a Mountain | https://artistcommunities.org/directory/open-calls/visual-arts-sounding-mountain"
+    "Arte Studio Ginestrelle: Creative & writ | https://artistcommunities.org/directory/open-calls/arte-studio-ginestrelle-creative-writing-retreats-assisi",
+    "Summer 2027 Byrdcliffe Communal Residenc | https://artistcommunities.org/directory/open-calls/summer-2027-byrdcliffe-communal-residency",
+    "End of Year! Your Time at Dorland Mounta | https://artistcommunities.org/directory/open-calls/end-year-your-time-dorland-mountain-arts",
+    "AMAZON FOREST - AUGUST 2027 | https://artistcommunities.org/directory/open-calls/amazon-forest-august-2027"
    ],
    "status": "ok",
    "url": "https://artistcommunities.org/directory/open-calls"
@@ -298,7 +257,7 @@
    "id": "kstartup-ongoing",
    "links": 58,
    "name": "K-Startup 사업공고",
-   "new": 18,
+   "new": 6,
    "sample": [
     "사업신청관리 | https://www.k-startup.go.kr/passni/kstartup/tokenInfoRelay.jsp?flag=biz",
     "자주하는 질문 | https://www.k-startup.go.kr/web/contents/webFAQ.do",
@@ -321,7 +280,7 @@
   {
    "board": "art",
    "id": "sba-notice",
-   "links": 62,
+   "links": 61,
    "name": "서울경제진흥원 사업공고",
    "new": 0,
    "sample": [
@@ -348,12 +307,12 @@
    "id": "gdfac-notice",
    "links": 10,
    "name": "강동문화재단 공지",
-   "new": 0,
+   "new": 1,
    "sample": [
+    "2026. 강동아트센터 고객자문 회의 참가자 모집 | https://www.gdfac.or.kr/community/ko/notice/102656?q=null",
     "강동문화재단 12월 전시 안내원 모집 공고 | https://www.gdfac.or.kr/community/ko/notice/102655?q=null",
     "[아트센터 소식] <최태지의 발레 오픈 리허설 Ⅱ - 프레임을 벗어난 춤 | https://www.gdfac.or.kr/community/ko/notice/102637?q=null",
-    "클래식 토크 콘서트 <두 남자 이야기> 프로그램북 | https://www.gdfac.or.kr/community/ko/notice/102400?q=null",
-    "[연합뉴스] 강동문화재단, '지방공공기관 발전' 행안부장관 표창(2026 | https://www.gdfac.or.kr/community/ko/notice/102395?q=null"
+    "클래식 토크 콘서트 <두 남자 이야기> 프로그램북 | https://www.gdfac.or.kr/community/ko/notice/102400?q=null"
    ],
    "status": "ok",
    "url": "https://www.gdfac.or.kr/community/ko/notice"
@@ -462,13 +421,13 @@
   },
   {
    "board": "art",
-   "detail": "robots.txt가 수집을 막음: https://www.arte.or.kr",
+   "detail": "홈페이지에서 공지·공모 게시판을 찾지 못함. orgs.yaml에 board_url을 적어주세요",
    "id": "org-arte",
    "kind": "org",
    "links": 0,
    "name": "한국문화예술교육진흥원",
    "new": 0,
-   "status": "robots",
+   "status": "empty",
    "url": "https://www.arte.or.kr"
   },
   {
@@ -668,7 +627,7 @@
    "kind": "org",
    "links": 48,
    "name": "제천문화재단",
-   "new": 0,
+   "new": 1,
    "sample": [
     "조직 및 업무 안내 | https://www.jccf.or.kr/bbs/board.php?bo_table=w1_c&wr_id=4",
     "문화예술진흥사업 | https://www.jccf.or.kr/bbs/board.php?bo_table=w2_c&wr_id=1",
@@ -710,16 +669,16 @@
    "kind": "org",
    "links": 25,
    "name": "경남문화예술진흥원",
-   "new": 0,
+   "new": 1,
    "sample": [
     "경남문화예술진흥원 후원 명칭사용 신청안내 | https://www.gcaf.or.kr/bbs/board.php?bo_table=sub3_1&wr_id=1771",
     "◆행사안내·수강생모집·심사참관 공지를 위한 게시판입니다◆ | https://www.gcaf.or.kr/bbs/board.php?bo_table=sub3_1&wr_id=1322",
     "◆지원사업과 관련된 공모, 결과, 변경 등은 '사업공고·입찰' 게시판을  | https://www.gcaf.or.kr/bbs/board.php?bo_table=sub3_1&wr_id=1321",
     "2026 경남콘텐츠코리아랩 콘텐츠 창작스쿨 프로그램 별별창작소 – 생성형 | https://www.gcaf.or.kr/bbs/board.php?bo_table=sub3_1&wr_id=1878",
+    "경남문화예술진흥원, 2027년도 상반기 동남아트센터 정기대관 공모 | https://www.gcaf.or.kr/bbs/board.php?bo_table=sub3_2&wr_id=1256",
     "경남 문화예술교육사, 전국 공모 전 휩쓸었다… 대상 포함 4명 수상 | https://www.gcaf.or.kr/bbs/board.php?bo_table=sub3_2&wr_id=1232",
     "경남 게임기업, 국내 대표 인디게임 공모 전 2년연속 수상 | https://www.gcaf.or.kr/bbs/board.php?bo_table=sub3_2&wr_id=1222",
-    "경남의 명소가 웹툰의 무대로! ‘경남 3D 웹툰배경 활용 단편웹툰 공모  | https://www.gcaf.or.kr/bbs/board.php?bo_table=sub3_2&wr_id=1213",
-    "경남문화예술진흥원, 2026 동남아트센터 하반기 정기대관 공모 | https://www.gcaf.or.kr/bbs/board.php?bo_table=sub3_2&wr_id=1148"
+    "경남의 명소가 웹툰의 무대로! ‘경남 3D 웹툰배경 활용 단편웹툰 공모  | https://www.gcaf.or.kr/bbs/board.php?bo_table=sub3_2&wr_id=1213"
    ],
    "status": "ok",
    "url": "https://www.gcaf.or.kr/bbs/board.php?bo_table=sub3_1"
@@ -736,10 +695,10 @@
     "2026 인디 플레이테스트 지원 2차 참여기업 모집 공고 | https://www.cjculture.org/sub.php?code=33&mode=view&no=466&category=&page=1&search=&keyword=",
     "2026 교육발전특구 [찾아가는 게임학교] 참여학교 모집 공고 | https://www.cjculture.org/sub.php?code=33&mode=view&no=465&category=&page=1&search=&keyword=",
     "2026 원도심 활성화 시민 공모사업 [3차] 공모 안내 | https://www.cjculture.org/sub.php?code=33&mode=view&no=464&category=&page=1&search=&keyword=",
+    "[하남문화재단] 재단법인하남문화재단 2026년 제6회 직원채용(육아휴직대 | https://www.cjculture.org/sub.php?code=32&mode=view&no=1930&category=&page=1&search=&keyword=",
     "[제천시] 제천예술의전당 대공연장 2027년 상반기 수시대관 및 하반기  | https://www.cjculture.org/sub.php?code=32&mode=view&no=1929&category=&page=1&search=&keyword=",
     "[공고번호-2026-0782호] 2027년 아르코공연연습센터@청주 상반기 | https://www.cjculture.org/sub.php?code=32&mode=view&no=1928&category=&page=1&search=&keyword=",
-    "[청주시] 「한파 영향예보 직접 전달 서비스」 | https://www.cjculture.org/sub.php?code=32&mode=view&no=1927&category=&page=1&search=&keyword=",
-    "[모집] 2027 청주시한국공예관 상반기 대관 모집 | https://www.cjculture.org/sub.php?code=32&mode=view&no=1924&category=&page=1&search=&keyword="
+    "[청주시] 「한파 영향예보 직접 전달 서비스」 | https://www.cjculture.org/sub.php?code=32&mode=view&no=1927&category=&page=1&search=&keyword="
    ],
    "status": "ok",
    "url": "https://www.cjculture.org/sub.php?code=33"
@@ -750,12 +709,12 @@
    "kind": "org",
    "links": 15,
    "name": "강릉문화재단",
-   "new": 0,
+   "new": 1,
    "sample": [
+    "2026 강릉 로컬 푸드 팝업스토어 개최 | https://www.gncaf.or.kr/ko/community/notice?a=view&id=498",
+    "[모집] 2026 강릉 로컬 푸드 팝업스토어 셀러 모집 | https://www.gncaf.or.kr/ko/community/notice?a=view&id=497",
     "[공고] 제17회 강릉청소년예술상 수상자 결과 발표 | https://www.gncaf.or.kr/ko/community/notice?a=view&id=495",
-    "[공고] 제17회 박준용 청년예술문화상 수상자 결과 발표 | https://www.gncaf.or.kr/ko/community/notice?a=view&id=494",
-    "[모집] 2026 네트워크 창의파티 「우리는 문화민회를 어떻게 만들어 갈 | https://www.gncaf.or.kr/ko/community/notice?a=view&id=492",
-    "[공고] 2026 시민자율예산제 <작당모의> 공모 선정 결과 발표 | https://www.gncaf.or.kr/ko/community/notice?a=view&id=491"
+    "[공고] 제17회 박준용 청년예술문화상 수상자 결과 발표 | https://www.gncaf.or.kr/ko/community/notice?a=view&id=494"
    ],
    "status": "ok",
    "url": "https://www.gncaf.or.kr/ko/community/notice"
@@ -777,9 +736,9 @@
    "kind": "org",
    "links": 22,
    "name": "노원문화재단",
-   "new": 1,
+   "new": 0,
    "sample": [
-    "2026 노원구립여성합창단 신규단원 모집 공고 N | https://www.nowonarts.kr/channels/notice/posts/6522",
+    "2026 노원구립여성합창단 신규단원 모집 공고 | https://www.nowonarts.kr/channels/notice/posts/6522",
     "2026년 지역문화행사 지원(전시분야) 사업 운영단체 공모 | https://www.nowonarts.kr/channels/notice/posts/6469",
     "공공기관 사칭 범죄 주의 (노원문화재단 직원 사칭 등) | https://www.nowonarts.kr/channels/notice/posts/6332",
     "노원문화지도 등록 안내 (예술인·단체, 노원행사, 노원문화공간) | https://www.nowonarts.kr/channels/notice/posts/5109",
@@ -826,14 +785,19 @@
   },
   {
    "board": "art",
-   "detail": "robots.txt가 수집을 막음: https://www.idfac.or.kr/bbs/board.php?bo_table=notice",
    "id": "org-idfac",
    "kind": "org",
-   "links": 0,
+   "links": 15,
    "name": "동작문화재단",
    "new": 0,
-   "status": "robots",
-   "url": "https://www.idfac.or.kr"
+   "sample": [
+    "동작문화재단 홈페이지 점검(2026.11.02. 09~12시) | https://www.idfac.or.kr/bbs/board.php?bo_table=notice&wr_id=483",
+    "사육신역사관 11월 <사육신시네마> 상영작 안내 | https://www.idfac.or.kr/bbs/board.php?bo_table=notice&wr_id=487",
+    "2026 동작 빵도동 축제 문화누리카드 사용 가능 매장 안내 | https://www.idfac.or.kr/bbs/board.php?bo_table=notice&wr_id=486",
+    "11/7(토), 단 4시간만 열리는 사당의 지하낙원으로 초대합니다! | https://www.idfac.or.kr/bbs/board.php?bo_table=notice&wr_id=485"
+   ],
+   "status": "ok",
+   "url": "https://www.idfac.or.kr/bbs/board.php?bo_table=notice"
   },
   {
    "board": "art",
@@ -861,12 +825,12 @@
    "kind": "org",
    "links": 10,
    "name": "전주문화재단",
-   "new": 5,
+   "new": 1,
    "sample": [
+    "[행사] 2026 흑석골 닥무지 큰잔치 개최 - 11월 28일(토) 10 | https://www.jjcf.or.kr/main/inner.php?sMenu=F1100&mode=view&no=22907",
     "[공고] 2027년 전주한벽문화관 공연장 상반기 정기대관 모집공고 | https://www.jjcf.or.kr/main/inner.php?sMenu=F1100&mode=view&no=22904",
     "[공고] 2027 한벽전시실 상반기 정기대관 모집 공고 | https://www.jjcf.or.kr/main/inner.php?sMenu=F1100&mode=view&no=22903",
-    "[공고]2026년 전주공연예술연습공간 제3차 정기대관 공모 | https://www.jjcf.or.kr/main/inner.php?sMenu=F1100&mode=view&no=22860",
-    "[공고] 2026 전북 청년 K-컬처 프로젝트 참여자 선정 최종 합격자  | https://www.jjcf.or.kr/main/inner.php?sMenu=F1100&mode=view&no=22853"
+    "[공고]2026년 전주공연예술연습공간 제3차 정기대관 공모 | https://www.jjcf.or.kr/main/inner.php?sMenu=F1100&mode=view&no=22860"
    ],
    "status": "ok",
    "url": "https://www.jjcf.or.kr/main/inner.php?sMenu=F1100"
@@ -937,7 +901,7 @@
   },
   {
    "board": "art",
-   "detail": "HTTPSConnectionPool(host='www.ayac.or.kr', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLError(1, '[SSL: SSLV3_ALERT_HANDSHAKE_FAILURE] ssl/tls alert handshake failure (_ssl.c:101",
+   "detail": "HTTPSConnectionPool(host='www.ayac.or.kr', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unab",
    "id": "org-ayac",
    "kind": "org",
    "links": 0,
@@ -1282,17 +1246,17 @@
    "name": "수성문화재단",
    "new": 0,
    "sample": [
-    "DOWNLOAD | https://www.sscf.or.kr/bbs/bbs_download.php?mv_data=aWR4PTg3MDQmc3RhcnRQYWdlPTAmbGlzdE5vPTU3MSZ0YWJsZT1jc19iYnNfZGF0YSZuYXZfY29kZT1uZXcxNjI4NTk0NDIyJmNvZGU9bm90aWNlJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=||&download=h&seq=0",
-    "DOWNLOAD | https://www.sscf.or.kr/bbs/bbs_download.php?mv_data=aWR4PTg3MDQmc3RhcnRQYWdlPTAmbGlzdE5vPTU3MSZ0YWJsZT1jc19iYnNfZGF0YSZuYXZfY29kZT1uZXcxNjI4NTk0NDIyJmNvZGU9bm90aWNlJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=||&download=h&seq=1",
-    "DOWNLOAD | https://www.sscf.or.kr/bbs/bbs_download.php?mv_data=aWR4PTgwMDUmc3RhcnRQYWdlPTAmbGlzdE5vPTU3MSZ0YWJsZT1jc19iYnNfZGF0YSZuYXZfY29kZT1uZXcxNjI4NTk0NDIyJmNvZGU9bm90aWNlJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=||&download=h&seq=0",
-    "DOWNLOAD | https://www.sscf.or.kr/bbs/bbs_download.php?mv_data=aWR4PTgwMDUmc3RhcnRQYWdlPTAmbGlzdE5vPTU3MSZ0YWJsZT1jc19iYnNfZGF0YSZuYXZfY29kZT1uZXcxNjI4NTk0NDIyJmNvZGU9bm90aWNlJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=||&download=h&seq=1",
     "DOWNLOAD | https://www.sscf.or.kr/bbs/bbs_download.php?mv_data=aWR4PTg3NTImc3RhcnRQYWdlPTAmbGlzdE5vPTUxNiZ0YWJsZT1jc19iYnNfZGF0YSZuYXZfY29kZT1uZXcxNjI4NTk0NDI5JmNvZGU9YmlkJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=||&download=h&seq=0",
     "DOWNLOAD | https://www.sscf.or.kr/bbs/bbs_download.php?mv_data=aWR4PTg3NTImc3RhcnRQYWdlPTAmbGlzdE5vPTUxNiZ0YWJsZT1jc19iYnNfZGF0YSZuYXZfY29kZT1uZXcxNjI4NTk0NDI5JmNvZGU9YmlkJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=||&download=h&seq=1",
     "DOWNLOAD | https://www.sscf.or.kr/bbs/bbs_download.php?mv_data=aWR4PTg3NTImc3RhcnRQYWdlPTAmbGlzdE5vPTUxNiZ0YWJsZT1jc19iYnNfZGF0YSZuYXZfY29kZT1uZXcxNjI4NTk0NDI5JmNvZGU9YmlkJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=||&download=h&seq=2",
-    "DOWNLOAD | https://www.sscf.or.kr/bbs/bbs_download.php?mv_data=aWR4PTg2NDkmc3RhcnRQYWdlPTAmbGlzdE5vPTUxMiZ0YWJsZT1jc19iYnNfZGF0YSZuYXZfY29kZT1uZXcxNjI4NTk0NDI5JmNvZGU9YmlkJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=||&download=h&seq=0"
+    "DOWNLOAD | https://www.sscf.or.kr/bbs/bbs_download.php?mv_data=aWR4PTg2NDkmc3RhcnRQYWdlPTAmbGlzdE5vPTUxMiZ0YWJsZT1jc19iYnNfZGF0YSZuYXZfY29kZT1uZXcxNjI4NTk0NDI5JmNvZGU9YmlkJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=||&download=h&seq=0",
+    "DOWNLOAD | https://www.sscf.or.kr/bbs/bbs_download.php?mv_data=aWR4PTg4MTImc3RhcnRQYWdlPTAmbGlzdE5vPTU3MiZ0YWJsZT1jc19iYnNfZGF0YSZuYXZfY29kZT1uZXcxNjI4NTk0NDIyJmNvZGU9bm90aWNlJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=||&download=h&seq=0",
+    "DOWNLOAD | https://www.sscf.or.kr/bbs/bbs_download.php?mv_data=aWR4PTg4MTImc3RhcnRQYWdlPTAmbGlzdE5vPTU3MiZ0YWJsZT1jc19iYnNfZGF0YSZuYXZfY29kZT1uZXcxNjI4NTk0NDIyJmNvZGU9bm90aWNlJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=||&download=h&seq=1",
+    "DOWNLOAD | https://www.sscf.or.kr/bbs/bbs_download.php?mv_data=aWR4PTgwMDUmc3RhcnRQYWdlPTAmbGlzdE5vPTU3MiZ0YWJsZT1jc19iYnNfZGF0YSZuYXZfY29kZT1uZXcxNjI4NTk0NDIyJmNvZGU9bm90aWNlJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=||&download=h&seq=0",
+    "DOWNLOAD | https://www.sscf.or.kr/bbs/bbs_download.php?mv_data=aWR4PTgwMDUmc3RhcnRQYWdlPTAmbGlzdE5vPTU3MiZ0YWJsZT1jc19iYnNfZGF0YSZuYXZfY29kZT1uZXcxNjI4NTk0NDIyJmNvZGU9bm90aWNlJnNlYXJjaF9pdGVtPSZzZWFyY2hfb3JkZXI9Jm9yZGVyX2xpc3Q9Jmxpc3Rfc2NhbGU9JnZpZXdfbGV2ZWw9JnZpZXdfY2F0ZT0mdmlld19jYXRlMj0=||&download=h&seq=1"
    ],
    "status": "ok",
-   "url": "https://www.sscf.or.kr/pages/sub.htm?nav_code=new1628594422"
+   "url": "https://www.sscf.or.kr/pages/sub.htm?nav_code=new1628594429"
   },
   {
    "board": "art",
@@ -1381,35 +1345,35 @@
   },
   {
    "board": "art",
-   "detail": "게시판 찾기 순서 대기 중 (하루 60곳씩)",
+   "detail": "robots.txt가 수집을 막음: https://yfac.kr/main/main.do",
    "id": "org-yfac",
    "kind": "org",
    "links": 0,
    "name": "양천문화재단",
    "new": 0,
-   "status": "skipped",
+   "status": "robots",
    "url": "https://yfac.kr/main/main.do"
   },
   {
    "board": "art",
-   "detail": "게시판 찾기 순서 대기 중 (하루 60곳씩)",
+   "detail": "HTTPSConnectionPool(host='www.ydct.org', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable",
    "id": "org-ydct",
    "kind": "org",
    "links": 0,
    "name": "영덕문화관광재단",
    "new": 0,
-   "status": "skipped",
+   "status": "error",
    "url": "https://www.ydct.org"
   },
   {
    "board": "art",
-   "detail": "게시판 찾기 순서 대기 중 (하루 60곳씩)",
+   "detail": "robots.txt가 수집을 막음: https://www.ucf.or.kr:478",
    "id": "org-ucf",
    "kind": "org",
    "links": 0,
    "name": "울주문화재단",
    "new": 0,
-   "status": "skipped",
+   "status": "robots",
    "url": "https://www.ucf.or.kr:478"
   },
   {
@@ -1425,13 +1389,13 @@
   },
   {
    "board": "art",
-   "detail": "게시판 찾기 순서 대기 중 (하루 60곳씩)",
+   "detail": "robots.txt가 수집을 막음: https://www.hbcf.or.kr/front",
    "id": "org-hbcf",
    "kind": "org",
    "links": 0,
    "name": "행복북구문화재단",
    "new": 0,
-   "status": "skipped",
+   "status": "robots",
    "url": "https://www.hbcf.or.kr/front"
   },
   {
@@ -1472,13 +1436,13 @@
   },
   {
    "board": "art",
-   "detail": "게시판 찾기 순서 대기 중 (하루 60곳씩)",
+   "detail": "HTTPSConnectionPool(host='www.mycf.or.kr', port=443): Max retries exceeded with url: /main (Caused by SSLError(SSLError(1, '[SSL: DH_KEY_TOO_SMALL] dh key too small (_ssl.c:1011)')))",
    "id": "org-mycf",
    "kind": "org",
    "links": 0,
    "name": "밀양문화관광재단",
    "new": 0,
-   "status": "skipped",
+   "status": "error",
    "url": "https://www.mycf.or.kr/main"
   },
   {
@@ -1505,13 +1469,13 @@
   },
   {
    "board": "art",
-   "detail": "게시판 찾기 순서 대기 중 (하루 60곳씩)",
+   "detail": "HTTPSConnectionPool(host='hub.cfac.or.kr', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self",
    "id": "org-hub-cfac",
    "kind": "org",
    "links": 0,
    "name": "천안문화재단",
    "new": 0,
-   "status": "skipped",
+   "status": "error",
    "url": "https://hub.cfac.or.kr"
   },
   {
@@ -1529,14 +1493,14 @@
    "board": "art",
    "id": "org-ywcf",
    "kind": "org",
-   "links": 40,
+   "links": 41,
    "name": "영월문화관광재단",
-   "new": 2,
+   "new": 1,
    "sample": [
+    "2027년 (재) 영월문화관광재단 영월청소년오케스트라 단원 모집 공고 | https://www.ywcf.or.kr/notices/3545",
     "[2026년 문화광부학교]농한기 시민강사 프로젝트_수강생 모집 공고 | https://www.ywcf.or.kr/notices/3543",
     "[2027년 제60회 단종문화제] 슬로건 공모전 안내 | https://www.ywcf.or.kr/notices/3542",
     "[2026 영락(樂)잇데이] 지역문화예술 발전 유공자 추천 공고 | https://www.ywcf.or.kr/notices/3539",
-    "[문화광부학교] 2026년 농한기 시민강사 프로젝트 강사 모집 공고 | https://www.ywcf.or.kr/notices/3532",
     "지구도 연습이 필요해 <Re:마켓> 참가자 모집 | https://www.ywcf.or.kr/contest/3247",
     "🌟 구석구석 문화가 있는 영월 🌟 영유아 문화예술교육 프로그램 <토닥토닥 | https://www.ywcf.or.kr/contest/3023",
     "2026년 「문화, 예월 아카이버(Archiver)」 모집 공고 | https://www.ywcf.or.kr/contest/2744",
@@ -1578,13 +1542,13 @@
   },
   {
    "board": "art",
-   "detail": "게시판 찾기 순서 대기 중 (하루 60곳씩)",
+   "detail": "HTTPSConnectionPool(host='seosancf.or.kr', port=443): Max retries exceeded with url: / (Caused by NewConnectionError(\"HTTPSConnection(host='seosancf.or.kr', port=443): Failed to establish a new connec",
    "id": "org-seosancf",
    "kind": "org",
    "links": 0,
    "name": "서산문화재단",
    "new": 0,
-   "status": "skipped",
+   "status": "error",
    "url": "https://seosancf.or.kr"
   },
   {
@@ -1673,24 +1637,24 @@
   },
   {
    "board": "art",
-   "detail": "게시판 찾기 순서 대기 중 (하루 60곳씩)",
+   "detail": "HTTP 404: https://www.bsjincf.or.kr/main.php",
    "id": "org-bsjincf",
    "kind": "org",
    "links": 0,
    "name": "부산진문화재단",
    "new": 0,
-   "status": "skipped",
+   "status": "error",
    "url": "https://www.bsjincf.or.kr/main.php"
   },
   {
    "board": "art",
-   "detail": "게시판 찾기 순서 대기 중 (하루 60곳씩)",
+   "detail": "HTTPSConnectionPool(host='gunwi3964.org', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unabl",
    "id": "org-gunwi3964",
    "kind": "org",
    "links": 0,
    "name": "군위문화관광재단",
    "new": 0,
-   "status": "skipped",
+   "status": "error",
    "url": "https://gunwi3964.org"
   },
   {
@@ -1755,13 +1719,13 @@
   },
   {
    "board": "art",
-   "detail": "게시판 찾기 순서 대기 중 (하루 60곳씩)",
+   "detail": "robots.txt가 수집을 막음: https://tyhansancf.or.kr",
    "id": "org-tyhansancf",
    "kind": "org",
    "links": 0,
    "name": "통영문화재단",
    "new": 0,
-   "status": "skipped",
+   "status": "robots",
    "url": "https://tyhansancf.or.kr"
   },
   {
@@ -1846,13 +1810,13 @@
   },
   {
    "board": "art",
-   "detail": "게시판 찾기 순서 대기 중 (하루 60곳씩)",
+   "detail": "robots.txt가 수집을 막음: https://www.geojeart.or.kr/index.asp",
    "id": "org-geojeart",
    "kind": "org",
    "links": 0,
    "name": "거제시문화예술재단",
    "new": 0,
-   "status": "skipped",
+   "status": "robots",
    "url": "https://www.geojeart.or.kr/index.asp"
   },
   {
@@ -1863,14 +1827,14 @@
    "name": "나주문화재단",
    "new": 0,
    "sample": [
+    "(재)나주문화재단 금고 지정 신청 공고 새로운글 | https://www.njcf.or.kr/www/community/notices?idx=971&mode=view",
     "2026 행복전남 문화지소 <로컬크리에이터 거버넌스> 참여신청 .. | https://www.njcf.or.kr/www/community/notices?idx=870&mode=view",
     "소규모 특화 축제 전라유람」 나주목사 행렬 운영 용역 제안서 평.. | https://www.njcf.or.kr/www/community/notices?idx=785&mode=view",
     "「2026 대한민국 예술과 기업 동반성장 대상 지원사업」 참여 .. | https://www.njcf.or.kr/www/community/notices?idx=684&mode=view",
-    "「소규모 특화 축제 전라유람」 <나주목사 행렬> 행사 운영 용역.. | https://www.njcf.or.kr/www/community/notices?idx=674&mode=view",
+    "(재)나주문화재단 금고 지정 신청 공고 새로운글 | https://www.njcf.or.kr/www/community/notices?idx=971&mode=view",
     "2026 행복전남 문화지소 <로컬크리에이터 거버넌스> 참여신청 .. | https://www.njcf.or.kr/www/community/notices?idx=870&mode=view",
     "소규모 특화 축제 전라유람」 나주목사 행렬 운영 용역 제안서 평.. | https://www.njcf.or.kr/www/community/notices?idx=785&mode=view",
-    "「2026 대한민국 예술과 기업 동반성장 대상 지원사업」 참여 .. | https://www.njcf.or.kr/www/community/notices?idx=684&mode=view",
-    "「소규모 특화 축제 전라유람」 <나주목사 행렬> 행사 운영 용역.. | https://www.njcf.or.kr/www/community/notices?idx=674&mode=view"
+    "「2026 대한민국 예술과 기업 동반성장 대상 지원사업」 참여 .. | https://www.njcf.or.kr/www/community/notices?idx=684&mode=view"
    ],
    "status": "ok",
    "url": "https://www.njcf.or.kr/www/community"
@@ -1881,7 +1845,7 @@
    "kind": "org",
    "links": 16,
    "name": "여주세종문화관광재단",
-   "new": 2,
+   "new": 0,
    "sample": [
     "[빈집 예술공간] 2027년 「빈집 예술공간 1층 전시실」 대관전시 공고 | https://www.yjcf.or.kr/brd/board/200/L/menu/341?brdType=R&thisPage=1&bbIdx=2578&searchField=&searchText=",
     "2027년 금은모래 작은미술관 대관전시 공고 | https://www.yjcf.or.kr/brd/board/200/L/menu/341?brdType=R&thisPage=1&bbIdx=2577&searchField=&searchText=",
@@ -1920,13 +1884,13 @@
   },
   {
    "board": "art",
-   "detail": "게시판 찾기 순서 대기 중 (하루 60곳씩)",
+   "detail": "HTTPSConnectionPool(host='www.chilgokctf.or.kr', port=443): Max retries exceeded with url: /ctf/main.do (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate ve",
    "id": "org-chilgokctf",
    "kind": "org",
    "links": 0,
    "name": "칠곡문화관광재단",
    "new": 0,
-   "status": "skipped",
+   "status": "error",
    "url": "https://www.chilgokctf.or.kr/ctf/main.do"
   },
   {
@@ -1953,13 +1917,13 @@
   },
   {
    "board": "art",
-   "detail": "게시판 찾기 순서 대기 중 (하루 60곳씩)",
+   "detail": "robots.txt가 수집을 막음: https://www.acc.go.kr",
    "id": "org-acc",
    "kind": "org",
    "links": 0,
    "name": "국립아시아문화전당",
    "new": 0,
-   "status": "skipped",
+   "status": "robots",
    "url": "https://www.acc.go.kr"
   },
   {
